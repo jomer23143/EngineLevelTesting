@@ -82,6 +82,9 @@
     <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RJCodeAdvance.RJControls.1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -155,6 +158,12 @@
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PowerBoardfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PowerBoardfrm.Designer.cs">
+      <DependentUpon>PowerBoardfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PowerBoardfrm.resx">
+      <DependentUpon>PowerBoardfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
