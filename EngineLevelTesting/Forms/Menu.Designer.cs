@@ -37,6 +37,7 @@ namespace EngineLevelTesting.Forms
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.btnSecc = new System.Windows.Forms.Button();
+            this.btnpower = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDataEntry
@@ -98,11 +99,23 @@ namespace EngineLevelTesting.Forms
             this.btnSecc.UseVisualStyleBackColor = true;
             this.btnSecc.Click += new System.EventHandler(this.btnSecc_Click);
             // 
+            // btnpower
+            // 
+            this.btnpower.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpower.Location = new System.Drawing.Point(339, 171);
+            this.btnpower.Name = "btnpower";
+            this.btnpower.Size = new System.Drawing.Size(244, 52);
+            this.btnpower.TabIndex = 5;
+            this.btnpower.Text = "L2 Powerboard Checklist";
+            this.btnpower.UseVisualStyleBackColor = true;
+            this.btnpower.Click += new System.EventHandler(this.btnpower_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 252);
+            this.ClientSize = new System.Drawing.Size(642, 257);
+            this.Controls.Add(this.btnpower);
             this.Controls.Add(this.btnSecc);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnafe);
@@ -127,5 +140,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSecc;
+        private System.Windows.Forms.Button btnpower;
     }
 }

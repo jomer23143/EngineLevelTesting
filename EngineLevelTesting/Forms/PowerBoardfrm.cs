@@ -24,6 +24,7 @@ namespace EngineLevelTesting.Forms
         }
         private async void Saved()
         {
+            rjCircularPictureBox1.Show();
             StringBuilder sql = new StringBuilder();
             Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
@@ -57,7 +58,73 @@ namespace EngineLevelTesting.Forms
             {
                 MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
             });
+            rjCircularPictureBox1.Hide();
             MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void PowerBoardfrm_Load(object sender, EventArgs e)
+        {
+            rjCircularPictureBox1.Hide();
+        }
+
+        private void txtserial_TextChanged(object sender, EventArgs e)
+        {
+            GetScanSerial();
+        }
+        private string GetScanSerial()
+        {
+            try
+            {
+                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from powertable where board_serial = '{txtserial.Text}' and ipn_number ='{cbipn.SelectedItem.ToString()}'", Class.SqlCon.connectionString(1));
+                if (dt.Rows.Count > 0)
+                {
+                    DialogResult dialogResult = MessageBox.Show("You are about to overwrite record!!!\nAre you sure want to edit record?\n\nIf viewing purposes please go to report!!!", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        //res = false;
+                        //status = true;
+                        foreach (DataRow item in dt.Rows)
+                        {
+                            txtrev.Text = item["rev"].ToString();
+                            txtfirm.Text = item["fw_version"].ToString();
+                            txttp2.Text = item["tp2"].ToString();
+                            txttp3.Text = item["tp3"].ToString();
+                            txttp4.Text = item["tp4"].ToString();
+                            txttp5.Text = item["tp5"].ToString();
+                            cbCopn.Text = item["c_open"].ToString();
+                            cbCclose.Text = item["c_closed"].ToString();
+                            txtvoltagePlus.Text = item["voltage_plus"].ToString();
+                            txtpn.Text = item["gfci_board"].ToString();
+                            txtsn.Text = item["gfci_sn"].ToString();
+                            cbleak.Text = item["leak_detect"].ToString();
+                            cbcircuit.Text = item["circuit"].ToString();
+                            cbduty.Text = item["duty_cycle"].ToString();
+                            txtamp240.Text = item["charge_amp_240"].ToString();
+                            txtamp120.Text = item["charge_amp_120"].ToString();
+                            cbjudgement.Text = item["judgement"].ToString();
+                            txtremarks.Text = item["remarks"].ToString();
+                            txttestby.Text = item["tested_by"].ToString();
+                        }
+                        return "Success";
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        //res = true;
+                        //status = false;
+                        return "Success";
+                    }
+                }
+                else
+                {
+                    //res = false;
+                }
+                return "Success";
+            }
+            catch (Exception)
+            {
+
+                return "Failed";
+            }
         }
     }
 }

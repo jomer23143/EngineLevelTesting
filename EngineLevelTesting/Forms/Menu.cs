@@ -195,5 +195,11 @@ namespace EngineLevelTesting.Forms
             Forms.SeccFrm frm = new Forms.SeccFrm();
             frm.Show();
         }
+
+        private void btnpower_Click(object sender, EventArgs e)
+        {
+            Forms.PowerBoardfrm frm = new Forms.PowerBoardfrm();
+            frm.Show();
+        }
     }
 }

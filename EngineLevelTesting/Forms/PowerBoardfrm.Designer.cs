@@ -29,6 +29,7 @@ namespace EngineLevelTesting.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PowerBoardfrm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.txttestby = new System.Windows.Forms.TextBox();
@@ -78,7 +79,9 @@ namespace EngineLevelTesting.Forms
             this.cbCopn = new System.Windows.Forms.ComboBox();
             this.cbCclose = new System.Windows.Forms.ComboBox();
             this.btnsave = new System.Windows.Forms.Button();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -335,6 +338,7 @@ namespace EngineLevelTesting.Forms
             this.txtserial.Size = new System.Drawing.Size(219, 22);
             this.txtserial.TabIndex = 94;
             this.txtserial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtserial.TextChanged += new System.EventHandler(this.txtserial_TextChanged);
             // 
             // label17
             // 
@@ -413,6 +417,7 @@ namespace EngineLevelTesting.Forms
             this.cbipn.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbipn.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbipn.BackColor = System.Drawing.Color.SkyBlue;
+            this.cbipn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbipn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbipn.FormattingEnabled = true;
             this.cbipn.Items.AddRange(new object[] {
@@ -675,11 +680,28 @@ namespace EngineLevelTesting.Forms
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(184, 263);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 159;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
             // PowerBoardfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 686);
+            this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.cbCclose);
             this.Controls.Add(this.cbCopn);
@@ -731,8 +753,11 @@ namespace EngineLevelTesting.Forms
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "PowerBoardfrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PowerBoardfrm";
+            this.Load += new System.EventHandler(this.PowerBoardfrm_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -789,5 +814,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.ComboBox cbCopn;
         private System.Windows.Forms.ComboBox cbCclose;
         private System.Windows.Forms.Button btnsave;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
     }
 }
