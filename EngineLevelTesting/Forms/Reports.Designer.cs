@@ -164,9 +164,11 @@ namespace EngineLevelTesting.Forms
             "HvCombo Checklist",
             "AFE Board Checklist",
             "Secc Board Checklist",
+            "Power Board Checklist",
             "HvCombo Checklist ISO",
             "AFE Board Checklist ISO",
-            "Secc Board Checklist ISO"});
+            "Secc Board Checklist ISO",
+            "Power Board Checklist ISO"});
             this.comboBox1.Location = new System.Drawing.Point(94, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(249, 23);

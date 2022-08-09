@@ -218,6 +218,7 @@
     <EmbeddedResource Include="Reports\IsoDocAfe.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocReport.rdlc" />
     <EmbeddedResource Include="Reports\ISOseccReport.rdlc" />
+    <EmbeddedResource Include="Reports\powerReport.rdlc" />
     <EmbeddedResource Include="Reports\seccReport.rdlc" />
     <None Include="Dataset\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

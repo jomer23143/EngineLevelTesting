@@ -90,6 +90,7 @@ namespace EngineLevelTesting.Forms
         {
             string sql = "";
             string report = "";
+            string datasetname = "";
             if (comboBox1.Text == "")
             {
                 MessageBox.Show("Please select from checklist!!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -99,37 +100,54 @@ namespace EngineLevelTesting.Forms
             {
                 sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
                 report = "HvComboReport";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "HvCombo Checklist ISO")
             {
                 sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
                 report = "IsoDocReport";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "AFE Board Checklist ISO")
             {
                 sql = $@"Select * from afe_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
                 report = "IsoDocAfe";
+                datasetname = "DataSet1";
             }
             else if(comboBox1.Text == "AFE Board Checklist")
             {
                 sql = $@"Select * from afe_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
                 report = "afeReport";
+                datasetname = "DataSet1";
             }
             else if(comboBox1.Text == "Secc Board Checklist")
             {
                 sql = $@"SELECT * FROM secc_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
                 report = "seccReport";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "Secc Board Checklist ISO")
             {
                 sql = $@"SELECT * FROM secc_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
                 report = "ISOseccReport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "Power Board Checklist")
+            {
+                sql = $@"SELECT * FROM powerboard_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                report = "powerReport";
+                datasetname = "powerboard";
+            }
+            else if (comboBox1.Text == "Power Board Checklist ISO")
+            {
+                //sql = $@"SELECT * FROM secc_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                //report = "ISOseccReport";
             }
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql, Class.SqlCon.connectionString(1));
             var localreport = reportViewer1.LocalReport;
             reportViewer1.LocalReport.DataSources.Clear();
-            ReportDataSource rds = new ReportDataSource("DataSet1", dt);
+            ReportDataSource rds = new ReportDataSource(datasetname, dt);
             reportViewer1.LocalReport.DataSources.Add(rds);
             //if (dt.Rows.Count != 0)
             //{
@@ -150,6 +168,7 @@ namespace EngineLevelTesting.Forms
         {
             string sql = "";
             string report = "";
+            string datasetname = "";
             if (comboBox1.Text == "")
             {
                 MessageBox.Show("Please select from checklist!!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -159,37 +178,54 @@ namespace EngineLevelTesting.Forms
             {
                 sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where board_serial = '{textBox1.Text}'";
                 report = "HvComboReport";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "HvCombo Checklist ISO")
             {
                 sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where board_serial = '{textBox1.Text}'";
                 report = "IsoDocReport";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "AFE Board Checklist ISO")
             {
                 sql = $@"Select * from afe_table where board_serial = '{textBox1.Text}'";
                 report = "IsoDocAfe";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "AFE Board Checklist")
             {
                 sql = $@"Select * from afe_table where board_serial = '{textBox1.Text}'";
                 report = "afeReport";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "Secc Board Checklist")
             {
                 sql = $@"SELECT * FROM secc_table where serial_number = '{textBox1.Text}'";
                 report = "seccReport";
+                datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "Secc Board Checklist ISO")
             {
                 sql = $@"SELECT * FROM secc_table where serial_number = '{textBox1.Text}'";
                 report = "ISOseccReport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "Power Board Checklist")
+            {
+                sql = $@"SELECT * FROM powerboard_table where board_serial = '{textBox1.Text}'";
+                report = "powerReport";
+                datasetname = "powerboard";
+            }
+            else if (comboBox1.Text == "Power Board Checklist ISO")
+            {
+                //sql = $@"SELECT * FROM secc_table where serial_number = '{textBox1.Text}'";
+                //report = "ISOseccReport";
             }
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql, Class.SqlCon.connectionString(1));
             var localreport = reportViewer1.LocalReport;
             reportViewer1.LocalReport.DataSources.Clear();
-            ReportDataSource rds = new ReportDataSource("DataSet1", dt);
+            ReportDataSource rds = new ReportDataSource(datasetname, dt);
             reportViewer1.LocalReport.DataSources.Add(rds);
             //if (dt.Rows.Count != 0)
             //{
