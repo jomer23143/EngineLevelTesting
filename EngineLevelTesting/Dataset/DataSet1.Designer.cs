@@ -1959,6 +1959,8 @@ namespace EngineLevelTesting.Dataset {
             
             private global::System.Data.DataColumn columndate_stamp;
             
+            private global::System.Data.DataColumn columntemp_read;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public powerboardDataTable() {
@@ -2178,6 +2180,14 @@ namespace EngineLevelTesting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn temp_readColumn {
+                get {
+                    return this.columntemp_read;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2236,7 +2246,8 @@ namespace EngineLevelTesting.Dataset {
                         string judgement, 
                         string remarks, 
                         string tested_by, 
-                        string date_stamp) {
+                        string date_stamp, 
+                        string temp_read) {
                 powerboardRow rowpowerboardRow = ((powerboardRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         date_tested,
@@ -2261,7 +2272,8 @@ namespace EngineLevelTesting.Dataset {
                         judgement,
                         remarks,
                         tested_by,
-                        date_stamp};
+                        date_stamp,
+                        temp_read};
                 rowpowerboardRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpowerboardRow);
                 return rowpowerboardRow;
@@ -2307,6 +2319,7 @@ namespace EngineLevelTesting.Dataset {
                 this.columnremarks = base.Columns["remarks"];
                 this.columntested_by = base.Columns["tested_by"];
                 this.columndate_stamp = base.Columns["date_stamp"];
+                this.columntemp_read = base.Columns["temp_read"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2358,6 +2371,8 @@ namespace EngineLevelTesting.Dataset {
                 base.Columns.Add(this.columntested_by);
                 this.columndate_stamp = new global::System.Data.DataColumn("date_stamp", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndate_stamp);
+                this.columntemp_read = new global::System.Data.DataColumn("temp_read", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntemp_read);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4453,6 +4468,22 @@ namespace EngineLevelTesting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string temp_read {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowerboard.temp_readColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'temp_read\' in table \'powerboard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowerboard.temp_readColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isdate_testedNull() {
                 return this.IsNull(this.tablepowerboard.date_testedColumn);
             }
@@ -4725,6 +4756,18 @@ namespace EngineLevelTesting.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setdate_stampNull() {
                 this[this.tablepowerboard.date_stampColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Istemp_readNull() {
+                return this.IsNull(this.tablepowerboard.temp_readColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Settemp_readNull() {
+                this[this.tablepowerboard.temp_readColumn] = global::System.Convert.DBNull;
             }
         }
         

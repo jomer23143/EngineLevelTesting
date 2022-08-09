@@ -217,6 +217,7 @@
     <EmbeddedResource Include="Reports\HvComboReport.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocAfe.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocReport.rdlc" />
+    <EmbeddedResource Include="Reports\IsopowerReport.rdlc" />
     <EmbeddedResource Include="Reports\ISOseccReport.rdlc" />
     <EmbeddedResource Include="Reports\powerReport.rdlc" />
     <EmbeddedResource Include="Reports\seccReport.rdlc" />

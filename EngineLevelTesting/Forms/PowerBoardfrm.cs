@@ -25,6 +25,7 @@ namespace EngineLevelTesting.Forms
             txtvoltagePlus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtamp240.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtamp120.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txttempRead.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtserial.ReadOnly = true;
             txtrev.ReadOnly = true;
             txtfirm.ReadOnly = true;
@@ -69,6 +70,7 @@ namespace EngineLevelTesting.Forms
                                 { "c_open",cbCopn.SelectedItem.ToString()},
                                 { "c_closed",cbCclose.SelectedItem.ToString()},
                                 { "voltage_plus",txtvoltagePlus.Text},
+                                { "temp_read",txtvoltagePlus.Text},
                                 { "gfci_board",txtpn.Text},
                                 { "gfci_sn",txtsn.Text},
                                 { "leak_detect",cbleak.SelectedItem.ToString()},
@@ -169,6 +171,7 @@ namespace EngineLevelTesting.Forms
             cbCopn.SelectedIndex = -1;
             cbCclose.SelectedIndex = -1;
             txtvoltagePlus.Clear();
+            txttempRead.Clear();
             txtpn.Clear();
             txtsn.Clear();
             cbleak.SelectedIndex = -1;
