@@ -40,7 +40,7 @@ namespace EngineLevelTesting.Forms
             txtamp120.ReadOnly = true;
             txtremarks.ReadOnly = true;
             txttestby.ReadOnly = true;
-            this.MaximizeBox = false;
+            //this.MaximizeBox = false;
         }
 
         private void btnsave_Click(object sender, EventArgs e)
