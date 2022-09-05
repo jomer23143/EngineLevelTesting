@@ -38,6 +38,7 @@ namespace EngineLevelTesting.Forms
             this.button1 = new System.Windows.Forms.Button();
             this.btnSecc = new System.Windows.Forms.Button();
             this.btnpower = new System.Windows.Forms.Button();
+            this.btnpowermeter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDataEntry
@@ -110,11 +111,23 @@ namespace EngineLevelTesting.Forms
             this.btnpower.UseVisualStyleBackColor = true;
             this.btnpower.Click += new System.EventHandler(this.btnpower_Click);
             // 
+            // btnpowermeter
+            // 
+            this.btnpowermeter.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpowermeter.Location = new System.Drawing.Point(53, 240);
+            this.btnpowermeter.Name = "btnpowermeter";
+            this.btnpowermeter.Size = new System.Drawing.Size(244, 52);
+            this.btnpowermeter.TabIndex = 6;
+            this.btnpowermeter.Text = "L2 Power Meter Board Checklist";
+            this.btnpowermeter.UseVisualStyleBackColor = true;
+            this.btnpowermeter.Click += new System.EventHandler(this.btnpowermeter_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 257);
+            this.ClientSize = new System.Drawing.Size(642, 322);
+            this.Controls.Add(this.btnpowermeter);
             this.Controls.Add(this.btnpower);
             this.Controls.Add(this.btnSecc);
             this.Controls.Add(this.button1);
@@ -141,5 +154,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSecc;
         private System.Windows.Forms.Button btnpower;
+        private System.Windows.Forms.Button btnpowermeter;
     }
 }

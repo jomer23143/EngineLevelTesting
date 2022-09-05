@@ -228,6 +228,7 @@
     <EmbeddedResource Include="Reports\IsoDocReport.rdlc" />
     <EmbeddedResource Include="Reports\IsopowerReport.rdlc" />
     <EmbeddedResource Include="Reports\ISOseccReport.rdlc" />
+    <EmbeddedResource Include="Reports\powermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\powerReport.rdlc" />
     <EmbeddedResource Include="Reports\seccReport.rdlc" />
     <None Include="Dataset\DataSet1.xsc">

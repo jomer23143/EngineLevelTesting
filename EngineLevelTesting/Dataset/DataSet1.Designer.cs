@@ -32,6 +32,8 @@ namespace EngineLevelTesting.Dataset {
         
         private powerboardDataTable tablepowerboard;
         
+        private powermeterDataTable tablepowermeter;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -71,6 +73,9 @@ namespace EngineLevelTesting.Dataset {
                 }
                 if ((ds.Tables["powerboard"] != null)) {
                     base.Tables.Add(new powerboardDataTable(ds.Tables["powerboard"]));
+                }
+                if ((ds.Tables["powermeter"] != null)) {
+                    base.Tables.Add(new powermeterDataTable(ds.Tables["powermeter"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -127,6 +132,16 @@ namespace EngineLevelTesting.Dataset {
         public powerboardDataTable powerboard {
             get {
                 return this.tablepowerboard;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public powermeterDataTable powermeter {
+            get {
+                return this.tablepowermeter;
             }
         }
         
@@ -209,6 +224,9 @@ namespace EngineLevelTesting.Dataset {
                 if ((ds.Tables["powerboard"] != null)) {
                     base.Tables.Add(new powerboardDataTable(ds.Tables["powerboard"]));
                 }
+                if ((ds.Tables["powermeter"] != null)) {
+                    base.Tables.Add(new powermeterDataTable(ds.Tables["powermeter"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -266,6 +284,12 @@ namespace EngineLevelTesting.Dataset {
                     this.tablepowerboard.InitVars();
                 }
             }
+            this.tablepowermeter = ((powermeterDataTable)(base.Tables["powermeter"]));
+            if ((initTable == true)) {
+                if ((this.tablepowermeter != null)) {
+                    this.tablepowermeter.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -284,6 +308,8 @@ namespace EngineLevelTesting.Dataset {
             base.Tables.Add(this.tableseccboard);
             this.tablepowerboard = new powerboardDataTable();
             base.Tables.Add(this.tablepowerboard);
+            this.tablepowermeter = new powermeterDataTable();
+            base.Tables.Add(this.tablepowermeter);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -307,6 +333,12 @@ namespace EngineLevelTesting.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializepowerboard() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializepowermeter() {
             return false;
         }
         
@@ -376,6 +408,9 @@ namespace EngineLevelTesting.Dataset {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void powerboardRowChangeEventHandler(object sender, powerboardRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void powermeterRowChangeEventHandler(object sender, powermeterRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2459,6 +2494,524 @@ namespace EngineLevelTesting.Dataset {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "powerboardDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class powermeterDataTable : global::System.Data.TypedTableBase<powermeterRow> {
+            
+            private global::System.Data.DataColumn columndate_tested;
+            
+            private global::System.Data.DataColumn columnboard_serial;
+            
+            private global::System.Data.DataColumn columnrev_no;
+            
+            private global::System.Data.DataColumn columnfw_version;
+            
+            private global::System.Data.DataColumn columnled_dg26;
+            
+            private global::System.Data.DataColumn columnv_ref;
+            
+            private global::System.Data.DataColumn columnv_phase_a;
+            
+            private global::System.Data.DataColumn columnv_phase_b;
+            
+            private global::System.Data.DataColumn columni_ref;
+            
+            private global::System.Data.DataColumn columni_phase_a;
+            
+            private global::System.Data.DataColumn columni_phase_b;
+            
+            private global::System.Data.DataColumn columnp_ref;
+            
+            private global::System.Data.DataColumn columnactive_phase_a;
+            
+            private global::System.Data.DataColumn columnactive_phase_b;
+            
+            private global::System.Data.DataColumn columne_ref;
+            
+            private global::System.Data.DataColumn columne_ui;
+            
+            private global::System.Data.DataColumn columnresult;
+            
+            private global::System.Data.DataColumn columntested_by;
+            
+            private global::System.Data.DataColumn columndate_stamp;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public powermeterDataTable() {
+                this.TableName = "powermeter";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal powermeterDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected powermeterDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn date_testedColumn {
+                get {
+                    return this.columndate_tested;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn board_serialColumn {
+                get {
+                    return this.columnboard_serial;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn rev_noColumn {
+                get {
+                    return this.columnrev_no;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn fw_versionColumn {
+                get {
+                    return this.columnfw_version;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn led_dg26Column {
+                get {
+                    return this.columnled_dg26;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn v_refColumn {
+                get {
+                    return this.columnv_ref;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn v_phase_aColumn {
+                get {
+                    return this.columnv_phase_a;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn v_phase_bColumn {
+                get {
+                    return this.columnv_phase_b;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn i_refColumn {
+                get {
+                    return this.columni_ref;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn i_phase_aColumn {
+                get {
+                    return this.columni_phase_a;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn i_phase_bColumn {
+                get {
+                    return this.columni_phase_b;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn p_refColumn {
+                get {
+                    return this.columnp_ref;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn active_phase_aColumn {
+                get {
+                    return this.columnactive_phase_a;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn active_phase_bColumn {
+                get {
+                    return this.columnactive_phase_b;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn e_refColumn {
+                get {
+                    return this.columne_ref;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn e_uiColumn {
+                get {
+                    return this.columne_ui;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn resultColumn {
+                get {
+                    return this.columnresult;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn tested_byColumn {
+                get {
+                    return this.columntested_by;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn date_stampColumn {
+                get {
+                    return this.columndate_stamp;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public powermeterRow this[int index] {
+                get {
+                    return ((powermeterRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event powermeterRowChangeEventHandler powermeterRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event powermeterRowChangeEventHandler powermeterRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event powermeterRowChangeEventHandler powermeterRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event powermeterRowChangeEventHandler powermeterRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddpowermeterRow(powermeterRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public powermeterRow AddpowermeterRow(
+                        string date_tested, 
+                        string board_serial, 
+                        string rev_no, 
+                        string fw_version, 
+                        string led_dg26, 
+                        string v_ref, 
+                        string v_phase_a, 
+                        string v_phase_b, 
+                        string i_ref, 
+                        string i_phase_a, 
+                        string i_phase_b, 
+                        string p_ref, 
+                        string active_phase_a, 
+                        string active_phase_b, 
+                        string e_ref, 
+                        string e_ui, 
+                        string result, 
+                        string tested_by, 
+                        string date_stamp) {
+                powermeterRow rowpowermeterRow = ((powermeterRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        date_tested,
+                        board_serial,
+                        rev_no,
+                        fw_version,
+                        led_dg26,
+                        v_ref,
+                        v_phase_a,
+                        v_phase_b,
+                        i_ref,
+                        i_phase_a,
+                        i_phase_b,
+                        p_ref,
+                        active_phase_a,
+                        active_phase_b,
+                        e_ref,
+                        e_ui,
+                        result,
+                        tested_by,
+                        date_stamp};
+                rowpowermeterRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowpowermeterRow);
+                return rowpowermeterRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                powermeterDataTable cln = ((powermeterDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new powermeterDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columndate_tested = base.Columns["date_tested"];
+                this.columnboard_serial = base.Columns["board_serial"];
+                this.columnrev_no = base.Columns["rev_no"];
+                this.columnfw_version = base.Columns["fw_version"];
+                this.columnled_dg26 = base.Columns["led_dg26"];
+                this.columnv_ref = base.Columns["v_ref"];
+                this.columnv_phase_a = base.Columns["v_phase_a"];
+                this.columnv_phase_b = base.Columns["v_phase_b"];
+                this.columni_ref = base.Columns["i_ref"];
+                this.columni_phase_a = base.Columns["i_phase_a"];
+                this.columni_phase_b = base.Columns["i_phase_b"];
+                this.columnp_ref = base.Columns["p_ref"];
+                this.columnactive_phase_a = base.Columns["active_phase_a"];
+                this.columnactive_phase_b = base.Columns["active_phase_b"];
+                this.columne_ref = base.Columns["e_ref"];
+                this.columne_ui = base.Columns["e_ui"];
+                this.columnresult = base.Columns["result"];
+                this.columntested_by = base.Columns["tested_by"];
+                this.columndate_stamp = base.Columns["date_stamp"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columndate_tested = new global::System.Data.DataColumn("date_tested", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndate_tested);
+                this.columnboard_serial = new global::System.Data.DataColumn("board_serial", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnboard_serial);
+                this.columnrev_no = new global::System.Data.DataColumn("rev_no", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrev_no);
+                this.columnfw_version = new global::System.Data.DataColumn("fw_version", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfw_version);
+                this.columnled_dg26 = new global::System.Data.DataColumn("led_dg26", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnled_dg26);
+                this.columnv_ref = new global::System.Data.DataColumn("v_ref", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnv_ref);
+                this.columnv_phase_a = new global::System.Data.DataColumn("v_phase_a", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnv_phase_a);
+                this.columnv_phase_b = new global::System.Data.DataColumn("v_phase_b", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnv_phase_b);
+                this.columni_ref = new global::System.Data.DataColumn("i_ref", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columni_ref);
+                this.columni_phase_a = new global::System.Data.DataColumn("i_phase_a", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columni_phase_a);
+                this.columni_phase_b = new global::System.Data.DataColumn("i_phase_b", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columni_phase_b);
+                this.columnp_ref = new global::System.Data.DataColumn("p_ref", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnp_ref);
+                this.columnactive_phase_a = new global::System.Data.DataColumn("active_phase_a", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnactive_phase_a);
+                this.columnactive_phase_b = new global::System.Data.DataColumn("active_phase_b", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnactive_phase_b);
+                this.columne_ref = new global::System.Data.DataColumn("e_ref", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columne_ref);
+                this.columne_ui = new global::System.Data.DataColumn("e_ui", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columne_ui);
+                this.columnresult = new global::System.Data.DataColumn("result", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnresult);
+                this.columntested_by = new global::System.Data.DataColumn("tested_by", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntested_by);
+                this.columndate_stamp = new global::System.Data.DataColumn("date_stamp", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndate_stamp);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public powermeterRow NewpowermeterRow() {
+                return ((powermeterRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new powermeterRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(powermeterRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.powermeterRowChanged != null)) {
+                    this.powermeterRowChanged(this, new powermeterRowChangeEvent(((powermeterRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.powermeterRowChanging != null)) {
+                    this.powermeterRowChanging(this, new powermeterRowChangeEvent(((powermeterRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.powermeterRowDeleted != null)) {
+                    this.powermeterRowDeleted(this, new powermeterRowChangeEvent(((powermeterRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.powermeterRowDeleting != null)) {
+                    this.powermeterRowDeleting(this, new powermeterRowChangeEvent(((powermeterRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemovepowermeterRow(powermeterRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "powermeterDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4772,6 +5325,553 @@ namespace EngineLevelTesting.Dataset {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class powermeterRow : global::System.Data.DataRow {
+            
+            private powermeterDataTable tablepowermeter;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal powermeterRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablepowermeter = ((powermeterDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string date_tested {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.date_testedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'date_tested\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.date_testedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string board_serial {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.board_serialColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'board_serial\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.board_serialColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string rev_no {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.rev_noColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'rev_no\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.rev_noColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string fw_version {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.fw_versionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'fw_version\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.fw_versionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string led_dg26 {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.led_dg26Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'led_dg26\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.led_dg26Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string v_ref {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.v_refColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'v_ref\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.v_refColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string v_phase_a {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.v_phase_aColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'v_phase_a\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.v_phase_aColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string v_phase_b {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.v_phase_bColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'v_phase_b\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.v_phase_bColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string i_ref {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.i_refColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'i_ref\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.i_refColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string i_phase_a {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.i_phase_aColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'i_phase_a\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.i_phase_aColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string i_phase_b {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.i_phase_bColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'i_phase_b\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.i_phase_bColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string p_ref {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.p_refColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'p_ref\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.p_refColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string active_phase_a {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.active_phase_aColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'active_phase_a\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.active_phase_aColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string active_phase_b {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.active_phase_bColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'active_phase_b\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.active_phase_bColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string e_ref {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.e_refColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'e_ref\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.e_refColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string e_ui {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.e_uiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'e_ui\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.e_uiColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string result {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.resultColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'result\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.resultColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string tested_by {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.tested_byColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'tested_by\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.tested_byColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string date_stamp {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.date_stampColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'date_stamp\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.date_stampColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isdate_testedNull() {
+                return this.IsNull(this.tablepowermeter.date_testedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setdate_testedNull() {
+                this[this.tablepowermeter.date_testedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isboard_serialNull() {
+                return this.IsNull(this.tablepowermeter.board_serialColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setboard_serialNull() {
+                this[this.tablepowermeter.board_serialColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isrev_noNull() {
+                return this.IsNull(this.tablepowermeter.rev_noColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setrev_noNull() {
+                this[this.tablepowermeter.rev_noColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isfw_versionNull() {
+                return this.IsNull(this.tablepowermeter.fw_versionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setfw_versionNull() {
+                this[this.tablepowermeter.fw_versionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isled_dg26Null() {
+                return this.IsNull(this.tablepowermeter.led_dg26Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setled_dg26Null() {
+                this[this.tablepowermeter.led_dg26Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isv_refNull() {
+                return this.IsNull(this.tablepowermeter.v_refColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setv_refNull() {
+                this[this.tablepowermeter.v_refColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isv_phase_aNull() {
+                return this.IsNull(this.tablepowermeter.v_phase_aColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setv_phase_aNull() {
+                this[this.tablepowermeter.v_phase_aColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isv_phase_bNull() {
+                return this.IsNull(this.tablepowermeter.v_phase_bColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setv_phase_bNull() {
+                this[this.tablepowermeter.v_phase_bColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isi_refNull() {
+                return this.IsNull(this.tablepowermeter.i_refColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Seti_refNull() {
+                this[this.tablepowermeter.i_refColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isi_phase_aNull() {
+                return this.IsNull(this.tablepowermeter.i_phase_aColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Seti_phase_aNull() {
+                this[this.tablepowermeter.i_phase_aColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isi_phase_bNull() {
+                return this.IsNull(this.tablepowermeter.i_phase_bColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Seti_phase_bNull() {
+                this[this.tablepowermeter.i_phase_bColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isp_refNull() {
+                return this.IsNull(this.tablepowermeter.p_refColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setp_refNull() {
+                this[this.tablepowermeter.p_refColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isactive_phase_aNull() {
+                return this.IsNull(this.tablepowermeter.active_phase_aColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setactive_phase_aNull() {
+                this[this.tablepowermeter.active_phase_aColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isactive_phase_bNull() {
+                return this.IsNull(this.tablepowermeter.active_phase_bColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setactive_phase_bNull() {
+                this[this.tablepowermeter.active_phase_bColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ise_refNull() {
+                return this.IsNull(this.tablepowermeter.e_refColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Sete_refNull() {
+                this[this.tablepowermeter.e_refColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ise_uiNull() {
+                return this.IsNull(this.tablepowermeter.e_uiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Sete_uiNull() {
+                this[this.tablepowermeter.e_uiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsresultNull() {
+                return this.IsNull(this.tablepowermeter.resultColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetresultNull() {
+                this[this.tablepowermeter.resultColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Istested_byNull() {
+                return this.IsNull(this.tablepowermeter.tested_byColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Settested_byNull() {
+                this[this.tablepowermeter.tested_byColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isdate_stampNull() {
+                return this.IsNull(this.tablepowermeter.date_stampColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setdate_stampNull() {
+                this[this.tablepowermeter.date_stampColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -4893,6 +5993,40 @@ namespace EngineLevelTesting.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public powerboardRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class powermeterRowChangeEvent : global::System.EventArgs {
+            
+            private powermeterRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public powermeterRowChangeEvent(powermeterRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public powermeterRow Row {
                 get {
                     return this.eventRow;
                 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EngineLevelTesting.Utilities;
 
 namespace EngineLevelTesting.Forms
 {
@@ -15,11 +16,87 @@ namespace EngineLevelTesting.Forms
         public PowerMeterfrm()
         {
             InitializeComponent();
+            rjCircularPictureBox1.Hide();
+            txtrev.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForNumericOnly_KeyPress);
+            txtfirm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtvref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtvphasea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtvphaseb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtiref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtiphasea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtiphaseb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtpref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtactivea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txtactiveb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txteref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            txteuiref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+
         }
 
         private void label16_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            Saved();
+        }
+        private async void Saved()
+        {
+            rjCircularPictureBox1.Show();
+            StringBuilder sql = new StringBuilder();
+            Dictionary<string, object> data = new Dictionary<string, object> {
+                                { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
+                                { "board_serial", txtserial.Text},
+                                { "rev_no",txtrev.Text},
+                                { "fw_version",txtfirm.Text},
+                                { "led_dg26",cbledd26.Text},
+                                { "v_ref",txtvref.Text},
+                                { "v_phase_a",txtvphasea.Text},
+                                { "v_phase_b",txtvphaseb.Text},
+                                { "i_ref",txtiref.Text},
+                                { "i_phase_a",txtiphasea.Text},
+                                { "i_phase_b",txtiphaseb.Text},
+                                { "p_ref",txtpref.Text},
+                                { "active_phase_a",txtactivea.Text},
+                                { "active_phase_b",txtactiveb.Text},
+                                { "e_ref",txteref.Text},
+                                { "e_ui",txteuiref.Text},
+                                { "result",cbresult.Text},
+                                { "remarks",txtremarks.Text},
+                                { "tested_by",txttestby.Text},
+                                { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
+                                { "date_record", DateTime.Now.ToShortDateString()}
+            };
+            MySqlDatasupport.ID = 1;
+            sql.Append(MySqlDatasupport.GetInsert("powermeter_table", data));
+            await Task.Run(() =>
+            {
+                MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
+            });
+            rjCircularPictureBox1.Hide();
+            MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Clear();
+        }
+        private void Clear()
+        {
+            txtserial.Clear();
+            txtrev.Clear();
+            txtfirm.Clear();
+            txtvref.Clear();
+            txtvphasea.Clear();
+            txtvphaseb.Clear();
+            txtiref.Clear();
+            txtiphasea.Clear();
+            txtiphaseb.Clear();
+            txtpref.Clear();
+            txtactivea.Clear();
+            txtactiveb.Clear();
+            txteref.Clear();
+            txteuiref.Clear();
+            txtremarks.Clear();
+            txttestby.Clear();
         }
     }
 }

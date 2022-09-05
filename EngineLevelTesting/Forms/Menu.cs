@@ -201,5 +201,11 @@ namespace EngineLevelTesting.Forms
             Forms.PowerBoardfrm frm = new Forms.PowerBoardfrm();
             frm.Show();
         }
+
+        private void btnpowermeter_Click(object sender, EventArgs e)
+        {
+            Forms.PowerMeterfrm frm = new Forms.PowerMeterfrm();
+            frm.Show();
+        }
     }
 }

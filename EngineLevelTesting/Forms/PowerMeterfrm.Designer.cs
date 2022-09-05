@@ -29,6 +29,7 @@ namespace EngineLevelTesting.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PowerMeterfrm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,9 +52,9 @@ namespace EngineLevelTesting.Forms
             this.txtvphasea = new System.Windows.Forms.TextBox();
             this.txtvphaseb = new System.Windows.Forms.TextBox();
             this.txtvref = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtiphasea = new System.Windows.Forms.TextBox();
+            this.txtiphaseb = new System.Windows.Forms.TextBox();
+            this.txtiref = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -62,9 +63,9 @@ namespace EngineLevelTesting.Forms
             this.label12 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtactivea = new System.Windows.Forms.TextBox();
+            this.txtactiveb = new System.Windows.Forms.TextBox();
+            this.txtpref = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -73,21 +74,22 @@ namespace EngineLevelTesting.Forms
             this.label16 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txteuiref = new System.Windows.Forms.TextBox();
+            this.txteref = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
-            this.cbjudgement = new System.Windows.Forms.ComboBox();
+            this.cbresult = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txttestby = new System.Windows.Forms.TextBox();
             this.txtremarks = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -104,6 +106,7 @@ namespace EngineLevelTesting.Forms
             this.panel14.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -171,7 +174,7 @@ namespace EngineLevelTesting.Forms
             this.txtfirm.MaxLength = 10;
             this.txtfirm.Name = "txtfirm";
             this.txtfirm.Size = new System.Drawing.Size(156, 22);
-            this.txtfirm.TabIndex = 114;
+            this.txtfirm.TabIndex = 2;
             this.txtfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtrev
@@ -182,7 +185,7 @@ namespace EngineLevelTesting.Forms
             this.txtrev.MaxLength = 10;
             this.txtrev.Name = "txtrev";
             this.txtrev.Size = new System.Drawing.Size(156, 22);
-            this.txtrev.TabIndex = 113;
+            this.txtrev.TabIndex = 1;
             this.txtrev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtserial
@@ -193,7 +196,7 @@ namespace EngineLevelTesting.Forms
             this.txtserial.MaxLength = 12;
             this.txtserial.Name = "txtserial";
             this.txtserial.Size = new System.Drawing.Size(156, 22);
-            this.txtserial.TabIndex = 112;
+            this.txtserial.TabIndex = 0;
             this.txtserial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -221,7 +224,7 @@ namespace EngineLevelTesting.Forms
             this.cbledd26.Location = new System.Drawing.Point(390, 163);
             this.cbledd26.Name = "cbledd26";
             this.cbledd26.Size = new System.Drawing.Size(78, 22);
-            this.cbledd26.TabIndex = 119;
+            this.cbledd26.TabIndex = 3;
             // 
             // label11
             // 
@@ -327,7 +330,7 @@ namespace EngineLevelTesting.Forms
             this.txtvphasea.MaxLength = 10;
             this.txtvphasea.Name = "txtvphasea";
             this.txtvphasea.Size = new System.Drawing.Size(156, 22);
-            this.txtvphasea.TabIndex = 163;
+            this.txtvphasea.TabIndex = 5;
             this.txtvphasea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtvphaseb
@@ -338,7 +341,7 @@ namespace EngineLevelTesting.Forms
             this.txtvphaseb.MaxLength = 100;
             this.txtvphaseb.Name = "txtvphaseb";
             this.txtvphaseb.Size = new System.Drawing.Size(156, 22);
-            this.txtvphaseb.TabIndex = 162;
+            this.txtvphaseb.TabIndex = 6;
             this.txtvphaseb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtvref
@@ -349,41 +352,41 @@ namespace EngineLevelTesting.Forms
             this.txtvref.MaxLength = 10;
             this.txtvref.Name = "txtvref";
             this.txtvref.Size = new System.Drawing.Size(156, 22);
-            this.txtvref.TabIndex = 161;
+            this.txtvref.TabIndex = 4;
             this.txtvref.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // txtiphasea
             // 
-            this.textBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(390, 313);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 22);
-            this.textBox1.TabIndex = 170;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtiphasea.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtiphasea.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtiphasea.Location = new System.Drawing.Point(390, 313);
+            this.txtiphasea.MaxLength = 10;
+            this.txtiphasea.Name = "txtiphasea";
+            this.txtiphasea.Size = new System.Drawing.Size(156, 22);
+            this.txtiphasea.TabIndex = 8;
+            this.txtiphasea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtiphaseb
             // 
-            this.textBox2.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(390, 342);
-            this.textBox2.MaxLength = 100;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 22);
-            this.textBox2.TabIndex = 169;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtiphaseb.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtiphaseb.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtiphaseb.Location = new System.Drawing.Point(390, 342);
+            this.txtiphaseb.MaxLength = 100;
+            this.txtiphaseb.Name = "txtiphaseb";
+            this.txtiphaseb.Size = new System.Drawing.Size(156, 22);
+            this.txtiphaseb.TabIndex = 9;
+            this.txtiphaseb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtiref
             // 
-            this.textBox3.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(390, 284);
-            this.textBox3.MaxLength = 10;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 22);
-            this.textBox3.TabIndex = 168;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtiref.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtiref.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtiref.Location = new System.Drawing.Point(390, 284);
+            this.txtiref.MaxLength = 10;
+            this.txtiref.Name = "txtiref";
+            this.txtiref.Size = new System.Drawing.Size(156, 22);
+            this.txtiref.TabIndex = 7;
+            this.txtiref.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel4
             // 
@@ -469,38 +472,38 @@ namespace EngineLevelTesting.Forms
             this.label13.TabIndex = 116;
             this.label13.Text = "CURRENT";
             // 
-            // textBox4
+            // txtactivea
             // 
-            this.textBox4.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(390, 400);
-            this.textBox4.MaxLength = 10;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(156, 22);
-            this.textBox4.TabIndex = 177;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtactivea.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtactivea.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtactivea.Location = new System.Drawing.Point(390, 400);
+            this.txtactivea.MaxLength = 10;
+            this.txtactivea.Name = "txtactivea";
+            this.txtactivea.Size = new System.Drawing.Size(156, 22);
+            this.txtactivea.TabIndex = 11;
+            this.txtactivea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // txtactiveb
             // 
-            this.textBox5.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(390, 429);
-            this.textBox5.MaxLength = 100;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(156, 22);
-            this.textBox5.TabIndex = 176;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtactiveb.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtactiveb.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtactiveb.Location = new System.Drawing.Point(390, 429);
+            this.txtactiveb.MaxLength = 100;
+            this.txtactiveb.Name = "txtactiveb";
+            this.txtactiveb.Size = new System.Drawing.Size(156, 22);
+            this.txtactiveb.TabIndex = 12;
+            this.txtactiveb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // txtpref
             // 
-            this.textBox6.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(390, 371);
-            this.textBox6.MaxLength = 10;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(156, 22);
-            this.textBox6.TabIndex = 175;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtpref.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtpref.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpref.Location = new System.Drawing.Point(390, 371);
+            this.txtpref.MaxLength = 10;
+            this.txtpref.Name = "txtpref";
+            this.txtpref.Size = new System.Drawing.Size(156, 22);
+            this.txtpref.TabIndex = 10;
+            this.txtpref.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel10
             // 
@@ -587,27 +590,27 @@ namespace EngineLevelTesting.Forms
             this.label17.TabIndex = 116;
             this.label17.Text = "POWER";
             // 
-            // textBox7
+            // txteuiref
             // 
-            this.textBox7.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(390, 487);
-            this.textBox7.MaxLength = 10;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(156, 22);
-            this.textBox7.TabIndex = 184;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txteuiref.BackColor = System.Drawing.Color.SkyBlue;
+            this.txteuiref.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txteuiref.Location = new System.Drawing.Point(390, 487);
+            this.txteuiref.MaxLength = 10;
+            this.txteuiref.Name = "txteuiref";
+            this.txteuiref.Size = new System.Drawing.Size(156, 22);
+            this.txteuiref.TabIndex = 14;
+            this.txteuiref.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txteref
             // 
-            this.textBox9.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(390, 458);
-            this.textBox9.MaxLength = 10;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(156, 22);
-            this.textBox9.TabIndex = 182;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txteref.BackColor = System.Drawing.Color.SkyBlue;
+            this.txteref.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txteref.Location = new System.Drawing.Point(390, 458);
+            this.txteref.MaxLength = 10;
+            this.txteref.Name = "txteref";
+            this.txteref.Size = new System.Drawing.Size(156, 22);
+            this.txteref.TabIndex = 13;
+            this.txteref.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel14
             // 
@@ -624,11 +627,11 @@ namespace EngineLevelTesting.Forms
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(26, 5);
+            this.label18.Location = new System.Drawing.Point(121, 5);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(193, 15);
+            this.label18.Size = new System.Drawing.Size(96, 15);
             this.label18.TabIndex = 116;
-            this.label18.Text = "Active Power PhaseA P ref. ± 0.5% :";
+            this.label18.Text = "E UI E ref.(± 1)% :";
             // 
             // panel16
             // 
@@ -647,9 +650,9 @@ namespace EngineLevelTesting.Forms
             this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(162, 5);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(58, 15);
+            this.label20.Size = new System.Drawing.Size(57, 15);
             this.label20.TabIndex = 116;
-            this.label20.Text = "P ref. (V) :";
+            this.label20.Text = "E ref. (V) :";
             // 
             // panel17
             // 
@@ -672,20 +675,20 @@ namespace EngineLevelTesting.Forms
             this.label21.TabIndex = 116;
             this.label21.Text = "Energy at \r\nPayment App\r\n";
             // 
-            // cbjudgement
+            // cbresult
             // 
-            this.cbjudgement.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbjudgement.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbjudgement.BackColor = System.Drawing.Color.SkyBlue;
-            this.cbjudgement.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbjudgement.FormattingEnabled = true;
-            this.cbjudgement.Items.AddRange(new object[] {
+            this.cbresult.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbresult.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbresult.BackColor = System.Drawing.Color.SkyBlue;
+            this.cbresult.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbresult.FormattingEnabled = true;
+            this.cbresult.Items.AddRange(new object[] {
             "PASS",
             "FAIL"});
-            this.cbjudgement.Location = new System.Drawing.Point(390, 515);
-            this.cbjudgement.Name = "cbjudgement";
-            this.cbjudgement.Size = new System.Drawing.Size(78, 22);
-            this.cbjudgement.TabIndex = 185;
+            this.cbresult.Location = new System.Drawing.Point(390, 515);
+            this.cbresult.Name = "cbresult";
+            this.cbresult.Size = new System.Drawing.Size(78, 22);
+            this.cbresult.TabIndex = 15;
             // 
             // label19
             // 
@@ -707,7 +710,7 @@ namespace EngineLevelTesting.Forms
             this.txttestby.MaxLength = 20;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(156, 22);
-            this.txttestby.TabIndex = 188;
+            this.txttestby.TabIndex = 17;
             this.txttestby.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtremarks
@@ -718,7 +721,7 @@ namespace EngineLevelTesting.Forms
             this.txtremarks.MaxLength = 40;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(156, 22);
-            this.txtremarks.TabIndex = 187;
+            this.txtremarks.TabIndex = 16;
             this.txtremarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
@@ -753,37 +756,55 @@ namespace EngineLevelTesting.Forms
             this.btnsave.Location = new System.Drawing.Point(461, 596);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(85, 33);
-            this.btnsave.TabIndex = 191;
+            this.btnsave.TabIndex = 18;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(232, 269);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 191;
+            this.rjCircularPictureBox1.TabStop = false;
             // 
             // PowerMeterfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 638);
+            this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txttestby);
             this.Controls.Add(this.txtremarks);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.cbjudgement);
+            this.Controls.Add(this.cbresult);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txteuiref);
+            this.Controls.Add(this.txteref);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtactivea);
+            this.Controls.Add(this.txtactiveb);
+            this.Controls.Add(this.txtpref);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel13);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtiphasea);
+            this.Controls.Add(this.txtiphaseb);
+            this.Controls.Add(this.txtiref);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
@@ -807,6 +828,7 @@ namespace EngineLevelTesting.Forms
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "PowerMeterfrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YY";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -839,6 +861,7 @@ namespace EngineLevelTesting.Forms
             this.panel16.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -868,9 +891,9 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.TextBox txtvphasea;
         private System.Windows.Forms.TextBox txtvphaseb;
         private System.Windows.Forms.TextBox txtvref;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtiphasea;
+        private System.Windows.Forms.TextBox txtiphaseb;
+        private System.Windows.Forms.TextBox txtiref;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel7;
@@ -879,9 +902,9 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtactivea;
+        private System.Windows.Forms.TextBox txtactiveb;
+        private System.Windows.Forms.TextBox txtpref;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel11;
@@ -890,20 +913,21 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txteuiref;
+        private System.Windows.Forms.TextBox txteref;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox cbjudgement;
+        private System.Windows.Forms.ComboBox cbresult;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txttestby;
         private System.Windows.Forms.TextBox txtremarks;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button btnsave;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
     }
 }
