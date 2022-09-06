@@ -12,7 +12,7 @@
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Hvcombo" msprop:Generator_TableClassName="HvcomboDataTable" msprop:Generator_TableVarName="tableHvcombo" msprop:Generator_RowChangedName="HvcomboRowChanged" msprop:Generator_TablePropName="Hvcombo" msprop:Generator_RowDeletingName="HvcomboRowDeleting" msprop:Generator_RowChangingName="HvcomboRowChanging" msprop:Generator_RowEvHandlerName="HvcomboRowChangeEventHandler" msprop:Generator_RowDeletedName="HvcomboRowDeleted" msprop:Generator_RowClassName="HvcomboRow" msprop:Generator_UserTableName="Hvcombo" msprop:Generator_RowEvArgName="HvcomboRowChangeEvent">
+        <xs:element name="Hvcombo" msprop:Generator_TableClassName="HvcomboDataTable" msprop:Generator_TableVarName="tableHvcombo" msprop:Generator_TablePropName="Hvcombo" msprop:Generator_RowDeletingName="HvcomboRowDeleting" msprop:Generator_RowChangingName="HvcomboRowChanging" msprop:Generator_RowEvHandlerName="HvcomboRowChangeEventHandler" msprop:Generator_RowDeletedName="HvcomboRowDeleted" msprop:Generator_UserTableName="Hvcombo" msprop:Generator_RowChangedName="HvcomboRowChanged" msprop:Generator_RowEvArgName="HvcomboRowChangeEvent" msprop:Generator_RowClassName="HvcomboRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="date_tested" msprop:Generator_ColumnVarNameInTable="columndate_tested" msprop:Generator_ColumnPropNameInRow="date_tested" msprop:Generator_ColumnPropNameInTable="date_testedColumn" msprop:Generator_UserColumnName="date_tested" type="xs:string" minOccurs="0" />
@@ -40,7 +40,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="afeboard" msprop:Generator_TableClassName="afeboardDataTable" msprop:Generator_TableVarName="tableafeboard" msprop:Generator_TablePropName="afeboard" msprop:Generator_RowDeletingName="afeboardRowDeleting" msprop:Generator_RowChangingName="afeboardRowChanging" msprop:Generator_RowEvHandlerName="afeboardRowChangeEventHandler" msprop:Generator_RowDeletedName="afeboardRowDeleted" msprop:Generator_UserTableName="afeboard" msprop:Generator_RowChangedName="afeboardRowChanged" msprop:Generator_RowEvArgName="afeboardRowChangeEvent" msprop:Generator_RowClassName="afeboardRow">
+        <xs:element name="afeboard" msprop:Generator_TableClassName="afeboardDataTable" msprop:Generator_TableVarName="tableafeboard" msprop:Generator_RowChangedName="afeboardRowChanged" msprop:Generator_TablePropName="afeboard" msprop:Generator_RowDeletingName="afeboardRowDeleting" msprop:Generator_RowChangingName="afeboardRowChanging" msprop:Generator_RowEvHandlerName="afeboardRowChangeEventHandler" msprop:Generator_RowDeletedName="afeboardRowDeleted" msprop:Generator_RowClassName="afeboardRow" msprop:Generator_UserTableName="afeboard" msprop:Generator_RowEvArgName="afeboardRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="date_tested" msprop:Generator_ColumnVarNameInTable="columndate_tested" msprop:Generator_ColumnPropNameInRow="date_tested" msprop:Generator_ColumnPropNameInTable="date_testedColumn" msprop:Generator_UserColumnName="date_tested" type="xs:string" minOccurs="0" />
@@ -70,7 +70,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="seccboard" msprop:Generator_TableClassName="seccboardDataTable" msprop:Generator_TableVarName="tableseccboard" msprop:Generator_RowChangedName="seccboardRowChanged" msprop:Generator_TablePropName="seccboard" msprop:Generator_RowDeletingName="seccboardRowDeleting" msprop:Generator_RowChangingName="seccboardRowChanging" msprop:Generator_RowEvHandlerName="seccboardRowChangeEventHandler" msprop:Generator_RowDeletedName="seccboardRowDeleted" msprop:Generator_RowClassName="seccboardRow" msprop:Generator_UserTableName="seccboard" msprop:Generator_RowEvArgName="seccboardRowChangeEvent">
+        <xs:element name="seccboard" msprop:Generator_TableClassName="seccboardDataTable" msprop:Generator_TableVarName="tableseccboard" msprop:Generator_TablePropName="seccboard" msprop:Generator_RowDeletingName="seccboardRowDeleting" msprop:Generator_RowChangingName="seccboardRowChanging" msprop:Generator_RowEvHandlerName="seccboardRowChangeEventHandler" msprop:Generator_RowDeletedName="seccboardRowDeleted" msprop:Generator_UserTableName="seccboard" msprop:Generator_RowChangedName="seccboardRowChanged" msprop:Generator_RowEvArgName="seccboardRowChangeEvent" msprop:Generator_RowClassName="seccboardRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="date_tested" msprop:Generator_ColumnVarNameInTable="columndate_tested" msprop:Generator_ColumnPropNameInRow="date_tested" msprop:Generator_ColumnPropNameInTable="date_testedColumn" msprop:Generator_UserColumnName="date_tested" type="xs:string" minOccurs="0" />
@@ -85,7 +85,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="powerboard" msprop:Generator_TableClassName="powerboardDataTable" msprop:Generator_TableVarName="tablepowerboard" msprop:Generator_TablePropName="powerboard" msprop:Generator_RowDeletingName="powerboardRowDeleting" msprop:Generator_RowChangingName="powerboardRowChanging" msprop:Generator_RowEvHandlerName="powerboardRowChangeEventHandler" msprop:Generator_RowDeletedName="powerboardRowDeleted" msprop:Generator_UserTableName="powerboard" msprop:Generator_RowChangedName="powerboardRowChanged" msprop:Generator_RowEvArgName="powerboardRowChangeEvent" msprop:Generator_RowClassName="powerboardRow">
+        <xs:element name="powerboard" msprop:Generator_TableClassName="powerboardDataTable" msprop:Generator_TableVarName="tablepowerboard" msprop:Generator_RowChangedName="powerboardRowChanged" msprop:Generator_TablePropName="powerboard" msprop:Generator_RowDeletingName="powerboardRowDeleting" msprop:Generator_RowChangingName="powerboardRowChanging" msprop:Generator_RowEvHandlerName="powerboardRowChangeEventHandler" msprop:Generator_RowDeletedName="powerboardRowDeleted" msprop:Generator_RowClassName="powerboardRow" msprop:Generator_UserTableName="powerboard" msprop:Generator_RowEvArgName="powerboardRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="date_tested" msprop:Generator_ColumnVarNameInTable="columndate_tested" msprop:Generator_ColumnPropNameInRow="date_tested" msprop:Generator_ColumnPropNameInTable="date_testedColumn" msprop:Generator_UserColumnName="date_tested" type="xs:string" minOccurs="0" />
@@ -115,7 +115,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="powermeter" msprop:Generator_TableClassName="powermeterDataTable" msprop:Generator_TableVarName="tablepowermeter" msprop:Generator_TablePropName="powermeter" msprop:Generator_RowDeletingName="powermeterRowDeleting" msprop:Generator_RowChangingName="powermeterRowChanging" msprop:Generator_RowEvHandlerName="powermeterRowChangeEventHandler" msprop:Generator_RowDeletedName="powermeterRowDeleted" msprop:Generator_UserTableName="powermeter" msprop:Generator_RowChangedName="powermeterRowChanged" msprop:Generator_RowEvArgName="powermeterRowChangeEvent" msprop:Generator_RowClassName="powermeterRow">
+        <xs:element name="powermeter" msprop:Generator_TableClassName="powermeterDataTable" msprop:Generator_TableVarName="tablepowermeter" msprop:Generator_RowChangedName="powermeterRowChanged" msprop:Generator_TablePropName="powermeter" msprop:Generator_RowDeletingName="powermeterRowDeleting" msprop:Generator_RowChangingName="powermeterRowChanging" msprop:Generator_RowEvHandlerName="powermeterRowChangeEventHandler" msprop:Generator_RowDeletedName="powermeterRowDeleted" msprop:Generator_RowClassName="powermeterRow" msprop:Generator_UserTableName="powermeter" msprop:Generator_RowEvArgName="powermeterRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="date_tested" msprop:Generator_ColumnVarNameInTable="columndate_tested" msprop:Generator_ColumnPropNameInRow="date_tested" msprop:Generator_ColumnPropNameInTable="date_testedColumn" msprop:Generator_UserColumnName="date_tested" type="xs:string" minOccurs="0" />
@@ -137,6 +137,7 @@
               <xs:element name="result" msprop:Generator_ColumnVarNameInTable="columnresult" msprop:Generator_ColumnPropNameInRow="result" msprop:Generator_ColumnPropNameInTable="resultColumn" msprop:Generator_UserColumnName="result" type="xs:string" minOccurs="0" />
               <xs:element name="tested_by" msprop:Generator_ColumnVarNameInTable="columntested_by" msprop:Generator_ColumnPropNameInRow="tested_by" msprop:Generator_ColumnPropNameInTable="tested_byColumn" msprop:Generator_UserColumnName="tested_by" type="xs:string" minOccurs="0" />
               <xs:element name="date_stamp" msprop:Generator_ColumnVarNameInTable="columndate_stamp" msprop:Generator_ColumnPropNameInRow="date_stamp" msprop:Generator_ColumnPropNameInTable="date_stampColumn" msprop:Generator_UserColumnName="date_stamp" type="xs:string" minOccurs="0" />
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

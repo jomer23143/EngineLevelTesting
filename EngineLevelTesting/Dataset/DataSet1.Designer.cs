@@ -2579,6 +2579,8 @@ namespace EngineLevelTesting.Dataset {
             
             private global::System.Data.DataColumn columndate_stamp;
             
+            private global::System.Data.DataColumn columnremarks;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public powermeterDataTable() {
@@ -2766,6 +2768,14 @@ namespace EngineLevelTesting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn remarksColumn {
+                get {
+                    return this.columnremarks;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2820,7 +2830,8 @@ namespace EngineLevelTesting.Dataset {
                         string e_ui, 
                         string result, 
                         string tested_by, 
-                        string date_stamp) {
+                        string date_stamp, 
+                        string remarks) {
                 powermeterRow rowpowermeterRow = ((powermeterRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         date_tested,
@@ -2841,7 +2852,8 @@ namespace EngineLevelTesting.Dataset {
                         e_ui,
                         result,
                         tested_by,
-                        date_stamp};
+                        date_stamp,
+                        remarks};
                 rowpowermeterRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpowermeterRow);
                 return rowpowermeterRow;
@@ -2883,6 +2895,7 @@ namespace EngineLevelTesting.Dataset {
                 this.columnresult = base.Columns["result"];
                 this.columntested_by = base.Columns["tested_by"];
                 this.columndate_stamp = base.Columns["date_stamp"];
+                this.columnremarks = base.Columns["remarks"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2926,6 +2939,8 @@ namespace EngineLevelTesting.Dataset {
                 base.Columns.Add(this.columntested_by);
                 this.columndate_stamp = new global::System.Data.DataColumn("date_stamp", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndate_stamp);
+                this.columnremarks = new global::System.Data.DataColumn("remarks", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnremarks);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5644,6 +5659,22 @@ namespace EngineLevelTesting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string remarks {
+                get {
+                    try {
+                        return ((string)(this[this.tablepowermeter.remarksColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'remarks\' in table \'powermeter\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepowermeter.remarksColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isdate_testedNull() {
                 return this.IsNull(this.tablepowermeter.date_testedColumn);
             }
@@ -5868,6 +5899,18 @@ namespace EngineLevelTesting.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setdate_stampNull() {
                 this[this.tablepowermeter.date_stampColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsremarksNull() {
+                return this.IsNull(this.tablepowermeter.remarksColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetremarksNull() {
+                this[this.tablepowermeter.remarksColumn] = global::System.Convert.DBNull;
             }
         }
         
