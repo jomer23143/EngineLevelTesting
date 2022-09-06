@@ -153,7 +153,7 @@ namespace EngineLevelTesting.Forms
             else if (comboBox1.Text == "Power Meter Board Checklist ISO")
             {
                 sql = $@"SELECT * FROM powermeter_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
-                report = "powermeterReport";
+                report = "IsoPowermeterReport";
                 datasetname = "DataSet1";
             }
             reportViewer1.Reset();
@@ -234,6 +234,18 @@ namespace EngineLevelTesting.Forms
                 sql = $@"SELECT * FROM powerboard_table where serial_number = '{textBox1.Text}'";
                 report = "IsopowerReport";
                 datasetname = "powerboard";
+            }
+            else if (comboBox1.Text == "Power Meter Board Checklist")
+            {
+                sql = $@"SELECT * FROM powermeter_table where board_serial = '{textBox1.Text}'";
+                report = "powermeterReport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "Power Meter Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM powermeter_table where board_serial = '{textBox1.Text}'";
+                report = "IsoPowermeterReport";
+                datasetname = "DataSet1";
             }
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql, Class.SqlCon.connectionString(1));
