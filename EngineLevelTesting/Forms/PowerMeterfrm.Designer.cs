@@ -407,7 +407,7 @@ namespace EngineLevelTesting.Forms
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 15);
             this.label6.TabIndex = 116;
-            this.label6.Text = "I PhaseA I ref. ± 0.3V :";
+            this.label6.Text = "I PhaseA I ref. ± 0.3A :";
             // 
             // panel7
             // 
@@ -428,7 +428,7 @@ namespace EngineLevelTesting.Forms
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(123, 15);
             this.label10.TabIndex = 116;
-            this.label10.Text = "I PhaseB I ref. ± 0.3V :";
+            this.label10.Text = "I PhaseB I ref. ± 0.3A :";
             // 
             // panel8
             // 
@@ -449,7 +449,7 @@ namespace EngineLevelTesting.Forms
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 15);
             this.label12.TabIndex = 116;
-            this.label12.Text = "I ref. (V) :";
+            this.label12.Text = "I ref. (A) :";
             // 
             // panel9
             // 
@@ -564,9 +564,9 @@ namespace EngineLevelTesting.Forms
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(162, 5);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(58, 15);
+            this.label16.Size = new System.Drawing.Size(63, 15);
             this.label16.TabIndex = 116;
-            this.label16.Text = "P ref. (V) :";
+            this.label16.Text = "P ref. (W) :";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel13
@@ -648,11 +648,11 @@ namespace EngineLevelTesting.Forms
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(162, 5);
+            this.label20.Location = new System.Drawing.Point(145, 5);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(57, 15);
+            this.label20.Size = new System.Drawing.Size(74, 15);
             this.label20.TabIndex = 116;
-            this.label20.Text = "E ref. (V) :";
+            this.label20.Text = "E ref. (Whr) :";
             // 
             // panel17
             // 

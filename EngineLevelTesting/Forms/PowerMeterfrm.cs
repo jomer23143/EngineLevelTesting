@@ -28,8 +28,6 @@ namespace EngineLevelTesting.Forms
             txtpref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtactivea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtactiveb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
-            txteref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
-            txteuiref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
 
         }
 
@@ -46,7 +44,9 @@ namespace EngineLevelTesting.Forms
         {
             rjCircularPictureBox1.Show();
             StringBuilder sql = new StringBuilder();
-            Dictionary<string, object> data = new Dictionary<string, object> {
+            try
+            {
+                Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
                                 { "board_serial", txtserial.Text},
                                 { "rev_no",txtrev.Text},
@@ -69,15 +69,20 @@ namespace EngineLevelTesting.Forms
                                 { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
                                 { "date_record", DateTime.Now.ToShortDateString()}
             };
-            MySqlDatasupport.ID = 1;
-            sql.Append(MySqlDatasupport.GetInsert("powermeter_table", data));
-            await Task.Run(() =>
+                sql.Append(MySqlDatasupport.GetInsert("powermeter_table", data));
+                await Task.Run(() =>
+                {
+                    MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
+                });
+               
+                MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Clear();
+            }
+            catch (Exception)
             {
-                MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
-            });
-            rjCircularPictureBox1.Hide();
-            MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Clear();
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Please Contact Developer!!!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         private void Clear()
         {

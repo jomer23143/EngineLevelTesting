@@ -84,7 +84,6 @@ namespace EngineLevelTesting.Forms
                                 { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
                                 { "date_record", DateTime.Now.ToShortDateString()}
             };
-            MySqlDatasupport.ID = 1;
             sql.Append(MySqlDatasupport.GetInsert("powerboard_table", data));
             await Task.Run(() =>
             {
@@ -108,7 +107,7 @@ namespace EngineLevelTesting.Forms
         {
             try
             {
-                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from powerboard_table where board_serial = '{txtserial.Text}' and ipn_number ='{cbipn.SelectedItem.ToString()}'", Class.SqlCon.connectionString(1));
+                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from powerboard_table where board_serial = '{txtserial.Text}' and ipn_number ='{cbipn.SelectedItem.ToString()}'");
                 if (dt.Rows.Count > 0)
                 {
                     DialogResult dialogResult = MessageBox.Show("You are about to overwrite record!!!\nAre you sure want to edit record?\n\nIf viewing purposes please go to report!!!", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Error);

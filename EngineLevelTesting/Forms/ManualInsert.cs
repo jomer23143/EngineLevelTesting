@@ -42,9 +42,9 @@ namespace EngineLevelTesting.Forms
             try
             {
                 StringBuilder sql = new StringBuilder();
-                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper($"Select * from afe_table where date_record = '{dateTimePicker1.Text}'", Class.SqlCon.connectionString(0));
+                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper($"Select * from afe_table where date_record = '{dateTimePicker1.Text}'");
                 //DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(0));
-                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from afe_table where date_record = '{dateTimePicker1.Text}')", Class.SqlCon.connectionString(1));
+                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from afe_table where date_record = '{dateTimePicker1.Text}')");
                 //DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(1));
                 foreach (DataRow itemCloud in dtCloud.Rows)
                 {
@@ -107,9 +107,9 @@ namespace EngineLevelTesting.Forms
             try
             {
                 StringBuilder sql = new StringBuilder();
-                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper($"Select * from hvcombo_table where date_record = '{dateTimePicker1.Text}'", Class.SqlCon.connectionString(0));
+                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper($"Select * from hvcombo_table where date_record = '{dateTimePicker1.Text}'");
                 //DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(0));
-                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = '{dateTimePicker1.Text}'", Class.SqlCon.connectionString(1));
+                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = '{dateTimePicker1.Text}'");
                 //DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(1));
                 foreach (DataRow itemCloud in dtCloud.Rows)
                 {
@@ -154,7 +154,6 @@ namespace EngineLevelTesting.Forms
                 }
                 await Task.Run(() =>
                 {
-                    MySqlDatasupport.ID = 0;
                     MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
 
                 });

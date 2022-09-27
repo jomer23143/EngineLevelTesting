@@ -157,7 +157,7 @@ namespace EngineLevelTesting.Forms
                 datasetname = "DataSet1";
             }
             reportViewer1.Reset();
-            DataTable dt = MySqlDatasupport.RunDataTableDapper(sql, Class.SqlCon.connectionString(1));
+            DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
             var localreport = reportViewer1.LocalReport;
             reportViewer1.LocalReport.DataSources.Clear();
             ReportDataSource rds = new ReportDataSource(datasetname, dt);
@@ -248,7 +248,7 @@ namespace EngineLevelTesting.Forms
                 datasetname = "DataSet1";
             }
             reportViewer1.Reset();
-            DataTable dt = MySqlDatasupport.RunDataTableDapper(sql, Class.SqlCon.connectionString(1));
+            DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
             var localreport = reportViewer1.LocalReport;
             reportViewer1.LocalReport.DataSources.Clear();
             ReportDataSource rds = new ReportDataSource(datasetname, dt);

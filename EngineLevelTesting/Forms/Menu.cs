@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EngineLevelTesting.Utilities;
+using Utility.ModifyRegistry;
 
 namespace EngineLevelTesting.Forms
 {
@@ -46,16 +47,23 @@ namespace EngineLevelTesting.Forms
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            RegistrySupport registry = new RegistrySupport();
+            String data = registry.Read(Def.REGKEY_SUB);
+            if (data == null)
+            {
+                data += String.Format($"ENGINELEVELTESTING<limiter>192.168.0.197<limiter>root<limiter>System@2022<limiter>hvcomboafe<limiter>");
+                registry.Write(Def.REGKEY_SUB, data);
+            }
+            Utils.SetConnectionDetails();
         }
         private async void InsertCloudHvcombo()
         {
             try
             {
                 StringBuilder sql = new StringBuilder();
-                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(0));
+                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(0));
-                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(1));
+                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(1));
                 foreach (DataRow itemCloud in dtCloud.Rows)
                 {
@@ -100,7 +108,6 @@ namespace EngineLevelTesting.Forms
                 }
                 await Task.Run(() =>
                 {
-                    MySqlDatasupport.ID = 0;
                     MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
                 });
             }
@@ -115,9 +122,9 @@ namespace EngineLevelTesting.Forms
             try
             {
                 StringBuilder sql = new StringBuilder();
-                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from afe_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(0));
+                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from afe_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(0));
-                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from afe_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(1));
+                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from afe_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(1));
                 foreach (DataRow itemCloud in dtCloud.Rows)
                 {
@@ -163,7 +170,6 @@ namespace EngineLevelTesting.Forms
                 }
                 await Task.Run(() =>
                 {
-                    MySqlDatasupport.ID = 0;
                     MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
                 });
             }
@@ -176,12 +182,12 @@ namespace EngineLevelTesting.Forms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (lastHour < DateTime.Now.Hour)
-            {
-                lastHour = DateTime.Now.Hour;
-                InsertCloudHvcombo();
-                InsertCloudAFEboard();
-            }
+            //if (lastHour < DateTime.Now.Hour)
+            //{
+            //    lastHour = DateTime.Now.Hour;
+            //    InsertCloudHvcombo();
+            //    InsertCloudAFEboard();
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)

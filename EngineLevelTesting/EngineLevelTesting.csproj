@@ -146,6 +146,12 @@
     <Compile Include="Forms\AfeBoard.Designer.cs">
       <DependentUpon>AfeBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ConnectionSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConnectionSettings.designer.cs">
+      <DependentUpon>ConnectionSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManualInsert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,15 +191,21 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Utilities\Connection.cs" />
+    <Compile Include="Utilities\Def.cs" />
     <Compile Include="Utilities\KeyBoardSupport.cs" />
     <Compile Include="Utilities\MySqlDatasupport.cs" />
     <Compile Include="Utilities\MySqlORMSupport.cs" />
+    <Compile Include="Utilities\RegistrySupport.cs" />
     <Compile Include="Utilities\Utils.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AfeBoard.resx">
       <DependentUpon>AfeBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConnectionSettings.resx">
+      <DependentUpon>ConnectionSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManualInsert.resx">
       <DependentUpon>ManualInsert.cs</DependentUpon>

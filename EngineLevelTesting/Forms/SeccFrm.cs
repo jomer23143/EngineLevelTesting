@@ -59,7 +59,7 @@ namespace EngineLevelTesting.Forms
         {
             try
             {
-                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from secc_table where serial_number = '{txtserial.Text}'", Class.SqlCon.connectionString(1));
+                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from secc_table where serial_number = '{txtserial.Text}'");
                 if (dt.Rows.Count > 0)
                 {
                     DialogResult dialogResult = MessageBox.Show("You are about to overwrite record!!!\nAre you sure want to edit record?\n\nIf viewing purposes please go to report!!!", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Error);

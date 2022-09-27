@@ -425,7 +425,8 @@ namespace EngineLevelTesting.Forms
             this.cbipn.Items.AddRange(new object[] {
             "110-0061-01",
             "110-0243-01",
-            "110-0278-01"});
+            "110-0278-01",
+            "110-0279-01"});
             this.cbipn.Location = new System.Drawing.Point(240, 47);
             this.cbipn.Name = "cbipn";
             this.cbipn.Size = new System.Drawing.Size(220, 22);

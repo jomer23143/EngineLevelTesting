@@ -7,26 +7,28 @@ using System.Data.SqlClient;
 using System.Data;
 using System.IO;
 using System.Reflection;
+using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace EngineLevelTesting.Class
 {
    public static class SqlCon
     {
-        public static SqlConnection connections()
+        public static MySqlConnection connections(string connection)
         {
-            SqlConnection conn;
-            conn = new SqlConnection();
-            conn.ConnectionString = "Data source=194.163.40.175;initial catalog=icehrm; uid=root;pwd=";
+            MySqlConnection conn;
+            conn = new MySqlConnection();
+            conn.ConnectionString = connection;
             //conn.ConnectionString = connectionString();
             try
             {
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
-                Console.WriteLine("Success");
+                MessageBox.Show("Success");
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
             return conn;
         }

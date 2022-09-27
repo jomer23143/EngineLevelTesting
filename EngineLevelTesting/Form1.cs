@@ -91,7 +91,7 @@ namespace EngineLevelTesting
         {
             try
             {
-                DataTable dt = MySqlDatasupport.RunDataTableDapper($"Select board_serial from hvcombo_table where board_serial ='{txtserial.Text}'", Class.SqlCon.connectionString(0));
+                DataTable dt = MySqlDatasupport.RunDataTableDapper($"Select board_serial from hvcombo_table where board_serial ='{txtserial.Text}'");
                 StringBuilder sql = new StringBuilder();
                 StringBuilder sqlCould = new StringBuilder();
                 Dictionary<string, object> data = new Dictionary<string, object> {
@@ -150,9 +150,9 @@ namespace EngineLevelTesting
             try
             {
                 StringBuilder sql = new StringBuilder();
-                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(0));
+                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(0));
-                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(1));
+                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(1));
                 foreach (DataRow itemCloud in dtCloud.Rows)
                 {
@@ -592,7 +592,7 @@ namespace EngineLevelTesting
         {
             try
             {
-                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from hvcombo_table where board_serial = '{txtserial.Text}'", Class.SqlCon.connectionString(1));
+                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from hvcombo_table where board_serial = '{txtserial.Text}'");
                 if (dt.Rows.Count > 0)
                 {
                     DialogResult dialogResult = MessageBox.Show("You are about to overwrite record!!!\nAre you sure want to edit record?\n\nIf viewing purposes please go to report!!!", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
