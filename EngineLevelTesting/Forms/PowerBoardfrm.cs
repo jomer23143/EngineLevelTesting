@@ -34,7 +34,7 @@ namespace EngineLevelTesting.Forms
             txttp4.ReadOnly = true;
             txttp5.ReadOnly = true;
             txtvoltagePlus.ReadOnly = true;
-            txtpn.ReadOnly = true;
+            //txtpn.ReadOnly = true;
             txtsn.ReadOnly = true;
             txtamp240.ReadOnly = true;
             txtamp120.ReadOnly = true;
@@ -70,8 +70,8 @@ namespace EngineLevelTesting.Forms
                                 { "c_open",cbCopn.SelectedItem.ToString()},
                                 { "c_closed",cbCclose.SelectedItem.ToString()},
                                 { "voltage_plus",txtvoltagePlus.Text},
-                                { "temp_read",txtvoltagePlus.Text},
-                                { "gfci_board",txtpn.Text},
+                                { "temp_read",txttempRead.Text},
+                                { "gfci_board",cbmGfci.SelectedItem.ToString()},
                                 { "gfci_sn",txtsn.Text},
                                 { "leak_detect",cbleak.SelectedItem.ToString()},
                                 { "circuit",cbcircuit.SelectedItem.ToString()},
@@ -101,7 +101,7 @@ namespace EngineLevelTesting.Forms
 
         private void txtserial_TextChanged(object sender, EventArgs e)
         {
-            //GetScanSerial();
+            ///GetScanSerial();
         }
         private string GetScanSerial()
         {
@@ -126,7 +126,7 @@ namespace EngineLevelTesting.Forms
                             cbCopn.Text = item["c_open"].ToString();
                             cbCclose.Text = item["c_closed"].ToString();
                             txtvoltagePlus.Text = item["voltage_plus"].ToString();
-                            txtpn.Text = item["gfci_board"].ToString();
+                            cbmGfci.Text = item["gfci_board"].ToString();
                             txtsn.Text = item["gfci_sn"].ToString();
                             cbleak.Text = item["leak_detect"].ToString();
                             cbcircuit.Text = item["circuit"].ToString();
@@ -171,7 +171,7 @@ namespace EngineLevelTesting.Forms
             cbCclose.SelectedIndex = -1;
             txtvoltagePlus.Clear();
             txttempRead.Clear();
-            txtpn.Clear();
+            //txtpn.Clear();
             txtsn.Clear();
             cbleak.SelectedIndex = -1;
             cbcircuit.SelectedIndex = -1;
@@ -195,7 +195,7 @@ namespace EngineLevelTesting.Forms
                 txttp4.ReadOnly = false;
                 txttp5.ReadOnly = false;
                 txtvoltagePlus.ReadOnly = false;
-                txtpn.ReadOnly = false;
+                //txtpn.ReadOnly = false;
                 txtsn.ReadOnly = false;
                 txtamp240.ReadOnly = false;
                 txtamp120.ReadOnly = false;
@@ -213,7 +213,7 @@ namespace EngineLevelTesting.Forms
                 txttp4.ReadOnly = true;
                 txttp5.ReadOnly = true;
                 txtvoltagePlus.ReadOnly = true;
-                txtpn.ReadOnly = true;
+                //txtpn.ReadOnly = true;
                 txtsn.ReadOnly = true;
                 txtamp240.ReadOnly = true;
                 txtamp120.ReadOnly = true;

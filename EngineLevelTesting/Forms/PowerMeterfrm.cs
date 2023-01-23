@@ -17,7 +17,6 @@ namespace EngineLevelTesting.Forms
         {
             InitializeComponent();
             rjCircularPictureBox1.Hide();
-            txtrev.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForNumericOnly_KeyPress);
             txtfirm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtvref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtvphasea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
@@ -49,7 +48,7 @@ namespace EngineLevelTesting.Forms
                 Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
                                 { "board_serial", txtserial.Text},
-                                { "rev_no",txtrev.Text},
+                                { "rev_no",cbrev.Text},
                                 { "fw_version",txtfirm.Text},
                                 { "led_dg26",cbledd26.Text},
                                 { "v_ref",txtvref.Text},
@@ -87,7 +86,6 @@ namespace EngineLevelTesting.Forms
         private void Clear()
         {
             txtserial.Clear();
-            txtrev.Clear();
             txtfirm.Clear();
             txtvref.Clear();
             txtvphasea.Clear();

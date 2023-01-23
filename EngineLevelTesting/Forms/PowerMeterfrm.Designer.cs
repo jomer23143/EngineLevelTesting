@@ -36,7 +36,6 @@ namespace EngineLevelTesting.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtfirm = new System.Windows.Forms.TextBox();
-            this.txtrev = new System.Windows.Forms.TextBox();
             this.txtserial = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbledd26 = new System.Windows.Forms.ComboBox();
@@ -90,6 +89,7 @@ namespace EngineLevelTesting.Forms
             this.label24 = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.cbrev = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -176,17 +176,6 @@ namespace EngineLevelTesting.Forms
             this.txtfirm.Size = new System.Drawing.Size(156, 22);
             this.txtfirm.TabIndex = 2;
             this.txtfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtrev
-            // 
-            this.txtrev.BackColor = System.Drawing.Color.SkyBlue;
-            this.txtrev.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrev.Location = new System.Drawing.Point(390, 108);
-            this.txtrev.MaxLength = 10;
-            this.txtrev.Name = "txtrev";
-            this.txtrev.Size = new System.Drawing.Size(156, 22);
-            this.txtrev.TabIndex = 1;
-            this.txtrev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtserial
             // 
@@ -777,11 +766,28 @@ namespace EngineLevelTesting.Forms
             this.rjCircularPictureBox1.TabIndex = 191;
             this.rjCircularPictureBox1.TabStop = false;
             // 
+            // cbrev
+            // 
+            this.cbrev.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbrev.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbrev.BackColor = System.Drawing.Color.SkyBlue;
+            this.cbrev.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbrev.FormattingEnabled = true;
+            this.cbrev.Items.AddRange(new object[] {
+            "110-0116-01 Rev.02",
+            "110-0293-01 Rev.00",
+            "110-0116-01 Rev.03"});
+            this.cbrev.Location = new System.Drawing.Point(390, 108);
+            this.cbrev.Name = "cbrev";
+            this.cbrev.Size = new System.Drawing.Size(156, 22);
+            this.cbrev.TabIndex = 1;
+            // 
             // PowerMeterfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 638);
+            this.Controls.Add(this.cbrev);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txttestby);
@@ -823,13 +829,12 @@ namespace EngineLevelTesting.Forms
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtfirm);
-            this.Controls.Add(this.txtrev);
             this.Controls.Add(this.txtserial);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "PowerMeterfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "YY";
+            this.Text = "Power Meter";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -875,7 +880,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtfirm;
-        private System.Windows.Forms.TextBox txtrev;
         private System.Windows.Forms.TextBox txtserial;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbledd26;
@@ -929,5 +933,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button btnsave;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
+        private System.Windows.Forms.ComboBox cbrev;
     }
 }

@@ -38,7 +38,6 @@ namespace EngineLevelTesting.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtsn = new System.Windows.Forms.TextBox();
-            this.txtpn = new System.Windows.Forms.TextBox();
             this.txtvoltagePlus = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txttp2 = new System.Windows.Forms.TextBox();
@@ -82,6 +81,7 @@ namespace EngineLevelTesting.Forms
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.txttempRead = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.cbmGfci = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -111,7 +111,7 @@ namespace EngineLevelTesting.Forms
             // 
             this.txttestby.BackColor = System.Drawing.Color.SkyBlue;
             this.txttestby.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttestby.Location = new System.Drawing.Point(239, 624);
+            this.txttestby.Location = new System.Drawing.Point(239, 673);
             this.txttestby.MaxLength = 20;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(219, 22);
@@ -123,11 +123,11 @@ namespace EngineLevelTesting.Forms
             this.txtremarks.BackColor = System.Drawing.Color.SkyBlue;
             this.txtremarks.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtremarks.Location = new System.Drawing.Point(239, 599);
-            this.txtremarks.MaxLength = 40;
+            this.txtremarks.MaxLength = 200;
+            this.txtremarks.Multiline = true;
             this.txtremarks.Name = "txtremarks";
-            this.txtremarks.Size = new System.Drawing.Size(219, 22);
+            this.txtremarks.Size = new System.Drawing.Size(219, 68);
             this.txtremarks.TabIndex = 19;
-            this.txtremarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cbjudgement
             // 
@@ -178,17 +178,6 @@ namespace EngineLevelTesting.Forms
             this.txtsn.Size = new System.Drawing.Size(219, 22);
             this.txtsn.TabIndex = 12;
             this.txtsn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtpn
-            // 
-            this.txtpn.BackColor = System.Drawing.Color.SkyBlue;
-            this.txtpn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpn.Location = new System.Drawing.Point(240, 378);
-            this.txtpn.MaxLength = 100;
-            this.txtpn.Name = "txtpn";
-            this.txtpn.Size = new System.Drawing.Size(219, 22);
-            this.txtpn.TabIndex = 11;
-            this.txtpn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtvoltagePlus
             // 
@@ -360,7 +349,7 @@ namespace EngineLevelTesting.Forms
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(159, 626);
+            this.label22.Location = new System.Drawing.Point(159, 675);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(63, 15);
             this.label22.TabIndex = 135;
@@ -676,7 +665,7 @@ namespace EngineLevelTesting.Forms
             this.btnsave.BackColor = System.Drawing.Color.LimeGreen;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(375, 651);
+            this.btnsave.Location = new System.Drawing.Point(374, 704);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(85, 33);
             this.btnsave.TabIndex = 21;
@@ -723,11 +712,27 @@ namespace EngineLevelTesting.Forms
             this.label25.TabIndex = 161;
             this.label25.Text = "Temp. Read (>900) :";
             // 
+            // cbmGfci
+            // 
+            this.cbmGfci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbmGfci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbmGfci.BackColor = System.Drawing.Color.SkyBlue;
+            this.cbmGfci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbmGfci.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbmGfci.FormattingEnabled = true;
+            this.cbmGfci.Items.AddRange(new object[] {
+            "110-0242-01"});
+            this.cbmGfci.Location = new System.Drawing.Point(241, 378);
+            this.cbmGfci.Name = "cbmGfci";
+            this.cbmGfci.Size = new System.Drawing.Size(220, 22);
+            this.cbmGfci.TabIndex = 162;
+            // 
             // PowerBoardfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 689);
+            this.ClientSize = new System.Drawing.Size(490, 748);
+            this.Controls.Add(this.cbmGfci);
             this.Controls.Add(this.txttempRead);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.rjCircularPictureBox1);
@@ -758,7 +763,6 @@ namespace EngineLevelTesting.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtsn);
-            this.Controls.Add(this.txtpn);
             this.Controls.Add(this.txtvoltagePlus);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txttp2);
@@ -802,7 +806,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtsn;
-        private System.Windows.Forms.TextBox txtpn;
         private System.Windows.Forms.TextBox txtvoltagePlus;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txttp2;
@@ -846,5 +849,6 @@ namespace EngineLevelTesting.Forms
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.TextBox txttempRead;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.ComboBox cbmGfci;
     }
 }
