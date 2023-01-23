@@ -17,7 +17,7 @@ namespace EngineLevelTesting.Forms
         {
             InitializeComponent();
             rjCircularPictureBox1.Hide();
-            txtfirm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
+            //txtfirm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtvref.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtvphasea.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtvphaseb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
@@ -86,7 +86,7 @@ namespace EngineLevelTesting.Forms
         private void Clear()
         {
             txtserial.Clear();
-            txtfirm.Clear();
+            //txtfirm.Clear();
             txtvref.Clear();
             txtvphasea.Clear();
             txtvphaseb.Clear();

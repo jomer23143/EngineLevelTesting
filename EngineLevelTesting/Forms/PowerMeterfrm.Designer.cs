@@ -35,7 +35,6 @@ namespace EngineLevelTesting.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtfirm = new System.Windows.Forms.TextBox();
             this.txtserial = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbledd26 = new System.Windows.Forms.ComboBox();
@@ -90,6 +89,7 @@ namespace EngineLevelTesting.Forms
             this.btnsave = new System.Windows.Forms.Button();
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.cbrev = new System.Windows.Forms.ComboBox();
+            this.txtfirm = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -165,17 +165,6 @@ namespace EngineLevelTesting.Forms
             this.label9.Size = new System.Drawing.Size(109, 15);
             this.label9.TabIndex = 117;
             this.label9.Text = "Firmware Version :";
-            // 
-            // txtfirm
-            // 
-            this.txtfirm.BackColor = System.Drawing.Color.SkyBlue;
-            this.txtfirm.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfirm.Location = new System.Drawing.Point(390, 135);
-            this.txtfirm.MaxLength = 10;
-            this.txtfirm.Name = "txtfirm";
-            this.txtfirm.Size = new System.Drawing.Size(156, 22);
-            this.txtfirm.TabIndex = 2;
-            this.txtfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtserial
             // 
@@ -782,11 +771,26 @@ namespace EngineLevelTesting.Forms
             this.cbrev.Size = new System.Drawing.Size(156, 22);
             this.cbrev.TabIndex = 1;
             // 
+            // txtfirm
+            // 
+            this.txtfirm.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtfirm.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtfirm.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtfirm.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfirm.FormattingEnabled = true;
+            this.txtfirm.Items.AddRange(new object[] {
+            "1.04"});
+            this.txtfirm.Location = new System.Drawing.Point(390, 135);
+            this.txtfirm.Name = "txtfirm";
+            this.txtfirm.Size = new System.Drawing.Size(156, 22);
+            this.txtfirm.TabIndex = 192;
+            // 
             // PowerMeterfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 638);
+            this.Controls.Add(this.txtfirm);
             this.Controls.Add(this.cbrev);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.btnsave);
@@ -828,7 +832,6 @@ namespace EngineLevelTesting.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtfirm);
             this.Controls.Add(this.txtserial);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -879,7 +882,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtfirm;
         private System.Windows.Forms.TextBox txtserial;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbledd26;
@@ -934,5 +936,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Button btnsave;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.ComboBox cbrev;
+        private System.Windows.Forms.ComboBox txtfirm;
     }
 }
