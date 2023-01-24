@@ -783,7 +783,7 @@ namespace EngineLevelTesting.Forms
             this.txtfirm.Location = new System.Drawing.Point(390, 135);
             this.txtfirm.Name = "txtfirm";
             this.txtfirm.Size = new System.Drawing.Size(156, 22);
-            this.txtfirm.TabIndex = 192;
+            this.txtfirm.TabIndex = 2;
             // 
             // PowerMeterfrm
             // 

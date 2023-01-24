@@ -45,13 +45,16 @@ namespace EngineLevelTesting.Forms
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtserial.Text))
+            if (string.IsNullOrEmpty(txtserial.Text) || string.IsNullOrEmpty(txtrev.Text) || string.IsNullOrEmpty(txtfirm.Text) || string.IsNullOrEmpty(txttp3.Text) || string.IsNullOrEmpty(txttp4.Text)
+                || string.IsNullOrEmpty(txttp5.Text) || string.IsNullOrEmpty(cbCopn.Text) || string.IsNullOrEmpty(cbCclose.Text) || string.IsNullOrEmpty(txtvoltagePlus.Text) || string.IsNullOrEmpty(txttempRead.Text)
+                || string.IsNullOrEmpty(cbmGfci.Text) || string.IsNullOrEmpty(txtsn.Text) || string.IsNullOrEmpty(cbleak.Text) || string.IsNullOrEmpty(cbcircuit.Text) || string.IsNullOrEmpty(cbduty.Text) || 
+                string.IsNullOrEmpty(txtamp240.Text) || string.IsNullOrEmpty(txtamp120.Text) || string.IsNullOrEmpty(cbjudgement.Text) || string.IsNullOrEmpty(txtremarks.Text) || string.IsNullOrEmpty(txttestby.Text))
             {
-                Saved();
+                MessageBox.Show("Please Input Fields");
             }
             else
-                MessageBox.Show("Please Input Serial");
-            
+                Saved();
+
         }
         private async void Saved()
         {

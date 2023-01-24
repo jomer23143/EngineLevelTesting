@@ -475,7 +475,7 @@ namespace EngineLevelTesting.Forms
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(41, 198);
+            this.label6.Location = new System.Drawing.Point(41, 184);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 15);
             this.label6.TabIndex = 143;
@@ -545,7 +545,7 @@ namespace EngineLevelTesting.Forms
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(51, 254);
+            this.label28.Location = new System.Drawing.Point(51, 239);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(27, 15);
             this.label28.TabIndex = 149;

@@ -37,7 +37,15 @@ namespace EngineLevelTesting.Forms
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            Saved();
+            if (string.IsNullOrEmpty(txtserial.Text) || string.IsNullOrEmpty(cbrev.Text) || String.IsNullOrEmpty(txtfirm.Text) || string.IsNullOrEmpty(cbledd26.Text) || string.IsNullOrEmpty(txtvref.Text)
+                || string.IsNullOrEmpty(txtvphasea.Text) || string.IsNullOrEmpty(txtvphaseb.Text) || string.IsNullOrEmpty(txtiref.Text) || string.IsNullOrEmpty(txtiphasea.Text) || string.IsNullOrEmpty(txtiphaseb.Text)
+                || string.IsNullOrEmpty(txtpref.Text) || string.IsNullOrEmpty(txtactivea.Text) || string.IsNullOrEmpty(txtactiveb.Text) || string.IsNullOrEmpty(txteref.Text) || string.IsNullOrEmpty(txteuiref.Text)
+                || string.IsNullOrEmpty(cbresult.Text) || string.IsNullOrEmpty(txtremarks.Text) || string.IsNullOrEmpty(txttestby.Text))
+            {
+                MessageBox.Show("There is empty fields!!");
+            }
+            else
+                Saved();
         }
         private async void Saved()
         {
@@ -73,7 +81,7 @@ namespace EngineLevelTesting.Forms
                 {
                     MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
                 });
-               
+                rjCircularPictureBox1.Hide();
                 MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear();
             }
