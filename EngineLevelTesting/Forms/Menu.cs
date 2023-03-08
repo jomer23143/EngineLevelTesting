@@ -213,5 +213,17 @@ namespace EngineLevelTesting.Forms
             Forms.PowerMeterfrm frm = new Forms.PowerMeterfrm();
             frm.Show();
         }
+
+        private void btnmcu_Click(object sender, EventArgs e)
+        {
+            Forms.MCUFrm frm = new Forms.MCUFrm();
+            frm.Show();
+        }
+
+        private void btnxbu_Click(object sender, EventArgs e)
+        {
+            Forms.XBUfrm frm = new Forms.XBUfrm();
+            frm.Show();
+        }
     }
 }

@@ -98,62 +98,74 @@ namespace EngineLevelTesting.Forms
             }
             if (comboBox1.Text == "HvCombo Checklist")
             {
-                sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "HvComboReport";
                 datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "HvCombo Checklist ISO")
             {
-                sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"Select *, 12a_request as a_request12,25a_request as a_request25, 400voltage as voltage400, 800voltage as voltage800 from hvcombo_table hv where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "IsoDocReport";
                 datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "AFE Board Checklist ISO")
             {
-                sql = $@"Select * from afe_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"Select * from afe_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "IsoDocAfe";
                 datasetname = "DataSet1";
             }
             else if(comboBox1.Text == "AFE Board Checklist")
             {
-                sql = $@"Select * from afe_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"Select * from afe_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "afeReport";
                 datasetname = "DataSet1";
             }
             else if(comboBox1.Text == "Secc Board Checklist")
             {
-                sql = $@"SELECT * FROM secc_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"SELECT * FROM secc_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "seccReport";
                 datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "Secc Board Checklist ISO")
             {
-                sql = $@"SELECT * FROM secc_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"SELECT * FROM secc_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "ISOseccReport";
                 datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "Power Board Checklist")
             {
-                sql = $@"SELECT * FROM powerboard_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"SELECT * FROM powerboard_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "powerReport";
                 datasetname = "powerboard";
             }
             else if (comboBox1.Text == "Power Board Checklist ISO")
             {
-                sql = $@"SELECT * FROM powerboard_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"SELECT * FROM powerboard_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "IsopowerReport";
                 datasetname = "powerboard";
             }
             else if (comboBox1.Text == "Power Meter Board Checklist")
             {
-                sql = $@"SELECT * FROM powermeter_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"SELECT * FROM powermeter_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "powermeterReport";
                 datasetname = "DataSet1";
             }
             else if (comboBox1.Text == "Power Meter Board Checklist ISO")
             {
-                sql = $@"SELECT * FROM powermeter_table where date_record between '{dtfrom.Value.ToShortDateString()}' and '{dtto.Value.ToShortDateString()}'";
+                sql = $@"SELECT * FROM powermeter_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "IsoPowermeterReport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "MCU Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mcu_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "isoMCUReport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "XBU Tower Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM xbu_table where STR_TO_DATE(date_record,'%m/%d/%Y') between '{dtfrom.Value.ToString("yyyy-MM-dd")}' and '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "isoXBUReport";
                 datasetname = "DataSet1";
             }
             reportViewer1.Reset();

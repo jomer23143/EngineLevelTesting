@@ -20,13 +20,20 @@ namespace EngineLevelTesting.Forms
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            Saved();
+            if (string.IsNullOrEmpty(txtipn.Text) || string.IsNullOrEmpty(txtserial.Text) || string.IsNullOrEmpty(txtfirm.Text) || string.IsNullOrEmpty(cbsession1.Text) || string.IsNullOrEmpty(cbsession2.Text)
+                || string.IsNullOrEmpty(cbsession3.Text) || string.IsNullOrEmpty(cbjudgement.Text) || string.IsNullOrEmpty(txtremarks.Text) || string.IsNullOrEmpty(txttestby.Text))
+            {
+                MessageBox.Show("Please input all Fields");
+            }
+            else
+                Saved();
         }
         private void Saved()
         {
             StringBuilder sql = new StringBuilder();
             Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
+                                { "ipn_number", txtipn.Text},
                                 { "serial_number", txtserial.Text},
                                 { "firmware",txtfirm.Text},
                                 { "session1",cbsession1.SelectedItem.ToString()},

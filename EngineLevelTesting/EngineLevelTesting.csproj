@@ -158,6 +158,12 @@
     <Compile Include="Forms\ManualInsert.Designer.cs">
       <DependentUpon>ManualInsert.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MCUFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MCUFrm.Designer.cs">
+      <DependentUpon>MCUFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,12 @@
     <Compile Include="Forms\SeccFrm.Designer.cs">
       <DependentUpon>SeccFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\XBUfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XBUfrm.Designer.cs">
+      <DependentUpon>XBUfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -210,6 +222,9 @@
     <EmbeddedResource Include="Forms\ManualInsert.resx">
       <DependentUpon>ManualInsert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MCUFrm.resx">
+      <DependentUpon>MCUFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +240,9 @@
     <EmbeddedResource Include="Forms\SeccFrm.resx">
       <DependentUpon>SeccFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XBUfrm.resx">
+      <DependentUpon>XBUfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -238,9 +256,11 @@
     <EmbeddedResource Include="Reports\HvComboReport.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocAfe.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocReport.rdlc" />
+    <EmbeddedResource Include="Reports\isoMCUReport.rdlc" />
     <EmbeddedResource Include="Reports\IsoPowermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\IsopowerReport.rdlc" />
     <EmbeddedResource Include="Reports\ISOseccReport.rdlc" />
+    <EmbeddedResource Include="Reports\isoXBUReport.rdlc" />
     <EmbeddedResource Include="Reports\powermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\powerReport.rdlc" />
     <EmbeddedResource Include="Reports\seccReport.rdlc" />

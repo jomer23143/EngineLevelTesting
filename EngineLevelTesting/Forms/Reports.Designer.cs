@@ -170,7 +170,9 @@ namespace EngineLevelTesting.Forms
             "AFE Board Checklist ISO",
             "Secc Board Checklist ISO",
             "Power Board Checklist ISO",
-            "Power Meter Board Checklist ISO"});
+            "Power Meter Board Checklist ISO",
+            "MCU Board Checklist ISO",
+            "XBU Tower Board Checklist ISO"});
             this.comboBox1.Location = new System.Drawing.Point(94, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(249, 23);

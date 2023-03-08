@@ -39,6 +39,8 @@ namespace EngineLevelTesting.Forms
             this.btnSecc = new System.Windows.Forms.Button();
             this.btnpower = new System.Windows.Forms.Button();
             this.btnpowermeter = new System.Windows.Forms.Button();
+            this.btnmcu = new System.Windows.Forms.Button();
+            this.btnxbu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDataEntry
@@ -122,11 +124,35 @@ namespace EngineLevelTesting.Forms
             this.btnpowermeter.UseVisualStyleBackColor = true;
             this.btnpowermeter.Click += new System.EventHandler(this.btnpowermeter_Click);
             // 
+            // btnmcu
+            // 
+            this.btnmcu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmcu.Location = new System.Drawing.Point(339, 240);
+            this.btnmcu.Name = "btnmcu";
+            this.btnmcu.Size = new System.Drawing.Size(244, 52);
+            this.btnmcu.TabIndex = 7;
+            this.btnmcu.Text = "MCU 6.1 Board Checklist";
+            this.btnmcu.UseVisualStyleBackColor = true;
+            this.btnmcu.Click += new System.EventHandler(this.btnmcu_Click);
+            // 
+            // btnxbu
+            // 
+            this.btnxbu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxbu.Location = new System.Drawing.Point(53, 308);
+            this.btnxbu.Name = "btnxbu";
+            this.btnxbu.Size = new System.Drawing.Size(244, 52);
+            this.btnxbu.TabIndex = 8;
+            this.btnxbu.Text = "XBU Tower Board Checklist";
+            this.btnxbu.UseVisualStyleBackColor = true;
+            this.btnxbu.Click += new System.EventHandler(this.btnxbu_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 322);
+            this.ClientSize = new System.Drawing.Size(642, 390);
+            this.Controls.Add(this.btnxbu);
+            this.Controls.Add(this.btnmcu);
             this.Controls.Add(this.btnpowermeter);
             this.Controls.Add(this.btnpower);
             this.Controls.Add(this.btnSecc);
@@ -155,5 +181,7 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Button btnSecc;
         private System.Windows.Forms.Button btnpower;
         private System.Windows.Forms.Button btnpowermeter;
+        private System.Windows.Forms.Button btnmcu;
+        private System.Windows.Forms.Button btnxbu;
     }
 }
