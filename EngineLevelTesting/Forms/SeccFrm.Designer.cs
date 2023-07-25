@@ -32,6 +32,9 @@ namespace EngineLevelTesting.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeccFrm));
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtipn = new System.Windows.Forms.TextBox();
             this.txtfirm = new System.Windows.Forms.TextBox();
             this.txttestby = new System.Windows.Forms.TextBox();
             this.txtremarks = new System.Windows.Forms.TextBox();
@@ -50,9 +53,8 @@ namespace EngineLevelTesting.Forms
             this.cbsession2 = new System.Windows.Forms.ComboBox();
             this.cbsession1 = new System.Windows.Forms.ComboBox();
             this.txtserial = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtipn = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label23
@@ -69,6 +71,7 @@ namespace EngineLevelTesting.Forms
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rjCircularPictureBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtipn);
             this.groupBox1.Controls.Add(this.txtfirm);
@@ -97,12 +100,51 @@ namespace EngineLevelTesting.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "IPN: 110-0085-01";
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(191, 93);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 192;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(79, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 15);
+            this.label1.TabIndex = 120;
+            this.label1.Text = "IPN Rev. No :";
+            // 
+            // txtipn
+            // 
+            this.txtipn.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtipn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtipn.Location = new System.Drawing.Point(174, 44);
+            this.txtipn.MaxLength = 100;
+            this.txtipn.Name = "txtipn";
+            this.txtipn.Size = new System.Drawing.Size(164, 22);
+            this.txtipn.TabIndex = 0;
+            this.txtipn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // txtfirm
             // 
             this.txtfirm.BackColor = System.Drawing.Color.SkyBlue;
             this.txtfirm.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfirm.Location = new System.Drawing.Point(175, 99);
-            this.txtfirm.MaxLength = 10;
+            this.txtfirm.MaxLength = 100;
             this.txtfirm.Name = "txtfirm";
             this.txtfirm.Size = new System.Drawing.Size(164, 22);
             this.txtfirm.TabIndex = 2;
@@ -113,7 +155,7 @@ namespace EngineLevelTesting.Forms
             this.txttestby.BackColor = System.Drawing.Color.SkyBlue;
             this.txttestby.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttestby.Location = new System.Drawing.Point(174, 287);
-            this.txttestby.MaxLength = 20;
+            this.txttestby.MaxLength = 100;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(164, 22);
             this.txttestby.TabIndex = 8;
@@ -124,7 +166,7 @@ namespace EngineLevelTesting.Forms
             this.txtremarks.BackColor = System.Drawing.Color.SkyBlue;
             this.txtremarks.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtremarks.Location = new System.Drawing.Point(174, 260);
-            this.txtremarks.MaxLength = 40;
+            this.txtremarks.MaxLength = 500;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(164, 22);
             this.txtremarks.TabIndex = 7;
@@ -316,35 +358,12 @@ namespace EngineLevelTesting.Forms
             this.txtserial.BackColor = System.Drawing.Color.SkyBlue;
             this.txtserial.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtserial.Location = new System.Drawing.Point(175, 72);
-            this.txtserial.MaxLength = 12;
+            this.txtserial.MaxLength = 100;
             this.txtserial.Name = "txtserial";
             this.txtserial.Size = new System.Drawing.Size(164, 22);
             this.txtserial.TabIndex = 1;
             this.txtserial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtserial.TextChanged += new System.EventHandler(this.txtserial_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(79, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 15);
-            this.label1.TabIndex = 120;
-            this.label1.Text = "IPN Rev. No :";
-            // 
-            // txtipn
-            // 
-            this.txtipn.BackColor = System.Drawing.Color.SkyBlue;
-            this.txtipn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtipn.Location = new System.Drawing.Point(174, 44);
-            this.txtipn.MaxLength = 12;
-            this.txtipn.Name = "txtipn";
-            this.txtipn.Size = new System.Drawing.Size(164, 22);
-            this.txtipn.TabIndex = 0;
-            this.txtipn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SeccFrm
             // 
@@ -360,6 +379,7 @@ namespace EngineLevelTesting.Forms
             this.Text = "SeccFrm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -388,5 +408,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.TextBox txtfirm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtipn;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
     }
 }

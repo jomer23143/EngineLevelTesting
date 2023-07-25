@@ -64,6 +64,7 @@ namespace EngineLevelTesting.Forms
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
                                 { "ipn_number",cbipn.SelectedItem.ToString()},
                                 { "board_serial", txtserial.Text},
+                                { "version_ul", cbul.Text},
                                 { "rev",txtrev.Text},
                                 { "fw_version",txtfirm.Text},
                                 { "tp2",txttp2.Text},
@@ -76,6 +77,7 @@ namespace EngineLevelTesting.Forms
                                 { "temp_read",txttempRead.Text},
                                 { "gfci_board",cbmGfci.SelectedItem.ToString()},
                                 { "gfci_sn",txtsn.Text},
+                                { "gfci_rev",txtgfci_rev.Text},
                                 { "leak_detect",cbleak.SelectedItem.ToString()},
                                 { "circuit",cbcircuit.SelectedItem.ToString()},
                                 { "duty_cycle",cbduty.SelectedItem.ToString()},
@@ -175,6 +177,7 @@ namespace EngineLevelTesting.Forms
             txtvoltagePlus.Clear();
             txttempRead.Clear();
             //txtpn.Clear();
+            txtgfci_rev.Clear();
             txtsn.Clear();
             cbleak.SelectedIndex = -1;
             cbcircuit.SelectedIndex = -1;

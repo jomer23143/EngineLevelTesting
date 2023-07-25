@@ -41,7 +41,7 @@ namespace EngineLevelTesting.Forms
 
         private void AfeBoard_Load(object sender, EventArgs e)
         {
-
+            rjCircularPictureBox1.Hide();
         }
 
         private void btnsave_Click(object sender, EventArgs e)
@@ -54,10 +54,14 @@ namespace EngineLevelTesting.Forms
             Saved();
             txtserial.Focus();
         }
-        private void Saved()
+        private async void Saved()
         {
-            StringBuilder sql = new StringBuilder();
-            Dictionary<string, object> data = new Dictionary<string, object> {
+
+            try
+            {
+                rjCircularPictureBox1.Show();
+                StringBuilder sql = new StringBuilder();
+                Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
                                 { "board_serial", txtserial.Text},
                                 { "board_rev_no",txtrev.Text},
@@ -82,12 +86,22 @@ namespace EngineLevelTesting.Forms
                                 { "tested_by",txttestby.Text},
                                 { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
                                 { "date_record", DateTime.Now.ToShortDateString()}
-            };
-            MySqlDatasupport.ID = 1;
-            sql.Append(MySqlDatasupport.GetInsert("afe_table", data));
-            MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
-            MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Cleardata();
+                };
+                sql.Append(MySqlDatasupport.GetInsert("afe_table", data));
+                await Task.Run(() =>
+                {
+                    MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
+                });
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Cleardata();
+            }
+            catch (Exception)
+            {
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Failed!!!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
         private async void UpdatedData()
         {
@@ -208,7 +222,7 @@ namespace EngineLevelTesting.Forms
 
         private void txtserial_TextChanged(object sender, EventArgs e)
         {
-            GetScanSerial();
+            //GetScanSerial();
         }
         private async void InsertCloud()
         {
@@ -309,16 +323,16 @@ namespace EngineLevelTesting.Forms
 
         private void txtserial_Validating(object sender, CancelEventArgs e)
         {
-            if (res)
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(txtserial, "Already Exist!!!");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(txtserial, "");
-            }
+            //if (res)
+            //{
+            //    e.Cancel = true;
+            //    errorProvider1.SetError(txtserial, "Already Exist!!!");
+            //}
+            //else
+            //{
+            //    e.Cancel = false;
+            //    errorProvider1.SetError(txtserial, "");
+            //}
         }
     }
 }

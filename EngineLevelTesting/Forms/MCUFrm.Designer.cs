@@ -29,6 +29,7 @@ namespace EngineLevelTesting.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MCUFrm));
             this.label23 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtserial = new System.Windows.Forms.TextBox();
@@ -49,6 +50,12 @@ namespace EngineLevelTesting.Forms
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtseriesno = new System.Windows.Forms.TextBox();
+            this.txttestfail = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label23
@@ -92,7 +99,7 @@ namespace EngineLevelTesting.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(120, 109);
+            this.label1.Location = new System.Drawing.Point(120, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 15);
             this.label1.TabIndex = 48;
@@ -102,7 +109,7 @@ namespace EngineLevelTesting.Forms
             // 
             this.txtipn.BackColor = System.Drawing.Color.SkyBlue;
             this.txtipn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtipn.Location = new System.Drawing.Point(209, 107);
+            this.txtipn.Location = new System.Drawing.Point(209, 135);
             this.txtipn.MaxLength = 50;
             this.txtipn.Name = "txtipn";
             this.txtipn.Size = new System.Drawing.Size(219, 22);
@@ -115,7 +122,7 @@ namespace EngineLevelTesting.Forms
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(161, 135);
+            this.label3.Location = new System.Drawing.Point(161, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 15);
             this.label3.TabIndex = 50;
@@ -125,8 +132,8 @@ namespace EngineLevelTesting.Forms
             // 
             this.txtrev.BackColor = System.Drawing.Color.SkyBlue;
             this.txtrev.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrev.Location = new System.Drawing.Point(209, 135);
-            this.txtrev.MaxLength = 12;
+            this.txtrev.Location = new System.Drawing.Point(209, 163);
+            this.txtrev.MaxLength = 100;
             this.txtrev.Name = "txtrev";
             this.txtrev.Size = new System.Drawing.Size(219, 22);
             this.txtrev.TabIndex = 49;
@@ -138,7 +145,7 @@ namespace EngineLevelTesting.Forms
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(15, 165);
+            this.label4.Location = new System.Drawing.Point(15, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(187, 15);
             this.label4.TabIndex = 52;
@@ -148,7 +155,7 @@ namespace EngineLevelTesting.Forms
             // 
             this.txt1st.BackColor = System.Drawing.Color.SkyBlue;
             this.txt1st.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1st.Location = new System.Drawing.Point(209, 163);
+            this.txt1st.Location = new System.Drawing.Point(209, 191);
             this.txt1st.MaxLength = 12;
             this.txt1st.Name = "txt1st";
             this.txt1st.Size = new System.Drawing.Size(219, 22);
@@ -161,7 +168,7 @@ namespace EngineLevelTesting.Forms
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(11, 195);
+            this.label5.Location = new System.Drawing.Point(11, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(191, 15);
             this.label5.TabIndex = 54;
@@ -171,7 +178,7 @@ namespace EngineLevelTesting.Forms
             // 
             this.txt2nd.BackColor = System.Drawing.Color.SkyBlue;
             this.txt2nd.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2nd.Location = new System.Drawing.Point(209, 191);
+            this.txt2nd.Location = new System.Drawing.Point(209, 219);
             this.txt2nd.MaxLength = 12;
             this.txt2nd.Name = "txt2nd";
             this.txt2nd.Size = new System.Drawing.Size(219, 22);
@@ -184,7 +191,7 @@ namespace EngineLevelTesting.Forms
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(13, 223);
+            this.label6.Location = new System.Drawing.Point(13, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(189, 15);
             this.label6.TabIndex = 56;
@@ -194,7 +201,7 @@ namespace EngineLevelTesting.Forms
             // 
             this.txt3rd.BackColor = System.Drawing.Color.SkyBlue;
             this.txt3rd.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt3rd.Location = new System.Drawing.Point(209, 219);
+            this.txt3rd.Location = new System.Drawing.Point(209, 247);
             this.txt3rd.MaxLength = 12;
             this.txt3rd.Name = "txt3rd";
             this.txt3rd.Size = new System.Drawing.Size(219, 22);
@@ -207,7 +214,7 @@ namespace EngineLevelTesting.Forms
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(128, 249);
+            this.label7.Location = new System.Drawing.Point(128, 277);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 15);
             this.label7.TabIndex = 57;
@@ -223,7 +230,7 @@ namespace EngineLevelTesting.Forms
             this.cbjudgement.Items.AddRange(new object[] {
             "PASS",
             "FAIL"});
-            this.cbjudgement.Location = new System.Drawing.Point(209, 247);
+            this.cbjudgement.Location = new System.Drawing.Point(209, 275);
             this.cbjudgement.Name = "cbjudgement";
             this.cbjudgement.Size = new System.Drawing.Size(97, 22);
             this.cbjudgement.TabIndex = 58;
@@ -232,8 +239,8 @@ namespace EngineLevelTesting.Forms
             // 
             this.txttestby.BackColor = System.Drawing.Color.SkyBlue;
             this.txttestby.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttestby.Location = new System.Drawing.Point(209, 300);
-            this.txttestby.MaxLength = 20;
+            this.txttestby.Location = new System.Drawing.Point(209, 357);
+            this.txttestby.MaxLength = 100;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(219, 22);
             this.txttestby.TabIndex = 60;
@@ -243,8 +250,8 @@ namespace EngineLevelTesting.Forms
             // 
             this.txtremarks.BackColor = System.Drawing.Color.SkyBlue;
             this.txtremarks.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtremarks.Location = new System.Drawing.Point(209, 275);
-            this.txtremarks.MaxLength = 40;
+            this.txtremarks.Location = new System.Drawing.Point(209, 332);
+            this.txtremarks.MaxLength = 500;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(219, 22);
             this.txtremarks.TabIndex = 59;
@@ -256,7 +263,7 @@ namespace EngineLevelTesting.Forms
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(129, 302);
+            this.label22.Location = new System.Drawing.Point(133, 359);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(63, 15);
             this.label22.TabIndex = 62;
@@ -268,7 +275,7 @@ namespace EngineLevelTesting.Forms
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(131, 276);
+            this.label21.Location = new System.Drawing.Point(135, 333);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(60, 15);
             this.label21.TabIndex = 61;
@@ -279,7 +286,7 @@ namespace EngineLevelTesting.Forms
             this.btnsave.BackColor = System.Drawing.Color.LimeGreen;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(322, 338);
+            this.btnsave.Location = new System.Drawing.Point(322, 395);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(106, 34);
             this.btnsave.TabIndex = 63;
@@ -287,11 +294,78 @@ namespace EngineLevelTesting.Forms
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(176, 163);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 160;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(100, 109);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 15);
+            this.label8.TabIndex = 162;
+            this.label8.Text = "MCU Series No. :";
+            // 
+            // txtseriesno
+            // 
+            this.txtseriesno.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtseriesno.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtseriesno.Location = new System.Drawing.Point(209, 107);
+            this.txtseriesno.MaxLength = 50;
+            this.txtseriesno.Name = "txtseriesno";
+            this.txtseriesno.Size = new System.Drawing.Size(219, 22);
+            this.txtseriesno.TabIndex = 161;
+            this.txtseriesno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txttestfail
+            // 
+            this.txttestfail.BackColor = System.Drawing.Color.SkyBlue;
+            this.txttestfail.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttestfail.Location = new System.Drawing.Point(209, 303);
+            this.txttestfail.MaxLength = 40;
+            this.txttestfail.Name = "txttestfail";
+            this.txttestfail.Size = new System.Drawing.Size(219, 22);
+            this.txttestfail.TabIndex = 163;
+            this.txttestfail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(34, 304);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(161, 15);
+            this.label9.TabIndex = 164;
+            this.label9.Text = "Test Failure Details (If Fail) :";
+            // 
             // MCUFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 386);
+            this.ClientSize = new System.Drawing.Size(453, 438);
+            this.Controls.Add(this.txttestfail);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtseriesno);
+            this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txttestby);
             this.Controls.Add(this.txtremarks);
@@ -313,7 +387,9 @@ namespace EngineLevelTesting.Forms
             this.Controls.Add(this.txtserial);
             this.Controls.Add(this.label23);
             this.Name = "MCUFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MCUFrm";
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,5 +417,10 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btnsave;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtseriesno;
+        private System.Windows.Forms.TextBox txttestfail;
+        private System.Windows.Forms.Label label9;
     }
 }

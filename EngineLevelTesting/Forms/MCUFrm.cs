@@ -16,6 +16,7 @@ namespace EngineLevelTesting.Forms
         public MCUFrm()
         {
             InitializeComponent();
+            rjCircularPictureBox1.Hide();
         }
 
         private void btnsave_Click(object sender, EventArgs e)
@@ -28,36 +29,53 @@ namespace EngineLevelTesting.Forms
             else
                 Saved();
         }
-        private void Saved()
+        private async void Saved()
         {
-            StringBuilder sql = new StringBuilder();
-            Dictionary<string, object> data = new Dictionary<string, object> {
+            try
+            {
+                rjCircularPictureBox1.Show();
+                StringBuilder sql = new StringBuilder();
+                Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
                                 { "board_serial", txtserial.Text},
+                                { "series_no",txtseriesno.Text},
                                 { "ipn_number",txtipn.Text},
                                 { "rev_no",txtrev.Text},
                                 { "first",txt1st.Text},
                                 { "second",txt2nd.Text},
                                 { "third",txt3rd.Text},
                                 { "judgement",cbjudgement.SelectedItem.ToString()},
+                                { "test_fail_details",txttestfail.Text},
                                 { "remarks",txtremarks.Text},
                                 { "tested_by",txttestby.Text},
                                 { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
                                 { "date_record", DateTime.Now.ToShortDateString()}
-            };
-            sql.Append(MySqlDatasupport.GetInsert("mcu_table", data));
-            MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
-            MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Clear();
+                };
+                sql.Append(MySqlDatasupport.GetInsert("mcu_table", data));
+                await Task.Run(() =>
+                {
+                    MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
+                });
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Clear();
+            }
+            catch (Exception)
+            {
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Failed!!!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         private void Clear()
         {
             txtserial.Clear();
+            txtseriesno.Clear();
             txtipn.Clear();
             txtrev.Clear();
             txt1st.Clear();
             txt2nd.Clear();
             txt3rd.Clear();
+            txttestfail.Clear();
             txtremarks.Clear();
             txttestby.Clear();
 

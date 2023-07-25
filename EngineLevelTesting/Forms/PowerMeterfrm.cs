@@ -75,7 +75,7 @@ namespace EngineLevelTesting.Forms
                                 { "tested_by",txttestby.Text},
                                 { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
                                 { "date_record", DateTime.Now.ToShortDateString()}
-            };
+                };
                 sql.Append(MySqlDatasupport.GetInsert("powermeter_table", data));
                 await Task.Run(() =>
                 {

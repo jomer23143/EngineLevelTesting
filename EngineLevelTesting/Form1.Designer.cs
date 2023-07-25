@@ -83,9 +83,11 @@ namespace EngineLevelTesting
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -370,7 +372,7 @@ namespace EngineLevelTesting
             this.txtserial.BackColor = System.Drawing.Color.SkyBlue;
             this.txtserial.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtserial.Location = new System.Drawing.Point(380, 68);
-            this.txtserial.MaxLength = 12;
+            this.txtserial.MaxLength = 100;
             this.txtserial.Name = "txtserial";
             this.txtserial.Size = new System.Drawing.Size(219, 22);
             this.txtserial.TabIndex = 0;
@@ -611,7 +613,7 @@ namespace EngineLevelTesting
             this.txtremarks.BackColor = System.Drawing.Color.SkyBlue;
             this.txtremarks.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtremarks.Location = new System.Drawing.Point(380, 542);
-            this.txtremarks.MaxLength = 40;
+            this.txtremarks.MaxLength = 500;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(219, 22);
             this.txtremarks.TabIndex = 18;
@@ -622,7 +624,7 @@ namespace EngineLevelTesting
             this.txttestby.BackColor = System.Drawing.Color.SkyBlue;
             this.txttestby.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttestby.Location = new System.Drawing.Point(380, 567);
-            this.txttestby.MaxLength = 20;
+            this.txttestby.MaxLength = 100;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(219, 22);
             this.txttestby.TabIndex = 19;
@@ -711,6 +713,22 @@ namespace EngineLevelTesting
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(261, 256);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 192;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -718,6 +736,7 @@ namespace EngineLevelTesting
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(622, 660);
+            this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -775,6 +794,7 @@ namespace EngineLevelTesting
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -834,6 +854,7 @@ namespace EngineLevelTesting
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
     }
 }
 

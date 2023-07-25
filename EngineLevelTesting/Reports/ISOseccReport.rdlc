@@ -6,13 +6,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.85112cm</Width>
+              <Width>2.70677cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.87042cm</Width>
+              <Width>3.63797cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.65039cm</Width>
+              <Width>3.68435cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.54cm</Width>
@@ -27,10 +27,13 @@
               <Width>2.28833cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.34667cm</Width>
+              <Width>2.54cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.45825cm</Width>
+              <Width>2.92334cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.53221cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -215,6 +218,41 @@
                 </TablixCell>
                 <TablixCell />
                 <TablixCell />
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox5">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Judgement</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="Textbox164">
@@ -522,6 +560,41 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox172</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox6">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Pass/Fail</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox6</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -850,6 +923,40 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="judgement">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!judgement.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>judgement</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="tested_by">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -931,6 +1038,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -950,7 +1058,7 @@
         <Top>0.3937cm</Top>
         <Left>0.02125cm</Left>
         <Height>1.90583cm</Height>
-        <Width>28.08541cm</Width>
+        <Width>27.9332cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -972,9 +1080,9 @@
           <Source>Embedded</Source>
           <Value>logo</Value>
           <Sizing>FitProportional</Sizing>
-          <Left>0.7751in</Left>
+          <Left>0.4001in</Left>
           <Height>1.33738cm</Height>
-          <Width>9.21632cm</Width>
+          <Width>8.89881cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -992,10 +1100,25 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>CHECKLIST</Value>
+                  <Value>SECC BOARD ENGINE LEVEL</Value>
                   <Style>
                     <FontFamily>calibri</FontFamily>
-                    <FontSize>28pt</FontSize>
+                    <FontSize>36pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>TESTING FORM</Value>
+                  <Style>
+                    <FontFamily>calibri</FontFamily>
+                    <FontSize>36pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -1006,9 +1129,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Left>4.47302in</Left>
-          <Height>0.54736in</Height>
-          <Width>6.58111in</Width>
+          <Left>3.97301in</Left>
+          <Height>1.19667in</Height>
+          <Width>7.08112in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -1041,7 +1164,7 @@
           <Value>docSecc</Value>
           <Sizing>Fit</Sizing>
           <Top>0.54042in</Top>
-          <Left>2.60371in</Left>
+          <Left>2.10371in</Left>
           <Height>0.65625in</Height>
           <Width>1.79986in</Width>
           <ZIndex>3</ZIndex>
@@ -1051,41 +1174,6 @@
             </Border>
           </Style>
         </Image>
-        <Textbox Name="Textbox3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>SECC Board Engine Level Test</Value>
-                  <Style>
-                    <FontFamily>calibri</FontFamily>
-                    <FontSize>24pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.68625in</Top>
-          <Left>4.47302in</Left>
-          <Height>0.63542in</Height>
-          <Width>6.58111in</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
       </ReportItems>
       <Style>
         <Border>

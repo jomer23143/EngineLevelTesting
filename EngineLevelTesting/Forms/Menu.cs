@@ -15,6 +15,7 @@ namespace EngineLevelTesting.Forms
     public partial class Menu : Form
     {
         static int lastHour = DateTime.Now.Hour;
+        public static string adminpass = "System@2022";
         public Menu()
         {
             InitializeComponent();
@@ -51,7 +52,7 @@ namespace EngineLevelTesting.Forms
             String data = registry.Read(Def.REGKEY_SUB);
             if (data == null)
             {
-                data += String.Format($"ENGINELEVELTESTING<limiter>192.168.0.197<limiter>root<limiter>System@2022<limiter>hvcomboafe<limiter>");
+                data += String.Format($"ENGINELEVELTESTING<limiter>194.163.32.81<limiter>u867954426_board<limiter>System@2023<limiter>u867954426_board<limiter>");
                 registry.Write(Def.REGKEY_SUB, data);
             }
             Utils.SetConnectionDetails();
@@ -223,6 +224,34 @@ namespace EngineLevelTesting.Forms
         private void btnxbu_Click(object sender, EventArgs e)
         {
             Forms.XBUfrm frm = new Forms.XBUfrm();
+            frm.Show();
+        }
+
+        private void connectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminFrm frm = new AdminFrm();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                ConnectionSettings connect = new ConnectionSettings();
+                connect.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Forms.MCU50frm frm = new Forms.MCU50frm();
+            frm.Show();
+        }
+
+        private void btnopto_Click(object sender, EventArgs e)
+        {
+            Forms.OptoFRM frm = new Forms.OptoFRM();
+            frm.Show();
+        }
+
+        private void btnL2fsr_Click(object sender, EventArgs e)
+        {
+            Forms.Acl2 frm = new Forms.Acl2();
             frm.Show();
         }
     }

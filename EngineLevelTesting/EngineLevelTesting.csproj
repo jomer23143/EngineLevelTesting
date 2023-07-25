@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" Condition="Exists('..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,13 +38,15 @@
   <PropertyGroup>
     <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\OPSCOM\OPSCOM\bin\Debug\Dapper.dll</HintPath>
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
@@ -76,8 +81,8 @@
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\MySql.Data.dll</HintPath>
@@ -140,6 +145,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Acl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Acl2.Designer.cs">
+      <DependentUpon>Acl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminFrm.Designer.cs">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AfeBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +175,12 @@
     <Compile Include="Forms\ManualInsert.Designer.cs">
       <DependentUpon>ManualInsert.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MCU50frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MCU50frm.Designer.cs">
+      <DependentUpon>MCU50frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MCUFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +192,12 @@
     </Compile>
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptoFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptoFRM.Designer.cs">
+      <DependentUpon>OptoFRM.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PowerBoardfrm.cs">
       <SubType>Form</SubType>
@@ -202,7 +231,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Utilities\Connection.cs" />
     <Compile Include="Utilities\Def.cs" />
     <Compile Include="Utilities\KeyBoardSupport.cs" />
@@ -213,6 +241,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Acl2.resx">
+      <DependentUpon>Acl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminFrm.resx">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AfeBoard.resx">
       <DependentUpon>AfeBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,11 +256,17 @@
     <EmbeddedResource Include="Forms\ManualInsert.resx">
       <DependentUpon>ManualInsert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MCU50frm.resx">
+      <DependentUpon>MCU50frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MCUFrm.resx">
       <DependentUpon>MCUFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptoFRM.resx">
+      <DependentUpon>OptoFRM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PowerBoardfrm.resx">
       <DependentUpon>PowerBoardfrm.cs</DependentUpon>
@@ -252,15 +292,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reports\isoacl2Report.rdlc" />
     <EmbeddedResource Include="Reports\afeReport.rdlc" />
     <EmbeddedResource Include="Reports\HvComboReport.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocAfe.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocReport.rdlc" />
+    <EmbeddedResource Include="Reports\Isomcu50.rdlc" />
     <EmbeddedResource Include="Reports\isoMCUReport.rdlc" />
     <EmbeddedResource Include="Reports\IsoPowermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\IsopowerReport.rdlc" />
     <EmbeddedResource Include="Reports\ISOseccReport.rdlc" />
     <EmbeddedResource Include="Reports\isoXBUReport.rdlc" />
+    <EmbeddedResource Include="Reports\mcu50Report.rdlc" />
+    <EmbeddedResource Include="Reports\optoISO.rdlc" />
     <EmbeddedResource Include="Reports\powermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\powerReport.rdlc" />
     <EmbeddedResource Include="Reports\seccReport.rdlc" />
@@ -291,19 +335,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.ico" />
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props'))" />
+  </Target>
 </Project>

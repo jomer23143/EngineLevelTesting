@@ -171,7 +171,7 @@ namespace EngineLevelTesting.Forms
             this.txtserial.BackColor = System.Drawing.Color.SkyBlue;
             this.txtserial.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtserial.Location = new System.Drawing.Point(390, 83);
-            this.txtserial.MaxLength = 12;
+            this.txtserial.MaxLength = 100;
             this.txtserial.Name = "txtserial";
             this.txtserial.Size = new System.Drawing.Size(156, 22);
             this.txtserial.TabIndex = 0;
@@ -685,7 +685,7 @@ namespace EngineLevelTesting.Forms
             this.txttestby.BackColor = System.Drawing.Color.SkyBlue;
             this.txttestby.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttestby.Location = new System.Drawing.Point(390, 568);
-            this.txttestby.MaxLength = 20;
+            this.txttestby.MaxLength = 100;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(156, 22);
             this.txttestby.TabIndex = 17;
@@ -696,7 +696,7 @@ namespace EngineLevelTesting.Forms
             this.txtremarks.BackColor = System.Drawing.Color.SkyBlue;
             this.txtremarks.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtremarks.Location = new System.Drawing.Point(390, 543);
-            this.txtremarks.MaxLength = 40;
+            this.txtremarks.MaxLength = 500;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(156, 22);
             this.txtremarks.TabIndex = 16;

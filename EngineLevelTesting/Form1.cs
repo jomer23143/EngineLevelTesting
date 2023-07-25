@@ -53,39 +53,51 @@ namespace EngineLevelTesting
             Saved();
             txtserial.Focus();
         }
-        private void Saved()
+        private async void Saved()
         {
-            StringBuilder sql = new StringBuilder();
-            Dictionary<string, object> data = new Dictionary<string, object> {
-                                { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
-                                { "board_serial", txtserial.Text},
-                                { "board_rev_no",txtrev.Text},
-                                { "j13",cbj13.SelectedItem.ToString()},
-                                { "j22",cb22.SelectedItem.ToString()},
-                                { "j14",cb14.SelectedItem.ToString()},
-                                { "j17",cb17.SelectedItem.ToString()},
-                                { "firmware_version",txtfirm.Text},
-                                { "bc_actual_current",txtactualc.Text},
-                                { "bc_actual_voltage",txtactualv.Text},
-                                { "current_pwm_multiplier",txtpwm.Text},
-                                { "12a_request",txt120a.Text},
-                                { "25a_request",txt25a.Text},
-                                { "voltage_pwm_multiplier",txtvoltagepwm.Text},
-                                { "400voltage",txt400v.Text},
-                                { "800voltage",txt800v.Text},
-                                { "afe_dc_link_voltage",txtafeDC.Text},
-                                { "dc_voltage_resistor",txtdclink.Text},
-                                { "judgement",cbjudgement.SelectedItem.ToString()},
-                                { "remarks",txtremarks.Text},
-                                { "tested_by",txttestby.Text},
-                                { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
-                                { "date_record", DateTime.Now.ToShortDateString()}
-            };
-            MySqlDatasupport.ID = 1;
-            sql.Append(MySqlDatasupport.GetInsert("hvcombo_table", data));
-            MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
-            MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ClearData();
+            try
+            {
+                rjCircularPictureBox1.Show();
+                StringBuilder sql = new StringBuilder();
+                Dictionary<string, object> data = new Dictionary<string, object> {
+                                    { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
+                                    { "board_serial", txtserial.Text},
+                                    { "board_rev_no",txtrev.Text},
+                                    { "j13",cbj13.Text},
+                                    { "j22",cb22.Text},
+                                    { "j14",cb14.Text},
+                                    { "j17",cb17.Text},
+                                    { "firmware_version",txtfirm.Text},
+                                    { "bc_actual_current",txtactualc.Text},
+                                    { "bc_actual_voltage",txtactualv.Text},
+                                    { "current_pwm_multiplier",txtpwm.Text},
+                                    { "12a_request",txt120a.Text},
+                                    { "25a_request",txt25a.Text},
+                                    { "voltage_pwm_multiplier",txtvoltagepwm.Text},
+                                    { "400voltage",txt400v.Text},
+                                    { "800voltage",txt800v.Text},
+                                    { "afe_dc_link_voltage",txtafeDC.Text},
+                                    { "dc_voltage_resistor",txtdclink.Text},
+                                    { "judgement",cbjudgement.Text},
+                                    { "remarks",txtremarks.Text},
+                                    { "tested_by",txttestby.Text},
+                                    { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
+                                    { "date_record", DateTime.Now.ToShortDateString()}
+                    };
+                sql.Append(MySqlDatasupport.GetInsert("hvcombo_table", data));
+                await Task.Run(() =>
+                {
+                    MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
+                });
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearData();
+            }
+            catch (Exception)
+            {
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Failed!!!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         private async void UpdatedData()
         {
@@ -313,6 +325,7 @@ namespace EngineLevelTesting
             //aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
             //aTimer.Start();
             timer1.Start();
+            rjCircularPictureBox1.Hide();
 
         }
         private static void OnTimedEvent(object source, ElapsedEventArgs e)
@@ -586,7 +599,7 @@ namespace EngineLevelTesting
 
         private  void txtserial_TextChanged(object sender, EventArgs e)
         {
-           GetScanSerial();
+           //GetScanSerial();
         }
         private string GetScanSerial()
         {
@@ -720,16 +733,16 @@ namespace EngineLevelTesting
 
         private void txtserial_Validating(object sender, CancelEventArgs e)
         {
-            if (res)
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(txtserial, "Already Exist!!!");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(txtserial, "");
-            }
+            //if (res)
+            //{
+            //    e.Cancel = true;
+            //    errorProvider1.SetError(txtserial, "Already Exist!!!");
+            //}
+            //else
+            //{
+            //    e.Cancel = false;
+            //    errorProvider1.SetError(txtserial, "");
+            //}
         }
     }
 }

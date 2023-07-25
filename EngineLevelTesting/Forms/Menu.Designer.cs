@@ -41,6 +41,13 @@ namespace EngineLevelTesting.Forms
             this.btnpowermeter = new System.Windows.Forms.Button();
             this.btnmcu = new System.Windows.Forms.Button();
             this.btnxbu = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.connectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnopto = new System.Windows.Forms.Button();
+            this.btnL2fsr = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDataEntry
@@ -146,11 +153,72 @@ namespace EngineLevelTesting.Forms
             this.btnxbu.UseVisualStyleBackColor = true;
             this.btnxbu.Click += new System.EventHandler(this.btnxbu_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(642, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.connectionToolStripMenuItem});
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // connectionToolStripMenuItem
+            // 
+            this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
+            this.connectionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.connectionToolStripMenuItem.Text = "Connection";
+            this.connectionToolStripMenuItem.Click += new System.EventHandler(this.connectionToolStripMenuItem_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(339, 308);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(244, 52);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "MCU 5.0 & 5.1 Board Checklist";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnopto
+            // 
+            this.btnopto.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnopto.Location = new System.Drawing.Point(53, 375);
+            this.btnopto.Name = "btnopto";
+            this.btnopto.Size = new System.Drawing.Size(244, 52);
+            this.btnopto.TabIndex = 11;
+            this.btnopto.Text = "Opto-Isolator Board Checklist";
+            this.btnopto.UseVisualStyleBackColor = true;
+            this.btnopto.Click += new System.EventHandler(this.btnopto_Click);
+            // 
+            // btnL2fsr
+            // 
+            this.btnL2fsr.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnL2fsr.Location = new System.Drawing.Point(339, 375);
+            this.btnL2fsr.Name = "btnL2fsr";
+            this.btnL2fsr.Size = new System.Drawing.Size(244, 52);
+            this.btnL2fsr.TabIndex = 12;
+            this.btnL2fsr.Text = "AC L2 FSR SIDE BRACKET SUB-ASSEMBLY";
+            this.btnL2fsr.UseVisualStyleBackColor = true;
+            this.btnL2fsr.Click += new System.EventHandler(this.btnL2fsr_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 390);
+            this.ClientSize = new System.Drawing.Size(642, 461);
+            this.Controls.Add(this.btnL2fsr);
+            this.Controls.Add(this.btnopto);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnxbu);
             this.Controls.Add(this.btnmcu);
             this.Controls.Add(this.btnpowermeter);
@@ -160,14 +228,19 @@ namespace EngineLevelTesting.Forms
             this.Controls.Add(this.btnafe);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnDataEntry);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             this.Load += new System.EventHandler(this.Menu_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -183,5 +256,11 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Button btnpowermeter;
         private System.Windows.Forms.Button btnmcu;
         private System.Windows.Forms.Button btnxbu;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem connectionToolStripMenuItem;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnopto;
+        private System.Windows.Forms.Button btnL2fsr;
     }
 }
