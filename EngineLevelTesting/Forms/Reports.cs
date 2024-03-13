@@ -192,6 +192,19 @@ namespace EngineLevelTesting.Forms
                 report = "isoacl2Report";
                 datasetname = "DataSet1";
             }
+            else if (comboBox1.Text == "XBU Tower Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM xbu_tower_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "isoxbutowerReport";
+                datasetname = "DataSet2";
+            }
+            else if (comboBox1.Text == "MCU 360 Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mcu_360_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "isoMcu360report";
+                datasetname = "DataSet1";
+            }
+
 
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
@@ -284,6 +297,12 @@ namespace EngineLevelTesting.Forms
                 report = "IsoPowermeterReport";
                 datasetname = "DataSet1";
             }
+            else if (comboBox1.Text == "MCU Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mcu_table where board_serial = '{textBox1.Text}'";
+                report = "isoMCUReport";
+                datasetname = "DataSet1";
+            }
             else if (comboBox1.Text == "MCU 50 Board Checklist")
             {
                 sql = $@"SELECT * FROM mcu50_table where board_serial = '{textBox1.Text}'";
@@ -294,6 +313,30 @@ namespace EngineLevelTesting.Forms
             {
                 sql = $@"SELECT * FROM mcu50_table where board_serial = '{textBox1.Text}'";
                 report = "Isomcu50";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "Opto-Isolator Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM opto_isolator_table where board_serial = '{textBox1.Text}'";
+                report = "optoISO";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "AC L2 Side Bracket Checklist ISO")
+            {
+                sql = $@"SELECT * FROM acl2_table where board_serial = '{textBox1.Text}'";
+                report = "isoacl2Report";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "XBU Tower Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM xbu_tower_table where board_serial = '{textBox1.Text}'";
+                report = "isoxbutowerReport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "MCU 360 Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mcu_360_table where board_serial = '{textBox1.Text}'";
+                report = "isoMcu360report";
                 datasetname = "DataSet1";
             }
             reportViewer1.Reset();

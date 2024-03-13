@@ -47,13 +47,18 @@ namespace EngineLevelTesting.Forms
             this.button2 = new System.Windows.Forms.Button();
             this.btnopto = new System.Windows.Forms.Button();
             this.btnL2fsr = new System.Windows.Forms.Button();
+            this.btnxbutower = new System.Windows.Forms.Button();
+            this.btnmcu360 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDataEntry
             // 
             this.btnDataEntry.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataEntry.Location = new System.Drawing.Point(53, 28);
+            this.btnDataEntry.Location = new System.Drawing.Point(42, 73);
             this.btnDataEntry.Name = "btnDataEntry";
             this.btnDataEntry.Size = new System.Drawing.Size(244, 52);
             this.btnDataEntry.TabIndex = 0;
@@ -64,7 +69,7 @@ namespace EngineLevelTesting.Forms
             // btnReport
             // 
             this.btnReport.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.Location = new System.Drawing.Point(339, 28);
+            this.btnReport.Location = new System.Drawing.Point(980, 140);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(244, 52);
             this.btnReport.TabIndex = 1;
@@ -75,7 +80,7 @@ namespace EngineLevelTesting.Forms
             // btnafe
             // 
             this.btnafe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnafe.Location = new System.Drawing.Point(53, 99);
+            this.btnafe.Location = new System.Drawing.Point(42, 140);
             this.btnafe.Name = "btnafe";
             this.btnafe.Size = new System.Drawing.Size(244, 52);
             this.btnafe.TabIndex = 2;
@@ -90,7 +95,7 @@ namespace EngineLevelTesting.Forms
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(339, 99);
+            this.button1.Location = new System.Drawing.Point(980, 73);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 52);
             this.button1.TabIndex = 3;
@@ -101,7 +106,7 @@ namespace EngineLevelTesting.Forms
             // btnSecc
             // 
             this.btnSecc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSecc.Location = new System.Drawing.Point(53, 171);
+            this.btnSecc.Location = new System.Drawing.Point(339, 73);
             this.btnSecc.Name = "btnSecc";
             this.btnSecc.Size = new System.Drawing.Size(244, 52);
             this.btnSecc.TabIndex = 4;
@@ -112,7 +117,7 @@ namespace EngineLevelTesting.Forms
             // btnpower
             // 
             this.btnpower.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpower.Location = new System.Drawing.Point(339, 171);
+            this.btnpower.Location = new System.Drawing.Point(668, 140);
             this.btnpower.Name = "btnpower";
             this.btnpower.Size = new System.Drawing.Size(244, 52);
             this.btnpower.TabIndex = 5;
@@ -123,7 +128,7 @@ namespace EngineLevelTesting.Forms
             // btnpowermeter
             // 
             this.btnpowermeter.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpowermeter.Location = new System.Drawing.Point(53, 240);
+            this.btnpowermeter.Location = new System.Drawing.Point(668, 73);
             this.btnpowermeter.Name = "btnpowermeter";
             this.btnpowermeter.Size = new System.Drawing.Size(244, 52);
             this.btnpowermeter.TabIndex = 6;
@@ -134,22 +139,22 @@ namespace EngineLevelTesting.Forms
             // btnmcu
             // 
             this.btnmcu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmcu.Location = new System.Drawing.Point(339, 240);
+            this.btnmcu.Location = new System.Drawing.Point(339, 351);
             this.btnmcu.Name = "btnmcu";
             this.btnmcu.Size = new System.Drawing.Size(244, 52);
             this.btnmcu.TabIndex = 7;
-            this.btnmcu.Text = "MCU 6.1 Board Checklist";
+            this.btnmcu.Text = "MCU 6 Series Board Checklist";
             this.btnmcu.UseVisualStyleBackColor = true;
             this.btnmcu.Click += new System.EventHandler(this.btnmcu_Click);
             // 
             // btnxbu
             // 
             this.btnxbu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxbu.Location = new System.Drawing.Point(53, 308);
+            this.btnxbu.Location = new System.Drawing.Point(339, 140);
             this.btnxbu.Name = "btnxbu";
             this.btnxbu.Size = new System.Drawing.Size(244, 52);
             this.btnxbu.TabIndex = 8;
-            this.btnxbu.Text = "XBU Tower Board Checklist";
+            this.btnxbu.Text = "XBU AIO Board ELT Checklist";
             this.btnxbu.UseVisualStyleBackColor = true;
             this.btnxbu.Click += new System.EventHandler(this.btnxbu_Click);
             // 
@@ -159,7 +164,7 @@ namespace EngineLevelTesting.Forms
             this.settingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(642, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1289, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -181,7 +186,7 @@ namespace EngineLevelTesting.Forms
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(339, 308);
+            this.button2.Location = new System.Drawing.Point(42, 208);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(244, 52);
             this.button2.TabIndex = 10;
@@ -192,7 +197,7 @@ namespace EngineLevelTesting.Forms
             // btnopto
             // 
             this.btnopto.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnopto.Location = new System.Drawing.Point(53, 375);
+            this.btnopto.Location = new System.Drawing.Point(668, 208);
             this.btnopto.Name = "btnopto";
             this.btnopto.Size = new System.Drawing.Size(244, 52);
             this.btnopto.TabIndex = 11;
@@ -203,7 +208,7 @@ namespace EngineLevelTesting.Forms
             // btnL2fsr
             // 
             this.btnL2fsr.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnL2fsr.Location = new System.Drawing.Point(339, 375);
+            this.btnL2fsr.Location = new System.Drawing.Point(668, 281);
             this.btnL2fsr.Name = "btnL2fsr";
             this.btnL2fsr.Size = new System.Drawing.Size(244, 52);
             this.btnL2fsr.TabIndex = 12;
@@ -211,11 +216,71 @@ namespace EngineLevelTesting.Forms
             this.btnL2fsr.UseVisualStyleBackColor = true;
             this.btnL2fsr.Click += new System.EventHandler(this.btnL2fsr_Click);
             // 
+            // btnxbutower
+            // 
+            this.btnxbutower.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxbutower.Location = new System.Drawing.Point(339, 208);
+            this.btnxbutower.Name = "btnxbutower";
+            this.btnxbutower.Size = new System.Drawing.Size(244, 52);
+            this.btnxbutower.TabIndex = 13;
+            this.btnxbutower.Text = "XBU TOWER BOARD CHECKLIST";
+            this.btnxbutower.UseVisualStyleBackColor = true;
+            this.btnxbutower.Click += new System.EventHandler(this.btnxbutower_Click);
+            // 
+            // btnmcu360
+            // 
+            this.btnmcu360.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmcu360.Location = new System.Drawing.Point(339, 281);
+            this.btnmcu360.Name = "btnmcu360";
+            this.btnmcu360.Size = new System.Drawing.Size(244, 52);
+            this.btnmcu360.TabIndex = 14;
+            this.btnmcu360.Text = "MCU 360 BOARD CHECKLIST";
+            this.btnmcu360.UseVisualStyleBackColor = true;
+            this.btnmcu360.Click += new System.EventHandler(this.btnmcu360_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label1.Location = new System.Drawing.Point(82, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "GEN 2 BOARDS";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label2.Location = new System.Drawing.Point(378, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 25);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "GEN 4 BOARDS";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label3.Location = new System.Drawing.Point(695, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 25);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "L2 BOARDS";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 461);
+            this.ClientSize = new System.Drawing.Size(1289, 425);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnmcu360);
+            this.Controls.Add(this.btnxbutower);
             this.Controls.Add(this.btnL2fsr);
             this.Controls.Add(this.btnopto);
             this.Controls.Add(this.button2);
@@ -262,5 +327,10 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnopto;
         private System.Windows.Forms.Button btnL2fsr;
+        private System.Windows.Forms.Button btnxbutower;
+        private System.Windows.Forms.Button btnmcu360;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

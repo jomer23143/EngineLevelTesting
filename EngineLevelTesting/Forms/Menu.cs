@@ -254,5 +254,17 @@ namespace EngineLevelTesting.Forms
             Forms.Acl2 frm = new Forms.Acl2();
             frm.Show();
         }
+
+        private void btnxbutower_Click(object sender, EventArgs e)
+        {
+            Forms.XBUTowerfrm frm = new Forms.XBUTowerfrm();
+            frm.Show();
+        }
+
+        private void btnmcu360_Click(object sender, EventArgs e)
+        {
+            Forms.MCU360frm frm = new Forms.MCU360frm();
+            frm.Show();
+        }
     }
 }

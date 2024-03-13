@@ -7,8 +7,8 @@ using System.Data.SqlClient;
 using System.Data;
 using System.IO;
 using System.Reflection;
-using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using MySqlConnector;
 
 namespace EngineLevelTesting.Class
 {
@@ -17,13 +17,18 @@ namespace EngineLevelTesting.Class
         public static MySqlConnection connections(string connection)
         {
             MySqlConnection conn;
-            conn = new MySqlConnection();
-            conn.ConnectionString = connection;
-            //conn.ConnectionString = connectionString();
+            //string connnn = @"Server=194.163.32.81;Port=3306;Database=u867954426_board;UID=u867954426_board;Pwd=System@2023; Ssl Mode=Required; convert zero datetime=True;";
+            //string connnn1 = @"Server=194.163.32.81;Database=u867954426_board; user=u867954426_board; Pwd=System@2023;";
+
+            //string connnn1 = @"Server=151.106.122.3;Database=u867954426_sample2314; user=u867954426_sample; Pwd=Access1234@;";
+            conn = new MySqlConnection(connection);
+            //conn.ConnectionString = connection;
+            //conn.ConnectionString = connectionString();.
+            //Convert.ToInt32(conn);
             try
             {
-                if (conn.State == ConnectionState.Closed)
-                    conn.Open();
+                //if (conn.State == ConnectionState.Closed)
+                conn.Open();
                 MessageBox.Show("Success");
             }
             catch (Exception ex)

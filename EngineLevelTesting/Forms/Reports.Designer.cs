@@ -176,7 +176,9 @@ namespace EngineLevelTesting.Forms
             "XBU AIO Tower Board Checklist ISO",
             "MCU 50 Board Checklist ISO",
             "Opto-Isolator Board Checklist ISO",
-            "AC L2 Side Bracket Checklist ISO"});
+            "AC L2 Side Bracket Checklist ISO",
+            "XBU Tower Board Checklist ISO",
+            "MCU 360 Board Checklist ISO"});
             this.comboBox1.Location = new System.Drawing.Point(94, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(249, 23);

@@ -86,6 +86,7 @@ namespace EngineLevelTesting.Forms
             this.cbul = new System.Windows.Forms.ComboBox();
             this.txtgfci_rev = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -223,7 +224,7 @@ namespace EngineLevelTesting.Forms
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(78, 192);
+            this.label10.Location = new System.Drawing.Point(76, 187);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(27, 15);
             this.label10.TabIndex = 114;
@@ -365,7 +366,7 @@ namespace EngineLevelTesting.Forms
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(51, 550);
+            this.label18.Location = new System.Drawing.Point(50, 550);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(168, 15);
             this.label18.TabIndex = 129;
@@ -479,7 +480,7 @@ namespace EngineLevelTesting.Forms
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(41, 184);
+            this.label6.Location = new System.Drawing.Point(42, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 15);
             this.label6.TabIndex = 143;
@@ -514,7 +515,7 @@ namespace EngineLevelTesting.Forms
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(71, 248);
+            this.label8.Location = new System.Drawing.Point(71, 242);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(27, 15);
             this.label8.TabIndex = 146;
@@ -549,7 +550,7 @@ namespace EngineLevelTesting.Forms
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(51, 239);
+            this.label28.Location = new System.Drawing.Point(51, 271);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(27, 15);
             this.label28.TabIndex = 149;
@@ -782,11 +783,24 @@ namespace EngineLevelTesting.Forms
             this.label29.TabIndex = 166;
             this.label29.Text = "GFCI REV NO :";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Black;
+            this.label30.Location = new System.Drawing.Point(21, 550);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(27, 15);
+            this.label30.TabIndex = 167;
+            this.label30.Text = "TP9";
+            // 
             // PowerBoardfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 797);
+            this.Controls.Add(this.label30);
             this.Controls.Add(this.txtgfci_rev);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label26);
@@ -913,5 +927,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.ComboBox cbul;
         private System.Windows.Forms.TextBox txtgfci_rev;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
     }
 }

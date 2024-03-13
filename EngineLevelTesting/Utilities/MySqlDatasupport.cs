@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 using System.Data;
 using EngineLevelTesting.Class;
 using static EngineLevelTesting.Utilities.MySqlORMSupport;
 using Dapper;
+using MySqlConnector;
 
 namespace EngineLevelTesting.Utilities
 {
