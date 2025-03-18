@@ -4,16 +4,20 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EngineLevelTesting.Utilities;
+using Utility.ModifyRegistry;
 
 namespace EngineLevelTesting.Forms
 {
     public partial class Menu : Form
     {
+        private Dictionary<String, Dictionary<String, String>> dbConnectionSettings = new Dictionary<String, Dictionary<String, String>>();
         static int lastHour = DateTime.Now.Hour;
+        public static string adminpass = "System@2022";
         public Menu()
         {
             InitializeComponent();
@@ -46,16 +50,29 @@ namespace EngineLevelTesting.Forms
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            Get_connection();
+        }
+        private void Get_connection()
+        {
+            RegistrySupport registry = new RegistrySupport();
+            String data = registry.Read(Def.REGKEY_SUB);
+            if (data == null)
+            {
+                data += String.Format($"ENGINELEVELTESTING<limiter>194.163.32.81<limiter>u867954426_board<limiter>System@2023<limiter>u867954426_board<limiter>");
+                registry.Write(Def.REGKEY_SUB, data);
+            }
+            Utils.SetConnectionDetails();
+            this.Text =$"{Assembly.GetExecutingAssembly().GetName().Version.ToString()} - {Utils.DBConnection["ENGINELEVELTESTING"]["DBNAME"].ToString()}";
+            dbConnectionSettings = Utils.DBConnection;
         }
         private async void InsertCloudHvcombo()
         {
             try
             {
                 StringBuilder sql = new StringBuilder();
-                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(0));
+                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(0));
-                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(1));
+                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(1));
                 foreach (DataRow itemCloud in dtCloud.Rows)
                 {
@@ -100,7 +117,6 @@ namespace EngineLevelTesting.Forms
                 }
                 await Task.Run(() =>
                 {
-                    MySqlDatasupport.ID = 0;
                     MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
                 });
             }
@@ -115,9 +131,9 @@ namespace EngineLevelTesting.Forms
             try
             {
                 StringBuilder sql = new StringBuilder();
-                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from afe_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(0));
+                DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from afe_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtCloud = MySqlDatasupport.RunDataTableDapper("Select * from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(0));
-                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from afe_table where date_record = date_format(now(), '%m/%d/%Y')", Class.SqlCon.connectionString(1));
+                DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from afe_table where date_record = date_format(now(), '%m/%d/%Y')");
                 //DataTable dtlocal = MySqlDatasupport.RunDataTableDapper($@"Select *,date_format(date_tested,'%Y-%m-%d %h:%m:%s') as dateTested,date_format(date_stamp,'%Y-%m-%d %h:%m:%s') as dateStamp from hvcombo_table where date_record = date_format(date_sub(curdate(), interval 3 Day),'%m/%d/%Y')", Class.SqlCon.connectionString(1));
                 foreach (DataRow itemCloud in dtCloud.Rows)
                 {
@@ -163,7 +179,6 @@ namespace EngineLevelTesting.Forms
                 }
                 await Task.Run(() =>
                 {
-                    MySqlDatasupport.ID = 0;
                     MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
                 });
             }
@@ -176,12 +191,14 @@ namespace EngineLevelTesting.Forms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (lastHour < DateTime.Now.Hour)
-            {
-                lastHour = DateTime.Now.Hour;
-                InsertCloudHvcombo();
-                InsertCloudAFEboard();
-            }
+            Get_connection();
+            timer1.Stop();
+            //if (lastHour < DateTime.Now.Hour)
+            //{
+            //    lastHour = DateTime.Now.Hour;
+            //    InsertCloudHvcombo();
+            //    InsertCloudAFEboard();
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -193,6 +210,85 @@ namespace EngineLevelTesting.Forms
         private void btnSecc_Click(object sender, EventArgs e)
         {
             Forms.SeccFrm frm = new Forms.SeccFrm();
+            frm.Show();
+        }
+
+        private void btnpower_Click(object sender, EventArgs e)
+        {
+            Forms.PowerBoardfrm frm = new Forms.PowerBoardfrm();
+            frm.Show();
+        }
+
+        private void btnpowermeter_Click(object sender, EventArgs e)
+        {
+            Forms.PowerMeterfrm frm = new Forms.PowerMeterfrm();
+            frm.Show();
+        }
+
+        private void btnmcu_Click(object sender, EventArgs e)
+        {
+            Forms.MCUFrm frm = new Forms.MCUFrm();
+            frm.Show();
+        }
+
+        private void btnxbu_Click(object sender, EventArgs e)
+        {
+            Forms.XBUfrm frm = new Forms.XBUfrm();
+            frm.Show();
+        }
+
+        private void connectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminFrm frm = new AdminFrm();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                ConnectionSettings connect = new ConnectionSettings();
+                connect.ShowDialog();
+                dbConnectionSettings = connect.dbConnectionSettings;
+                timer1.Start();
+                timer1.Interval = 1000;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Forms.MCU50frm frm = new Forms.MCU50frm();
+            frm.Show();
+        }
+
+        private void btnopto_Click(object sender, EventArgs e)
+        {
+            Forms.OptoFRM frm = new Forms.OptoFRM();
+            frm.Show();
+        }
+
+        private void btnL2fsr_Click(object sender, EventArgs e)
+        {
+            Forms.Acl2 frm = new Forms.Acl2();
+            frm.Show();
+        }
+
+        private void btnxbutower_Click(object sender, EventArgs e)
+        {
+            Forms.XBUTowerfrm frm = new Forms.XBUTowerfrm();
+            frm.Show();
+        }
+
+        private void btnmcu360_Click(object sender, EventArgs e)
+        {
+            Forms.MCU360frm frm = new Forms.MCU360frm();
+            frm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Forms.MiniPCMfrm frm = new Forms.MiniPCMfrm();
+            frm.Show();
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            Forms.resetBoardfrm frm = new Forms.resetBoardfrm();
             frm.Show();
         }
     }

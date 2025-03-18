@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 using System.Data;
 using EngineLevelTesting.Class;
 using static EngineLevelTesting.Utilities.MySqlORMSupport;
 using Dapper;
+using MySqlConnector;
+using System.Windows.Forms;
 
 namespace EngineLevelTesting.Utilities
 {
@@ -20,18 +22,9 @@ namespace EngineLevelTesting.Utilities
         {
             get
             {
-                String result = "";
-                //Utils.SetConnectionDetails();
-                if (connectString == "")
-                {
-                    //result = @"Data source=EVGL-SERVER;user id=vgl_data;password=tqbfjotld;initial catalog=otms_merged";
-                    result = SqlCon.connectionString(ID);
-                    //result = "Initial Catalog=" + Utils.DBConnection["OTMS"]["DBNAME"] + ";Data Source=" + Utils.DBConnection["OTMS"]["SERVER"] + ";User Id = " + Utils.DBConnection["OTMS"]["USERNAME"] + "; Password = " + Utils.DBConnection["OTMS"]["PASSWORD"];
-                }
-                else
-                    result = connectString;
-
-                return result;
+                ///result = SqlCon.connectionString(ID);
+                Utils.SetConnectionDetails();
+                return connectString == "" ? EngineLevelTesting.Connection.GetConnectionStringReg : connectString;
             }
             set { connectString = value; }
         }
@@ -709,23 +702,31 @@ namespace EngineLevelTesting.Utilities
             result = ConvertDataReaderToDataSet(cmd.ExecuteReader());
             return result;
         }
-        public static DataTable RunDataTableDapper(string sql, string connectionString)
+        public static DataTable RunDataTableDapper(string sql)
         {
-            using (var conn = new MySqlConnection(connectionString))
+            try
             {
-                IDataReader reader;
-                reader = conn.ExecuteReader(sql);
-                var table = new DataTable();
-                
-                table.Load(reader);
+                using (var conn = new MySqlConnection(EngineLevelTesting.Connection.GetConnectionStringReg))
+                {
+                    IDataReader reader;
+                    reader = conn.ExecuteReader(sql);
+                    var table = new DataTable();
 
-                return table;
+                    table.Load(reader);
+
+                    return table;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error :" + ex.Message);
+            }
+           return null;
         }
 
-        public static DataTable RunDataTableDapper(string sql, object param, string connectionString)
+        public static DataTable RunDataTableDapper(string sql, object param)
         {
-            using (var conn = new MySqlConnection(connectionString))
+            using (var conn = new MySqlConnection(EngineLevelTesting.Connection.GetConnectionStringReg))
             {
                 IDataReader reader;
                 reader = conn.ExecuteReader(sql, param);

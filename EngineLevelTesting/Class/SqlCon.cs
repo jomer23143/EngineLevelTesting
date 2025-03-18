@@ -7,26 +7,33 @@ using System.Data.SqlClient;
 using System.Data;
 using System.IO;
 using System.Reflection;
+using System.Windows.Forms;
+using MySqlConnector;
 
 namespace EngineLevelTesting.Class
 {
    public static class SqlCon
     {
-        public static SqlConnection connections()
+        public static MySqlConnection connections(string connection)
         {
-            SqlConnection conn;
-            conn = new SqlConnection();
-            conn.ConnectionString = "Data source=194.163.40.175;initial catalog=icehrm; uid=root;pwd=";
-            //conn.ConnectionString = connectionString();
+            MySqlConnection conn;
+            //string connnn = @"Server=194.163.32.81;Port=3306;Database=u867954426_board;UID=u867954426_board;Pwd=System@2023; Ssl Mode=Required; convert zero datetime=True;";
+            //string connnn1 = @"Server=194.163.32.81;Database=u867954426_board; user=u867954426_board; Pwd=System@2023;";
+
+            //string connnn1 = @"Server=151.106.122.3;Database=u867954426_sample2314; user=u867954426_sample; Pwd=Access1234@;";
+            conn = new MySqlConnection(connection);
+            //conn.ConnectionString = connection;
+            //conn.ConnectionString = connectionString();.
+            //Convert.ToInt32(conn);
             try
             {
-                if (conn.State == ConnectionState.Closed)
-                    conn.Open();
-                Console.WriteLine("Success");
+                //if (conn.State == ConnectionState.Closed)
+                conn.Open();
+                MessageBox.Show("Success");
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
             return conn;
         }

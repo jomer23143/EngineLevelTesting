@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" Condition="Exists('..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,25 +38,36 @@
   <PropertyGroup>
     <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\OPSCOM\OPSCOM\bin\Debug\Dapper.dll</HintPath>
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.25.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.25.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
-      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
-    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
-      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
     </Reference>
-    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
-      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.1\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -76,12 +90,17 @@
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\MySql.Data.dll</HintPath>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.3.5\lib\net471\MySqlConnector.dll</HintPath>
     </Reference>
+    <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RJCodeAdvance.RJControls.1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=22.1460.34.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4" />
+    <Reference Include="Syncfusion.Shared.Base, Version=22.1460.34.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -89,18 +108,33 @@
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
     <Reference Include="System.Management" />
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Services" />
@@ -113,11 +147,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\Ubiety.Dns.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\ZstdNet.dll</HintPath>
+    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -131,11 +162,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\DataSet2.cs">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Acl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Acl2.Designer.cs">
+      <DependentUpon>Acl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminFrm.Designer.cs">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AfeBoard.cs">
       <SubType>Form</SubType>
@@ -143,11 +194,35 @@
     <Compile Include="Forms\AfeBoard.Designer.cs">
       <DependentUpon>AfeBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ConnectionSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConnectionSettings.designer.cs">
+      <DependentUpon>ConnectionSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManualInsert.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ManualInsert.Designer.cs">
       <DependentUpon>ManualInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MCU360frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MCU360frm.Designer.cs">
+      <DependentUpon>MCU360frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MCU50frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MCU50frm.Designer.cs">
+      <DependentUpon>MCU50frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MCUFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MCUFrm.Designer.cs">
+      <DependentUpon>MCUFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
@@ -155,11 +230,41 @@
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MiniPCMfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MiniPCMfrm.Designer.cs">
+      <DependentUpon>MiniPCMfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptoFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptoFRM.Designer.cs">
+      <DependentUpon>OptoFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PowerBoardfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PowerBoardfrm.Designer.cs">
+      <DependentUpon>PowerBoardfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PowerMeterfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PowerMeterfrm.Designer.cs">
+      <DependentUpon>PowerMeterfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Reports.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\resetBoardfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\resetBoardfrm.Designer.cs">
+      <DependentUpon>resetBoardfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SeccFrm.cs">
       <SubType>Form</SubType>
@@ -167,30 +272,83 @@
     <Compile Include="Forms\SeccFrm.Designer.cs">
       <DependentUpon>SeccFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\XBUfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XBUfrm.Designer.cs">
+      <DependentUpon>XBUfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XBUTowerfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XBUTowerfrm.Designer.cs">
+      <DependentUpon>XBUTowerfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Utilities\Connection.cs" />
+    <Compile Include="Utilities\Def.cs" />
     <Compile Include="Utilities\KeyBoardSupport.cs" />
     <Compile Include="Utilities\MySqlDatasupport.cs" />
     <Compile Include="Utilities\MySqlORMSupport.cs" />
+    <Compile Include="Utilities\RegistrySupport.cs" />
     <Compile Include="Utilities\Utils.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Acl2.resx">
+      <DependentUpon>Acl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminFrm.resx">
+      <DependentUpon>AdminFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AfeBoard.resx">
       <DependentUpon>AfeBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConnectionSettings.resx">
+      <DependentUpon>ConnectionSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManualInsert.resx">
       <DependentUpon>ManualInsert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MCU360frm.resx">
+      <DependentUpon>MCU360frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MCU50frm.resx">
+      <DependentUpon>MCU50frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MCUFrm.resx">
+      <DependentUpon>MCUFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MiniPCMfrm.resx">
+      <DependentUpon>MiniPCMfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptoFRM.resx">
+      <DependentUpon>OptoFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PowerBoardfrm.resx">
+      <DependentUpon>PowerBoardfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PowerMeterfrm.resx">
+      <DependentUpon>PowerMeterfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\resetBoardfrm.resx">
+      <DependentUpon>resetBoardfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeccFrm.resx">
       <DependentUpon>SeccFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XBUfrm.resx">
+      <DependentUpon>XBUfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XBUTowerfrm.resx">
+      <DependentUpon>XBUTowerfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -201,11 +359,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reports\isoacl2Report.rdlc" />
     <EmbeddedResource Include="Reports\afeReport.rdlc" />
     <EmbeddedResource Include="Reports\HvComboReport.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocAfe.rdlc" />
     <EmbeddedResource Include="Reports\IsoDocReport.rdlc" />
+    <EmbeddedResource Include="Reports\isoMcu360report.rdlc" />
+    <EmbeddedResource Include="Reports\Isomcu50.rdlc" />
+    <EmbeddedResource Include="Reports\isomcu6series.rdlc" />
+    <EmbeddedResource Include="Reports\isoMCUReport.rdlc" />
+    <EmbeddedResource Include="Reports\IsoPowermeterReport.rdlc" />
+    <EmbeddedResource Include="Reports\IsopowerReport.rdlc" />
+    <EmbeddedResource Include="Reports\isoresetreport.rdlc" />
     <EmbeddedResource Include="Reports\ISOseccReport.rdlc" />
+    <EmbeddedResource Include="Reports\isoXBUReport.rdlc" />
+    <EmbeddedResource Include="Reports\isoxbutowerReport.rdlc" />
+    <EmbeddedResource Include="Reports\mcu50Report.rdlc" />
+    <EmbeddedResource Include="Reports\minipcmrReport.rdlc" />
+    <EmbeddedResource Include="Reports\optoISO.rdlc" />
+    <EmbeddedResource Include="Reports\powermeterReport.rdlc" />
+    <EmbeddedResource Include="Reports\powerReport.rdlc" />
     <EmbeddedResource Include="Reports\seccReport.rdlc" />
     <None Include="Dataset\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -217,6 +390,17 @@
     </None>
     <None Include="Dataset\DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -234,19 +418,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.ico" />
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props'))" />
+    <Error Condition="!Exists('..\packages\mysql-connector-cpp-jdbc-vc15.1.1.0\build\mysql-connector-cpp-jdbc-vc15.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\mysql-connector-cpp-jdbc-vc15.1.1.0\build\mysql-connector-cpp-jdbc-vc15.targets'))" />
+  </Target>
+  <Import Project="..\packages\mysql-connector-cpp-jdbc-vc15.1.1.0\build\mysql-connector-cpp-jdbc-vc15.targets" Condition="Exists('..\packages\mysql-connector-cpp-jdbc-vc15.1.1.0\build\mysql-connector-cpp-jdbc-vc15.targets')" />
 </Project>

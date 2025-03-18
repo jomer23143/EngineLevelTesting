@@ -91,9 +91,11 @@ namespace EngineLevelTesting.Forms
             this.label34 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // errorProvider1
@@ -162,7 +164,7 @@ namespace EngineLevelTesting.Forms
             this.txttestby.BackColor = System.Drawing.Color.SkyBlue;
             this.txttestby.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttestby.Location = new System.Drawing.Point(297, 584);
-            this.txttestby.MaxLength = 20;
+            this.txttestby.MaxLength = 100;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(164, 22);
             this.txttestby.TabIndex = 21;
@@ -173,7 +175,7 @@ namespace EngineLevelTesting.Forms
             this.txtremarks.BackColor = System.Drawing.Color.SkyBlue;
             this.txtremarks.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtremarks.Location = new System.Drawing.Point(297, 559);
-            this.txtremarks.MaxLength = 40;
+            this.txtremarks.MaxLength = 500;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(164, 22);
             this.txtremarks.TabIndex = 20;
@@ -431,7 +433,7 @@ namespace EngineLevelTesting.Forms
             this.txtfirm.BackColor = System.Drawing.Color.SkyBlue;
             this.txtfirm.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfirm.Location = new System.Drawing.Point(297, 283);
-            this.txtfirm.MaxLength = 10;
+            this.txtfirm.MaxLength = 100;
             this.txtfirm.Name = "txtfirm";
             this.txtfirm.Size = new System.Drawing.Size(164, 22);
             this.txtfirm.TabIndex = 8;
@@ -562,7 +564,7 @@ namespace EngineLevelTesting.Forms
             this.txtrev.BackColor = System.Drawing.Color.SkyBlue;
             this.txtrev.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrev.Location = new System.Drawing.Point(297, 94);
-            this.txtrev.MaxLength = 2;
+            this.txtrev.MaxLength = 100;
             this.txtrev.Name = "txtrev";
             this.txtrev.Size = new System.Drawing.Size(164, 22);
             this.txtrev.TabIndex = 1;
@@ -585,7 +587,7 @@ namespace EngineLevelTesting.Forms
             this.txtserial.BackColor = System.Drawing.Color.SkyBlue;
             this.txtserial.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtserial.Location = new System.Drawing.Point(297, 69);
-            this.txtserial.MaxLength = 12;
+            this.txtserial.MaxLength = 100;
             this.txtserial.Name = "txtserial";
             this.txtserial.Size = new System.Drawing.Size(164, 22);
             this.txtserial.TabIndex = 0;
@@ -803,11 +805,28 @@ namespace EngineLevelTesting.Forms
             this.label26.TabIndex = 108;
             this.label26.Text = "Bleed Resistor SW ON";
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(213, 225);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 160;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
             // AfeBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 676);
+            this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label34);
@@ -871,6 +890,7 @@ namespace EngineLevelTesting.Forms
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -938,5 +958,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label lbldc400;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
     }
 }

@@ -161,12 +161,21 @@ namespace EngineLevelTesting.Forms
             this.comboBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "HvCombo Checklist",
-            "AFE Board Checklist",
-            "Secc Board Checklist",
             "HvCombo Checklist ISO",
             "AFE Board Checklist ISO",
-            "Secc Board Checklist ISO"});
+            "Secc Board Checklist ISO",
+            "Power Board Checklist ISO",
+            "Power Meter Board Checklist ISO",
+            "MCU Board Checklist ISO",
+            "XBU AIO Tower Board Checklist ISO",
+            "MCU 50 Board Checklist ISO",
+            "Opto-Isolator Board Checklist ISO",
+            "AC L2 Side Bracket Checklist ISO",
+            "XBU Tower Board Checklist ISO",
+            "MCU 360 Board Checklist ISO",
+            "Mini PCM 1 and 2 Board Checklist ISO",
+            "Reset Board Test Checklist ISO",
+            "MCU 6 Series Board Engine Level Test Checklist ISO"});
             this.comboBox1.Location = new System.Drawing.Point(94, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(249, 23);

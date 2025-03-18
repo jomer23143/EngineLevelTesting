@@ -10,6 +10,7 @@ using System.IO;
 using System.Reflection;
 using System.Globalization;
 using EngineLevelTesting;
+using Utility.ModifyRegistry;
 
 public static class Utils
 {
@@ -455,65 +456,34 @@ public static class Utils
         }
         return str;
     }
+    public static void SetConnectionDetails()
+    {
+        RegistrySupport registry = new RegistrySupport();
+        String data = registry.Read(EngineLevelTesting.Def.REGKEY_SUB);
 
-    //public static void SetConnectionDetails()
-    //{
-    //    RegistrySupport registry = new RegistrySupport();
-    //    String data = registry.Read(RFIDSystem.Def.REGKEY_SUB);
+        if (data == null)
+            return;
 
-    //    if (data == null)
-    //        return;
-
-    //    String[] programs = data.Split(new String[] { "<limiter1>" }, StringSplitOptions.RemoveEmptyEntries);
-    //    Dictionary<String, Dictionary<String, String>> conn = new Dictionary<String, Dictionary<String, String>>();
-    //    foreach (String program in programs)
-    //    {
-    //        String[] records = program.Split(new String[] { "<limiter>" }, StringSplitOptions.RemoveEmptyEntries);
-    //        Dictionary<String, String> details = new Dictionary<String, String>();
-    //        details.Add("NAME", records[0]);
-    //        details.Add("SERVER", records[1]);
-    //        details.Add("USERNAME", records[2]);
-    //        details.Add("PASSWORD", records[3]);
-
-    //        switch (records[0].ToUpper())
-    //        {
-    //            case "DBSETTINGS":
-    //                details.Add("DBNAME", records[4]);
-    //                conn.Add("SETTINGS", details);
-    //                break;
-
-    //            case "MASTER":
-    //                details.Add("DBNAME", records[4]);
-    //                conn.Add("MASTER", details);
-    //                break;
-
-    //            case "WMS":
-    //                details.Add("DBNAME", records[4]);
-    //                conn.Add("WMS", details);
-    //                break;
-
-    //            case "TMS":
-    //                details.Add("DBNAME", records[4]);
-    //                conn.Add("TMS", details);
-    //                break;
-
-    //            case "OMS":
-    //                details.Add("DBNAME", Path.GetFileNameWithoutExtension(Assembly.GetAssembly(typeof(Utils)).CodeBase));
-    //                conn.Add("OMS", details);
-    //                break;
-    //            case "OTMS":
-    //                details.Add("DBNAME",records[4]);
-    //                conn.Add("OTMS", details);
-    //                break;
-    //            case "RFID":
-    //                details.Add("DBNAME", records[4]);
-    //                conn.Add("RFID", details);
-    //                break;
-    //        }
-    //    }
-    //    DBConnection = conn;
-    //}
-
+        String[] programs = data.Split(new String[] { "<limiter1>" }, StringSplitOptions.RemoveEmptyEntries);
+        Dictionary<String, Dictionary<String, String>> conn = new Dictionary<String, Dictionary<String, String>>();
+        foreach (String program in programs)
+        {
+            String[] records = program.Split(new String[] { "<limiter>" }, StringSplitOptions.RemoveEmptyEntries);
+            Dictionary<String, String> details = new Dictionary<String, String>();
+            details.Add("NAME", records[0]);
+            details.Add("SERVER", records[1]);
+            details.Add("USERNAME", records[2]);
+            details.Add("PASSWORD", records[3]);
+            details.Add("DBNAME", records[4]);
+            switch (records[0].ToUpper())
+            {
+                case "ENGINELEVELTESTING":
+                    conn.Add("ENGINELEVELTESTING", details);
+                    break;
+            }
+        }
+        DBConnection = conn;
+    }
     public static byte[] ConvertImageToByteArray(Image imageToConvert,
                                System.Drawing.Imaging.ImageFormat formatOfImage)
     {

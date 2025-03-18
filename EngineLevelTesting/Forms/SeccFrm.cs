@@ -16,17 +16,28 @@ namespace EngineLevelTesting.Forms
         public SeccFrm()
         {
             InitializeComponent();
+            rjCircularPictureBox1.Hide();
         }
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            Saved();
+            if (string.IsNullOrEmpty(txtipn.Text) || string.IsNullOrEmpty(txtserial.Text) || string.IsNullOrEmpty(txtfirm.Text) || string.IsNullOrEmpty(cbsession1.Text) || string.IsNullOrEmpty(cbsession2.Text)
+                || string.IsNullOrEmpty(cbsession3.Text) || string.IsNullOrEmpty(cbjudgement.Text) || string.IsNullOrEmpty(txtremarks.Text) || string.IsNullOrEmpty(txttestby.Text))
+            {
+                MessageBox.Show("Please input all Fields");
+            }
+            else
+                Saved();
         }
-        private void Saved()
+        private async void Saved()
         {
-            StringBuilder sql = new StringBuilder();
-            Dictionary<string, object> data = new Dictionary<string, object> {
+            try
+            {
+                rjCircularPictureBox1.Show();
+                StringBuilder sql = new StringBuilder();
+                Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
+                                { "ipn_number", txtipn.Text},
                                 { "serial_number", txtserial.Text},
                                 { "firmware",txtfirm.Text},
                                 { "session1",cbsession1.SelectedItem.ToString()},
@@ -37,12 +48,21 @@ namespace EngineLevelTesting.Forms
                                 { "tested_by",txttestby.Text},
                                 { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
                                 { "date_record", DateTime.Now.ToShortDateString()}
-            };
-            MySqlDatasupport.ID = 1;
-            sql.Append(MySqlDatasupport.GetInsert("secc_table", data));
-            MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
-            MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Cleardata();
+                };
+                sql.Append(MySqlDatasupport.GetInsert("secc_table", data));
+                await Task.Run(() =>
+                {
+                    MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
+                });
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Saved!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Cleardata();
+            }
+            catch (Exception)
+            {
+                rjCircularPictureBox1.Hide();
+                MessageBox.Show("Failed!!!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         private void Cleardata()
         {
@@ -59,7 +79,7 @@ namespace EngineLevelTesting.Forms
         {
             try
             {
-                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from secc_table where serial_number = '{txtserial.Text}'", Class.SqlCon.connectionString(1));
+                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from secc_table where serial_number = '{txtserial.Text}'");
                 if (dt.Rows.Count > 0)
                 {
                     DialogResult dialogResult = MessageBox.Show("You are about to overwrite record!!!\nAre you sure want to edit record?\n\nIf viewing purposes please go to report!!!", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
@@ -102,7 +122,7 @@ namespace EngineLevelTesting.Forms
 
         private void txtserial_TextChanged(object sender, EventArgs e)
         {
-            GetScanSerial();
+            //GetScanSerial();
         }
     }
 }
