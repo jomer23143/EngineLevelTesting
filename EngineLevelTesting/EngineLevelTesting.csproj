@@ -230,6 +230,12 @@
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MiniPCMfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MiniPCMfrm.Designer.cs">
+      <DependentUpon>MiniPCMfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OptoFRM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +259,12 @@
     </Compile>
     <Compile Include="Forms\Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\resetBoardfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\resetBoardfrm.Designer.cs">
+      <DependentUpon>resetBoardfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SeccFrm.cs">
       <SubType>Form</SubType>
@@ -311,6 +323,9 @@
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MiniPCMfrm.resx">
+      <DependentUpon>MiniPCMfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\OptoFRM.resx">
       <DependentUpon>OptoFRM.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\resetBoardfrm.resx">
+      <DependentUpon>resetBoardfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeccFrm.resx">
       <DependentUpon>SeccFrm.cs</DependentUpon>
@@ -348,13 +366,16 @@
     <EmbeddedResource Include="Reports\IsoDocReport.rdlc" />
     <EmbeddedResource Include="Reports\isoMcu360report.rdlc" />
     <EmbeddedResource Include="Reports\Isomcu50.rdlc" />
+    <EmbeddedResource Include="Reports\isomcu6series.rdlc" />
     <EmbeddedResource Include="Reports\isoMCUReport.rdlc" />
     <EmbeddedResource Include="Reports\IsoPowermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\IsopowerReport.rdlc" />
+    <EmbeddedResource Include="Reports\isoresetreport.rdlc" />
     <EmbeddedResource Include="Reports\ISOseccReport.rdlc" />
     <EmbeddedResource Include="Reports\isoXBUReport.rdlc" />
     <EmbeddedResource Include="Reports\isoxbutowerReport.rdlc" />
     <EmbeddedResource Include="Reports\mcu50Report.rdlc" />
+    <EmbeddedResource Include="Reports\minipcmrReport.rdlc" />
     <EmbeddedResource Include="Reports\optoISO.rdlc" />
     <EmbeddedResource Include="Reports\powermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\powerReport.rdlc" />

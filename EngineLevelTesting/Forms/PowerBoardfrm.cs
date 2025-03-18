@@ -26,7 +26,7 @@ namespace EngineLevelTesting.Forms
             txtamp240.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txtamp120.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
             txttempRead.KeyPress += new System.Windows.Forms.KeyPressEventHandler(KeyBoardSupport.ForCurrencyOnly_Keypress);
-            txtserial.ReadOnly = true;
+            //txtserial.ReadOnly = true;
             txtrev.ReadOnly = true;
             txtfirm.ReadOnly = true;
             txttp2.ReadOnly = true;
@@ -47,7 +47,7 @@ namespace EngineLevelTesting.Forms
         {
             if (string.IsNullOrEmpty(txtserial.Text) || string.IsNullOrEmpty(txtrev.Text) || string.IsNullOrEmpty(txtfirm.Text) || string.IsNullOrEmpty(txttp3.Text) || string.IsNullOrEmpty(txttp4.Text)
                 || string.IsNullOrEmpty(txttp5.Text) || string.IsNullOrEmpty(cbCopn.Text) || string.IsNullOrEmpty(cbCclose.Text) || string.IsNullOrEmpty(txtvoltagePlus.Text) || string.IsNullOrEmpty(txttempRead.Text)
-                || string.IsNullOrEmpty(cbmGfci.Text) || string.IsNullOrEmpty(txtsn.Text) || string.IsNullOrEmpty(cbleak.Text) || string.IsNullOrEmpty(cbcircuit.Text) || string.IsNullOrEmpty(cbduty.Text) || 
+                || string.IsNullOrEmpty(txtgfci.Text) || string.IsNullOrEmpty(txtsn.Text) || string.IsNullOrEmpty(cbleak.Text) || string.IsNullOrEmpty(cbcircuit.Text) || string.IsNullOrEmpty(cbduty.Text) || 
                 string.IsNullOrEmpty(txtamp240.Text) || string.IsNullOrEmpty(txtamp120.Text) || string.IsNullOrEmpty(cbjudgement.Text) || string.IsNullOrEmpty(txtremarks.Text) || string.IsNullOrEmpty(txttestby.Text))
             {
                 MessageBox.Show("Please Input Fields");
@@ -62,7 +62,7 @@ namespace EngineLevelTesting.Forms
             StringBuilder sql = new StringBuilder();
             Dictionary<string, object> data = new Dictionary<string, object> {
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
-                                { "ipn_number",cbipn.SelectedItem.ToString()},
+                                { "ipn_number",txtipn.Text},
                                 { "board_serial", txtserial.Text},
                                 { "version_ul", cbul.Text},
                                 { "rev",txtrev.Text},
@@ -75,7 +75,7 @@ namespace EngineLevelTesting.Forms
                                 { "c_closed",cbCclose.SelectedItem.ToString()},
                                 { "voltage_plus",txtvoltagePlus.Text},
                                 { "temp_read",txttempRead.Text},
-                                { "gfci_board",cbmGfci.SelectedItem.ToString()},
+                                { "gfci_board",txtgfci.Text},
                                 { "gfci_sn",txtsn.Text},
                                 { "gfci_rev",txtgfci_rev.Text},
                                 { "leak_detect",cbleak.SelectedItem.ToString()},
@@ -112,7 +112,7 @@ namespace EngineLevelTesting.Forms
         {
             try
             {
-                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from powerboard_table where board_serial = '{txtserial.Text}' and ipn_number ='{cbipn.SelectedItem.ToString()}'");
+                DataTable dt = MySqlDatasupport.RunDataTableDapper($@"Select * from powerboard_table where board_serial = '{txtserial.Text}' and ipn_number ='{txtipn.Text}'");
                 if (dt.Rows.Count > 0)
                 {
                     DialogResult dialogResult = MessageBox.Show("You are about to overwrite record!!!\nAre you sure want to edit record?\n\nIf viewing purposes please go to report!!!", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
@@ -131,7 +131,7 @@ namespace EngineLevelTesting.Forms
                             cbCopn.Text = item["c_open"].ToString();
                             cbCclose.Text = item["c_closed"].ToString();
                             txtvoltagePlus.Text = item["voltage_plus"].ToString();
-                            cbmGfci.Text = item["gfci_board"].ToString();
+                            txtgfci.Text = item["gfci_board"].ToString();
                             txtsn.Text = item["gfci_sn"].ToString();
                             cbleak.Text = item["leak_detect"].ToString();
                             cbcircuit.Text = item["circuit"].ToString();
@@ -191,7 +191,7 @@ namespace EngineLevelTesting.Forms
 
         private void cbipn_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(cbipn.Text))
+            if (!string.IsNullOrEmpty(txtipn.Text))
             {
                 txtserial.ReadOnly = false;
                 txtrev.ReadOnly = false;
@@ -225,7 +225,45 @@ namespace EngineLevelTesting.Forms
                 txtamp120.ReadOnly = true;
                 txtremarks.ReadOnly = true;
                 txttestby.ReadOnly = true;
+            }
+        }
 
+        private void txtipn_Leave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtipn.Text))
+            {
+                txtserial.ReadOnly = false;
+                txtrev.ReadOnly = false;
+                txtfirm.ReadOnly = false;
+                txttp2.ReadOnly = false;
+                txttp3.ReadOnly = false;
+                txttp4.ReadOnly = false;
+                txttp5.ReadOnly = false;
+                txtvoltagePlus.ReadOnly = false;
+                //txtpn.ReadOnly = false;
+                txtsn.ReadOnly = false;
+                txtamp240.ReadOnly = false;
+                txtamp120.ReadOnly = false;
+                txtremarks.ReadOnly = false;
+                txttestby.ReadOnly = false;
+
+            }
+            else
+            {
+                txtserial.ReadOnly = true;
+                txtrev.ReadOnly = true;
+                txtfirm.ReadOnly = true;
+                txttp2.ReadOnly = true;
+                txttp3.ReadOnly = true;
+                txttp4.ReadOnly = true;
+                txttp5.ReadOnly = true;
+                txtvoltagePlus.ReadOnly = true;
+                //txtpn.ReadOnly = true;
+                txtsn.ReadOnly = true;
+                txtamp240.ReadOnly = true;
+                txtamp120.ReadOnly = true;
+                txtremarks.ReadOnly = true;
+                txttestby.ReadOnly = true;
             }
         }
     }

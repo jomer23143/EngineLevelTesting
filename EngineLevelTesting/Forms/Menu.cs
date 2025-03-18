@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace EngineLevelTesting.Forms
 {
     public partial class Menu : Form
     {
+        private Dictionary<String, Dictionary<String, String>> dbConnectionSettings = new Dictionary<String, Dictionary<String, String>>();
         static int lastHour = DateTime.Now.Hour;
         public static string adminpass = "System@2022";
         public Menu()
@@ -48,6 +50,10 @@ namespace EngineLevelTesting.Forms
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            Get_connection();
+        }
+        private void Get_connection()
+        {
             RegistrySupport registry = new RegistrySupport();
             String data = registry.Read(Def.REGKEY_SUB);
             if (data == null)
@@ -56,6 +62,8 @@ namespace EngineLevelTesting.Forms
                 registry.Write(Def.REGKEY_SUB, data);
             }
             Utils.SetConnectionDetails();
+            this.Text =$"{Assembly.GetExecutingAssembly().GetName().Version.ToString()} - {Utils.DBConnection["ENGINELEVELTESTING"]["DBNAME"].ToString()}";
+            dbConnectionSettings = Utils.DBConnection;
         }
         private async void InsertCloudHvcombo()
         {
@@ -183,6 +191,8 @@ namespace EngineLevelTesting.Forms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Get_connection();
+            timer1.Stop();
             //if (lastHour < DateTime.Now.Hour)
             //{
             //    lastHour = DateTime.Now.Hour;
@@ -233,7 +243,10 @@ namespace EngineLevelTesting.Forms
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 ConnectionSettings connect = new ConnectionSettings();
-                connect.Show();
+                connect.ShowDialog();
+                dbConnectionSettings = connect.dbConnectionSettings;
+                timer1.Start();
+                timer1.Interval = 1000;
             }
         }
 
@@ -264,6 +277,18 @@ namespace EngineLevelTesting.Forms
         private void btnmcu360_Click(object sender, EventArgs e)
         {
             Forms.MCU360frm frm = new Forms.MCU360frm();
+            frm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Forms.MiniPCMfrm frm = new Forms.MiniPCMfrm();
+            frm.Show();
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            Forms.resetBoardfrm frm = new Forms.resetBoardfrm();
             frm.Show();
         }
     }

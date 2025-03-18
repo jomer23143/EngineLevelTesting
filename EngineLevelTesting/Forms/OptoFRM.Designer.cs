@@ -118,7 +118,7 @@ namespace EngineLevelTesting.Forms
             this.txtserial.BackColor = System.Drawing.Color.SkyBlue;
             this.txtserial.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtserial.Location = new System.Drawing.Point(283, 73);
-            this.txtserial.MaxLength = 10;
+            this.txtserial.MaxLength = 20;
             this.txtserial.Name = "txtserial";
             this.txtserial.Size = new System.Drawing.Size(164, 22);
             this.txtserial.TabIndex = 94;

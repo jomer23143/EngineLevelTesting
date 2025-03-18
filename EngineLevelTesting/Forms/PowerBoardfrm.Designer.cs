@@ -57,7 +57,6 @@ namespace EngineLevelTesting.Forms
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.cbipn = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -81,12 +80,13 @@ namespace EngineLevelTesting.Forms
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.txttempRead = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.cbmGfci = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.cbul = new System.Windows.Forms.ComboBox();
             this.txtgfci_rev = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.txtipn = new System.Windows.Forms.TextBox();
+            this.txtgfci = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -120,7 +120,7 @@ namespace EngineLevelTesting.Forms
             this.txttestby.MaxLength = 100;
             this.txttestby.Name = "txttestby";
             this.txttestby.Size = new System.Drawing.Size(219, 22);
-            this.txttestby.TabIndex = 20;
+            this.txttestby.TabIndex = 23;
             this.txttestby.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtremarks
@@ -132,7 +132,7 @@ namespace EngineLevelTesting.Forms
             this.txtremarks.Multiline = true;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(219, 68);
-            this.txtremarks.TabIndex = 19;
+            this.txtremarks.TabIndex = 22;
             // 
             // cbjudgement
             // 
@@ -147,7 +147,7 @@ namespace EngineLevelTesting.Forms
             this.cbjudgement.Location = new System.Drawing.Point(239, 632);
             this.cbjudgement.Name = "cbjudgement";
             this.cbjudgement.Size = new System.Drawing.Size(97, 22);
-            this.cbjudgement.TabIndex = 18;
+            this.cbjudgement.TabIndex = 21;
             // 
             // label2
             // 
@@ -181,7 +181,7 @@ namespace EngineLevelTesting.Forms
             this.txtsn.MaxLength = 100;
             this.txtsn.Name = "txtsn";
             this.txtsn.Size = new System.Drawing.Size(219, 22);
-            this.txtsn.TabIndex = 12;
+            this.txtsn.TabIndex = 14;
             this.txtsn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtvoltagePlus
@@ -192,7 +192,7 @@ namespace EngineLevelTesting.Forms
             this.txtvoltagePlus.MaxLength = 10;
             this.txtvoltagePlus.Name = "txtvoltagePlus";
             this.txtvoltagePlus.Size = new System.Drawing.Size(219, 22);
-            this.txtvoltagePlus.TabIndex = 10;
+            this.txtvoltagePlus.TabIndex = 11;
             this.txtvoltagePlus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
@@ -215,7 +215,7 @@ namespace EngineLevelTesting.Forms
             this.txttp2.MaxLength = 10;
             this.txttp2.Name = "txttp2";
             this.txttp2.Size = new System.Drawing.Size(219, 22);
-            this.txttp2.TabIndex = 4;
+            this.txttp2.TabIndex = 5;
             this.txttp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
@@ -238,7 +238,7 @@ namespace EngineLevelTesting.Forms
             this.txtfirm.MaxLength = 100;
             this.txtfirm.Name = "txtfirm";
             this.txtfirm.Size = new System.Drawing.Size(219, 22);
-            this.txtfirm.TabIndex = 3;
+            this.txtfirm.TabIndex = 4;
             this.txtfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
@@ -309,7 +309,7 @@ namespace EngineLevelTesting.Forms
             this.txtrev.MaxLength = 100;
             this.txtrev.Name = "txtrev";
             this.txtrev.Size = new System.Drawing.Size(219, 22);
-            this.txtrev.TabIndex = 2;
+            this.txtrev.TabIndex = 3;
             this.txtrev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
@@ -408,25 +408,6 @@ namespace EngineLevelTesting.Forms
             this.label20.TabIndex = 133;
             this.label20.Text = "Judgement :";
             // 
-            // cbipn
-            // 
-            this.cbipn.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbipn.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbipn.BackColor = System.Drawing.Color.SkyBlue;
-            this.cbipn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbipn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbipn.FormattingEnabled = true;
-            this.cbipn.Items.AddRange(new object[] {
-            "110-0061-01",
-            "110-0243-01",
-            "110-0278-01",
-            "110-0279-01"});
-            this.cbipn.Location = new System.Drawing.Point(240, 47);
-            this.cbipn.Name = "cbipn";
-            this.cbipn.Size = new System.Drawing.Size(220, 22);
-            this.cbipn.TabIndex = 0;
-            this.cbipn.SelectedIndexChanged += new System.EventHandler(this.cbipn_SelectedIndexChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -471,7 +452,7 @@ namespace EngineLevelTesting.Forms
             this.txttp3.MaxLength = 10;
             this.txttp3.Name = "txttp3";
             this.txttp3.Size = new System.Drawing.Size(219, 22);
-            this.txttp3.TabIndex = 5;
+            this.txttp3.TabIndex = 6;
             this.txttp3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -506,7 +487,7 @@ namespace EngineLevelTesting.Forms
             this.txttp4.MaxLength = 10;
             this.txttp4.Name = "txttp4";
             this.txttp4.Size = new System.Drawing.Size(219, 22);
-            this.txttp4.TabIndex = 6;
+            this.txttp4.TabIndex = 7;
             this.txttp4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
@@ -541,7 +522,7 @@ namespace EngineLevelTesting.Forms
             this.txttp5.MaxLength = 10;
             this.txttp5.Name = "txttp5";
             this.txttp5.Size = new System.Drawing.Size(219, 22);
-            this.txttp5.TabIndex = 7;
+            this.txttp5.TabIndex = 8;
             this.txttp5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label28
@@ -576,7 +557,7 @@ namespace EngineLevelTesting.Forms
             this.txtamp240.MaxLength = 10;
             this.txtamp240.Name = "txtamp240";
             this.txtamp240.Size = new System.Drawing.Size(219, 22);
-            this.txtamp240.TabIndex = 16;
+            this.txtamp240.TabIndex = 19;
             this.txtamp240.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtamp120
@@ -587,7 +568,7 @@ namespace EngineLevelTesting.Forms
             this.txtamp120.MaxLength = 10;
             this.txtamp120.Name = "txtamp120";
             this.txtamp120.Size = new System.Drawing.Size(219, 22);
-            this.txtamp120.TabIndex = 17;
+            this.txtamp120.TabIndex = 20;
             this.txtamp120.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cbleak
@@ -603,7 +584,7 @@ namespace EngineLevelTesting.Forms
             this.cbleak.Location = new System.Drawing.Point(240, 492);
             this.cbleak.Name = "cbleak";
             this.cbleak.Size = new System.Drawing.Size(97, 22);
-            this.cbleak.TabIndex = 13;
+            this.cbleak.TabIndex = 16;
             // 
             // cbcircuit
             // 
@@ -618,7 +599,7 @@ namespace EngineLevelTesting.Forms
             this.cbcircuit.Location = new System.Drawing.Point(240, 518);
             this.cbcircuit.Name = "cbcircuit";
             this.cbcircuit.Size = new System.Drawing.Size(97, 22);
-            this.cbcircuit.TabIndex = 14;
+            this.cbcircuit.TabIndex = 17;
             // 
             // cbduty
             // 
@@ -633,7 +614,7 @@ namespace EngineLevelTesting.Forms
             this.cbduty.Location = new System.Drawing.Point(240, 546);
             this.cbduty.Name = "cbduty";
             this.cbduty.Size = new System.Drawing.Size(97, 22);
-            this.cbduty.TabIndex = 15;
+            this.cbduty.TabIndex = 18;
             // 
             // cbCopn
             // 
@@ -648,7 +629,7 @@ namespace EngineLevelTesting.Forms
             this.cbCopn.Location = new System.Drawing.Point(239, 297);
             this.cbCopn.Name = "cbCopn";
             this.cbCopn.Size = new System.Drawing.Size(97, 22);
-            this.cbCopn.TabIndex = 8;
+            this.cbCopn.TabIndex = 9;
             // 
             // cbCclose
             // 
@@ -663,7 +644,7 @@ namespace EngineLevelTesting.Forms
             this.cbCclose.Location = new System.Drawing.Point(239, 325);
             this.cbCclose.Name = "cbCclose";
             this.cbCclose.Size = new System.Drawing.Size(97, 22);
-            this.cbCclose.TabIndex = 9;
+            this.cbCclose.TabIndex = 10;
             // 
             // btnsave
             // 
@@ -673,7 +654,7 @@ namespace EngineLevelTesting.Forms
             this.btnsave.Location = new System.Drawing.Point(373, 759);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(85, 33);
-            this.btnsave.TabIndex = 21;
+            this.btnsave.TabIndex = 24;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -702,7 +683,7 @@ namespace EngineLevelTesting.Forms
             this.txttempRead.MaxLength = 10;
             this.txttempRead.Name = "txttempRead";
             this.txttempRead.Size = new System.Drawing.Size(219, 22);
-            this.txttempRead.TabIndex = 160;
+            this.txttempRead.TabIndex = 12;
             this.txttempRead.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
@@ -716,21 +697,6 @@ namespace EngineLevelTesting.Forms
             this.label25.Size = new System.Drawing.Size(112, 15);
             this.label25.TabIndex = 161;
             this.label25.Text = "Temp. Read (>900) :";
-            // 
-            // cbmGfci
-            // 
-            this.cbmGfci.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbmGfci.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbmGfci.BackColor = System.Drawing.Color.SkyBlue;
-            this.cbmGfci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbmGfci.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbmGfci.FormattingEnabled = true;
-            this.cbmGfci.Items.AddRange(new object[] {
-            "110-0242-01"});
-            this.cbmGfci.Location = new System.Drawing.Point(240, 408);
-            this.cbmGfci.Name = "cbmGfci";
-            this.cbmGfci.Size = new System.Drawing.Size(220, 22);
-            this.cbmGfci.TabIndex = 162;
             // 
             // label26
             // 
@@ -758,7 +724,7 @@ namespace EngineLevelTesting.Forms
             this.cbul.Location = new System.Drawing.Point(239, 103);
             this.cbul.Name = "cbul";
             this.cbul.Size = new System.Drawing.Size(220, 22);
-            this.cbul.TabIndex = 163;
+            this.cbul.TabIndex = 2;
             // 
             // txtgfci_rev
             // 
@@ -768,7 +734,7 @@ namespace EngineLevelTesting.Forms
             this.txtgfci_rev.MaxLength = 100;
             this.txtgfci_rev.Name = "txtgfci_rev";
             this.txtgfci_rev.Size = new System.Drawing.Size(219, 22);
-            this.txtgfci_rev.TabIndex = 165;
+            this.txtgfci_rev.TabIndex = 15;
             this.txtgfci_rev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label29
@@ -795,17 +761,41 @@ namespace EngineLevelTesting.Forms
             this.label30.TabIndex = 167;
             this.label30.Text = "TP9";
             // 
+            // txtipn
+            // 
+            this.txtipn.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtipn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtipn.Location = new System.Drawing.Point(239, 49);
+            this.txtipn.MaxLength = 20;
+            this.txtipn.Name = "txtipn";
+            this.txtipn.Size = new System.Drawing.Size(219, 22);
+            this.txtipn.TabIndex = 0;
+            this.txtipn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtipn.Leave += new System.EventHandler(this.txtipn_Leave);
+            // 
+            // txtgfci
+            // 
+            this.txtgfci.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtgfci.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgfci.Location = new System.Drawing.Point(240, 408);
+            this.txtgfci.MaxLength = 20;
+            this.txtgfci.Name = "txtgfci";
+            this.txtgfci.Size = new System.Drawing.Size(219, 22);
+            this.txtgfci.TabIndex = 13;
+            this.txtgfci.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // PowerBoardfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 797);
+            this.Controls.Add(this.txtgfci);
+            this.Controls.Add(this.txtipn);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.txtgfci_rev);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.cbul);
-            this.Controls.Add(this.cbmGfci);
             this.Controls.Add(this.txttempRead);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.rjCircularPictureBox1);
@@ -828,7 +818,6 @@ namespace EngineLevelTesting.Forms
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbipn);
             this.Controls.Add(this.txttestby);
             this.Controls.Add(this.txtremarks);
             this.Controls.Add(this.cbjudgement);
@@ -898,7 +887,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox cbipn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -922,11 +910,12 @@ namespace EngineLevelTesting.Forms
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.TextBox txttempRead;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox cbmGfci;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cbul;
         private System.Windows.Forms.TextBox txtgfci_rev;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox txtipn;
+        private System.Windows.Forms.TextBox txtgfci;
     }
 }

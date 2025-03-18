@@ -7,6 +7,7 @@ using EngineLevelTesting.Class;
 using static EngineLevelTesting.Utilities.MySqlORMSupport;
 using Dapper;
 using MySqlConnector;
+using System.Windows.Forms;
 
 namespace EngineLevelTesting.Utilities
 {
@@ -703,16 +704,24 @@ namespace EngineLevelTesting.Utilities
         }
         public static DataTable RunDataTableDapper(string sql)
         {
-            using (var conn = new MySqlConnection(EngineLevelTesting.Connection.GetConnectionStringReg))
+            try
             {
-                IDataReader reader;
-                reader = conn.ExecuteReader(sql);
-                var table = new DataTable();
-                
-                table.Load(reader);
+                using (var conn = new MySqlConnection(EngineLevelTesting.Connection.GetConnectionStringReg))
+                {
+                    IDataReader reader;
+                    reader = conn.ExecuteReader(sql);
+                    var table = new DataTable();
 
-                return table;
+                    table.Load(reader);
+
+                    return table;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error :" + ex.Message);
+            }
+           return null;
         }
 
         public static DataTable RunDataTableDapper(string sql, object param)

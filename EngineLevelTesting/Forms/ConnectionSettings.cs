@@ -15,6 +15,7 @@ namespace EngineLevelTesting.Forms
 {
     public partial class ConnectionSettings : Form
     {
+        public Dictionary<String, Dictionary<String, String>> dbConnectionSettings = new Dictionary<String, Dictionary<String, String>>();
         public ConnectionSettings()
         {
             InitializeComponent();
@@ -58,7 +59,7 @@ namespace EngineLevelTesting.Forms
                 String data = registry.Read(Def.REGKEY_SUB);
                 if (data == null)
                 {
-                    data += String.Format($"ATTENDANCEDEPARTMENT<limiter>192.168.0.197<limiter>root<limiter>System@2022<limiter>icehrm<limiter>");
+                    data += String.Format($"ENGINELEVELTESTING<limiter>194.163.32.81<limiter>u867954426_board<limiter>System@2023<limiter>u867954426_board<limiter>");
                     registry.Write(Def.REGKEY_SUB, data);
                 }
                 String[] programs = data.Split(new String[] { "<limiter1>" }, StringSplitOptions.RemoveEmptyEntries);

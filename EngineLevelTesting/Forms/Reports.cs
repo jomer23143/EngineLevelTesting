@@ -204,8 +204,25 @@ namespace EngineLevelTesting.Forms
                 report = "isoMcu360report";
                 datasetname = "DataSet1";
             }
-
-
+            else if (comboBox1.Text == "Mini PCM 1 and 2 Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mini_pcm where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "minipcmrReport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "Reset Board Test Checklist ISO")
+            {
+                sql = $@"SELECT * FROM reset_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "isoresetreport";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "MCU 6 Series Board Engine Level Test Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mcu6_series_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "isomcu6series";
+                datasetname = "DataSet1";
+            }
+            
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
             var localreport = reportViewer1.LocalReport;
@@ -338,6 +355,12 @@ namespace EngineLevelTesting.Forms
                 sql = $@"SELECT * FROM mcu_360_table where board_serial = '{textBox1.Text}'";
                 report = "isoMcu360report";
                 datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "Mini PCM 1 and 2 Board Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mini_pcm where board_serial = '{textBox1.Text}'";
+                report = "minipcmrReport";
+                datasetname = "DataSet2";
             }
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);

@@ -19,17 +19,14 @@ namespace EngineLevelTesting
             }
         }
 
-        //public static DataSupport GetWMSConnection
-        //{
-        //    get
-        //    {
-        //        return new DataSupport(GetConnectionstring("WMS"));
-        //    }
-        //}
 
-        //public static string GetWMSConnectionString { get; } = GetConnectionstring("WMS");
-
-        public static string GetConnectionStringReg { get; } = GetConnectionstring("ENGINELEVELTESTING");
+        public static string GetConnectionStringReg
+        { 
+            get 
+            {
+                return GetConnectionstring("ENGINELEVELTESTING");
+            }
+        }  
 
         public static string GetConnectionstring(string connName)
         {
