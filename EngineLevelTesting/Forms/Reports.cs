@@ -222,7 +222,13 @@ namespace EngineLevelTesting.Forms
                 report = "isomcu6series";
                 datasetname = "DataSet1";
             }
-            
+            else if (comboBox1.Text == "SECC 2.0 Board Test Checklist ISO")
+            {
+                sql = $@"SELECT * FROM secc2_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "secc2Report";
+                datasetname = "DataSet1";
+            }
+
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
             var localreport = reportViewer1.LocalReport;
@@ -362,6 +368,8 @@ namespace EngineLevelTesting.Forms
                 report = "minipcmrReport";
                 datasetname = "DataSet2";
             }
+          
+
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
             var localreport = reportViewer1.LocalReport;

@@ -163,11 +163,12 @@ namespace EngineLevelTesting.Forms
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1289, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1289, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,13 +177,13 @@ namespace EngineLevelTesting.Forms
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectionToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // connectionToolStripMenuItem
             // 
             this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
-            this.connectionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.connectionToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.connectionToolStripMenuItem.Text = "Connection";
             this.connectionToolStripMenuItem.Click += new System.EventHandler(this.connectionToolStripMenuItem_Click);
             // 
@@ -248,7 +249,7 @@ namespace EngineLevelTesting.Forms
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(82, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.Size = new System.Drawing.Size(210, 32);
             this.label1.TabIndex = 15;
             this.label1.Text = "GEN 2 BOARDS";
             // 
@@ -259,7 +260,7 @@ namespace EngineLevelTesting.Forms
             this.label2.ForeColor = System.Drawing.Color.SeaGreen;
             this.label2.Location = new System.Drawing.Point(378, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 25);
+            this.label2.Size = new System.Drawing.Size(210, 32);
             this.label2.TabIndex = 16;
             this.label2.Text = "GEN 4 BOARDS";
             // 
@@ -270,7 +271,7 @@ namespace EngineLevelTesting.Forms
             this.label3.ForeColor = System.Drawing.Color.SeaGreen;
             this.label3.Location = new System.Drawing.Point(695, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 25);
+            this.label3.Size = new System.Drawing.Size(157, 32);
             this.label3.TabIndex = 17;
             this.label3.Text = "L2 BOARDS";
             // 
@@ -305,10 +306,11 @@ namespace EngineLevelTesting.Forms
             this.btnsecc2.TabIndex = 20;
             this.btnsecc2.Text = "SECC 2.0 Board Checklist";
             this.btnsecc2.UseVisualStyleBackColor = true;
+            this.btnsecc2.Click += new System.EventHandler(this.btnsecc2_Click);
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1289, 554);
             this.Controls.Add(this.btnsecc2);
