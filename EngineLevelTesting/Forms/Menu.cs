@@ -291,5 +291,11 @@ namespace EngineLevelTesting.Forms
             Forms.resetBoardfrm frm = new Forms.resetBoardfrm();
             frm.Show();
         }
+
+        private void btnsecc2_Click(object sender, EventArgs e)
+        {
+            Forms.Secc2Frm frm = new Forms.Secc2Frm();
+            frm.Show();
+        }
     }
 }

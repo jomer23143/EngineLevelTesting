@@ -48,6 +48,25 @@
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\Downloads\DesktoUI\YAOUI\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\..\Downloads\DesktoUI\YAOUI\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\Downloads\DesktoUI\YAOUI\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>..\..\..\..\Downloads\DesktoUI\YAOUI\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\..\Downloads\DesktoUI\YAOUI\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\..\Downloads\DesktoUI\YAOUI\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
@@ -153,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Connection.cs" />
+    <Compile Include="Class\MyCorners.cs" />
     <Compile Include="Class\SqlCon.cs" />
     <Compile Include="Dataset\DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -266,6 +286,12 @@
     <Compile Include="Forms\resetBoardfrm.Designer.cs">
       <DependentUpon>resetBoardfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Secc2Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secc2Frm.Designer.cs">
+      <DependentUpon>Secc2Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SeccFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,6 +367,9 @@
     <EmbeddedResource Include="Forms\resetBoardfrm.resx">
       <DependentUpon>resetBoardfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secc2Frm.resx">
+      <DependentUpon>Secc2Frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeccFrm.resx">
       <DependentUpon>SeccFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,6 +379,7 @@
     <EmbeddedResource Include="Forms\XBUTowerfrm.resx">
       <DependentUpon>XBUTowerfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -379,6 +409,7 @@
     <EmbeddedResource Include="Reports\optoISO.rdlc" />
     <EmbeddedResource Include="Reports\powermeterReport.rdlc" />
     <EmbeddedResource Include="Reports\powerReport.rdlc" />
+    <EmbeddedResource Include="Reports\secc2Report.rdlc" />
     <EmbeddedResource Include="Reports\seccReport.rdlc" />
     <None Include="Dataset\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
