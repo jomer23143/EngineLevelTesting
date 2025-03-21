@@ -29,51 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Secc2Frm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties89 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties90 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties91 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties92 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties93 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties94 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties95 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties96 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties97 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties98 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties99 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties100 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties101 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties102 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties103 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties104 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties105 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties106 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties107 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties108 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties109 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties110 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties111 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties112 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties113 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties114 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties115 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties116 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties117 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties118 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties119 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties120 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties121 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties122 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties123 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties124 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties125 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties126 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties127 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties128 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties129 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties130 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties131 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties132 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties45 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties49 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties50 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties51 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties52 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties53 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties54 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties55 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties56 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties57 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties58 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties59 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties60 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties61 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties62 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties63 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties64 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties65 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties66 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties67 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties68 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties69 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties70 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties71 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties72 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties73 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties74 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties75 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties76 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties77 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties78 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties79 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties80 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties81 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties82 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties83 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties84 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties85 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties86 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties87 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties88 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.Btn_close = new System.Windows.Forms.Button();
@@ -159,17 +159,19 @@
             this.c9 = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.c1 = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.panel_headerText = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_headerText.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            this.panel1.Controls.Add(this.label30);
+            this.panel1.BackColor = System.Drawing.Color.Green;
+            this.panel1.Controls.Add(this.panel_headerText);
             this.panel1.Controls.Add(this.Btn_close);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -180,14 +182,14 @@
             // 
             // label30
             // 
-            this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label30.Location = new System.Drawing.Point(556, 9);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(25, 6);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(399, 38);
+            this.label30.Size = new System.Drawing.Size(501, 38);
             this.label30.TabIndex = 1;
             this.label30.Text = "SECC 2.0 Board Test Checklist";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Btn_close
             // 
@@ -197,7 +199,7 @@
             this.Btn_close.FlatAppearance.BorderSize = 0;
             this.Btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_close.Location = new System.Drawing.Point(1407, 5);
+            this.Btn_close.Location = new System.Drawing.Point(1387, 5);
             this.Btn_close.Name = "Btn_close";
             this.Btn_close.Size = new System.Drawing.Size(50, 42);
             this.Btn_close.TabIndex = 0;
@@ -206,12 +208,12 @@
             // 
             // bunifuPanel1
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.White;
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
             this.bunifuPanel1.BorderRadius = 18;
-            this.bunifuPanel1.BorderThickness = 10;
+            this.bunifuPanel1.BorderThickness = 4;
             this.bunifuPanel1.Controls.Add(this.pictureBox3);
             this.bunifuPanel1.Controls.Add(this.Btn_Save);
             this.bunifuPanel1.Controls.Add(this.Cmb_boardtype);
@@ -303,9 +305,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(485, 371);
+            this.pictureBox3.Location = new System.Drawing.Point(500, 283);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(497, 371);
+            this.pictureBox3.Size = new System.Drawing.Size(478, 384);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 124;
             this.pictureBox3.TabStop = false;
@@ -321,7 +323,7 @@
             this.Btn_Save.AutoSizeLeftIcon = true;
             this.Btn_Save.AutoSizeRightIcon = true;
             this.Btn_Save.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Save.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Btn_Save.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Btn_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Save.BackgroundImage")));
             this.Btn_Save.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Btn_Save.ButtonText = "Save";
@@ -329,18 +331,18 @@
             this.Btn_Save.ColorContrastOnClick = 45;
             this.Btn_Save.ColorContrastOnHover = 45;
             this.Btn_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.Btn_Save.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.Btn_Save.CustomizableEdges = borderEdges2;
             this.Btn_Save.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Save.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Save.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.Btn_Save.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.Btn_Save.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.Btn_Save.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            this.Btn_Save.ForeColor = System.Drawing.Color.White;
             this.Btn_Save.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Save.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Save.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
@@ -353,7 +355,7 @@
             this.Btn_Save.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Save.IdleBorderRadius = 18;
             this.Btn_Save.IdleBorderThickness = 1;
-            this.Btn_Save.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Btn_Save.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Btn_Save.IdleIconLeftImage = null;
             this.Btn_Save.IdleIconRightImage = null;
             this.Btn_Save.IndicateFocus = false;
@@ -371,7 +373,7 @@
             this.Btn_Save.onHoverState.BorderRadius = 18;
             this.Btn_Save.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Btn_Save.onHoverState.BorderThickness = 1;
-            this.Btn_Save.onHoverState.FillColor = System.Drawing.Color.SpringGreen;
+            this.Btn_Save.onHoverState.FillColor = System.Drawing.Color.SeaGreen;
             this.Btn_Save.onHoverState.ForeColor = System.Drawing.Color.White;
             this.Btn_Save.onHoverState.IconLeftImage = null;
             this.Btn_Save.onHoverState.IconRightImage = null;
@@ -379,8 +381,8 @@
             this.Btn_Save.OnIdleState.BorderRadius = 18;
             this.Btn_Save.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Btn_Save.OnIdleState.BorderThickness = 1;
-            this.Btn_Save.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.Btn_Save.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            this.Btn_Save.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            this.Btn_Save.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.Btn_Save.OnIdleState.IconLeftImage = null;
             this.Btn_Save.OnIdleState.IconRightImage = null;
             this.Btn_Save.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -391,7 +393,7 @@
             this.Btn_Save.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Btn_Save.OnPressedState.IconLeftImage = null;
             this.Btn_Save.OnPressedState.IconRightImage = null;
-            this.Btn_Save.Size = new System.Drawing.Size(351, 74);
+            this.Btn_Save.Size = new System.Drawing.Size(403, 74);
             this.Btn_Save.TabIndex = 25;
             this.Btn_Save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_Save.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -403,7 +405,7 @@
             // Cmb_boardtype
             // 
             this.Cmb_boardtype.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_boardtype.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_boardtype.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_boardtype.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_boardtype.BorderRadius = 17;
             this.Cmb_boardtype.Color = System.Drawing.Color.Silver;
@@ -425,13 +427,13 @@
             this.Cmb_boardtype.FormattingEnabled = true;
             this.Cmb_boardtype.Icon = null;
             this.Cmb_boardtype.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_boardtype.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_boardtype.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_boardtype.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_boardtype.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_boardtype.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_boardtype.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_boardtype.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_boardtype.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_boardtype.ItemHeight = 26;
-            this.Cmb_boardtype.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_boardtype.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_boardtype.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_boardtype.Items.AddRange(new object[] {
             "Yes",
@@ -448,7 +450,7 @@
             // Cmb_tok
             // 
             this.Cmb_tok.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_tok.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_tok.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_tok.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_tok.BorderRadius = 17;
             this.Cmb_tok.Color = System.Drawing.Color.Silver;
@@ -470,13 +472,13 @@
             this.Cmb_tok.FormattingEnabled = true;
             this.Cmb_tok.Icon = null;
             this.Cmb_tok.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_tok.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_tok.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_tok.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_tok.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_tok.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_tok.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_tok.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_tok.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_tok.ItemHeight = 26;
-            this.Cmb_tok.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_tok.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_tok.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_tok.Items.AddRange(new object[] {
             "Yes",
@@ -493,7 +495,7 @@
             // Cmb_judgement
             // 
             this.Cmb_judgement.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_judgement.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_judgement.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_judgement.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_judgement.BorderRadius = 17;
             this.Cmb_judgement.Color = System.Drawing.Color.Silver;
@@ -515,13 +517,13 @@
             this.Cmb_judgement.FormattingEnabled = true;
             this.Cmb_judgement.Icon = null;
             this.Cmb_judgement.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_judgement.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_judgement.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_judgement.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_judgement.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_judgement.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_judgement.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_judgement.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_judgement.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_judgement.ItemHeight = 26;
-            this.Cmb_judgement.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_judgement.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_judgement.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_judgement.Items.AddRange(new object[] {
             "Pass",
@@ -538,7 +540,7 @@
             // Cmb_charging_session3
             // 
             this.Cmb_charging_session3.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_charging_session3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_charging_session3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_session3.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_charging_session3.BorderRadius = 17;
             this.Cmb_charging_session3.Color = System.Drawing.Color.Silver;
@@ -560,13 +562,13 @@
             this.Cmb_charging_session3.FormattingEnabled = true;
             this.Cmb_charging_session3.Icon = null;
             this.Cmb_charging_session3.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_session3.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_charging_session3.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_charging_session3.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_session3.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_charging_session3.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_session3.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_charging_session3.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_charging_session3.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_charging_session3.ItemHeight = 26;
-            this.Cmb_charging_session3.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_charging_session3.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_charging_session3.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_charging_session3.Items.AddRange(new object[] {
             "Pass",
@@ -583,7 +585,7 @@
             // Cmb_charging_session2
             // 
             this.Cmb_charging_session2.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_charging_session2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_charging_session2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_session2.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_charging_session2.BorderRadius = 17;
             this.Cmb_charging_session2.Color = System.Drawing.Color.Silver;
@@ -605,13 +607,13 @@
             this.Cmb_charging_session2.FormattingEnabled = true;
             this.Cmb_charging_session2.Icon = null;
             this.Cmb_charging_session2.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_session2.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_charging_session2.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_charging_session2.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_session2.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_charging_session2.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_session2.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_charging_session2.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_charging_session2.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_charging_session2.ItemHeight = 26;
-            this.Cmb_charging_session2.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_charging_session2.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_charging_session2.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_charging_session2.Items.AddRange(new object[] {
             "Pass",
@@ -628,7 +630,7 @@
             // Cmb_charging_session1
             // 
             this.Cmb_charging_session1.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_charging_session1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_charging_session1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_session1.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_charging_session1.BorderRadius = 17;
             this.Cmb_charging_session1.Color = System.Drawing.Color.Silver;
@@ -650,13 +652,13 @@
             this.Cmb_charging_session1.FormattingEnabled = true;
             this.Cmb_charging_session1.Icon = null;
             this.Cmb_charging_session1.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_session1.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_charging_session1.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_charging_session1.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_session1.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_charging_session1.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_session1.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_charging_session1.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_charging_session1.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_charging_session1.ItemHeight = 26;
-            this.Cmb_charging_session1.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_charging_session1.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_charging_session1.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_charging_session1.Items.AddRange(new object[] {
             "Pass",
@@ -673,7 +675,7 @@
             // Cmb_charging_sessions
             // 
             this.Cmb_charging_sessions.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_charging_sessions.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_charging_sessions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_sessions.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_charging_sessions.BorderRadius = 17;
             this.Cmb_charging_sessions.Color = System.Drawing.Color.Silver;
@@ -695,13 +697,13 @@
             this.Cmb_charging_sessions.FormattingEnabled = true;
             this.Cmb_charging_sessions.Icon = null;
             this.Cmb_charging_sessions.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_sessions.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_charging_sessions.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_charging_sessions.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_charging_sessions.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_charging_sessions.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_charging_sessions.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_charging_sessions.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_charging_sessions.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_charging_sessions.ItemHeight = 26;
-            this.Cmb_charging_sessions.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_charging_sessions.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_charging_sessions.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_charging_sessions.Items.AddRange(new object[] {
             "Keysight EVS ",
@@ -718,7 +720,7 @@
             // Cmb_Load_production_binaries
             // 
             this.Cmb_Load_production_binaries.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_Load_production_binaries.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_Load_production_binaries.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_Load_production_binaries.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_Load_production_binaries.BorderRadius = 17;
             this.Cmb_Load_production_binaries.Color = System.Drawing.Color.Silver;
@@ -740,13 +742,13 @@
             this.Cmb_Load_production_binaries.FormattingEnabled = true;
             this.Cmb_Load_production_binaries.Icon = null;
             this.Cmb_Load_production_binaries.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_Load_production_binaries.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_Load_production_binaries.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_Load_production_binaries.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_Load_production_binaries.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_Load_production_binaries.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_Load_production_binaries.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_Load_production_binaries.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_Load_production_binaries.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_Load_production_binaries.ItemHeight = 26;
-            this.Cmb_Load_production_binaries.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_Load_production_binaries.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_Load_production_binaries.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_Load_production_binaries.Items.AddRange(new object[] {
             "Yes",
@@ -763,7 +765,7 @@
             // Cmb_succesfully
             // 
             this.Cmb_succesfully.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_succesfully.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_succesfully.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_succesfully.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_succesfully.BorderRadius = 17;
             this.Cmb_succesfully.Color = System.Drawing.Color.Silver;
@@ -785,13 +787,13 @@
             this.Cmb_succesfully.FormattingEnabled = true;
             this.Cmb_succesfully.Icon = null;
             this.Cmb_succesfully.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_succesfully.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_succesfully.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_succesfully.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_succesfully.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_succesfully.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_succesfully.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_succesfully.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_succesfully.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_succesfully.ItemHeight = 26;
-            this.Cmb_succesfully.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_succesfully.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_succesfully.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_succesfully.Items.AddRange(new object[] {
             "Yes",
@@ -808,7 +810,7 @@
             // Cmb_cm_set_key_test
             // 
             this.Cmb_cm_set_key_test.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_cm_set_key_test.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_cm_set_key_test.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_cm_set_key_test.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_cm_set_key_test.BorderRadius = 17;
             this.Cmb_cm_set_key_test.Color = System.Drawing.Color.Silver;
@@ -830,13 +832,13 @@
             this.Cmb_cm_set_key_test.FormattingEnabled = true;
             this.Cmb_cm_set_key_test.Icon = null;
             this.Cmb_cm_set_key_test.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_cm_set_key_test.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_cm_set_key_test.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_cm_set_key_test.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_cm_set_key_test.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_cm_set_key_test.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_cm_set_key_test.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_cm_set_key_test.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_cm_set_key_test.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_cm_set_key_test.ItemHeight = 26;
-            this.Cmb_cm_set_key_test.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_cm_set_key_test.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_cm_set_key_test.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_cm_set_key_test.Items.AddRange(new object[] {
             "Yes",
@@ -853,7 +855,7 @@
             // Cmb_usb_type_c_test
             // 
             this.Cmb_usb_type_c_test.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_usb_type_c_test.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_usb_type_c_test.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_usb_type_c_test.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_usb_type_c_test.BorderRadius = 17;
             this.Cmb_usb_type_c_test.Color = System.Drawing.Color.Silver;
@@ -875,13 +877,13 @@
             this.Cmb_usb_type_c_test.FormattingEnabled = true;
             this.Cmb_usb_type_c_test.Icon = null;
             this.Cmb_usb_type_c_test.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_usb_type_c_test.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_usb_type_c_test.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_usb_type_c_test.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_usb_type_c_test.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_usb_type_c_test.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_usb_type_c_test.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_usb_type_c_test.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_usb_type_c_test.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_usb_type_c_test.ItemHeight = 26;
-            this.Cmb_usb_type_c_test.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_usb_type_c_test.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_usb_type_c_test.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_usb_type_c_test.Items.AddRange(new object[] {
             "Yes",
@@ -898,7 +900,7 @@
             // Cmb_usb_type_a_test
             // 
             this.Cmb_usb_type_a_test.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_usb_type_a_test.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_usb_type_a_test.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_usb_type_a_test.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_usb_type_a_test.BorderRadius = 17;
             this.Cmb_usb_type_a_test.Color = System.Drawing.Color.Silver;
@@ -920,13 +922,13 @@
             this.Cmb_usb_type_a_test.FormattingEnabled = true;
             this.Cmb_usb_type_a_test.Icon = null;
             this.Cmb_usb_type_a_test.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_usb_type_a_test.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_usb_type_a_test.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_usb_type_a_test.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_usb_type_a_test.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_usb_type_a_test.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_usb_type_a_test.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_usb_type_a_test.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_usb_type_a_test.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_usb_type_a_test.ItemHeight = 26;
-            this.Cmb_usb_type_a_test.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_usb_type_a_test.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_usb_type_a_test.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_usb_type_a_test.Items.AddRange(new object[] {
             "Yes",
@@ -943,7 +945,7 @@
             // Cmb_board_selection
             // 
             this.Cmb_board_selection.BackColor = System.Drawing.Color.Transparent;
-            this.Cmb_board_selection.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Cmb_board_selection.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_board_selection.BorderColor = System.Drawing.Color.Silver;
             this.Cmb_board_selection.BorderRadius = 17;
             this.Cmb_board_selection.Color = System.Drawing.Color.Silver;
@@ -965,13 +967,13 @@
             this.Cmb_board_selection.FormattingEnabled = true;
             this.Cmb_board_selection.Icon = null;
             this.Cmb_board_selection.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_board_selection.IndicatorColor = System.Drawing.Color.Gray;
+            this.Cmb_board_selection.IndicatorColor = System.Drawing.Color.White;
             this.Cmb_board_selection.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Cmb_board_selection.ItemBackColor = System.Drawing.Color.White;
+            this.Cmb_board_selection.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
             this.Cmb_board_selection.ItemBorderColor = System.Drawing.Color.White;
-            this.Cmb_board_selection.ItemForeColor = System.Drawing.Color.Black;
+            this.Cmb_board_selection.ItemForeColor = System.Drawing.Color.White;
             this.Cmb_board_selection.ItemHeight = 26;
-            this.Cmb_board_selection.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Cmb_board_selection.ItemHighLightColor = System.Drawing.Color.SeaGreen;
             this.Cmb_board_selection.ItemHighLightForeColor = System.Drawing.Color.White;
             this.Cmb_board_selection.Items.AddRange(new object[] {
             "Yes",
@@ -1010,7 +1012,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label8.Location = new System.Drawing.Point(113, 743);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(233, 21);
@@ -1051,26 +1053,26 @@
             this.Txt_remarks.Modified = false;
             this.Txt_remarks.Multiline = false;
             this.Txt_remarks.Name = "Txt_remarks";
-            stateProperties89.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties89.FillColor = System.Drawing.Color.Empty;
-            stateProperties89.ForeColor = System.Drawing.Color.Empty;
-            stateProperties89.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_remarks.OnActiveState = stateProperties89;
-            stateProperties90.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties90.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties90.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_remarks.OnDisabledState = stateProperties90;
-            stateProperties91.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties91.FillColor = System.Drawing.Color.Empty;
-            stateProperties91.ForeColor = System.Drawing.Color.Empty;
-            stateProperties91.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_remarks.OnHoverState = stateProperties91;
-            stateProperties92.BorderColor = System.Drawing.Color.Silver;
-            stateProperties92.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties92.ForeColor = System.Drawing.Color.White;
-            stateProperties92.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_remarks.OnIdleState = stateProperties92;
+            stateProperties45.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties45.FillColor = System.Drawing.Color.Empty;
+            stateProperties45.ForeColor = System.Drawing.Color.Empty;
+            stateProperties45.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_remarks.OnActiveState = stateProperties45;
+            stateProperties46.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties46.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_remarks.OnDisabledState = stateProperties46;
+            stateProperties47.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties47.FillColor = System.Drawing.Color.Empty;
+            stateProperties47.ForeColor = System.Drawing.Color.Empty;
+            stateProperties47.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_remarks.OnHoverState = stateProperties47;
+            stateProperties48.BorderColor = System.Drawing.Color.Silver;
+            stateProperties48.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties48.ForeColor = System.Drawing.Color.White;
+            stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_remarks.OnIdleState = stateProperties48;
             this.Txt_remarks.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_remarks.PasswordChar = '\0';
             this.Txt_remarks.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1126,26 +1128,26 @@
             this.Txt_failure_details.Modified = false;
             this.Txt_failure_details.Multiline = false;
             this.Txt_failure_details.Name = "Txt_failure_details";
-            stateProperties93.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties93.FillColor = System.Drawing.Color.Empty;
-            stateProperties93.ForeColor = System.Drawing.Color.Empty;
-            stateProperties93.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_failure_details.OnActiveState = stateProperties93;
-            stateProperties94.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties94.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties94.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_failure_details.OnDisabledState = stateProperties94;
-            stateProperties95.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties95.FillColor = System.Drawing.Color.Empty;
-            stateProperties95.ForeColor = System.Drawing.Color.Empty;
-            stateProperties95.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_failure_details.OnHoverState = stateProperties95;
-            stateProperties96.BorderColor = System.Drawing.Color.Silver;
-            stateProperties96.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties96.ForeColor = System.Drawing.Color.White;
-            stateProperties96.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_failure_details.OnIdleState = stateProperties96;
+            stateProperties49.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties49.FillColor = System.Drawing.Color.Empty;
+            stateProperties49.ForeColor = System.Drawing.Color.Empty;
+            stateProperties49.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_failure_details.OnActiveState = stateProperties49;
+            stateProperties50.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties50.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties50.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_failure_details.OnDisabledState = stateProperties50;
+            stateProperties51.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties51.FillColor = System.Drawing.Color.Empty;
+            stateProperties51.ForeColor = System.Drawing.Color.Empty;
+            stateProperties51.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_failure_details.OnHoverState = stateProperties51;
+            stateProperties52.BorderColor = System.Drawing.Color.Silver;
+            stateProperties52.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties52.ForeColor = System.Drawing.Color.White;
+            stateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_failure_details.OnIdleState = stateProperties52;
             this.Txt_failure_details.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_failure_details.PasswordChar = '\0';
             this.Txt_failure_details.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1201,26 +1203,26 @@
             this.Txt_test_technician.Modified = false;
             this.Txt_test_technician.Multiline = false;
             this.Txt_test_technician.Name = "Txt_test_technician";
-            stateProperties97.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties97.FillColor = System.Drawing.Color.Empty;
-            stateProperties97.ForeColor = System.Drawing.Color.Empty;
-            stateProperties97.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_test_technician.OnActiveState = stateProperties97;
-            stateProperties98.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties98.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties98.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties98.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_test_technician.OnDisabledState = stateProperties98;
-            stateProperties99.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties99.FillColor = System.Drawing.Color.Empty;
-            stateProperties99.ForeColor = System.Drawing.Color.Empty;
-            stateProperties99.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_test_technician.OnHoverState = stateProperties99;
-            stateProperties100.BorderColor = System.Drawing.Color.Silver;
-            stateProperties100.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties100.ForeColor = System.Drawing.Color.White;
-            stateProperties100.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_test_technician.OnIdleState = stateProperties100;
+            stateProperties53.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties53.FillColor = System.Drawing.Color.Empty;
+            stateProperties53.ForeColor = System.Drawing.Color.Empty;
+            stateProperties53.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_test_technician.OnActiveState = stateProperties53;
+            stateProperties54.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties54.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties54.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_test_technician.OnDisabledState = stateProperties54;
+            stateProperties55.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties55.FillColor = System.Drawing.Color.Empty;
+            stateProperties55.ForeColor = System.Drawing.Color.Empty;
+            stateProperties55.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_test_technician.OnHoverState = stateProperties55;
+            stateProperties56.BorderColor = System.Drawing.Color.Silver;
+            stateProperties56.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties56.ForeColor = System.Drawing.Color.White;
+            stateProperties56.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_test_technician.OnIdleState = stateProperties56;
             this.Txt_test_technician.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_test_technician.PasswordChar = '\0';
             this.Txt_test_technician.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1276,26 +1278,26 @@
             this.Txt_keysight_attenuation.Modified = false;
             this.Txt_keysight_attenuation.Multiline = false;
             this.Txt_keysight_attenuation.Name = "Txt_keysight_attenuation";
-            stateProperties101.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties101.FillColor = System.Drawing.Color.Empty;
-            stateProperties101.ForeColor = System.Drawing.Color.Empty;
-            stateProperties101.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_keysight_attenuation.OnActiveState = stateProperties101;
-            stateProperties102.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties102.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties102.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties102.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_keysight_attenuation.OnDisabledState = stateProperties102;
-            stateProperties103.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties103.FillColor = System.Drawing.Color.Empty;
-            stateProperties103.ForeColor = System.Drawing.Color.Empty;
-            stateProperties103.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_keysight_attenuation.OnHoverState = stateProperties103;
-            stateProperties104.BorderColor = System.Drawing.Color.Silver;
-            stateProperties104.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties104.ForeColor = System.Drawing.Color.White;
-            stateProperties104.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_keysight_attenuation.OnIdleState = stateProperties104;
+            stateProperties57.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties57.FillColor = System.Drawing.Color.Empty;
+            stateProperties57.ForeColor = System.Drawing.Color.Empty;
+            stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_keysight_attenuation.OnActiveState = stateProperties57;
+            stateProperties58.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties58.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_keysight_attenuation.OnDisabledState = stateProperties58;
+            stateProperties59.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties59.FillColor = System.Drawing.Color.Empty;
+            stateProperties59.ForeColor = System.Drawing.Color.Empty;
+            stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_keysight_attenuation.OnHoverState = stateProperties59;
+            stateProperties60.BorderColor = System.Drawing.Color.Silver;
+            stateProperties60.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties60.ForeColor = System.Drawing.Color.White;
+            stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_keysight_attenuation.OnIdleState = stateProperties60;
             this.Txt_keysight_attenuation.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_keysight_attenuation.PasswordChar = '\0';
             this.Txt_keysight_attenuation.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1351,26 +1353,26 @@
             this.Txt_ipn.Modified = false;
             this.Txt_ipn.Multiline = false;
             this.Txt_ipn.Name = "Txt_ipn";
-            stateProperties105.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties105.FillColor = System.Drawing.Color.Empty;
-            stateProperties105.ForeColor = System.Drawing.Color.Empty;
-            stateProperties105.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_ipn.OnActiveState = stateProperties105;
-            stateProperties106.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties106.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties106.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties106.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_ipn.OnDisabledState = stateProperties106;
-            stateProperties107.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties107.FillColor = System.Drawing.Color.Empty;
-            stateProperties107.ForeColor = System.Drawing.Color.Empty;
-            stateProperties107.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_ipn.OnHoverState = stateProperties107;
-            stateProperties108.BorderColor = System.Drawing.Color.Silver;
-            stateProperties108.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties108.ForeColor = System.Drawing.Color.White;
-            stateProperties108.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_ipn.OnIdleState = stateProperties108;
+            stateProperties61.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties61.FillColor = System.Drawing.Color.Empty;
+            stateProperties61.ForeColor = System.Drawing.Color.Empty;
+            stateProperties61.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_ipn.OnActiveState = stateProperties61;
+            stateProperties62.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties62.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties62.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_ipn.OnDisabledState = stateProperties62;
+            stateProperties63.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties63.FillColor = System.Drawing.Color.Empty;
+            stateProperties63.ForeColor = System.Drawing.Color.Empty;
+            stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_ipn.OnHoverState = stateProperties63;
+            stateProperties64.BorderColor = System.Drawing.Color.Silver;
+            stateProperties64.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties64.ForeColor = System.Drawing.Color.White;
+            stateProperties64.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_ipn.OnIdleState = stateProperties64;
             this.Txt_ipn.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_ipn.PasswordChar = '\0';
             this.Txt_ipn.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1426,26 +1428,26 @@
             this.Txt_emmc.Modified = false;
             this.Txt_emmc.Multiline = false;
             this.Txt_emmc.Name = "Txt_emmc";
-            stateProperties109.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties109.FillColor = System.Drawing.Color.Empty;
-            stateProperties109.ForeColor = System.Drawing.Color.Empty;
-            stateProperties109.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_emmc.OnActiveState = stateProperties109;
-            stateProperties110.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties110.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties110.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties110.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_emmc.OnDisabledState = stateProperties110;
-            stateProperties111.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties111.FillColor = System.Drawing.Color.Empty;
-            stateProperties111.ForeColor = System.Drawing.Color.Empty;
-            stateProperties111.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_emmc.OnHoverState = stateProperties111;
-            stateProperties112.BorderColor = System.Drawing.Color.Silver;
-            stateProperties112.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties112.ForeColor = System.Drawing.Color.White;
-            stateProperties112.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_emmc.OnIdleState = stateProperties112;
+            stateProperties65.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties65.FillColor = System.Drawing.Color.Empty;
+            stateProperties65.ForeColor = System.Drawing.Color.Empty;
+            stateProperties65.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_emmc.OnActiveState = stateProperties65;
+            stateProperties66.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties66.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties66.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_emmc.OnDisabledState = stateProperties66;
+            stateProperties67.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties67.FillColor = System.Drawing.Color.Empty;
+            stateProperties67.ForeColor = System.Drawing.Color.Empty;
+            stateProperties67.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_emmc.OnHoverState = stateProperties67;
+            stateProperties68.BorderColor = System.Drawing.Color.Silver;
+            stateProperties68.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties68.ForeColor = System.Drawing.Color.White;
+            stateProperties68.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_emmc.OnIdleState = stateProperties68;
             this.Txt_emmc.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_emmc.PasswordChar = '\0';
             this.Txt_emmc.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1472,7 +1474,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.Location = new System.Drawing.Point(113, 280);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 21);
@@ -1513,26 +1515,26 @@
             this.Txt_datetested.Modified = false;
             this.Txt_datetested.Multiline = false;
             this.Txt_datetested.Name = "Txt_datetested";
-            stateProperties113.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties113.FillColor = System.Drawing.Color.Empty;
-            stateProperties113.ForeColor = System.Drawing.Color.Empty;
-            stateProperties113.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_datetested.OnActiveState = stateProperties113;
-            stateProperties114.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties114.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties114.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties114.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_datetested.OnDisabledState = stateProperties114;
-            stateProperties115.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties115.FillColor = System.Drawing.Color.Empty;
-            stateProperties115.ForeColor = System.Drawing.Color.Empty;
-            stateProperties115.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_datetested.OnHoverState = stateProperties115;
-            stateProperties116.BorderColor = System.Drawing.Color.Silver;
-            stateProperties116.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties116.ForeColor = System.Drawing.Color.White;
-            stateProperties116.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_datetested.OnIdleState = stateProperties116;
+            stateProperties69.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties69.FillColor = System.Drawing.Color.Empty;
+            stateProperties69.ForeColor = System.Drawing.Color.Empty;
+            stateProperties69.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_datetested.OnActiveState = stateProperties69;
+            stateProperties70.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties70.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties70.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_datetested.OnDisabledState = stateProperties70;
+            stateProperties71.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties71.FillColor = System.Drawing.Color.Empty;
+            stateProperties71.ForeColor = System.Drawing.Color.Empty;
+            stateProperties71.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_datetested.OnHoverState = stateProperties71;
+            stateProperties72.BorderColor = System.Drawing.Color.Silver;
+            stateProperties72.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties72.ForeColor = System.Drawing.Color.White;
+            stateProperties72.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_datetested.OnIdleState = stateProperties72;
             this.Txt_datetested.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_datetested.PasswordChar = '\0';
             this.Txt_datetested.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1559,7 +1561,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label19.Location = new System.Drawing.Point(113, 596);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(241, 21);
@@ -1571,7 +1573,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label18.Location = new System.Drawing.Point(113, 575);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(209, 21);
@@ -1583,7 +1585,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label17.Location = new System.Drawing.Point(106, 468);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(247, 21);
@@ -1595,7 +1597,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label7.Location = new System.Drawing.Point(113, 440);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(336, 21);
@@ -1607,7 +1609,7 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label28.Location = new System.Drawing.Point(831, 907);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(77, 21);
@@ -1619,7 +1621,7 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label27.Location = new System.Drawing.Point(831, 821);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(121, 21);
@@ -1631,7 +1633,7 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label26.Location = new System.Drawing.Point(831, 748);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(197, 21);
@@ -1643,7 +1645,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label23.Location = new System.Drawing.Point(831, 670);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(187, 21);
@@ -1655,7 +1657,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label22.Location = new System.Drawing.Point(831, 592);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(172, 21);
@@ -1667,7 +1669,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label21.Location = new System.Drawing.Point(831, 514);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(224, 21);
@@ -1679,7 +1681,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label20.Location = new System.Drawing.Point(831, 436);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(224, 21);
@@ -1691,7 +1693,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label16.Location = new System.Drawing.Point(831, 361);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(224, 21);
@@ -1703,7 +1705,7 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label25.Location = new System.Drawing.Point(831, 204);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(324, 21);
@@ -1715,7 +1717,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label15.Location = new System.Drawing.Point(831, 280);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(284, 21);
@@ -1727,7 +1729,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label14.Location = new System.Drawing.Point(831, 128);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(478, 21);
@@ -1739,7 +1741,7 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label29.Location = new System.Drawing.Point(113, 894);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(284, 21);
@@ -1751,7 +1753,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label24.Location = new System.Drawing.Point(831, 21);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(256, 21);
@@ -1763,7 +1765,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label12.Location = new System.Drawing.Point(831, 50);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(472, 21);
@@ -1828,7 +1830,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label11.Location = new System.Drawing.Point(113, 1091);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(358, 21);
@@ -1893,7 +1895,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label10.Location = new System.Drawing.Point(113, 1004);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(367, 21);
@@ -1987,26 +1989,26 @@
             this.Txt_serial_number.Modified = false;
             this.Txt_serial_number.Multiline = false;
             this.Txt_serial_number.Name = "Txt_serial_number";
-            stateProperties117.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties117.FillColor = System.Drawing.Color.Empty;
-            stateProperties117.ForeColor = System.Drawing.Color.Empty;
-            stateProperties117.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_serial_number.OnActiveState = stateProperties117;
-            stateProperties118.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties118.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties118.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties118.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_serial_number.OnDisabledState = stateProperties118;
-            stateProperties119.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties119.FillColor = System.Drawing.Color.Empty;
-            stateProperties119.ForeColor = System.Drawing.Color.Empty;
-            stateProperties119.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_serial_number.OnHoverState = stateProperties119;
-            stateProperties120.BorderColor = System.Drawing.Color.Silver;
-            stateProperties120.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties120.ForeColor = System.Drawing.Color.White;
-            stateProperties120.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_serial_number.OnIdleState = stateProperties120;
+            stateProperties73.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties73.FillColor = System.Drawing.Color.Empty;
+            stateProperties73.ForeColor = System.Drawing.Color.Empty;
+            stateProperties73.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_serial_number.OnActiveState = stateProperties73;
+            stateProperties74.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties74.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties74.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_serial_number.OnDisabledState = stateProperties74;
+            stateProperties75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties75.FillColor = System.Drawing.Color.Empty;
+            stateProperties75.ForeColor = System.Drawing.Color.Empty;
+            stateProperties75.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_serial_number.OnHoverState = stateProperties75;
+            stateProperties76.BorderColor = System.Drawing.Color.Silver;
+            stateProperties76.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties76.ForeColor = System.Drawing.Color.White;
+            stateProperties76.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_serial_number.OnIdleState = stateProperties76;
             this.Txt_serial_number.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_serial_number.PasswordChar = '\0';
             this.Txt_serial_number.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -2086,7 +2088,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label13.Location = new System.Drawing.Point(113, 927);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(288, 21);
@@ -2257,7 +2259,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(113, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 21);
@@ -2351,26 +2353,26 @@
             this.Txt_revno.Modified = false;
             this.Txt_revno.Multiline = false;
             this.Txt_revno.Name = "Txt_revno";
-            stateProperties121.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties121.FillColor = System.Drawing.Color.Empty;
-            stateProperties121.ForeColor = System.Drawing.Color.Empty;
-            stateProperties121.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_revno.OnActiveState = stateProperties121;
-            stateProperties122.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties122.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties122.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties122.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_revno.OnDisabledState = stateProperties122;
-            stateProperties123.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties123.FillColor = System.Drawing.Color.Empty;
-            stateProperties123.ForeColor = System.Drawing.Color.Empty;
-            stateProperties123.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_revno.OnHoverState = stateProperties123;
-            stateProperties124.BorderColor = System.Drawing.Color.Silver;
-            stateProperties124.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties124.ForeColor = System.Drawing.Color.White;
-            stateProperties124.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_revno.OnIdleState = stateProperties124;
+            stateProperties77.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties77.FillColor = System.Drawing.Color.Empty;
+            stateProperties77.ForeColor = System.Drawing.Color.Empty;
+            stateProperties77.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_revno.OnActiveState = stateProperties77;
+            stateProperties78.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties78.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties78.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_revno.OnDisabledState = stateProperties78;
+            stateProperties79.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties79.FillColor = System.Drawing.Color.Empty;
+            stateProperties79.ForeColor = System.Drawing.Color.Empty;
+            stateProperties79.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_revno.OnHoverState = stateProperties79;
+            stateProperties80.BorderColor = System.Drawing.Color.Silver;
+            stateProperties80.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties80.ForeColor = System.Drawing.Color.White;
+            stateProperties80.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_revno.OnIdleState = stateProperties80;
             this.Txt_revno.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_revno.PasswordChar = '\0';
             this.Txt_revno.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -2638,26 +2640,26 @@
             this.Txt_load_test.Modified = false;
             this.Txt_load_test.Multiline = false;
             this.Txt_load_test.Name = "Txt_load_test";
-            stateProperties125.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties125.FillColor = System.Drawing.Color.Empty;
-            stateProperties125.ForeColor = System.Drawing.Color.Empty;
-            stateProperties125.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_load_test.OnActiveState = stateProperties125;
-            stateProperties126.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties126.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties126.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties126.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_load_test.OnDisabledState = stateProperties126;
-            stateProperties127.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties127.FillColor = System.Drawing.Color.Empty;
-            stateProperties127.ForeColor = System.Drawing.Color.Empty;
-            stateProperties127.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_load_test.OnHoverState = stateProperties127;
-            stateProperties128.BorderColor = System.Drawing.Color.Silver;
-            stateProperties128.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties128.ForeColor = System.Drawing.Color.White;
-            stateProperties128.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_load_test.OnIdleState = stateProperties128;
+            stateProperties81.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties81.FillColor = System.Drawing.Color.Empty;
+            stateProperties81.ForeColor = System.Drawing.Color.Empty;
+            stateProperties81.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_load_test.OnActiveState = stateProperties81;
+            stateProperties82.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties82.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties82.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_load_test.OnDisabledState = stateProperties82;
+            stateProperties83.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties83.FillColor = System.Drawing.Color.Empty;
+            stateProperties83.ForeColor = System.Drawing.Color.Empty;
+            stateProperties83.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_load_test.OnHoverState = stateProperties83;
+            stateProperties84.BorderColor = System.Drawing.Color.Silver;
+            stateProperties84.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties84.ForeColor = System.Drawing.Color.White;
+            stateProperties84.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_load_test.OnIdleState = stateProperties84;
             this.Txt_load_test.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_load_test.PasswordChar = '\0';
             this.Txt_load_test.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -2737,7 +2739,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label6.Location = new System.Drawing.Point(113, 668);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(366, 21);
@@ -2831,26 +2833,26 @@
             this.Txt_no.Modified = false;
             this.Txt_no.Multiline = false;
             this.Txt_no.Name = "Txt_no";
-            stateProperties129.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties129.FillColor = System.Drawing.Color.Empty;
-            stateProperties129.ForeColor = System.Drawing.Color.Empty;
-            stateProperties129.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_no.OnActiveState = stateProperties129;
-            stateProperties130.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties130.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties130.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties130.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_no.OnDisabledState = stateProperties130;
-            stateProperties131.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
-            stateProperties131.FillColor = System.Drawing.Color.Empty;
-            stateProperties131.ForeColor = System.Drawing.Color.Empty;
-            stateProperties131.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_no.OnHoverState = stateProperties131;
-            stateProperties132.BorderColor = System.Drawing.Color.Silver;
-            stateProperties132.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
-            stateProperties132.ForeColor = System.Drawing.Color.White;
-            stateProperties132.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_no.OnIdleState = stateProperties132;
+            stateProperties85.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties85.FillColor = System.Drawing.Color.Empty;
+            stateProperties85.ForeColor = System.Drawing.Color.Empty;
+            stateProperties85.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_no.OnActiveState = stateProperties85;
+            stateProperties86.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties86.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties86.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_no.OnDisabledState = stateProperties86;
+            stateProperties87.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties87.FillColor = System.Drawing.Color.Empty;
+            stateProperties87.ForeColor = System.Drawing.Color.Empty;
+            stateProperties87.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_no.OnHoverState = stateProperties87;
+            stateProperties88.BorderColor = System.Drawing.Color.Silver;
+            stateProperties88.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            stateProperties88.ForeColor = System.Drawing.Color.White;
+            stateProperties88.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_no.OnIdleState = stateProperties88;
             this.Txt_no.Padding = new System.Windows.Forms.Padding(3);
             this.Txt_no.PasswordChar = '\0';
             this.Txt_no.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -3036,7 +3038,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(113, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 21);
@@ -3207,7 +3209,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.Location = new System.Drawing.Point(113, 358);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 21);
@@ -3272,7 +3274,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label9.Location = new System.Drawing.Point(113, 812);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(412, 21);
@@ -3390,7 +3392,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(113, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 21);
@@ -3450,6 +3452,15 @@
             this.c1.ThreeState = false;
             this.c1.ToolTipText = null;
             // 
+            // panel_headerText
+            // 
+            this.panel_headerText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(40)))), ((int)(((byte)(86)))));
+            this.panel_headerText.Controls.Add(this.label30);
+            this.panel_headerText.Location = new System.Drawing.Point(497, 3);
+            this.panel_headerText.Name = "panel_headerText";
+            this.panel_headerText.Size = new System.Drawing.Size(544, 50);
+            this.panel_headerText.TabIndex = 2;
+            // 
             // Secc2Frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3463,12 +3474,12 @@
             this.Text = "Secc2Frm";
             this.Load += new System.EventHandler(this.Secc2Frm_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_headerText.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3560,5 +3571,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Save;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel_headerText;
     }
 }
