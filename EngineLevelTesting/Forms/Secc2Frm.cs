@@ -32,6 +32,7 @@ namespace EngineLevelTesting.Forms
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.None;
             myCorners.RoundedFormsDocker(this);
+            myCorners.RoundedPanelModuleName(panel_headerText);
             pictureBox3.Hide();
         }
 
@@ -234,6 +235,7 @@ namespace EngineLevelTesting.Forms
             Txt_no.Clear();
             Txt_revno.Clear();
             Txt_serial_number.Clear();
+
             Txt_emmc.Clear();
             Txt_load_test.Clear();
             Txt_keysight_attenuation.Clear();
