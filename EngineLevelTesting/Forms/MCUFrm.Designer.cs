@@ -1892,7 +1892,7 @@ namespace EngineLevelTesting.Forms
             this.tabControl1.Location = new System.Drawing.Point(-3, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1075, 622);
+            this.tabControl1.Size = new System.Drawing.Size(1059, 630);
             this.tabControl1.TabIndex = 221;
             // 
             // tabPage1
@@ -1954,7 +1954,7 @@ namespace EngineLevelTesting.Forms
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1067, 594);
+            this.tabPage1.Size = new System.Drawing.Size(1051, 602);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -2014,7 +2014,7 @@ namespace EngineLevelTesting.Forms
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1068, 594);
+            this.tabPage2.Size = new System.Drawing.Size(1051, 569);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2037,7 +2037,7 @@ namespace EngineLevelTesting.Forms
             this.panel66.Controls.Add(this.label44);
             this.panel66.Location = new System.Drawing.Point(-1, 1);
             this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(1070, 38);
+            this.panel66.Size = new System.Drawing.Size(1070, 46);
             this.panel66.TabIndex = 197;
             // 
             // label44
@@ -2047,7 +2047,7 @@ namespace EngineLevelTesting.Forms
             this.label44.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(0, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(1070, 38);
+            this.label44.Size = new System.Drawing.Size(1070, 46);
             this.label44.TabIndex = 0;
             this.label44.Text = "MCU 6 Series Board EL Test Data";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2056,7 +2056,7 @@ namespace EngineLevelTesting.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 637);
+            this.ClientSize = new System.Drawing.Size(1051, 637);
             this.Controls.Add(this.panel66);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
