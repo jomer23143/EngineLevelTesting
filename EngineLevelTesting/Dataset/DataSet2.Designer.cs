@@ -3660,8 +3660,6 @@ namespace EngineLevelTesting.Dataset {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class secc2_tableDataTable : global::System.Data.TypedTableBase<secc2_tableRow> {
             
-            private global::System.Data.DataColumn columnno;
-            
             private global::System.Data.DataColumn columndate_tested;
             
             private global::System.Data.DataColumn columnserial_number;
@@ -3739,14 +3737,6 @@ namespace EngineLevelTesting.Dataset {
             protected secc2_tableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn noColumn {
-                get {
-                    return this.columnno;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3971,7 +3961,6 @@ namespace EngineLevelTesting.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public secc2_tableRow Addsecc2_tableRow(
-                        string no, 
                         string date_tested, 
                         string serial_number, 
                         string ipn, 
@@ -3997,7 +3986,6 @@ namespace EngineLevelTesting.Dataset {
                         string remarks) {
                 secc2_tableRow rowsecc2_tableRow = ((secc2_tableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        no,
                         date_tested,
                         serial_number,
                         ipn,
@@ -4043,7 +4031,6 @@ namespace EngineLevelTesting.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnno = base.Columns["no"];
                 this.columndate_tested = base.Columns["date_tested"];
                 this.columnserial_number = base.Columns["serial_number"];
                 this.columnipn = base.Columns["ipn"];
@@ -4072,8 +4059,6 @@ namespace EngineLevelTesting.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnno = new global::System.Data.DataColumn("no", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnno);
                 this.columndate_tested = new global::System.Data.DataColumn("date_tested", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndate_tested);
                 this.columnserial_number = new global::System.Data.DataColumn("serial_number", typeof(string), null, global::System.Data.MappingType.Element);
@@ -8173,22 +8158,6 @@ namespace EngineLevelTesting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string no {
-                get {
-                    try {
-                        return ((string)(this[this.tablesecc2_table.noColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'no\' in table \'secc2_table\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesecc2_table.noColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string date_tested {
                 get {
                     try {
@@ -8555,18 +8524,6 @@ namespace EngineLevelTesting.Dataset {
                 set {
                     this[this.tablesecc2_table.remarksColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsnoNull() {
-                return this.IsNull(this.tablesecc2_table.noColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetnoNull() {
-                this[this.tablesecc2_table.noColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

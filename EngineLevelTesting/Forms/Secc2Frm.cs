@@ -30,115 +30,18 @@ namespace EngineLevelTesting.Forms
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.FormBorderStyle = FormBorderStyle.None;
-            myCorners.RoundedFormsDocker(this);
-            myCorners.RoundedPanelModuleName(panel_headerText);
+         
+    
             pictureBox3.Hide();
         }
 
         private void Secc2Frm_Load(object sender, EventArgs e)
         {
             Txt_datetested.Text = dt;
-            Txt_no.Select();
-            chckController();
+            Txt_serial_number.Select();
         }
 
-        private void chckController()
-        {
-            textBoxCheckBoxMap = new Dictionary<BunifuTextBox, BunifuCheckBox>();
-            dropdownCheckBoxMap1 = new Dictionary<BunifuDropdown, BunifuCheckBox>();
-
-            //Map Tetxboxes with CheckBoxes
-            if (Txt_no != null && c1 != null)
-                textBoxCheckBoxMap.Add(Txt_no, c1);
-
-            if (Txt_datetested != null && c2 != null)
-                textBoxCheckBoxMap.Add(Txt_datetested, c2);
-
-            if (Txt_serial_number != null && c3 != null)
-                textBoxCheckBoxMap.Add(Txt_serial_number, c3);
-
-            if (Txt_ipn != null && c4 != null)
-                textBoxCheckBoxMap.Add(Txt_ipn, c4);
-
-            if (Txt_revno != null && c5 != null)
-                textBoxCheckBoxMap.Add(Txt_revno, c5);
-
-            if (Txt_emmc != null && c6 != null)
-                textBoxCheckBoxMap.Add(Txt_emmc, c6);
-
-            if (Txt_load_test != null && c9 != null)
-                textBoxCheckBoxMap.Add(Txt_load_test, c9);
-
-            if (Txt_keysight_attenuation != null && c16 != null)
-                textBoxCheckBoxMap.Add(Txt_keysight_attenuation, c16);
-
-            if (Txt_failure_details != null && c22 != null)
-                textBoxCheckBoxMap.Add(Txt_failure_details, c22);
-
-            if (Txt_test_technician != null && c23 != null)
-                textBoxCheckBoxMap.Add(Txt_test_technician, c23);
-
-            if (Txt_remarks != null && c24 != null)
-                textBoxCheckBoxMap.Add(Txt_remarks, c24);
-
-
-            // Map Dropdowns with CheckBoxes
-            if (Cmb_board_selection != null && c7 != null)
-                dropdownCheckBoxMap1.Add(Cmb_board_selection, c7);
-
-            if (Cmb_boardtype != null & c8 != null)
-                dropdownCheckBoxMap1.Add(Cmb_boardtype, c8);
-           
-            if (Cmb_usb_type_a_test != null && c10 != null)
-                dropdownCheckBoxMap1.Add(Cmb_usb_type_a_test, c10);
-
-            if (Cmb_usb_type_c_test != null && c11 != null)
-
-                dropdownCheckBoxMap1.Add(Cmb_usb_type_c_test, c11);
-
-            if (Cmb_cm_set_key_test != null && c12 != null)
-                dropdownCheckBoxMap1.Add(Cmb_cm_set_key_test, c12);
-
-            if (Cmb_succesfully != null && c13 != null)
-                dropdownCheckBoxMap1.Add(Cmb_succesfully, c13);
-
-            if (Cmb_Load_production_binaries != null && c14 != null)
-                dropdownCheckBoxMap1.Add(Cmb_Load_production_binaries, c14);
-
-            if (Cmb_charging_sessions != null && c15 != null)
-                dropdownCheckBoxMap1.Add(Cmb_charging_sessions, c15);
-
-            if (Cmb_charging_session1 != null && c17 != null)
-                dropdownCheckBoxMap1.Add(Cmb_charging_session1, c17);
-
-            if (Cmb_charging_session2 != null && c18 != null)
-                dropdownCheckBoxMap1.Add(Cmb_charging_session2, c18);
-
-            if (Cmb_charging_session3 != null && c19 != null)
-                dropdownCheckBoxMap1.Add(Cmb_charging_session3, c19);
-
-            if (Cmb_judgement != null && c20 != null)
-                dropdownCheckBoxMap1.Add(Cmb_judgement, c20);
-
-            if (Cmb_tok != null && c21 != null)
-                dropdownCheckBoxMap1.Add(Cmb_tok, c21);
-
-
-
-            // Attach TextChanged event handler for all TextBoxes
-            foreach (var textBox in textBoxCheckBoxMap.Keys)
-            {
-                textBox.TextChanged += TextBox_TextChanged;
-            }
-
-            // Attach SelectedIndexChanged event handler for all Dropdowns
-            foreach (var dropdown in dropdownCheckBoxMap1.Keys)
-            {
-                dropdown.SelectedIndexChanged += Dropdown_SelectedIndexChanged;
-            }
-        }
-
+      
 
         // Single event handler for all TextBoxes
         private void TextBox_TextChanged(object sender, EventArgs e)
@@ -187,7 +90,7 @@ namespace EngineLevelTesting.Forms
               pictureBox3.Show();
                 StringBuilder sql = new StringBuilder();
                 Dictionary<string, object> data = new Dictionary<string, object> {
-                                { "no",Txt_no.Text},
+                               // { "no",Txt_no.Text},
                                 { "date_tested", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss")},
                                 { "serial_number", Txt_serial_number.Text},
                                 { "ipn",Txt_ipn.Text},
@@ -232,7 +135,7 @@ namespace EngineLevelTesting.Forms
 
         private void Cleardata()
         {
-            Txt_no.Clear();
+           
             Txt_revno.Clear();
             Txt_serial_number.Clear();
 

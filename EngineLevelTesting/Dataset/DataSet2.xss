@@ -11,7 +11,7 @@
     <Shape ID="DesignTable:mini_pcm" ZOrder="4" X="533" Y="34" Height="448" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="444" />
     <Shape ID="DesignTable:reset" ZOrder="3" X="782" Y="63" Height="257" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="253" />
     <Shape ID="DesignTable:mcu6_series" ZOrder="2" X="973" Y="5" Height="581" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="577" />
-    <Shape ID="DesignTable:secc2_table" ZOrder="1" X="1207" Y="61" Height="609" Width="283" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="605" />
+    <Shape ID="DesignTable:secc2_table" ZOrder="1" X="1207" Y="61" Height="562" Width="262" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="558" />
   </Shapes>
   <Connectors />
 </DiagramLayout>
