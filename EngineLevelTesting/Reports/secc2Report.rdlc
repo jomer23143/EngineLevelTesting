@@ -17,10 +17,6 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="no">
-          <DataField>no</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="date_tested">
           <DataField>date_tested</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -3104,7 +3100,7 @@ YES OR NO</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!no.Value</Value>
+                                  <Value>=RowNumber(nothing)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
