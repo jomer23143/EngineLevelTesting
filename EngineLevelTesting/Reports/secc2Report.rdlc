@@ -3859,17 +3859,17 @@ YES OR NO</Value>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>4.46673in</Height>
+        <Height>4.2305in</Height>
         <Style />
       </Body>
       <Width>34.61936in</Width>
       <Page>
         <PageHeight>21cm</PageHeight>
-        <PageWidth>29.7cm</PageWidth>
-        <LeftMargin>2cm</LeftMargin>
-        <RightMargin>2cm</RightMargin>
+        <PageWidth>91cm</PageWidth>
+        <LeftMargin>0.5in</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
         <TopMargin>2cm</TopMargin>
-        <BottomMargin>2cm</BottomMargin>
+        <BottomMargin>0.5cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>

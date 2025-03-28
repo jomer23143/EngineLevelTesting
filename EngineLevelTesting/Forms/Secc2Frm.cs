@@ -169,5 +169,15 @@ namespace EngineLevelTesting.Forms
                 SendMessage(Handle, 0x112, 0xf012, 0);
             }
         }
+
+        private void Btn_Save_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Txt_ipn.Text) || string.IsNullOrEmpty(Txt_serial_number.Text) || string.IsNullOrEmpty(Txt_emmc.Text) || string.IsNullOrEmpty(Txt_load_test.Text) || string.IsNullOrEmpty(Txt_keysight_attenuation.Text) || string.IsNullOrEmpty(Txt_failure_details.Text) || string.IsNullOrEmpty(Txt_test_technician.Text) || string.IsNullOrEmpty(Txt_remarks.Text))
+            {
+                MessageBox.Show("Please input all Fields", "Notification - SECC 2.0 Board Test Checklist", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+                Saved();
+        }
     }
 }

@@ -18,6 +18,7 @@ namespace EngineLevelTesting.Forms
         public Reports()
         {
             InitializeComponent();
+            dtfrom.Value = DateTime.Now.AddDays(-7);
         }
 
         private void Reports_Load(object sender, EventArgs e)
