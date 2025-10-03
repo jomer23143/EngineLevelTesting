@@ -51,6 +51,7 @@
             this.btnl2powerboard = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnReport = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -67,13 +68,14 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 437);
+            this.tabControl1.Size = new System.Drawing.Size(828, 437);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -86,7 +88,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 37);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 396);
+            this.tabPage1.Size = new System.Drawing.Size(820, 396);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "GEN 2 BOARDS";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -149,7 +151,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 37);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 396);
+            this.tabPage2.Size = new System.Drawing.Size(820, 396);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "GEN 4 BOARDS";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -157,7 +159,7 @@
             // btnmcu6_4
             // 
             this.btnmcu6_4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmcu6_4.Location = new System.Drawing.Point(305, 232);
+            this.btnmcu6_4.Location = new System.Drawing.Point(290, 232);
             this.btnmcu6_4.Name = "btnmcu6_4";
             this.btnmcu6_4.Size = new System.Drawing.Size(244, 52);
             this.btnmcu6_4.TabIndex = 25;
@@ -168,7 +170,7 @@
             // btnsecc2
             // 
             this.btnsecc2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsecc2.Location = new System.Drawing.Point(305, 157);
+            this.btnsecc2.Location = new System.Drawing.Point(290, 157);
             this.btnsecc2.Name = "btnsecc2";
             this.btnsecc2.Size = new System.Drawing.Size(244, 52);
             this.btnsecc2.TabIndex = 24;
@@ -179,7 +181,7 @@
             // btnreset
             // 
             this.btnreset.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreset.Location = new System.Drawing.Point(305, 89);
+            this.btnreset.Location = new System.Drawing.Point(290, 89);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(244, 52);
             this.btnreset.TabIndex = 23;
@@ -190,7 +192,7 @@
             // btnmcu6
             // 
             this.btnmcu6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmcu6.Location = new System.Drawing.Point(305, 22);
+            this.btnmcu6.Location = new System.Drawing.Point(290, 22);
             this.btnmcu6.Name = "btnmcu6";
             this.btnmcu6.Size = new System.Drawing.Size(244, 52);
             this.btnmcu6.TabIndex = 22;
@@ -201,7 +203,7 @@
             // btnmcu360
             // 
             this.btnmcu360.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmcu360.Location = new System.Drawing.Point(30, 233);
+            this.btnmcu360.Location = new System.Drawing.Point(15, 233);
             this.btnmcu360.Name = "btnmcu360";
             this.btnmcu360.Size = new System.Drawing.Size(244, 52);
             this.btnmcu360.TabIndex = 18;
@@ -212,7 +214,7 @@
             // btnxbutower
             // 
             this.btnxbutower.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxbutower.Location = new System.Drawing.Point(30, 157);
+            this.btnxbutower.Location = new System.Drawing.Point(15, 157);
             this.btnxbutower.Name = "btnxbutower";
             this.btnxbutower.Size = new System.Drawing.Size(244, 52);
             this.btnxbutower.TabIndex = 17;
@@ -223,7 +225,7 @@
             // btnxbu
             // 
             this.btnxbu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxbu.Location = new System.Drawing.Point(30, 89);
+            this.btnxbu.Location = new System.Drawing.Point(15, 89);
             this.btnxbu.Name = "btnxbu";
             this.btnxbu.Size = new System.Drawing.Size(244, 52);
             this.btnxbu.TabIndex = 16;
@@ -234,7 +236,7 @@
             // btnSecc
             // 
             this.btnSecc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSecc.Location = new System.Drawing.Point(30, 22);
+            this.btnSecc.Location = new System.Drawing.Point(15, 22);
             this.btnSecc.Name = "btnSecc";
             this.btnSecc.Size = new System.Drawing.Size(244, 52);
             this.btnSecc.TabIndex = 15;
@@ -251,7 +253,7 @@
             this.tabPage3.Controls.Add(this.btnl2powerboard);
             this.tabPage3.Location = new System.Drawing.Point(4, 37);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(768, 396);
+            this.tabPage3.Size = new System.Drawing.Size(820, 396);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "L2 BOARDS";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -306,7 +308,7 @@
             this.tabPage4.Controls.Add(this.btnReport);
             this.tabPage4.Location = new System.Drawing.Point(4, 37);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(768, 396);
+            this.tabPage4.Size = new System.Drawing.Size(820, 396);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "REPORTS";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -322,11 +324,20 @@
             this.btnReport.UseVisualStyleBackColor = true;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 37);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(820, 396);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "POWER MODULE";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // MenuV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 461);
+            this.ClientSize = new System.Drawing.Size(852, 461);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuV2";
@@ -366,5 +377,6 @@
         private System.Windows.Forms.Button btnopto;
         private System.Windows.Forms.Button btnl2powermeter;
         private System.Windows.Forms.Button btnl2powerboard;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
