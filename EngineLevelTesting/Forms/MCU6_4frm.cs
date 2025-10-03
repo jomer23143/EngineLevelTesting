@@ -11,23 +11,16 @@ using System.Windows.Forms;
 
 namespace EngineLevelTesting.Forms
 {
-    public partial class MCUFrm : Form
+    public partial class MCU6_4frm: Form
     {
-        public MCUFrm()
+        public MCU6_4frm()
         {
             InitializeComponent();
-            rjCircularPictureBox1.Hide();
         }
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtserial.Text) || string.IsNullOrEmpty(txtipn.Text) || string.IsNullOrEmpty(txtrev.Text) ||
-                string.IsNullOrEmpty(txtlow_c1_t1.Text) || string.IsNullOrEmpty(cbjudgement.Text) || string.IsNullOrEmpty(txtremarks.Text) || string.IsNullOrEmpty(txttestby.Text))
-            {
-                MessageBox.Show("Please Input all fields!!!");
-            }
-            else
-                Saved();
+            Saved();
         }
         private async void Saved()
         {
@@ -42,6 +35,16 @@ namespace EngineLevelTesting.Forms
                                 { "series_no",txtseriesno.Text},
                                 { "ipn_number",txtipn.Text},
                                 { "rev_no",txtrev.Text},
+                                { "otp_s2",cb_otps2.Text.ToUpper()},
+                                { "otp_s",cb_otpS.Text.ToUpper()},
+                                { "otp_s7",cb_otpS7.Text.ToUpper()},
+                                { "otp_s435",cb_otpS435.Text.ToUpper()},
+                                { "otp_s_",cb_otpS_.Text.ToUpper()},
+                                { "setting_off",cb_d52_off.Text.ToUpper()},
+                                { "setting_on",cb_d52_on.Text.ToUpper()},
+                                { "setting_should_off",cb_d52_shouldOff.Text.ToUpper()},
+                                { "setting_r375",cb_r375.Text.ToUpper()},
+                                { "mcu_type","MCU 6.4"},
                                 { "ccr_900",cb900.Text.ToUpper()},
                                 { "ccr_1000",cb1000.Text.ToUpper()},
                                 { "ccr_1090",cb1090.Text.ToUpper()},
@@ -86,8 +89,7 @@ namespace EngineLevelTesting.Forms
                                 { "remarks",txtremarks.Text},
                                 { "tested_by",txttestby.Text},
                                 { "date_stamp", DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") },
-                                { "date_record", DateTime.Now.ToShortDateString()},
-                                { "mcu_type","MCU 6"}
+                                { "date_record", DateTime.Now.ToShortDateString()}
                 };
                 sql.Append(MySqlDatasupport.GetInsert("mcu6_series_table", data));
                 await Task.Run(() =>
@@ -154,11 +156,15 @@ namespace EngineLevelTesting.Forms
             cb1200.SelectedIndex = -1;
             cb1290.SelectedIndex = -1;
             cb1380.SelectedIndex = -1;
-
-        }
-
-        private void MCUFrm_Load(object sender, EventArgs e)
-        {
+            cb_otpS.SelectedIndex = -1;
+            cb_otps2.SelectedIndex = -1;
+            cb_otpS435.SelectedIndex = -1;
+            cb_otpS7.SelectedIndex = -1;
+            cb_otpS_.SelectedIndex = -1;
+            cb_d52_off.SelectedIndex = -1;
+            cb_d52_on.SelectedIndex = -1;
+            cb_d52_shouldOff.SelectedIndex = -1;
+            cb_r375.SelectedIndex = -1;
 
         }
 
@@ -170,6 +176,11 @@ namespace EngineLevelTesting.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage1;
+        }
+
+        private void MCU6_4frm_Load(object sender, EventArgs e)
+        {
+            rjCircularPictureBox1.Hide();
         }
     }
 }

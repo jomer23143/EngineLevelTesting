@@ -70,6 +70,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties41 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties42 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties43 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties44 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.Btn_close = new System.Windows.Forms.Button();
@@ -100,9 +104,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.Txt_datetested = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Txt_emmc = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -130,11 +132,21 @@
             this.Cmb_tok = new System.Windows.Forms.ComboBox();
             this.pictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.cbboardsealed = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cbloadqcachip = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtkernelversion = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.cbsdcard = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,7 +156,7 @@
             this.panel1.Controls.Add(this.Btn_close);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(831, 46);
             this.panel1.TabIndex = 0;
@@ -171,7 +183,7 @@
             this.Btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_close.Location = new System.Drawing.Point(777, 7);
-            this.Btn_close.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_close.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_close.Name = "Btn_close";
             this.Btn_close.Size = new System.Drawing.Size(38, 34);
             this.Btn_close.TabIndex = 0;
@@ -185,7 +197,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label9.Location = new System.Drawing.Point(82, 427);
+            this.label9.Location = new System.Drawing.Point(82, 626);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(330, 17);
@@ -224,7 +236,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label6.Location = new System.Drawing.Point(114, 346);
+            this.label6.Location = new System.Drawing.Point(114, 469);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(290, 17);
@@ -259,8 +271,8 @@
             this.Txt_load_test.IconRight = null;
             this.Txt_load_test.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_load_test.Lines = new string[0];
-            this.Txt_load_test.Location = new System.Drawing.Point(424, 417);
-            this.Txt_load_test.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_load_test.Location = new System.Drawing.Point(424, 616);
+            this.Txt_load_test.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_load_test.MaxLength = 32767;
             this.Txt_load_test.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_load_test.Modified = false;
@@ -286,7 +298,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_load_test.OnIdleState = stateProperties4;
-            this.Txt_load_test.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_load_test.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_load_test.PasswordChar = '\0';
             this.Txt_load_test.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_load_test.PlaceholderText = "";
@@ -336,7 +348,7 @@
             this.Txt_revno.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_revno.Lines = new string[0];
             this.Txt_revno.Location = new System.Drawing.Point(424, 138);
-            this.Txt_revno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_revno.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_revno.MaxLength = 32767;
             this.Txt_revno.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_revno.Modified = false;
@@ -362,7 +374,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_revno.OnIdleState = stateProperties8;
-            this.Txt_revno.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_revno.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_revno.PasswordChar = '\0';
             this.Txt_revno.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_revno.PlaceholderText = "";
@@ -402,7 +414,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(169, 502);
+            this.label13.Location = new System.Drawing.Point(169, 688);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(232, 17);
@@ -438,7 +450,7 @@
             this.Txt_serial_number.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_serial_number.Lines = new string[0];
             this.Txt_serial_number.Location = new System.Drawing.Point(424, 65);
-            this.Txt_serial_number.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_serial_number.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_serial_number.MaxLength = 32767;
             this.Txt_serial_number.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_serial_number.Modified = false;
@@ -464,7 +476,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_serial_number.OnIdleState = stateProperties12;
-            this.Txt_serial_number.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_serial_number.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_serial_number.PasswordChar = '\0';
             this.Txt_serial_number.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_serial_number.PlaceholderText = "";
@@ -491,7 +503,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(112, 537);
+            this.label10.Location = new System.Drawing.Point(112, 723);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(296, 17);
@@ -504,7 +516,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label11.Location = new System.Drawing.Point(116, 574);
+            this.label11.Location = new System.Drawing.Point(116, 760);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(287, 17);
@@ -530,7 +542,7 @@
             this.c24.Cursor = System.Windows.Forms.Cursors.Default;
             this.c24.CustomCheckmarkImage = null;
             this.c24.Location = new System.Drawing.Point(16, 1282);
-            this.c24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.c24.Margin = new System.Windows.Forms.Padding(2);
             this.c24.MinimumSize = new System.Drawing.Size(13, 14);
             this.c24.Name = "c24";
             this.c24.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
@@ -571,7 +583,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label12.Location = new System.Drawing.Point(38, 651);
+            this.label12.Location = new System.Drawing.Point(38, 818);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(377, 17);
@@ -584,7 +596,7 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label24.Location = new System.Drawing.Point(188, 613);
+            this.label24.Location = new System.Drawing.Point(188, 789);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(206, 17);
@@ -597,7 +609,7 @@
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label29.Location = new System.Drawing.Point(166, 470);
+            this.label29.Location = new System.Drawing.Point(166, 656);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(230, 17);
@@ -610,7 +622,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label14.Location = new System.Drawing.Point(36, 689);
+            this.label14.Location = new System.Drawing.Point(36, 856);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(381, 17);
@@ -623,7 +635,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(170, 765);
+            this.label15.Location = new System.Drawing.Point(170, 1025);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(229, 17);
@@ -636,7 +648,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label25.Location = new System.Drawing.Point(142, 721);
+            this.label25.Location = new System.Drawing.Point(142, 981);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(257, 17);
@@ -649,7 +661,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label16.Location = new System.Drawing.Point(212, 803);
+            this.label16.Location = new System.Drawing.Point(212, 1063);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(176, 17);
@@ -662,7 +674,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label20.Location = new System.Drawing.Point(212, 841);
+            this.label20.Location = new System.Drawing.Point(212, 1101);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(176, 17);
@@ -675,7 +687,7 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label21.Location = new System.Drawing.Point(212, 886);
+            this.label21.Location = new System.Drawing.Point(212, 1146);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(176, 17);
@@ -688,7 +700,7 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label22.Location = new System.Drawing.Point(253, 924);
+            this.label22.Location = new System.Drawing.Point(253, 1184);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(135, 17);
@@ -701,7 +713,7 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label23.Location = new System.Drawing.Point(242, 956);
+            this.label23.Location = new System.Drawing.Point(242, 1216);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(150, 17);
@@ -714,7 +726,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label26.Location = new System.Drawing.Point(236, 999);
+            this.label26.Location = new System.Drawing.Point(236, 1259);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(158, 17);
@@ -727,7 +739,7 @@
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label27.Location = new System.Drawing.Point(292, 1047);
+            this.label27.Location = new System.Drawing.Point(292, 1307);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(97, 17);
@@ -740,7 +752,7 @@
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label28.Location = new System.Drawing.Point(323, 1087);
+            this.label28.Location = new System.Drawing.Point(323, 1347);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(61, 17);
@@ -753,25 +765,12 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(128, 175);
+            this.label7.Location = new System.Drawing.Point(101, 277);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(277, 17);
+            this.label7.Size = new System.Drawing.Size(190, 34);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Flashing Latest Image (EMMC)_Image version:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label17.Location = new System.Drawing.Point(119, 197);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(195, 17);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "(SW4 Sttings: 1,4 - ON, 2,3 -OFF)`:";
+            this.label7.Text = "Flashing Latest Image (EMMC)_\r\nImage version:";
             // 
             // label18
             // 
@@ -779,25 +778,12 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label18.Location = new System.Drawing.Point(120, 284);
+            this.label18.Location = new System.Drawing.Point(120, 389);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(171, 17);
             this.label18.TabIndex = 1;
             this.label18.Text = "SECC FIRMWARE INSTALLER ";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label19.Location = new System.Drawing.Point(119, 301);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(190, 17);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "(SW4 Sttings: 1,4 - ON, 2,3 -OFF) ";
             // 
             // Txt_datetested
             // 
@@ -828,7 +814,7 @@
             this.Txt_datetested.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_datetested.Lines = new string[0];
             this.Txt_datetested.Location = new System.Drawing.Point(424, 28);
-            this.Txt_datetested.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_datetested.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_datetested.MaxLength = 32767;
             this.Txt_datetested.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_datetested.Modified = false;
@@ -854,7 +840,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_datetested.OnIdleState = stateProperties16;
-            this.Txt_datetested.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_datetested.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_datetested.PasswordChar = '\0';
             this.Txt_datetested.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_datetested.PlaceholderText = "Enter text";
@@ -916,8 +902,8 @@
             this.Txt_emmc.IconRight = null;
             this.Txt_emmc.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_emmc.Lines = new string[0];
-            this.Txt_emmc.Location = new System.Drawing.Point(424, 175);
-            this.Txt_emmc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_emmc.Location = new System.Drawing.Point(424, 277);
+            this.Txt_emmc.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_emmc.MaxLength = 32767;
             this.Txt_emmc.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_emmc.Modified = false;
@@ -943,7 +929,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_emmc.OnIdleState = stateProperties20;
-            this.Txt_emmc.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_emmc.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_emmc.PasswordChar = '\0';
             this.Txt_emmc.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_emmc.PlaceholderText = "";
@@ -993,7 +979,7 @@
             this.Txt_ipn.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_ipn.Lines = new string[0];
             this.Txt_ipn.Location = new System.Drawing.Point(424, 102);
-            this.Txt_ipn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_ipn.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_ipn.MaxLength = 32767;
             this.Txt_ipn.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_ipn.Modified = false;
@@ -1019,7 +1005,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_ipn.OnIdleState = stateProperties24;
-            this.Txt_ipn.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_ipn.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_ipn.PasswordChar = '\0';
             this.Txt_ipn.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_ipn.PlaceholderText = "";
@@ -1068,8 +1054,8 @@
             this.Txt_keysight_attenuation.IconRight = null;
             this.Txt_keysight_attenuation.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_keysight_attenuation.Lines = new string[0];
-            this.Txt_keysight_attenuation.Location = new System.Drawing.Point(424, 754);
-            this.Txt_keysight_attenuation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_keysight_attenuation.Location = new System.Drawing.Point(424, 1014);
+            this.Txt_keysight_attenuation.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_keysight_attenuation.MaxLength = 32767;
             this.Txt_keysight_attenuation.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_keysight_attenuation.Modified = false;
@@ -1095,7 +1081,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Black;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_keysight_attenuation.OnIdleState = stateProperties28;
-            this.Txt_keysight_attenuation.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_keysight_attenuation.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_keysight_attenuation.PasswordChar = '\0';
             this.Txt_keysight_attenuation.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_keysight_attenuation.PlaceholderText = "Enter text";
@@ -1144,8 +1130,8 @@
             this.Txt_test_technician.IconRight = null;
             this.Txt_test_technician.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_test_technician.Lines = new string[0];
-            this.Txt_test_technician.Location = new System.Drawing.Point(424, 1033);
-            this.Txt_test_technician.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_test_technician.Location = new System.Drawing.Point(424, 1293);
+            this.Txt_test_technician.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_test_technician.MaxLength = 32767;
             this.Txt_test_technician.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_test_technician.Modified = false;
@@ -1171,7 +1157,7 @@
             stateProperties32.ForeColor = System.Drawing.Color.Black;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_test_technician.OnIdleState = stateProperties32;
-            this.Txt_test_technician.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_test_technician.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_test_technician.PasswordChar = '\0';
             this.Txt_test_technician.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_test_technician.PlaceholderText = "";
@@ -1220,8 +1206,8 @@
             this.Txt_failure_details.IconRight = null;
             this.Txt_failure_details.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_failure_details.Lines = new string[0];
-            this.Txt_failure_details.Location = new System.Drawing.Point(424, 989);
-            this.Txt_failure_details.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_failure_details.Location = new System.Drawing.Point(424, 1249);
+            this.Txt_failure_details.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_failure_details.MaxLength = 32767;
             this.Txt_failure_details.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_failure_details.Modified = false;
@@ -1247,7 +1233,7 @@
             stateProperties36.ForeColor = System.Drawing.Color.Black;
             stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_failure_details.OnIdleState = stateProperties36;
-            this.Txt_failure_details.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_failure_details.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_failure_details.PasswordChar = '\0';
             this.Txt_failure_details.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_failure_details.PlaceholderText = "";
@@ -1296,8 +1282,8 @@
             this.Txt_remarks.IconRight = null;
             this.Txt_remarks.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_remarks.Lines = new string[0];
-            this.Txt_remarks.Location = new System.Drawing.Point(424, 1077);
-            this.Txt_remarks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_remarks.Location = new System.Drawing.Point(424, 1337);
+            this.Txt_remarks.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_remarks.MaxLength = 32767;
             this.Txt_remarks.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_remarks.Modified = false;
@@ -1323,7 +1309,7 @@
             stateProperties40.ForeColor = System.Drawing.Color.Black;
             stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_remarks.OnIdleState = stateProperties40;
-            this.Txt_remarks.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_remarks.Padding = new System.Windows.Forms.Padding(2);
             this.Txt_remarks.PasswordChar = '\0';
             this.Txt_remarks.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Txt_remarks.PlaceholderText = "";
@@ -1333,7 +1319,7 @@
             this.Txt_remarks.SelectionLength = 0;
             this.Txt_remarks.SelectionStart = 0;
             this.Txt_remarks.ShortcutsEnabled = true;
-            this.Txt_remarks.Size = new System.Drawing.Size(314, 33);
+            this.Txt_remarks.Size = new System.Drawing.Size(314, 34);
             this.Txt_remarks.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.Txt_remarks.TabIndex = 24;
             this.Txt_remarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1350,7 +1336,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label8.Location = new System.Drawing.Point(206, 384);
+            this.label8.Location = new System.Drawing.Point(212, 507);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(191, 17);
@@ -1360,10 +1346,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(291, 194);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(300, 277);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(112, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -1371,10 +1357,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(291, 269);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(298, 374);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 60);
+            this.pictureBox2.Size = new System.Drawing.Size(114, 82);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -1426,8 +1412,8 @@
             this.Btn_Save.IdleIconLeftImage = null;
             this.Btn_Save.IdleIconRightImage = null;
             this.Btn_Save.IndicateFocus = false;
-            this.Btn_Save.Location = new System.Drawing.Point(424, 1145);
-            this.Btn_Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_Save.Location = new System.Drawing.Point(424, 1386);
+            this.Btn_Save.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_Save.Name = "Btn_Save";
             this.Btn_Save.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Save.OnDisabledState.BorderRadius = 18;
@@ -1473,29 +1459,29 @@
             // Cmb_board_selection
             // 
             this.Cmb_board_selection.BackColor = System.Drawing.Color.SkyBlue;
-            this.Cmb_board_selection.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cmb_board_selection.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cmb_board_selection.FormattingEnabled = true;
             this.Cmb_board_selection.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_board_selection.Location = new System.Drawing.Point(424, 344);
-            this.Cmb_board_selection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_board_selection.Location = new System.Drawing.Point(424, 467);
+            this.Cmb_board_selection.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_board_selection.Name = "Cmb_board_selection";
-            this.Cmb_board_selection.Size = new System.Drawing.Size(153, 22);
+            this.Cmb_board_selection.Size = new System.Drawing.Size(153, 27);
             this.Cmb_board_selection.TabIndex = 126;
             // 
             // Cmb_boardtype
             // 
             this.Cmb_boardtype.BackColor = System.Drawing.Color.SkyBlue;
-            this.Cmb_boardtype.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cmb_boardtype.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cmb_boardtype.FormattingEnabled = true;
             this.Cmb_boardtype.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_boardtype.Location = new System.Drawing.Point(424, 377);
-            this.Cmb_boardtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_boardtype.Location = new System.Drawing.Point(424, 500);
+            this.Cmb_boardtype.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_boardtype.Name = "Cmb_boardtype";
-            this.Cmb_boardtype.Size = new System.Drawing.Size(153, 22);
+            this.Cmb_boardtype.Size = new System.Drawing.Size(153, 27);
             this.Cmb_boardtype.TabIndex = 126;
             // 
             // Cmb_usb_type_a_test
@@ -1506,8 +1492,8 @@
             this.Cmb_usb_type_a_test.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_usb_type_a_test.Location = new System.Drawing.Point(424, 495);
-            this.Cmb_usb_type_a_test.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_usb_type_a_test.Location = new System.Drawing.Point(424, 681);
+            this.Cmb_usb_type_a_test.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_usb_type_a_test.Name = "Cmb_usb_type_a_test";
             this.Cmb_usb_type_a_test.Size = new System.Drawing.Size(153, 22);
             this.Cmb_usb_type_a_test.TabIndex = 126;
@@ -1520,8 +1506,8 @@
             this.Cmb_usb_type_c_test.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_usb_type_c_test.Location = new System.Drawing.Point(424, 533);
-            this.Cmb_usb_type_c_test.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_usb_type_c_test.Location = new System.Drawing.Point(424, 719);
+            this.Cmb_usb_type_c_test.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_usb_type_c_test.Name = "Cmb_usb_type_c_test";
             this.Cmb_usb_type_c_test.Size = new System.Drawing.Size(153, 22);
             this.Cmb_usb_type_c_test.TabIndex = 126;
@@ -1534,8 +1520,8 @@
             this.Cmb_cm_set_key_test.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_cm_set_key_test.Location = new System.Drawing.Point(424, 566);
-            this.Cmb_cm_set_key_test.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_cm_set_key_test.Location = new System.Drawing.Point(424, 752);
+            this.Cmb_cm_set_key_test.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_cm_set_key_test.Name = "Cmb_cm_set_key_test";
             this.Cmb_cm_set_key_test.Size = new System.Drawing.Size(153, 22);
             this.Cmb_cm_set_key_test.TabIndex = 126;
@@ -1548,8 +1534,8 @@
             this.Cmb_succesfully.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_succesfully.Location = new System.Drawing.Point(424, 644);
-            this.Cmb_succesfully.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_succesfully.Location = new System.Drawing.Point(424, 811);
+            this.Cmb_succesfully.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_succesfully.Name = "Cmb_succesfully";
             this.Cmb_succesfully.Size = new System.Drawing.Size(153, 22);
             this.Cmb_succesfully.TabIndex = 126;
@@ -1562,8 +1548,8 @@
             this.Cmb_Load_production_binaries.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_Load_production_binaries.Location = new System.Drawing.Point(424, 682);
-            this.Cmb_Load_production_binaries.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_Load_production_binaries.Location = new System.Drawing.Point(424, 849);
+            this.Cmb_Load_production_binaries.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_Load_production_binaries.Name = "Cmb_Load_production_binaries";
             this.Cmb_Load_production_binaries.Size = new System.Drawing.Size(153, 22);
             this.Cmb_Load_production_binaries.TabIndex = 126;
@@ -1576,8 +1562,8 @@
             this.Cmb_charging_sessions.Items.AddRange(new object[] {
             "Keysight EVS ",
             "BTC EVS"});
-            this.Cmb_charging_sessions.Location = new System.Drawing.Point(424, 714);
-            this.Cmb_charging_sessions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_charging_sessions.Location = new System.Drawing.Point(424, 974);
+            this.Cmb_charging_sessions.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_charging_sessions.Name = "Cmb_charging_sessions";
             this.Cmb_charging_sessions.Size = new System.Drawing.Size(153, 22);
             this.Cmb_charging_sessions.TabIndex = 126;
@@ -1590,8 +1576,8 @@
             this.Cmb_charging_session1.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.Cmb_charging_session1.Location = new System.Drawing.Point(424, 800);
-            this.Cmb_charging_session1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_charging_session1.Location = new System.Drawing.Point(424, 1060);
+            this.Cmb_charging_session1.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_charging_session1.Name = "Cmb_charging_session1";
             this.Cmb_charging_session1.Size = new System.Drawing.Size(153, 22);
             this.Cmb_charging_session1.TabIndex = 126;
@@ -1604,8 +1590,8 @@
             this.Cmb_charging_session2.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.Cmb_charging_session2.Location = new System.Drawing.Point(424, 835);
-            this.Cmb_charging_session2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_charging_session2.Location = new System.Drawing.Point(424, 1095);
+            this.Cmb_charging_session2.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_charging_session2.Name = "Cmb_charging_session2";
             this.Cmb_charging_session2.Size = new System.Drawing.Size(153, 22);
             this.Cmb_charging_session2.TabIndex = 126;
@@ -1618,8 +1604,8 @@
             this.Cmb_charging_session3.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.Cmb_charging_session3.Location = new System.Drawing.Point(424, 879);
-            this.Cmb_charging_session3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_charging_session3.Location = new System.Drawing.Point(424, 1139);
+            this.Cmb_charging_session3.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_charging_session3.Name = "Cmb_charging_session3";
             this.Cmb_charging_session3.Size = new System.Drawing.Size(153, 22);
             this.Cmb_charging_session3.TabIndex = 126;
@@ -1632,8 +1618,8 @@
             this.Cmb_judgement.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.Cmb_judgement.Location = new System.Drawing.Point(424, 917);
-            this.Cmb_judgement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_judgement.Location = new System.Drawing.Point(424, 1177);
+            this.Cmb_judgement.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_judgement.Name = "Cmb_judgement";
             this.Cmb_judgement.Size = new System.Drawing.Size(153, 22);
             this.Cmb_judgement.TabIndex = 126;
@@ -1646,8 +1632,8 @@
             this.Cmb_tok.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.Cmb_tok.Location = new System.Drawing.Point(424, 950);
-            this.Cmb_tok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cmb_tok.Location = new System.Drawing.Point(424, 1210);
+            this.Cmb_tok.Margin = new System.Windows.Forms.Padding(2);
             this.Cmb_tok.Name = "Cmb_tok";
             this.Cmb_tok.Size = new System.Drawing.Size(153, 22);
             this.Cmb_tok.TabIndex = 126;
@@ -1660,8 +1646,8 @@
             this.pictureBox3.BorderRadius = 101;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.IsCircle = true;
-            this.pictureBox3.Location = new System.Drawing.Point(292, 443);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(581, 345);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(202, 202);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1678,6 +1664,15 @@
             this.bunifuPanel1.BorderColor = System.Drawing.SystemColors.Control;
             this.bunifuPanel1.BorderRadius = 18;
             this.bunifuPanel1.BorderThickness = 4;
+            this.bunifuPanel1.Controls.Add(this.cbboardsealed);
+            this.bunifuPanel1.Controls.Add(this.label31);
+            this.bunifuPanel1.Controls.Add(this.cbloadqcachip);
+            this.bunifuPanel1.Controls.Add(this.label19);
+            this.bunifuPanel1.Controls.Add(this.txtkernelversion);
+            this.bunifuPanel1.Controls.Add(this.label17);
+            this.bunifuPanel1.Controls.Add(this.cbsdcard);
+            this.bunifuPanel1.Controls.Add(this.label1);
+            this.bunifuPanel1.Controls.Add(this.pictureBox4);
             this.bunifuPanel1.Controls.Add(this.pictureBox3);
             this.bunifuPanel1.Controls.Add(this.Cmb_tok);
             this.bunifuPanel1.Controls.Add(this.Cmb_judgement);
@@ -1704,9 +1699,7 @@
             this.bunifuPanel1.Controls.Add(this.Txt_emmc);
             this.bunifuPanel1.Controls.Add(this.label4);
             this.bunifuPanel1.Controls.Add(this.Txt_datetested);
-            this.bunifuPanel1.Controls.Add(this.label19);
             this.bunifuPanel1.Controls.Add(this.label18);
-            this.bunifuPanel1.Controls.Add(this.label17);
             this.bunifuPanel1.Controls.Add(this.label7);
             this.bunifuPanel1.Controls.Add(this.label28);
             this.bunifuPanel1.Controls.Add(this.label27);
@@ -1734,12 +1727,194 @@
             this.bunifuPanel1.Controls.Add(this.label3);
             this.bunifuPanel1.Controls.Add(this.label5);
             this.bunifuPanel1.Controls.Add(this.label9);
-            this.bunifuPanel1.Location = new System.Drawing.Point(11, 51);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuPanel1.Location = new System.Drawing.Point(-25, 51);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(805, 1224);
+            this.bunifuPanel1.Size = new System.Drawing.Size(805, 1462);
             this.bunifuPanel1.TabIndex = 2;
+            // 
+            // cbboardsealed
+            // 
+            this.cbboardsealed.BackColor = System.Drawing.Color.SkyBlue;
+            this.cbboardsealed.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbboardsealed.FormattingEnabled = true;
+            this.cbboardsealed.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cbboardsealed.Location = new System.Drawing.Point(423, 912);
+            this.cbboardsealed.Margin = new System.Windows.Forms.Padding(2);
+            this.cbboardsealed.Name = "cbboardsealed";
+            this.cbboardsealed.Size = new System.Drawing.Size(153, 22);
+            this.cbboardsealed.TabIndex = 135;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label31.Location = new System.Drawing.Point(183, 891);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(223, 68);
+            this.label31.TabIndex = 134;
+            this.label31.Text = "BOARD SEALED\r\nAT PUTTY RUN SECURED COMMAND :\r\nSECURED BOOT ENABLE?\r\n(YES/NO)";
+            // 
+            // cbloadqcachip
+            // 
+            this.cbloadqcachip.BackColor = System.Drawing.Color.SkyBlue;
+            this.cbloadqcachip.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbloadqcachip.FormattingEnabled = true;
+            this.cbloadqcachip.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cbloadqcachip.Location = new System.Drawing.Point(423, 580);
+            this.cbloadqcachip.Margin = new System.Windows.Forms.Padding(2);
+            this.cbloadqcachip.Name = "cbloadqcachip";
+            this.cbloadqcachip.Size = new System.Drawing.Size(153, 27);
+            this.cbloadqcachip.TabIndex = 133;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label19.Location = new System.Drawing.Point(199, 577);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(219, 34);
+            this.label19.TabIndex = 132;
+            this.label19.Text = "LOAD QCA CHIP FIRMWARE PACKAGE\r\n(YES,NO)";
+            // 
+            // txtkernelversion
+            // 
+            this.txtkernelversion.AcceptsReturn = false;
+            this.txtkernelversion.AcceptsTab = false;
+            this.txtkernelversion.AnimationSpeed = 200;
+            this.txtkernelversion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtkernelversion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtkernelversion.BackColor = System.Drawing.Color.Transparent;
+            this.txtkernelversion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtkernelversion.BackgroundImage")));
+            this.txtkernelversion.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            this.txtkernelversion.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtkernelversion.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            this.txtkernelversion.BorderColorIdle = System.Drawing.Color.SkyBlue;
+            this.txtkernelversion.BorderRadius = 2;
+            this.txtkernelversion.BorderThickness = 1;
+            this.txtkernelversion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtkernelversion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtkernelversion.DefaultFont = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtkernelversion.DefaultText = "";
+            this.txtkernelversion.FillColor = System.Drawing.Color.SkyBlue;
+            this.txtkernelversion.ForeColor = System.Drawing.Color.Black;
+            this.txtkernelversion.HideSelection = true;
+            this.txtkernelversion.IconLeft = null;
+            this.txtkernelversion.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtkernelversion.IconPadding = 10;
+            this.txtkernelversion.IconRight = null;
+            this.txtkernelversion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtkernelversion.Lines = new string[0];
+            this.txtkernelversion.Location = new System.Drawing.Point(424, 539);
+            this.txtkernelversion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtkernelversion.MaxLength = 32767;
+            this.txtkernelversion.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtkernelversion.Modified = false;
+            this.txtkernelversion.Multiline = false;
+            this.txtkernelversion.Name = "txtkernelversion";
+            stateProperties41.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties41.FillColor = System.Drawing.Color.Empty;
+            stateProperties41.ForeColor = System.Drawing.Color.Empty;
+            stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtkernelversion.OnActiveState = stateProperties41;
+            stateProperties42.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties42.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties42.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtkernelversion.OnDisabledState = stateProperties42;
+            stateProperties43.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(144)))), ((int)(((byte)(39)))));
+            stateProperties43.FillColor = System.Drawing.Color.Empty;
+            stateProperties43.ForeColor = System.Drawing.Color.Empty;
+            stateProperties43.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtkernelversion.OnHoverState = stateProperties43;
+            stateProperties44.BorderColor = System.Drawing.Color.SkyBlue;
+            stateProperties44.FillColor = System.Drawing.Color.SkyBlue;
+            stateProperties44.ForeColor = System.Drawing.Color.Black;
+            stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtkernelversion.OnIdleState = stateProperties44;
+            this.txtkernelversion.Padding = new System.Windows.Forms.Padding(2);
+            this.txtkernelversion.PasswordChar = '\0';
+            this.txtkernelversion.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtkernelversion.PlaceholderText = "";
+            this.txtkernelversion.ReadOnly = false;
+            this.txtkernelversion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtkernelversion.SelectedText = "";
+            this.txtkernelversion.SelectionLength = 0;
+            this.txtkernelversion.SelectionStart = 0;
+            this.txtkernelversion.ShortcutsEnabled = true;
+            this.txtkernelversion.Size = new System.Drawing.Size(152, 32);
+            this.txtkernelversion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtkernelversion.TabIndex = 131;
+            this.txtkernelversion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtkernelversion.TextMarginBottom = 0;
+            this.txtkernelversion.TextMarginLeft = 3;
+            this.txtkernelversion.TextMarginTop = 0;
+            this.txtkernelversion.TextPlaceholder = "";
+            this.txtkernelversion.UseSystemPasswordChar = false;
+            this.txtkernelversion.WordWrap = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label17.Location = new System.Drawing.Point(242, 546);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(157, 17);
+            this.label17.TabIndex = 130;
+            this.label17.Text = "KERNEL VERSION (LATEST)";
+            // 
+            // cbsdcard
+            // 
+            this.cbsdcard.BackColor = System.Drawing.Color.SkyBlue;
+            this.cbsdcard.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbsdcard.FormattingEnabled = true;
+            this.cbsdcard.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cbsdcard.Location = new System.Drawing.Point(424, 182);
+            this.cbsdcard.Margin = new System.Windows.Forms.Padding(2);
+            this.cbsdcard.Name = "cbsdcard";
+            this.cbsdcard.Size = new System.Drawing.Size(153, 27);
+            this.cbsdcard.TabIndex = 129;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(93, 184);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 51);
+            this.label1.TabIndex = 128;
+            this.label1.Text = "SD CARD BOOTING TEST PROCESS\r\n\"USDHC2(SD)\" FOUND IN PUTTY?\r\n(YES,NO)";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(303, 180);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(112, 88);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 127;
+            this.pictureBox4.TabStop = false;
             // 
             // Secc2Frm
             // 
@@ -1751,7 +1926,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Secc2Frm";
             this.Text = "Secc2Frm";
             this.Load += new System.EventHandler(this.Secc2Frm_Load);
@@ -1761,6 +1936,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1797,9 +1973,7 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
         private Bunifu.UI.WinForms.BunifuTextBox Txt_datetested;
         private System.Windows.Forms.Label label4;
         private Bunifu.UI.WinForms.BunifuTextBox Txt_emmc;
@@ -1827,5 +2001,14 @@
         private System.Windows.Forms.ComboBox Cmb_tok;
         private Bunifu.UI.WinForms.BunifuPictureBox pictureBox3;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuTextBox txtkernelversion;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox cbsdcard;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ComboBox cbboardsealed;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.ComboBox cbloadqcachip;
+        private System.Windows.Forms.Label label19;
     }
 }

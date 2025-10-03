@@ -703,7 +703,7 @@ namespace EngineLevelTesting
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Forms.Menu frm = new Forms.Menu();
+            Forms.MenuV2 frm = new Forms.MenuV2();
             frm.Show();
         }
 

@@ -219,7 +219,7 @@ namespace EngineLevelTesting.Forms
             }
             else if (comboBox1.Text == "MCU 6 Series Board Engine Level Test Checklist ISO")
             {
-                sql = $@"SELECT * FROM mcu6_series_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                sql = $@"SELECT * FROM mcu6_series_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}' and mcu_type = 'MCU 6.4'";
                 report = "isomcu6series";
                 datasetname = "DataSet1";
             }
@@ -227,6 +227,12 @@ namespace EngineLevelTesting.Forms
             {
                 sql = $@"SELECT * FROM secc2_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "secc2Report";
+                datasetname = "DataSet1";
+            }
+            else if (comboBox1.Text == "MCU 6.4 Board Engine Level Test Checklist ISO")
+            {
+                sql = $@"SELECT * FROM mcu6_series_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}' and mcu_type = 'MCU 6.4'";
+                report = "mcu6.4";
                 datasetname = "DataSet1";
             }
 
@@ -387,7 +393,7 @@ namespace EngineLevelTesting.Forms
         }
         private void Reports_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Forms.Menu frm = new Forms.Menu();
+            Forms.MenuV2 frm = new Forms.MenuV2();
             frm.Show();
         }
 

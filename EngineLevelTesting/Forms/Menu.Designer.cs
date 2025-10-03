@@ -30,7 +30,7 @@ namespace EngineLevelTesting.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuV2));
             this.btnDataEntry = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnafe = new System.Windows.Forms.Button();
@@ -55,6 +55,7 @@ namespace EngineLevelTesting.Forms
             this.button3 = new System.Windows.Forms.Button();
             this.btnreset = new System.Windows.Forms.Button();
             this.btnsecc2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -168,7 +169,7 @@ namespace EngineLevelTesting.Forms
             this.settingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1289, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1289, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -177,13 +178,13 @@ namespace EngineLevelTesting.Forms
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectionToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // connectionToolStripMenuItem
             // 
             this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
-            this.connectionToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.connectionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.connectionToolStripMenuItem.Text = "Connection";
             this.connectionToolStripMenuItem.Click += new System.EventHandler(this.connectionToolStripMenuItem_Click);
             // 
@@ -249,7 +250,7 @@ namespace EngineLevelTesting.Forms
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(82, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 32);
+            this.label1.Size = new System.Drawing.Size(165, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "GEN 2 BOARDS";
             // 
@@ -260,7 +261,7 @@ namespace EngineLevelTesting.Forms
             this.label2.ForeColor = System.Drawing.Color.SeaGreen;
             this.label2.Location = new System.Drawing.Point(378, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 32);
+            this.label2.Size = new System.Drawing.Size(165, 25);
             this.label2.TabIndex = 16;
             this.label2.Text = "GEN 4 BOARDS";
             // 
@@ -271,7 +272,7 @@ namespace EngineLevelTesting.Forms
             this.label3.ForeColor = System.Drawing.Color.SeaGreen;
             this.label3.Location = new System.Drawing.Point(695, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 32);
+            this.label3.Size = new System.Drawing.Size(123, 25);
             this.label3.TabIndex = 17;
             this.label3.Text = "L2 BOARDS";
             // 
@@ -308,11 +309,23 @@ namespace EngineLevelTesting.Forms
             this.btnsecc2.UseVisualStyleBackColor = true;
             this.btnsecc2.Click += new System.EventHandler(this.btnsecc2_Click);
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(339, 541);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(244, 52);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "MCU 6.4 Board Checklist";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1289, 554);
+            this.ClientSize = new System.Drawing.Size(1289, 607);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnsecc2);
             this.Controls.Add(this.btnreset);
             this.Controls.Add(this.button3);
@@ -375,5 +388,6 @@ namespace EngineLevelTesting.Forms
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnreset;
         private System.Windows.Forms.Button btnsecc2;
+        private System.Windows.Forms.Button button4;
     }
 }

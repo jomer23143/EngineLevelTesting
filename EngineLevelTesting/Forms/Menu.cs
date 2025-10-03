@@ -297,5 +297,11 @@ namespace EngineLevelTesting.Forms
             Forms.Secc2Frm frm = new Forms.Secc2Frm();
             frm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MCU6_4frm frm = new MCU6_4frm();
+            frm.Show();
+        }
     }
 }
