@@ -70,13 +70,14 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(828, 437);
+            this.tabControl1.Size = new System.Drawing.Size(851, 437);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
             // tabPage1
             // 
@@ -85,10 +86,10 @@
             this.tabPage1.Controls.Add(this.btnmc5);
             this.tabPage1.Controls.Add(this.btnafe);
             this.tabPage1.Controls.Add(this.btnhvcombo);
-            this.tabPage1.Location = new System.Drawing.Point(4, 37);
+            this.tabPage1.Location = new System.Drawing.Point(4, 31);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(820, 396);
+            this.tabPage1.Size = new System.Drawing.Size(843, 402);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "GEN 2 BOARDS";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -128,6 +129,7 @@
             // 
             // btnhvcombo
             // 
+            this.btnhvcombo.AutoEllipsis = true;
             this.btnhvcombo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhvcombo.Location = new System.Drawing.Point(24, 20);
             this.btnhvcombo.Name = "btnhvcombo";
@@ -338,7 +340,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 461);
+            this.ClientSize = new System.Drawing.Size(875, 461);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuV2";

@@ -30,7 +30,7 @@ namespace EngineLevelTesting.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuV2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.btnDataEntry = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnafe = new System.Windows.Forms.Button();
@@ -270,7 +270,7 @@ namespace EngineLevelTesting.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label3.Location = new System.Drawing.Point(695, 40);
+            this.label3.Location = new System.Drawing.Point(666, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 25);
             this.label3.TabIndex = 17;

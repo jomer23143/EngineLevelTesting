@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Utilities.BunifuShadowPanel;
 
 namespace EngineLevelTesting.Forms
 {
@@ -19,9 +21,16 @@ namespace EngineLevelTesting.Forms
 
         private void MenuV2_Load(object sender, EventArgs e)
         {
-
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl1.ItemSize = new Size(160, 70);
+            this.tabControl1.SizeMode = TabSizeMode.Fixed;
         }
-
+        private void GetRoundButton(Button btn)
+        {
+            GraphicsPath p = new GraphicsPath();
+            p.AddEllipse(1, 1, btn.Width + 4, btn.Height + 4);
+            btn.Region = new Region(p);
+        }
         private void btnhvcombo_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
@@ -122,6 +131,26 @@ namespace EngineLevelTesting.Forms
         {
             var report = new Reports();
             report.Show();
+        }
+
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            Brush textbrush;
+            Brush backbrush;
+            textbrush = Brushes.Green;
+            TextRenderer.DrawText(e.Graphics, tabControl1.TabPages[e.Index].Text, tabControl1.Font, e.Bounds, (textbrush as SolidBrush).Color);
+            if (e.State.HasFlag(DrawItemState.Selected))
+            {
+                backbrush = new System.Drawing.SolidBrush(Color.Orange);
+                textbrush = Brushes.White;
+            }
+            else
+            {
+                backbrush = new System.Drawing.SolidBrush(Color.DarkOrange);
+                textbrush = Brushes.White;
+            }
+            e.Graphics.FillRectangle(backbrush, e.Bounds);
+            TextRenderer.DrawText(e.Graphics, tabControl1.TabPages[e.Index].Text, tabControl1.Font, e.Bounds, (textbrush as SolidBrush).Color);
         }
     }
 }
