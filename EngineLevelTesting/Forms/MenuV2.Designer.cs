@@ -326,6 +326,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage5.Location = new System.Drawing.Point(4, 37);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(820, 396);
