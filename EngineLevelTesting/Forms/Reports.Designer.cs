@@ -64,7 +64,7 @@ namespace EngineLevelTesting.Forms
             this.dtfrom.Location = new System.Drawing.Point(395, 54);
             this.dtfrom.Margin = new System.Windows.Forms.Padding(4);
             this.dtfrom.Name = "dtfrom";
-            this.dtfrom.Size = new System.Drawing.Size(164, 23);
+            this.dtfrom.Size = new System.Drawing.Size(164, 27);
             this.dtfrom.TabIndex = 1;
             this.dtfrom.ValueChanged += new System.EventHandler(this.dtfrom_ValueChanged);
             // 
@@ -76,7 +76,7 @@ namespace EngineLevelTesting.Forms
             this.dtto.Location = new System.Drawing.Point(585, 54);
             this.dtto.Margin = new System.Windows.Forms.Padding(4);
             this.dtto.Name = "dtto";
-            this.dtto.Size = new System.Drawing.Size(164, 23);
+            this.dtto.Size = new System.Drawing.Size(164, 27);
             this.dtto.TabIndex = 2;
             this.dtto.ValueChanged += new System.EventHandler(this.dtto_ValueChanged);
             // 
@@ -87,7 +87,7 @@ namespace EngineLevelTesting.Forms
             this.label1.Location = new System.Drawing.Point(357, 60);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 15);
+            this.label1.Size = new System.Drawing.Size(30, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "OR";
             // 
@@ -98,7 +98,7 @@ namespace EngineLevelTesting.Forms
             this.label2.Location = new System.Drawing.Point(657, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 15);
+            this.label2.Size = new System.Drawing.Size(29, 21);
             this.label2.TabIndex = 4;
             this.label2.Text = "TO";
             // 
@@ -109,7 +109,7 @@ namespace EngineLevelTesting.Forms
             this.label3.Location = new System.Drawing.Point(455, 35);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 15);
+            this.label3.Size = new System.Drawing.Size(53, 21);
             this.label3.TabIndex = 5;
             this.label3.Text = "FROM";
             // 
@@ -133,7 +133,7 @@ namespace EngineLevelTesting.Forms
             this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(22, 61);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 15);
+            this.label4.Size = new System.Drawing.Size(91, 21);
             this.label4.TabIndex = 7;
             this.label4.Text = "SERIAL NO :";
             // 
@@ -142,7 +142,7 @@ namespace EngineLevelTesting.Forms
             this.textBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(94, 55);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 23);
+            this.textBox1.Size = new System.Drawing.Size(249, 27);
             this.textBox1.TabIndex = 8;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -152,7 +152,7 @@ namespace EngineLevelTesting.Forms
             this.label5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(22, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 15);
+            this.label5.Size = new System.Drawing.Size(92, 21);
             this.label5.TabIndex = 9;
             this.label5.Text = "CHECKLIST :";
             // 
@@ -177,15 +177,16 @@ namespace EngineLevelTesting.Forms
             "Reset Board Test Checklist ISO",
             "MCU 6 Series Board Engine Level Test Checklist ISO",
             "SECC 2.0 Board Test Checklist ISO",
-            "MCU 6.4 Board Engine Level Test Checklist ISO"});
+            "MCU 6.4 Board Engine Level Test Checklist ISO",
+            "Power Module Test Data"});
             this.comboBox1.Location = new System.Drawing.Point(94, 22);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(249, 23);
+            this.comboBox1.Size = new System.Drawing.Size(249, 27);
             this.comboBox1.TabIndex = 10;
             // 
             // Reports
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 642);
             this.Controls.Add(this.comboBox1);

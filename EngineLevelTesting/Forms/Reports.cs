@@ -1,15 +1,9 @@
-﻿using EngineLevelTesting.Utilities;
-using Microsoft.Reporting.WinForms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using EngineLevelTesting.Utilities;
+using Microsoft.Reporting.WinForms;
 
 namespace EngineLevelTesting.Forms
 {
@@ -115,13 +109,13 @@ namespace EngineLevelTesting.Forms
                 report = "IsoDocAfe";
                 datasetname = "DataSet1";
             }
-            else if(comboBox1.Text == "AFE Board Checklist")
+            else if (comboBox1.Text == "AFE Board Checklist")
             {
                 sql = $@"Select * from afe_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "afeReport";
                 datasetname = "DataSet1";
             }
-            else if(comboBox1.Text == "Secc Board Checklist")
+            else if (comboBox1.Text == "Secc Board Checklist")
             {
                 sql = $@"SELECT * FROM secc_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
                 report = "seccReport";
@@ -236,6 +230,13 @@ namespace EngineLevelTesting.Forms
                 datasetname = "DataSet1";
             }
 
+            else if (comboBox1.Text == "Power Module Test Data")
+            {
+                sql = $@"SELECT * FROM power_module_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}'";
+                report = "PowerModuleReport";
+                datasetname = "DataSet2";
+            }
+
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
             var localreport = reportViewer1.LocalReport;
@@ -244,7 +245,7 @@ namespace EngineLevelTesting.Forms
             reportViewer1.LocalReport.DataSources.Add(rds);
             //if (dt.Rows.Count != 0)
             //{
-            localreport.ReportEmbeddedResource = $"{ Assembly.GetExecutingAssembly().EntryPoint.DeclaringType.Namespace}.Reports.{report}.rdlc";
+            localreport.ReportEmbeddedResource = $"{Assembly.GetExecutingAssembly().EntryPoint.DeclaringType.Namespace}.Reports.{report}.rdlc";
             //    ReportParameter rp1 = new ReportParameter("from", "From : " + dtfrom.Value.ToShortDateString());
             //    ReportParameter rp2 = new ReportParameter("to", "To : " + dtto.Value.ToShortDateString());
             //    reportViewer1.LocalReport.SetParameters(new ReportParameter[] { rp1, rp2 });
@@ -375,7 +376,7 @@ namespace EngineLevelTesting.Forms
                 report = "minipcmrReport";
                 datasetname = "DataSet2";
             }
-          
+
 
             reportViewer1.Reset();
             DataTable dt = MySqlDatasupport.RunDataTableDapper(sql);
@@ -385,7 +386,7 @@ namespace EngineLevelTesting.Forms
             reportViewer1.LocalReport.DataSources.Add(rds);
             //if (dt.Rows.Count != 0)
             //{
-            localreport.ReportEmbeddedResource = $"{ Assembly.GetExecutingAssembly().EntryPoint.DeclaringType.Namespace}.Reports.{report}.rdlc";
+            localreport.ReportEmbeddedResource = $"{Assembly.GetExecutingAssembly().EntryPoint.DeclaringType.Namespace}.Reports.{report}.rdlc";
 
             reportViewer1.RefreshReport();
             reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);

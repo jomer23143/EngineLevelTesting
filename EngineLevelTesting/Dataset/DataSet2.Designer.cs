@@ -36,6 +36,8 @@ namespace EngineLevelTesting.Dataset {
         
         private secc2_tableDataTable tablesecc2_table;
         
+        private power_module_tableDataTable tablepower_module_table;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -81,6 +83,9 @@ namespace EngineLevelTesting.Dataset {
                 }
                 if ((ds.Tables["secc2_table"] != null)) {
                     base.Tables.Add(new secc2_tableDataTable(ds.Tables["secc2_table"]));
+                }
+                if ((ds.Tables["power_module_table"] != null)) {
+                    base.Tables.Add(new power_module_tableDataTable(ds.Tables["power_module_table"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -157,6 +162,16 @@ namespace EngineLevelTesting.Dataset {
         public secc2_tableDataTable secc2_table {
             get {
                 return this.tablesecc2_table;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public power_module_tableDataTable power_module_table {
+            get {
+                return this.tablepower_module_table;
             }
         }
         
@@ -245,6 +260,9 @@ namespace EngineLevelTesting.Dataset {
                 if ((ds.Tables["secc2_table"] != null)) {
                     base.Tables.Add(new secc2_tableDataTable(ds.Tables["secc2_table"]));
                 }
+                if ((ds.Tables["power_module_table"] != null)) {
+                    base.Tables.Add(new power_module_tableDataTable(ds.Tables["power_module_table"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -314,6 +332,12 @@ namespace EngineLevelTesting.Dataset {
                     this.tablesecc2_table.InitVars();
                 }
             }
+            this.tablepower_module_table = ((power_module_tableDataTable)(base.Tables["power_module_table"]));
+            if ((initTable == true)) {
+                if ((this.tablepower_module_table != null)) {
+                    this.tablepower_module_table.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -336,6 +360,8 @@ namespace EngineLevelTesting.Dataset {
             base.Tables.Add(this.tablemcu6_series);
             this.tablesecc2_table = new secc2_tableDataTable();
             base.Tables.Add(this.tablesecc2_table);
+            this.tablepower_module_table = new power_module_tableDataTable();
+            base.Tables.Add(this.tablepower_module_table);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -371,6 +397,12 @@ namespace EngineLevelTesting.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializesecc2_table() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializepower_module_table() {
             return false;
         }
         
@@ -446,6 +478,9 @@ namespace EngineLevelTesting.Dataset {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void secc2_tableRowChangeEventHandler(object sender, secc2_tableRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void power_module_tableRowChangeEventHandler(object sender, power_module_tableRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4476,6 +4511,764 @@ namespace EngineLevelTesting.Dataset {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "secc2_tableDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class power_module_tableDataTable : global::System.Data.TypedTableBase<power_module_tableRow> {
+            
+            private global::System.Data.DataColumn columndate_tested;
+            
+            private global::System.Data.DataColumn columnserial_number;
+            
+            private global::System.Data.DataColumn columnvisual_inspection;
+            
+            private global::System.Data.DataColumn columnv_l1;
+            
+            private global::System.Data.DataColumn columnv_l2;
+            
+            private global::System.Data.DataColumn columnv_l3;
+            
+            private global::System.Data.DataColumn columna_l1;
+            
+            private global::System.Data.DataColumn columna_l2;
+            
+            private global::System.Data.DataColumn columna_l3;
+            
+            private global::System.Data.DataColumn columnvoltage_500_display;
+            
+            private global::System.Data.DataColumn columnvoltage_500_act;
+            
+            private global::System.Data.DataColumn columnvoltage_1000_display;
+            
+            private global::System.Data.DataColumn columnvoltage_1000_act;
+            
+            private global::System.Data.DataColumn columncurrent_15a_display;
+            
+            private global::System.Data.DataColumn columncurrent_15a_act;
+            
+            private global::System.Data.DataColumn columncurrent_30a_display;
+            
+            private global::System.Data.DataColumn columncurrent_30a_act;
+            
+            private global::System.Data.DataColumn columninhibit_function;
+            
+            private global::System.Data.DataColumn columnstandby_power;
+            
+            private global::System.Data.DataColumn columninput_power;
+            
+            private global::System.Data.DataColumn columnoutput_voltage;
+            
+            private global::System.Data.DataColumn columnoutput_current;
+            
+            private global::System.Data.DataColumn columnoutput_power;
+            
+            private global::System.Data.DataColumn columneffciency;
+            
+            private global::System.Data.DataColumn columnpower_factor;
+            
+            private global::System.Data.DataColumn columnstatus_after_born_in;
+            
+            private global::System.Data.DataColumn columnpfc_firmware;
+            
+            private global::System.Data.DataColumn columndcdc_firmware;
+            
+            private global::System.Data.DataColumn columnbutton_function;
+            
+            private global::System.Data.DataColumn columnled_display_function;
+            
+            private global::System.Data.DataColumn columnjudgement;
+            
+            private global::System.Data.DataColumn columntok_sticker_attached;
+            
+            private global::System.Data.DataColumn columntest_failure_details;
+            
+            private global::System.Data.DataColumn columntest_technician;
+            
+            private global::System.Data.DataColumn columnremarks;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public power_module_tableDataTable() {
+                this.TableName = "power_module_table";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal power_module_tableDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected power_module_tableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn date_testedColumn {
+                get {
+                    return this.columndate_tested;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn serial_numberColumn {
+                get {
+                    return this.columnserial_number;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn visual_inspectionColumn {
+                get {
+                    return this.columnvisual_inspection;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn v_l1Column {
+                get {
+                    return this.columnv_l1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn v_l2Column {
+                get {
+                    return this.columnv_l2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn v_l3Column {
+                get {
+                    return this.columnv_l3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn a_l1Column {
+                get {
+                    return this.columna_l1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn a_l2Column {
+                get {
+                    return this.columna_l2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn a_l3Column {
+                get {
+                    return this.columna_l3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn voltage_500_displayColumn {
+                get {
+                    return this.columnvoltage_500_display;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn voltage_500_actColumn {
+                get {
+                    return this.columnvoltage_500_act;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn voltage_1000_displayColumn {
+                get {
+                    return this.columnvoltage_1000_display;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn voltage_1000_actColumn {
+                get {
+                    return this.columnvoltage_1000_act;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn current_15a_displayColumn {
+                get {
+                    return this.columncurrent_15a_display;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn current_15a_actColumn {
+                get {
+                    return this.columncurrent_15a_act;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn current_30a_displayColumn {
+                get {
+                    return this.columncurrent_30a_display;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn current_30a_actColumn {
+                get {
+                    return this.columncurrent_30a_act;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn inhibit_functionColumn {
+                get {
+                    return this.columninhibit_function;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn standby_powerColumn {
+                get {
+                    return this.columnstandby_power;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn input_powerColumn {
+                get {
+                    return this.columninput_power;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn output_voltageColumn {
+                get {
+                    return this.columnoutput_voltage;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn output_currentColumn {
+                get {
+                    return this.columnoutput_current;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn output_powerColumn {
+                get {
+                    return this.columnoutput_power;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn effciencyColumn {
+                get {
+                    return this.columneffciency;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn power_factorColumn {
+                get {
+                    return this.columnpower_factor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn status_after_born_inColumn {
+                get {
+                    return this.columnstatus_after_born_in;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn pfc_firmwareColumn {
+                get {
+                    return this.columnpfc_firmware;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn dcdc_firmwareColumn {
+                get {
+                    return this.columndcdc_firmware;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn button_functionColumn {
+                get {
+                    return this.columnbutton_function;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn led_display_functionColumn {
+                get {
+                    return this.columnled_display_function;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn judgementColumn {
+                get {
+                    return this.columnjudgement;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn tok_sticker_attachedColumn {
+                get {
+                    return this.columntok_sticker_attached;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn test_failure_detailsColumn {
+                get {
+                    return this.columntest_failure_details;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn test_technicianColumn {
+                get {
+                    return this.columntest_technician;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn remarksColumn {
+                get {
+                    return this.columnremarks;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public power_module_tableRow this[int index] {
+                get {
+                    return ((power_module_tableRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event power_module_tableRowChangeEventHandler power_module_tableRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event power_module_tableRowChangeEventHandler power_module_tableRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event power_module_tableRowChangeEventHandler power_module_tableRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event power_module_tableRowChangeEventHandler power_module_tableRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Addpower_module_tableRow(power_module_tableRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public power_module_tableRow Addpower_module_tableRow(
+                        string date_tested, 
+                        string serial_number, 
+                        string visual_inspection, 
+                        string v_l1, 
+                        string v_l2, 
+                        string v_l3, 
+                        string a_l1, 
+                        string a_l2, 
+                        string a_l3, 
+                        string voltage_500_display, 
+                        string voltage_500_act, 
+                        string voltage_1000_display, 
+                        string voltage_1000_act, 
+                        string current_15a_display, 
+                        string current_15a_act, 
+                        string current_30a_display, 
+                        string current_30a_act, 
+                        string inhibit_function, 
+                        string standby_power, 
+                        string input_power, 
+                        string output_voltage, 
+                        string output_current, 
+                        string output_power, 
+                        string effciency, 
+                        string power_factor, 
+                        string status_after_born_in, 
+                        string pfc_firmware, 
+                        string dcdc_firmware, 
+                        string button_function, 
+                        string led_display_function, 
+                        string judgement, 
+                        string tok_sticker_attached, 
+                        string test_failure_details, 
+                        string test_technician, 
+                        string remarks) {
+                power_module_tableRow rowpower_module_tableRow = ((power_module_tableRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        date_tested,
+                        serial_number,
+                        visual_inspection,
+                        v_l1,
+                        v_l2,
+                        v_l3,
+                        a_l1,
+                        a_l2,
+                        a_l3,
+                        voltage_500_display,
+                        voltage_500_act,
+                        voltage_1000_display,
+                        voltage_1000_act,
+                        current_15a_display,
+                        current_15a_act,
+                        current_30a_display,
+                        current_30a_act,
+                        inhibit_function,
+                        standby_power,
+                        input_power,
+                        output_voltage,
+                        output_current,
+                        output_power,
+                        effciency,
+                        power_factor,
+                        status_after_born_in,
+                        pfc_firmware,
+                        dcdc_firmware,
+                        button_function,
+                        led_display_function,
+                        judgement,
+                        tok_sticker_attached,
+                        test_failure_details,
+                        test_technician,
+                        remarks};
+                rowpower_module_tableRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowpower_module_tableRow);
+                return rowpower_module_tableRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                power_module_tableDataTable cln = ((power_module_tableDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new power_module_tableDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columndate_tested = base.Columns["date_tested"];
+                this.columnserial_number = base.Columns["serial_number"];
+                this.columnvisual_inspection = base.Columns["visual_inspection"];
+                this.columnv_l1 = base.Columns["v_l1"];
+                this.columnv_l2 = base.Columns["v_l2"];
+                this.columnv_l3 = base.Columns["v_l3"];
+                this.columna_l1 = base.Columns["a_l1"];
+                this.columna_l2 = base.Columns["a_l2"];
+                this.columna_l3 = base.Columns["a_l3"];
+                this.columnvoltage_500_display = base.Columns["voltage_500_display"];
+                this.columnvoltage_500_act = base.Columns["voltage_500_act"];
+                this.columnvoltage_1000_display = base.Columns["voltage_1000_display"];
+                this.columnvoltage_1000_act = base.Columns["voltage_1000_act"];
+                this.columncurrent_15a_display = base.Columns["current_15a_display"];
+                this.columncurrent_15a_act = base.Columns["current_15a_act"];
+                this.columncurrent_30a_display = base.Columns["current_30a_display"];
+                this.columncurrent_30a_act = base.Columns["current_30a_act"];
+                this.columninhibit_function = base.Columns["inhibit_function"];
+                this.columnstandby_power = base.Columns["standby_power"];
+                this.columninput_power = base.Columns["input_power"];
+                this.columnoutput_voltage = base.Columns["output_voltage"];
+                this.columnoutput_current = base.Columns["output_current"];
+                this.columnoutput_power = base.Columns["output_power"];
+                this.columneffciency = base.Columns["effciency"];
+                this.columnpower_factor = base.Columns["power_factor"];
+                this.columnstatus_after_born_in = base.Columns["status_after_born_in"];
+                this.columnpfc_firmware = base.Columns["pfc_firmware"];
+                this.columndcdc_firmware = base.Columns["dcdc_firmware"];
+                this.columnbutton_function = base.Columns["button_function"];
+                this.columnled_display_function = base.Columns["led_display_function"];
+                this.columnjudgement = base.Columns["judgement"];
+                this.columntok_sticker_attached = base.Columns["tok_sticker_attached"];
+                this.columntest_failure_details = base.Columns["test_failure_details"];
+                this.columntest_technician = base.Columns["test_technician"];
+                this.columnremarks = base.Columns["remarks"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columndate_tested = new global::System.Data.DataColumn("date_tested", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndate_tested);
+                this.columnserial_number = new global::System.Data.DataColumn("serial_number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnserial_number);
+                this.columnvisual_inspection = new global::System.Data.DataColumn("visual_inspection", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnvisual_inspection);
+                this.columnv_l1 = new global::System.Data.DataColumn("v_l1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnv_l1);
+                this.columnv_l2 = new global::System.Data.DataColumn("v_l2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnv_l2);
+                this.columnv_l3 = new global::System.Data.DataColumn("v_l3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnv_l3);
+                this.columna_l1 = new global::System.Data.DataColumn("a_l1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columna_l1);
+                this.columna_l2 = new global::System.Data.DataColumn("a_l2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columna_l2);
+                this.columna_l3 = new global::System.Data.DataColumn("a_l3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columna_l3);
+                this.columnvoltage_500_display = new global::System.Data.DataColumn("voltage_500_display", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnvoltage_500_display);
+                this.columnvoltage_500_act = new global::System.Data.DataColumn("voltage_500_act", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnvoltage_500_act);
+                this.columnvoltage_1000_display = new global::System.Data.DataColumn("voltage_1000_display", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnvoltage_1000_display);
+                this.columnvoltage_1000_act = new global::System.Data.DataColumn("voltage_1000_act", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnvoltage_1000_act);
+                this.columncurrent_15a_display = new global::System.Data.DataColumn("current_15a_display", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncurrent_15a_display);
+                this.columncurrent_15a_act = new global::System.Data.DataColumn("current_15a_act", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncurrent_15a_act);
+                this.columncurrent_30a_display = new global::System.Data.DataColumn("current_30a_display", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncurrent_30a_display);
+                this.columncurrent_30a_act = new global::System.Data.DataColumn("current_30a_act", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncurrent_30a_act);
+                this.columninhibit_function = new global::System.Data.DataColumn("inhibit_function", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columninhibit_function);
+                this.columnstandby_power = new global::System.Data.DataColumn("standby_power", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstandby_power);
+                this.columninput_power = new global::System.Data.DataColumn("input_power", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columninput_power);
+                this.columnoutput_voltage = new global::System.Data.DataColumn("output_voltage", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnoutput_voltage);
+                this.columnoutput_current = new global::System.Data.DataColumn("output_current", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnoutput_current);
+                this.columnoutput_power = new global::System.Data.DataColumn("output_power", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnoutput_power);
+                this.columneffciency = new global::System.Data.DataColumn("effciency", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columneffciency);
+                this.columnpower_factor = new global::System.Data.DataColumn("power_factor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpower_factor);
+                this.columnstatus_after_born_in = new global::System.Data.DataColumn("status_after_born_in", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstatus_after_born_in);
+                this.columnpfc_firmware = new global::System.Data.DataColumn("pfc_firmware", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpfc_firmware);
+                this.columndcdc_firmware = new global::System.Data.DataColumn("dcdc_firmware", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndcdc_firmware);
+                this.columnbutton_function = new global::System.Data.DataColumn("button_function", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnbutton_function);
+                this.columnled_display_function = new global::System.Data.DataColumn("led_display_function", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnled_display_function);
+                this.columnjudgement = new global::System.Data.DataColumn("judgement", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnjudgement);
+                this.columntok_sticker_attached = new global::System.Data.DataColumn("tok_sticker_attached", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntok_sticker_attached);
+                this.columntest_failure_details = new global::System.Data.DataColumn("test_failure_details", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntest_failure_details);
+                this.columntest_technician = new global::System.Data.DataColumn("test_technician", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntest_technician);
+                this.columnremarks = new global::System.Data.DataColumn("remarks", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnremarks);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public power_module_tableRow Newpower_module_tableRow() {
+                return ((power_module_tableRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new power_module_tableRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(power_module_tableRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.power_module_tableRowChanged != null)) {
+                    this.power_module_tableRowChanged(this, new power_module_tableRowChangeEvent(((power_module_tableRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.power_module_tableRowChanging != null)) {
+                    this.power_module_tableRowChanging(this, new power_module_tableRowChangeEvent(((power_module_tableRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.power_module_tableRowDeleted != null)) {
+                    this.power_module_tableRowDeleted(this, new power_module_tableRowChangeEvent(((power_module_tableRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.power_module_tableRowDeleting != null)) {
+                    this.power_module_tableRowDeleting(this, new power_module_tableRowChangeEvent(((power_module_tableRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Removepower_module_tableRow(power_module_tableRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet2 ds = new DataSet2();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "power_module_tableDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -9621,6 +10414,1010 @@ namespace EngineLevelTesting.Dataset {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class power_module_tableRow : global::System.Data.DataRow {
+            
+            private power_module_tableDataTable tablepower_module_table;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal power_module_tableRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablepower_module_table = ((power_module_tableDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string date_tested {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.date_testedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'date_tested\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.date_testedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string serial_number {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.serial_numberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'serial_number\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.serial_numberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string visual_inspection {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.visual_inspectionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'visual_inspection\' in table \'power_module_table\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.visual_inspectionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string v_l1 {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.v_l1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'v_l1\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.v_l1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string v_l2 {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.v_l2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'v_l2\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.v_l2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string v_l3 {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.v_l3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'v_l3\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.v_l3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string a_l1 {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.a_l1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'a_l1\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.a_l1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string a_l2 {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.a_l2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'a_l2\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.a_l2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string a_l3 {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.a_l3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'a_l3\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.a_l3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string voltage_500_display {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.voltage_500_displayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'voltage_500_display\' in table \'power_module_table\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.voltage_500_displayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string voltage_500_act {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.voltage_500_actColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'voltage_500_act\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.voltage_500_actColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string voltage_1000_display {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.voltage_1000_displayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'voltage_1000_display\' in table \'power_module_table\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.voltage_1000_displayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string voltage_1000_act {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.voltage_1000_actColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'voltage_1000_act\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.voltage_1000_actColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string current_15a_display {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.current_15a_displayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'current_15a_display\' in table \'power_module_table\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.current_15a_displayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string current_15a_act {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.current_15a_actColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'current_15a_act\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.current_15a_actColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string current_30a_display {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.current_30a_displayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'current_30a_display\' in table \'power_module_table\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.current_30a_displayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string current_30a_act {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.current_30a_actColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'current_30a_act\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.current_30a_actColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string inhibit_function {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.inhibit_functionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'inhibit_function\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.inhibit_functionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string standby_power {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.standby_powerColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'standby_power\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.standby_powerColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string input_power {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.input_powerColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'input_power\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.input_powerColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string output_voltage {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.output_voltageColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'output_voltage\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.output_voltageColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string output_current {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.output_currentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'output_current\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.output_currentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string output_power {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.output_powerColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'output_power\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.output_powerColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string effciency {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.effciencyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'effciency\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.effciencyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string power_factor {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.power_factorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'power_factor\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.power_factorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string status_after_born_in {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.status_after_born_inColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'status_after_born_in\' in table \'power_module_table\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.status_after_born_inColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string pfc_firmware {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.pfc_firmwareColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'pfc_firmware\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.pfc_firmwareColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string dcdc_firmware {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.dcdc_firmwareColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'dcdc_firmware\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.dcdc_firmwareColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string button_function {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.button_functionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'button_function\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.button_functionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string led_display_function {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.led_display_functionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'led_display_function\' in table \'power_module_table\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.led_display_functionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string judgement {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.judgementColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'judgement\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.judgementColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string tok_sticker_attached {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.tok_sticker_attachedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'tok_sticker_attached\' in table \'power_module_table\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.tok_sticker_attachedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string test_failure_details {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.test_failure_detailsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'test_failure_details\' in table \'power_module_table\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.test_failure_detailsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string test_technician {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.test_technicianColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'test_technician\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.test_technicianColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string remarks {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.remarksColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'remarks\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.remarksColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdate_testedNull() {
+                return this.IsNull(this.tablepower_module_table.date_testedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdate_testedNull() {
+                this[this.tablepower_module_table.date_testedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isserial_numberNull() {
+                return this.IsNull(this.tablepower_module_table.serial_numberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setserial_numberNull() {
+                this[this.tablepower_module_table.serial_numberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isvisual_inspectionNull() {
+                return this.IsNull(this.tablepower_module_table.visual_inspectionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setvisual_inspectionNull() {
+                this[this.tablepower_module_table.visual_inspectionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isv_l1Null() {
+                return this.IsNull(this.tablepower_module_table.v_l1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setv_l1Null() {
+                this[this.tablepower_module_table.v_l1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isv_l2Null() {
+                return this.IsNull(this.tablepower_module_table.v_l2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setv_l2Null() {
+                this[this.tablepower_module_table.v_l2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isv_l3Null() {
+                return this.IsNull(this.tablepower_module_table.v_l3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setv_l3Null() {
+                this[this.tablepower_module_table.v_l3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isa_l1Null() {
+                return this.IsNull(this.tablepower_module_table.a_l1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Seta_l1Null() {
+                this[this.tablepower_module_table.a_l1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isa_l2Null() {
+                return this.IsNull(this.tablepower_module_table.a_l2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Seta_l2Null() {
+                this[this.tablepower_module_table.a_l2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isa_l3Null() {
+                return this.IsNull(this.tablepower_module_table.a_l3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Seta_l3Null() {
+                this[this.tablepower_module_table.a_l3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isvoltage_500_displayNull() {
+                return this.IsNull(this.tablepower_module_table.voltage_500_displayColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setvoltage_500_displayNull() {
+                this[this.tablepower_module_table.voltage_500_displayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isvoltage_500_actNull() {
+                return this.IsNull(this.tablepower_module_table.voltage_500_actColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setvoltage_500_actNull() {
+                this[this.tablepower_module_table.voltage_500_actColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isvoltage_1000_displayNull() {
+                return this.IsNull(this.tablepower_module_table.voltage_1000_displayColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setvoltage_1000_displayNull() {
+                this[this.tablepower_module_table.voltage_1000_displayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isvoltage_1000_actNull() {
+                return this.IsNull(this.tablepower_module_table.voltage_1000_actColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setvoltage_1000_actNull() {
+                this[this.tablepower_module_table.voltage_1000_actColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Iscurrent_15a_displayNull() {
+                return this.IsNull(this.tablepower_module_table.current_15a_displayColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setcurrent_15a_displayNull() {
+                this[this.tablepower_module_table.current_15a_displayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Iscurrent_15a_actNull() {
+                return this.IsNull(this.tablepower_module_table.current_15a_actColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setcurrent_15a_actNull() {
+                this[this.tablepower_module_table.current_15a_actColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Iscurrent_30a_displayNull() {
+                return this.IsNull(this.tablepower_module_table.current_30a_displayColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setcurrent_30a_displayNull() {
+                this[this.tablepower_module_table.current_30a_displayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Iscurrent_30a_actNull() {
+                return this.IsNull(this.tablepower_module_table.current_30a_actColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setcurrent_30a_actNull() {
+                this[this.tablepower_module_table.current_30a_actColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isinhibit_functionNull() {
+                return this.IsNull(this.tablepower_module_table.inhibit_functionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setinhibit_functionNull() {
+                this[this.tablepower_module_table.inhibit_functionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isstandby_powerNull() {
+                return this.IsNull(this.tablepower_module_table.standby_powerColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setstandby_powerNull() {
+                this[this.tablepower_module_table.standby_powerColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isinput_powerNull() {
+                return this.IsNull(this.tablepower_module_table.input_powerColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setinput_powerNull() {
+                this[this.tablepower_module_table.input_powerColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isoutput_voltageNull() {
+                return this.IsNull(this.tablepower_module_table.output_voltageColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setoutput_voltageNull() {
+                this[this.tablepower_module_table.output_voltageColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isoutput_currentNull() {
+                return this.IsNull(this.tablepower_module_table.output_currentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setoutput_currentNull() {
+                this[this.tablepower_module_table.output_currentColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isoutput_powerNull() {
+                return this.IsNull(this.tablepower_module_table.output_powerColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setoutput_powerNull() {
+                this[this.tablepower_module_table.output_powerColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IseffciencyNull() {
+                return this.IsNull(this.tablepower_module_table.effciencyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SeteffciencyNull() {
+                this[this.tablepower_module_table.effciencyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ispower_factorNull() {
+                return this.IsNull(this.tablepower_module_table.power_factorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setpower_factorNull() {
+                this[this.tablepower_module_table.power_factorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isstatus_after_born_inNull() {
+                return this.IsNull(this.tablepower_module_table.status_after_born_inColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setstatus_after_born_inNull() {
+                this[this.tablepower_module_table.status_after_born_inColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ispfc_firmwareNull() {
+                return this.IsNull(this.tablepower_module_table.pfc_firmwareColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setpfc_firmwareNull() {
+                this[this.tablepower_module_table.pfc_firmwareColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdcdc_firmwareNull() {
+                return this.IsNull(this.tablepower_module_table.dcdc_firmwareColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdcdc_firmwareNull() {
+                this[this.tablepower_module_table.dcdc_firmwareColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isbutton_functionNull() {
+                return this.IsNull(this.tablepower_module_table.button_functionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setbutton_functionNull() {
+                this[this.tablepower_module_table.button_functionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isled_display_functionNull() {
+                return this.IsNull(this.tablepower_module_table.led_display_functionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setled_display_functionNull() {
+                this[this.tablepower_module_table.led_display_functionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsjudgementNull() {
+                return this.IsNull(this.tablepower_module_table.judgementColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetjudgementNull() {
+                this[this.tablepower_module_table.judgementColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Istok_sticker_attachedNull() {
+                return this.IsNull(this.tablepower_module_table.tok_sticker_attachedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Settok_sticker_attachedNull() {
+                this[this.tablepower_module_table.tok_sticker_attachedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Istest_failure_detailsNull() {
+                return this.IsNull(this.tablepower_module_table.test_failure_detailsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Settest_failure_detailsNull() {
+                this[this.tablepower_module_table.test_failure_detailsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Istest_technicianNull() {
+                return this.IsNull(this.tablepower_module_table.test_technicianColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Settest_technicianNull() {
+                this[this.tablepower_module_table.test_technicianColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsremarksNull() {
+                return this.IsNull(this.tablepower_module_table.remarksColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetremarksNull() {
+                this[this.tablepower_module_table.remarksColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -9810,6 +11607,40 @@ namespace EngineLevelTesting.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public secc2_tableRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class power_module_tableRowChangeEvent : global::System.EventArgs {
+            
+            private power_module_tableRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public power_module_tableRowChangeEvent(power_module_tableRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public power_module_tableRow Row {
                 get {
                     return this.eventRow;
                 }

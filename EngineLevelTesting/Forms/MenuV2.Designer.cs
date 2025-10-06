@@ -49,13 +49,15 @@
             this.btnopto = new System.Windows.Forms.Button();
             this.btnl2powermeter = new System.Windows.Forms.Button();
             this.btnl2powerboard = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnReport = new System.Windows.Forms.Button();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btn_powermodule1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,11 +73,12 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(16, 15);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(851, 437);
+            this.tabControl1.Size = new System.Drawing.Size(1135, 538);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             // 
@@ -86,10 +89,11 @@
             this.tabPage1.Controls.Add(this.btnmc5);
             this.tabPage1.Controls.Add(this.btnafe);
             this.tabPage1.Controls.Add(this.btnhvcombo);
-            this.tabPage1.Location = new System.Drawing.Point(4, 31);
+            this.tabPage1.Location = new System.Drawing.Point(4, 36);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(843, 402);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1127, 498);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "GEN 2 BOARDS";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -97,9 +101,10 @@
             // btnminipcm
             // 
             this.btnminipcm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnminipcm.Location = new System.Drawing.Point(24, 228);
+            this.btnminipcm.Location = new System.Drawing.Point(32, 281);
+            this.btnminipcm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnminipcm.Name = "btnminipcm";
-            this.btnminipcm.Size = new System.Drawing.Size(244, 52);
+            this.btnminipcm.Size = new System.Drawing.Size(325, 64);
             this.btnminipcm.TabIndex = 22;
             this.btnminipcm.Text = "MINI PCM 1 AND 2 BOARD CHECKLIST";
             this.btnminipcm.UseVisualStyleBackColor = true;
@@ -108,9 +113,10 @@
             // btnmc5
             // 
             this.btnmc5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmc5.Location = new System.Drawing.Point(24, 155);
+            this.btnmc5.Location = new System.Drawing.Point(32, 191);
+            this.btnmc5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmc5.Name = "btnmc5";
-            this.btnmc5.Size = new System.Drawing.Size(244, 52);
+            this.btnmc5.Size = new System.Drawing.Size(325, 64);
             this.btnmc5.TabIndex = 21;
             this.btnmc5.Text = "MCU 5.0 & 5.1 Board Checklist";
             this.btnmc5.UseVisualStyleBackColor = true;
@@ -119,9 +125,10 @@
             // btnafe
             // 
             this.btnafe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnafe.Location = new System.Drawing.Point(24, 87);
+            this.btnafe.Location = new System.Drawing.Point(32, 107);
+            this.btnafe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnafe.Name = "btnafe";
-            this.btnafe.Size = new System.Drawing.Size(244, 52);
+            this.btnafe.Size = new System.Drawing.Size(325, 64);
             this.btnafe.TabIndex = 20;
             this.btnafe.Text = "AFE BOARD CHECKLIST";
             this.btnafe.UseVisualStyleBackColor = true;
@@ -131,9 +138,10 @@
             // 
             this.btnhvcombo.AutoEllipsis = true;
             this.btnhvcombo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhvcombo.Location = new System.Drawing.Point(24, 20);
+            this.btnhvcombo.Location = new System.Drawing.Point(32, 25);
+            this.btnhvcombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnhvcombo.Name = "btnhvcombo";
-            this.btnhvcombo.Size = new System.Drawing.Size(244, 52);
+            this.btnhvcombo.Size = new System.Drawing.Size(325, 64);
             this.btnhvcombo.TabIndex = 19;
             this.btnhvcombo.Text = "HVCOMBO CHECKLIST";
             this.btnhvcombo.UseVisualStyleBackColor = true;
@@ -150,10 +158,11 @@
             this.tabPage2.Controls.Add(this.btnxbutower);
             this.tabPage2.Controls.Add(this.btnxbu);
             this.tabPage2.Controls.Add(this.btnSecc);
-            this.tabPage2.Location = new System.Drawing.Point(4, 37);
+            this.tabPage2.Location = new System.Drawing.Point(4, 36);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(820, 396);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1127, 498);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "GEN 4 BOARDS";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -161,9 +170,10 @@
             // btnmcu6_4
             // 
             this.btnmcu6_4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmcu6_4.Location = new System.Drawing.Point(290, 232);
+            this.btnmcu6_4.Location = new System.Drawing.Point(387, 286);
+            this.btnmcu6_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmcu6_4.Name = "btnmcu6_4";
-            this.btnmcu6_4.Size = new System.Drawing.Size(244, 52);
+            this.btnmcu6_4.Size = new System.Drawing.Size(325, 64);
             this.btnmcu6_4.TabIndex = 25;
             this.btnmcu6_4.Text = "MCU 6.4 BOARD CHECKLIST";
             this.btnmcu6_4.UseVisualStyleBackColor = true;
@@ -172,9 +182,10 @@
             // btnsecc2
             // 
             this.btnsecc2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsecc2.Location = new System.Drawing.Point(290, 157);
+            this.btnsecc2.Location = new System.Drawing.Point(387, 193);
+            this.btnsecc2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsecc2.Name = "btnsecc2";
-            this.btnsecc2.Size = new System.Drawing.Size(244, 52);
+            this.btnsecc2.Size = new System.Drawing.Size(325, 64);
             this.btnsecc2.TabIndex = 24;
             this.btnsecc2.Text = "SECC 2.0 BOARD CHECKLIST";
             this.btnsecc2.UseVisualStyleBackColor = true;
@@ -183,9 +194,10 @@
             // btnreset
             // 
             this.btnreset.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreset.Location = new System.Drawing.Point(290, 89);
+            this.btnreset.Location = new System.Drawing.Point(387, 110);
+            this.btnreset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(244, 52);
+            this.btnreset.Size = new System.Drawing.Size(325, 64);
             this.btnreset.TabIndex = 23;
             this.btnreset.Text = "RESET BOARD CHECKLIST";
             this.btnreset.UseVisualStyleBackColor = true;
@@ -194,9 +206,10 @@
             // btnmcu6
             // 
             this.btnmcu6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmcu6.Location = new System.Drawing.Point(290, 22);
+            this.btnmcu6.Location = new System.Drawing.Point(387, 27);
+            this.btnmcu6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmcu6.Name = "btnmcu6";
-            this.btnmcu6.Size = new System.Drawing.Size(244, 52);
+            this.btnmcu6.Size = new System.Drawing.Size(325, 64);
             this.btnmcu6.TabIndex = 22;
             this.btnmcu6.Text = "MCU 6 SERIES BOARD CHECKLIST";
             this.btnmcu6.UseVisualStyleBackColor = true;
@@ -205,9 +218,10 @@
             // btnmcu360
             // 
             this.btnmcu360.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmcu360.Location = new System.Drawing.Point(15, 233);
+            this.btnmcu360.Location = new System.Drawing.Point(20, 287);
+            this.btnmcu360.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmcu360.Name = "btnmcu360";
-            this.btnmcu360.Size = new System.Drawing.Size(244, 52);
+            this.btnmcu360.Size = new System.Drawing.Size(325, 64);
             this.btnmcu360.TabIndex = 18;
             this.btnmcu360.Text = "MCU 360 BOARD CHECKLIST";
             this.btnmcu360.UseVisualStyleBackColor = true;
@@ -216,9 +230,10 @@
             // btnxbutower
             // 
             this.btnxbutower.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxbutower.Location = new System.Drawing.Point(15, 157);
+            this.btnxbutower.Location = new System.Drawing.Point(20, 193);
+            this.btnxbutower.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnxbutower.Name = "btnxbutower";
-            this.btnxbutower.Size = new System.Drawing.Size(244, 52);
+            this.btnxbutower.Size = new System.Drawing.Size(325, 64);
             this.btnxbutower.TabIndex = 17;
             this.btnxbutower.Text = "XBU TOWER BOARD CHECKLIST";
             this.btnxbutower.UseVisualStyleBackColor = true;
@@ -227,9 +242,10 @@
             // btnxbu
             // 
             this.btnxbu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxbu.Location = new System.Drawing.Point(15, 89);
+            this.btnxbu.Location = new System.Drawing.Point(20, 110);
+            this.btnxbu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnxbu.Name = "btnxbu";
-            this.btnxbu.Size = new System.Drawing.Size(244, 52);
+            this.btnxbu.Size = new System.Drawing.Size(325, 64);
             this.btnxbu.TabIndex = 16;
             this.btnxbu.Text = "XBU AIO BOARD ELT CHECKLIST";
             this.btnxbu.UseVisualStyleBackColor = true;
@@ -238,9 +254,10 @@
             // btnSecc
             // 
             this.btnSecc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSecc.Location = new System.Drawing.Point(15, 22);
+            this.btnSecc.Location = new System.Drawing.Point(20, 27);
+            this.btnSecc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSecc.Name = "btnSecc";
-            this.btnSecc.Size = new System.Drawing.Size(244, 52);
+            this.btnSecc.Size = new System.Drawing.Size(325, 64);
             this.btnSecc.TabIndex = 15;
             this.btnSecc.Text = "SECC BOARD CHECKLIST";
             this.btnSecc.UseVisualStyleBackColor = true;
@@ -253,9 +270,10 @@
             this.tabPage3.Controls.Add(this.btnopto);
             this.tabPage3.Controls.Add(this.btnl2powermeter);
             this.tabPage3.Controls.Add(this.btnl2powerboard);
-            this.tabPage3.Location = new System.Drawing.Point(4, 37);
+            this.tabPage3.Location = new System.Drawing.Point(4, 36);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(820, 396);
+            this.tabPage3.Size = new System.Drawing.Size(1127, 498);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "L2 BOARDS";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -263,9 +281,10 @@
             // btnacl2
             // 
             this.btnacl2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnacl2.Location = new System.Drawing.Point(31, 235);
+            this.btnacl2.Location = new System.Drawing.Point(41, 289);
+            this.btnacl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnacl2.Name = "btnacl2";
-            this.btnacl2.Size = new System.Drawing.Size(244, 52);
+            this.btnacl2.Size = new System.Drawing.Size(325, 64);
             this.btnacl2.TabIndex = 20;
             this.btnacl2.Text = "AC L2 FSR SIDE BRACKET SUB-ASSEMBLY";
             this.btnacl2.UseVisualStyleBackColor = true;
@@ -274,9 +293,10 @@
             // btnopto
             // 
             this.btnopto.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnopto.Location = new System.Drawing.Point(31, 162);
+            this.btnopto.Location = new System.Drawing.Point(41, 199);
+            this.btnopto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnopto.Name = "btnopto";
-            this.btnopto.Size = new System.Drawing.Size(244, 52);
+            this.btnopto.Size = new System.Drawing.Size(325, 64);
             this.btnopto.TabIndex = 19;
             this.btnopto.Text = "Opto-Isolator Board Checklist";
             this.btnopto.UseVisualStyleBackColor = true;
@@ -285,9 +305,10 @@
             // btnl2powermeter
             // 
             this.btnl2powermeter.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnl2powermeter.Location = new System.Drawing.Point(31, 27);
+            this.btnl2powermeter.Location = new System.Drawing.Point(41, 33);
+            this.btnl2powermeter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnl2powermeter.Name = "btnl2powermeter";
-            this.btnl2powermeter.Size = new System.Drawing.Size(244, 52);
+            this.btnl2powermeter.Size = new System.Drawing.Size(325, 64);
             this.btnl2powermeter.TabIndex = 18;
             this.btnl2powermeter.Text = "L2 Power Meter Board Checklist";
             this.btnl2powermeter.UseVisualStyleBackColor = true;
@@ -296,21 +317,35 @@
             // btnl2powerboard
             // 
             this.btnl2powerboard.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnl2powerboard.Location = new System.Drawing.Point(31, 94);
+            this.btnl2powerboard.Location = new System.Drawing.Point(41, 116);
+            this.btnl2powerboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnl2powerboard.Name = "btnl2powerboard";
-            this.btnl2powerboard.Size = new System.Drawing.Size(244, 52);
+            this.btnl2powerboard.Size = new System.Drawing.Size(325, 64);
             this.btnl2powerboard.TabIndex = 17;
             this.btnl2powerboard.Text = "L2 Powerboard Checklist";
             this.btnl2powerboard.UseVisualStyleBackColor = true;
             this.btnl2powerboard.Click += new System.EventHandler(this.btnl2powerboard_Click);
             // 
+            // tabPage5
+            // 
+            this.tabPage5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage5.Controls.Add(this.btn_powermodule1);
+            this.tabPage5.Location = new System.Drawing.Point(4, 36);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1127, 498);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "POWER MODULE";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // tabPage4
             // 
             this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage4.Controls.Add(this.btnReport);
-            this.tabPage4.Location = new System.Drawing.Point(4, 37);
+            this.tabPage4.Location = new System.Drawing.Point(4, 36);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(820, 396);
+            this.tabPage4.Size = new System.Drawing.Size(1127, 498);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "REPORTS";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -318,31 +353,35 @@
             // btnReport
             // 
             this.btnReport.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.Location = new System.Drawing.Point(25, 27);
+            this.btnReport.Location = new System.Drawing.Point(33, 33);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(244, 52);
+            this.btnReport.Size = new System.Drawing.Size(325, 64);
             this.btnReport.TabIndex = 2;
             this.btnReport.Text = "Reports";
             this.btnReport.UseVisualStyleBackColor = true;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
-            // tabPage5
+            // btn_powermodule1
             // 
-            this.tabPage5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage5.Location = new System.Drawing.Point(4, 37);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(820, 396);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "POWER MODULE";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.btn_powermodule1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_powermodule1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_powermodule1.Location = new System.Drawing.Point(36, 38);
+            this.btn_powermodule1.Name = "btn_powermodule1";
+            this.btn_powermodule1.Size = new System.Drawing.Size(350, 66);
+            this.btn_powermodule1.TabIndex = 21;
+            this.btn_powermodule1.Text = "Power Module";
+            this.btn_powermodule1.UseVisualStyleBackColor = true;
+            this.btn_powermodule1.Click += new System.EventHandler(this.btn_powermodule1_Click);
             // 
             // MenuV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 461);
+            this.ClientSize = new System.Drawing.Size(1167, 567);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuV2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuV2";
@@ -351,6 +390,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -381,5 +421,6 @@
         private System.Windows.Forms.Button btnl2powermeter;
         private System.Windows.Forms.Button btnl2powerboard;
         private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button btn_powermodule1;
     }
 }
