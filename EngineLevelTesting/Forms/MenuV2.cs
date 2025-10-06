@@ -5,15 +5,18 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utilities.BunifuShadowPanel;
+using Utility.ModifyRegistry;
 
 namespace EngineLevelTesting.Forms
 {
     public partial class MenuV2: Form
     {
+        private Dictionary<String, Dictionary<String, String>> dbConnectionSettings = new Dictionary<String, Dictionary<String, String>>();
         public MenuV2()
         {
             InitializeComponent();
@@ -24,6 +27,20 @@ namespace EngineLevelTesting.Forms
             tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
             tabControl1.ItemSize = new Size(160, 70);
             this.tabControl1.SizeMode = TabSizeMode.Fixed;
+            Get_connection();
+        }
+        private void Get_connection()
+        {
+            RegistrySupport registry = new RegistrySupport();
+            String data = registry.Read(Def.REGKEY_SUB);
+            if (data == null)
+            {
+                data += String.Format($"ENGINELEVELTESTING<limiter>194.163.32.81<limiter>u867954426_board<limiter>System@2023<limiter>u867954426_board<limiter>");
+                registry.Write(Def.REGKEY_SUB, data);
+            }
+            Utils.SetConnectionDetails();
+            this.Text = $"{Assembly.GetExecutingAssembly().GetName().Version.ToString()} - {Utils.DBConnection["ENGINELEVELTESTING"]["DBNAME"].ToString()}";
+            dbConnectionSettings = Utils.DBConnection;
         }
         private void GetRoundButton(Button btn)
         {
