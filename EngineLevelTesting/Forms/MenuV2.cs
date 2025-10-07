@@ -1,22 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Utilities.BunifuShadowPanel;
 using Utility.ModifyRegistry;
 
 namespace EngineLevelTesting.Forms
 {
-    public partial class MenuV2: Form
+    public partial class MenuV2 : Form
     {
         private Dictionary<String, Dictionary<String, String>> dbConnectionSettings = new Dictionary<String, Dictionary<String, String>>();
+        static int lastHour = DateTime.Now.Hour;
+        public static string adminpass = "System@2022";
         public MenuV2()
         {
             InitializeComponent();
@@ -150,6 +146,12 @@ namespace EngineLevelTesting.Forms
             report.Show();
         }
 
+        private void btn_powermodule1_Click(object sender, EventArgs e)
+        {
+            PowerModulefrm frm = new PowerModulefrm();
+            frm.Show();
+        }
+
         private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
         {
             Brush textbrush;
@@ -169,5 +171,7 @@ namespace EngineLevelTesting.Forms
             e.Graphics.FillRectangle(backbrush, e.Bounds);
             TextRenderer.DrawText(e.Graphics, tabControl1.TabPages[e.Index].Text, tabControl1.Font, e.Bounds, (textbrush as SolidBrush).Color);
         }
+
+
     }
 }
