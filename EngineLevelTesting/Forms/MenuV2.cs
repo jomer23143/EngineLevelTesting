@@ -143,6 +143,7 @@ namespace EngineLevelTesting.Forms
         private void btnReport_Click(object sender, EventArgs e)
         {
             var report = new Reports();
+            this.Hide();
             report.Show();
         }
 

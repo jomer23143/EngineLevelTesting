@@ -2955,7 +2955,7 @@ Function
         <Top>3.58987cm</Top>
         <Left>0.33329cm</Left>
         <Height>2.84367cm</Height>
-        <Width>47.00315cm</Width>
+        <Width>47.00314cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -4323,7 +4323,7 @@ Function
         <Top>6.46881cm</Top>
         <Left>0.29511cm</Left>
         <Height>0.6cm</Height>
-        <Width>47.04133cm</Width>
+        <Width>47.04137cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -4339,15 +4339,15 @@ Function
       </Border>
     </Style>
   </Body>
-  <Width>20.95582in</Width>
+  <Width>18.63641in</Width>
   <Page>
-    <PageHeight>21cm</PageHeight>
-    <PageWidth>29.7cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
-    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <PageHeight>8.27in</PageHeight>
+    <PageWidth>19.47in</PageWidth>
+    <LeftMargin>0.25in</LeftMargin>
+    <RightMargin>0.25in</RightMargin>
+    <TopMargin>0.25in</TopMargin>
+    <BottomMargin>0.25in</BottomMargin>
+    <ColumnSpacing>0.05118in</ColumnSpacing>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
@@ -4631,6 +4631,6 @@ ay1rjlU9WFgvBeu1LGf5sdxZn7OGsH7NmilBLGx+gWunsFDOwxg25PiI9QELec1nYbel51j3M6yljvRN
 Uw/xf5xDvvKAJaY7At6wRBYGR2VDrH0PSx5IxUwcTI0EuKEFLLmBkA0zX5axXmehLNR1IQvlwAB5uY7IYyNrDAuGuiKtPN1Rx0JahGqmsQD6GjPHXQG7IkVVqGoMdoQ5EL7AICUE7xxeLgYX5emEgLa9V4+57UgbxbKH4FMsgBvnAFfZ/s2S4+94OUl+WQmGshBft88HsEc4Bg2Dsw2kcQ1CNPD2URZm0tRn2RuAjXNxLJSnZsFwbSALs3tkw0tZSIveQUVfdKoWpoBdkaIqVDUGu2I12BSwK1JUhVLArlhlmAJ2RYqqUArYFasMU8CuSFEVSgG7YpVhCtgVKapCKWBXrDLsvmAvvJ3+7NX/5NGNXwrp+s8FihQpeoT6D91iwJ+TpwwqptgjsfuC/QJd+At7Fj1zrqf1yrp+VpEiRY9QV3/M75V9Na3GvPiiWM2w+4JdMcUUU0yxmmUK2BVTTDHFHjNTwK6YYoop9piZAnbFFFNMscfMFLArpphiij1mZgN79rWzWLReMcUUU0yxGm5Zl073YrAnssd+vjD72rkFihQpUqSoZuvS99n7sm+cNblcuHJen3s9rYUiRYoUKarZKvpPfui1axlP/n+0RPRWc6Y9AQAAAABJRU5ErkJggg==</ImageData>
     </EmbeddedImage>
   </EmbeddedImages>
-  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>98cba711-f02c-43b0-b8f6-aaeec138df89</rd:ReportID>
 </Report>
