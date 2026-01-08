@@ -213,7 +213,7 @@ namespace EngineLevelTesting.Forms
             }
             else if (comboBox1.Text == "MCU 6 Series Board Engine Level Test Checklist ISO")
             {
-                sql = $@"SELECT * FROM mcu6_series_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}' and mcu_type = 'MCU 6.4'";
+                sql = $@"SELECT * FROM mcu6_series_table where Date(date_stamp) >= '{dtfrom.Value.ToString("yyyy-MM-dd")}' and  Date(date_stamp) <= '{dtto.Value.ToString("yyyy-MM-dd")}' and mcu_type = 'MCU 6'";
                 report = "isomcu6series";
                 datasetname = "DataSet1";
             }

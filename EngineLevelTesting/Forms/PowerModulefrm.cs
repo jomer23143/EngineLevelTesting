@@ -80,7 +80,7 @@ namespace EngineLevelTesting.Forms
                 string.IsNullOrEmpty(text_currentmode_15A_actual.Text) || string.IsNullOrEmpty(text_currentmode_30A_display.Text) || string.IsNullOrEmpty(text_currentmode_30A_actual.Text) ||
                 string.IsNullOrEmpty(txt_inhibit_function_12V.Text) || string.IsNullOrEmpty(txt_standby_power.Text) || string.IsNullOrEmpty(txt_input_power.Text) || string.IsNullOrEmpty(txt_output_voltage.Text) ||
                 string.IsNullOrEmpty(txt_Output_current.Text) || string.IsNullOrEmpty(txt_output_power.Text) || string.IsNullOrEmpty(txt_efficiency.Text) || string.IsNullOrEmpty(txt_powerfactor.Text) ||
-                string.IsNullOrEmpty(cmb_status_burn_in_1hr.Text) || string.IsNullOrEmpty(cmb_pfc_firmware.Text) || string.IsNullOrEmpty(cmb_dcdc_firmware.Text) || string.IsNullOrEmpty(cmb_button_function.Text) ||
+                string.IsNullOrEmpty(cmb_status_burn_in_1hr.Text) || string.IsNullOrEmpty(txtfirmware.Text) || string.IsNullOrEmpty(cmb_button_function.Text) ||
                 string.IsNullOrEmpty(cmb_led_display.Text) || string.IsNullOrEmpty(cmb_judgement.Text) || string.IsNullOrEmpty(txt_tok_sticker_attached.Text) || string.IsNullOrEmpty(txt_testfailuredetails.Text) ||
                 string.IsNullOrEmpty(txt_test_technician.Text) || string.IsNullOrEmpty(txt_remarks.Text))
             {
@@ -128,8 +128,7 @@ namespace EngineLevelTesting.Forms
                                 { "effciency",txt_efficiency.Text},
                                 { "power_factor",txt_powerfactor.Text},
                                 { "status_after_born_in",cmb_status_burn_in_1hr.Text},
-                                { "pfc_firmware",cmb_pfc_firmware.Text},
-                                { "dcdc_firmware",cmb_dcdc_firmware.Text},
+                                { "firmware",txtfirmware.Text},
                                 { "button_function",cmb_button_function.Text},
                                 { "led_display_function",cmb_led_display.Text},
                                 { "judgement",cmb_judgement.Text},
@@ -183,8 +182,7 @@ namespace EngineLevelTesting.Forms
             txt_efficiency.Clear();
             txt_powerfactor.Clear();
             cmb_status_burn_in_1hr.SelectedIndex = -1; ;
-            cmb_pfc_firmware.SelectedIndex = -1; ;
-            cmb_dcdc_firmware.SelectedIndex = -1; ;
+            txtfirmware.Clear();
             cmb_button_function.SelectedIndex = -1; ;
             cmb_led_display.SelectedIndex = -1; ;
             cmb_judgement.SelectedIndex = -1; ;

@@ -4628,6 +4628,8 @@ namespace EngineLevelTesting.Dataset {
             
             private global::System.Data.DataColumn columnremarks;
             
+            private global::System.Data.DataColumn columnfirmware;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public power_module_tableDataTable() {
@@ -4943,6 +4945,14 @@ namespace EngineLevelTesting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn firmwareColumn {
+                get {
+                    return this.columnfirmware;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -5013,7 +5023,8 @@ namespace EngineLevelTesting.Dataset {
                         string tok_sticker_attached, 
                         string test_failure_details, 
                         string test_technician, 
-                        string remarks) {
+                        string remarks, 
+                        string firmware) {
                 power_module_tableRow rowpower_module_tableRow = ((power_module_tableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         date_tested,
@@ -5050,7 +5061,8 @@ namespace EngineLevelTesting.Dataset {
                         tok_sticker_attached,
                         test_failure_details,
                         test_technician,
-                        remarks};
+                        remarks,
+                        firmware};
                 rowpower_module_tableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpower_module_tableRow);
                 return rowpower_module_tableRow;
@@ -5108,6 +5120,7 @@ namespace EngineLevelTesting.Dataset {
                 this.columntest_failure_details = base.Columns["test_failure_details"];
                 this.columntest_technician = base.Columns["test_technician"];
                 this.columnremarks = base.Columns["remarks"];
+                this.columnfirmware = base.Columns["firmware"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5183,6 +5196,8 @@ namespace EngineLevelTesting.Dataset {
                 base.Columns.Add(this.columntest_technician);
                 this.columnremarks = new global::System.Data.DataColumn("remarks", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnremarks);
+                this.columnfirmware = new global::System.Data.DataColumn("firmware", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfirmware);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10998,6 +11013,22 @@ namespace EngineLevelTesting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string firmware {
+                get {
+                    try {
+                        return ((string)(this[this.tablepower_module_table.firmwareColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'firmware\' in table \'power_module_table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablepower_module_table.firmwareColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isdate_testedNull() {
                 return this.IsNull(this.tablepower_module_table.date_testedColumn);
             }
@@ -11414,6 +11445,18 @@ namespace EngineLevelTesting.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetremarksNull() {
                 this[this.tablepower_module_table.remarksColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsfirmwareNull() {
+                return this.IsNull(this.tablepower_module_table.firmwareColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetfirmwareNull() {
+                this[this.tablepower_module_table.firmwareColumn] = global::System.Convert.DBNull;
             }
         }
         

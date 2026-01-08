@@ -36,6 +36,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.text_voltagemode_500v_actual = new System.Windows.Forms.TextBox();
             this.text_voltagemode_500v_display = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -66,8 +67,6 @@
             this.cmb_judgement = new System.Windows.Forms.ComboBox();
             this.cmb_led_display = new System.Windows.Forms.ComboBox();
             this.cmb_button_function = new System.Windows.Forms.ComboBox();
-            this.cmb_dcdc_firmware = new System.Windows.Forms.ComboBox();
-            this.cmb_pfc_firmware = new System.Windows.Forms.ComboBox();
             this.cmb_status_burn_in_1hr = new System.Windows.Forms.ComboBox();
             this.txt_remarks = new System.Windows.Forms.TextBox();
             this.txt_test_technician = new System.Windows.Forms.TextBox();
@@ -77,7 +76,6 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -118,15 +116,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txt_ipn = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.txtfirmware = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label23
@@ -152,8 +150,8 @@
             this.panel1.Controls.Add(this.tableLayoutPanel6);
             this.panel1.Controls.Add(this.tableLayoutPanel5);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Location = new System.Drawing.Point(63, 62);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(54, 62);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(534, 1012);
             this.panel1.TabIndex = 46;
@@ -165,7 +163,7 @@
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Location = new System.Drawing.Point(337, 956);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(169, 44);
             this.btn_save.TabIndex = 2;
@@ -181,7 +179,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label18, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label17, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(26, 261);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.44172F));
@@ -221,8 +219,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.23729F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.76271F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel3.Controls.Add(this.rjCircularPictureBox1, 0, 0);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
             this.tableLayoutPanel3.Controls.Add(this.text_voltagemode_500v_actual, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.text_voltagemode_500v_display, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label13, 2, 0);
@@ -238,7 +235,7 @@
             this.tableLayoutPanel3.Controls.Add(this.text_currentmode_15A_display, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.text_voltagemode_100v_display, 1, 2);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(219, 260);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 5;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.56311F));
@@ -249,12 +246,29 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(286, 133);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(548, 342);
+            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(97, 97);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 47;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
             // text_voltagemode_500v_actual
             // 
             this.text_voltagemode_500v_actual.BackColor = System.Drawing.Color.SkyBlue;
             this.text_voltagemode_500v_actual.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_voltagemode_500v_actual.Location = new System.Drawing.Point(194, 22);
-            this.text_voltagemode_500v_actual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_voltagemode_500v_actual.Location = new System.Drawing.Point(192, 22);
+            this.text_voltagemode_500v_actual.Margin = new System.Windows.Forms.Padding(2);
             this.text_voltagemode_500v_actual.MaxLength = 100;
             this.text_voltagemode_500v_actual.Name = "text_voltagemode_500v_actual";
             this.text_voltagemode_500v_actual.Size = new System.Drawing.Size(80, 22);
@@ -265,8 +279,8 @@
             // 
             this.text_voltagemode_500v_display.BackColor = System.Drawing.Color.SkyBlue;
             this.text_voltagemode_500v_display.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_voltagemode_500v_display.Location = new System.Drawing.Point(107, 22);
-            this.text_voltagemode_500v_display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_voltagemode_500v_display.Location = new System.Drawing.Point(105, 22);
+            this.text_voltagemode_500v_display.Margin = new System.Windows.Forms.Padding(2);
             this.text_voltagemode_500v_display.MaxLength = 100;
             this.text_voltagemode_500v_display.Name = "text_voltagemode_500v_display";
             this.text_voltagemode_500v_display.Size = new System.Drawing.Size(81, 22);
@@ -278,7 +292,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(194, 1);
+            this.label13.Location = new System.Drawing.Point(192, 1);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(79, 18);
@@ -322,7 +336,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 24);
             this.label12.TabIndex = 171;
-            this.label12.Text = "100V";
+            this.label12.Text = "1000V";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
@@ -343,7 +357,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(107, 1);
+            this.label14.Location = new System.Drawing.Point(105, 1);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(80, 18);
@@ -355,8 +369,8 @@
             // 
             this.text_voltagemode_100v_actual.BackColor = System.Drawing.Color.SkyBlue;
             this.text_voltagemode_100v_actual.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_voltagemode_100v_actual.Location = new System.Drawing.Point(194, 50);
-            this.text_voltagemode_100v_actual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_voltagemode_100v_actual.Location = new System.Drawing.Point(192, 50);
+            this.text_voltagemode_100v_actual.Margin = new System.Windows.Forms.Padding(2);
             this.text_voltagemode_100v_actual.MaxLength = 100;
             this.text_voltagemode_100v_actual.Name = "text_voltagemode_100v_actual";
             this.text_voltagemode_100v_actual.Size = new System.Drawing.Size(80, 22);
@@ -367,8 +381,8 @@
             // 
             this.text_currentmode_15A_actual.BackColor = System.Drawing.Color.SkyBlue;
             this.text_currentmode_15A_actual.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_currentmode_15A_actual.Location = new System.Drawing.Point(194, 78);
-            this.text_currentmode_15A_actual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_currentmode_15A_actual.Location = new System.Drawing.Point(192, 78);
+            this.text_currentmode_15A_actual.Margin = new System.Windows.Forms.Padding(2);
             this.text_currentmode_15A_actual.MaxLength = 100;
             this.text_currentmode_15A_actual.Name = "text_currentmode_15A_actual";
             this.text_currentmode_15A_actual.Size = new System.Drawing.Size(80, 22);
@@ -379,8 +393,8 @@
             // 
             this.text_currentmode_30A_actual.BackColor = System.Drawing.Color.SkyBlue;
             this.text_currentmode_30A_actual.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_currentmode_30A_actual.Location = new System.Drawing.Point(194, 106);
-            this.text_currentmode_30A_actual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_currentmode_30A_actual.Location = new System.Drawing.Point(192, 106);
+            this.text_currentmode_30A_actual.Margin = new System.Windows.Forms.Padding(2);
             this.text_currentmode_30A_actual.MaxLength = 100;
             this.text_currentmode_30A_actual.Name = "text_currentmode_30A_actual";
             this.text_currentmode_30A_actual.Size = new System.Drawing.Size(80, 22);
@@ -391,8 +405,8 @@
             // 
             this.text_currentmode_30A_display.BackColor = System.Drawing.Color.SkyBlue;
             this.text_currentmode_30A_display.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_currentmode_30A_display.Location = new System.Drawing.Point(107, 106);
-            this.text_currentmode_30A_display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_currentmode_30A_display.Location = new System.Drawing.Point(105, 106);
+            this.text_currentmode_30A_display.Margin = new System.Windows.Forms.Padding(2);
             this.text_currentmode_30A_display.MaxLength = 100;
             this.text_currentmode_30A_display.Name = "text_currentmode_30A_display";
             this.text_currentmode_30A_display.Size = new System.Drawing.Size(81, 22);
@@ -403,8 +417,8 @@
             // 
             this.text_currentmode_15A_display.BackColor = System.Drawing.Color.SkyBlue;
             this.text_currentmode_15A_display.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_currentmode_15A_display.Location = new System.Drawing.Point(107, 78);
-            this.text_currentmode_15A_display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_currentmode_15A_display.Location = new System.Drawing.Point(105, 78);
+            this.text_currentmode_15A_display.Margin = new System.Windows.Forms.Padding(2);
             this.text_currentmode_15A_display.MaxLength = 100;
             this.text_currentmode_15A_display.Name = "text_currentmode_15A_display";
             this.text_currentmode_15A_display.Size = new System.Drawing.Size(81, 22);
@@ -415,8 +429,8 @@
             // 
             this.text_voltagemode_100v_display.BackColor = System.Drawing.Color.SkyBlue;
             this.text_voltagemode_100v_display.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_voltagemode_100v_display.Location = new System.Drawing.Point(107, 50);
-            this.text_voltagemode_100v_display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_voltagemode_100v_display.Location = new System.Drawing.Point(105, 50);
+            this.text_voltagemode_100v_display.Margin = new System.Windows.Forms.Padding(2);
             this.text_voltagemode_100v_display.MaxLength = 100;
             this.text_voltagemode_100v_display.Name = "text_voltagemode_100v_display";
             this.text_voltagemode_100v_display.Size = new System.Drawing.Size(81, 22);
@@ -430,7 +444,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.49118F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.50882F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.tableLayoutPanel2.Controls.Add(this.text_vrms_l3, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.text_vrms_l2, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.text_vrms_l1, 1, 1);
@@ -443,7 +457,7 @@
             this.tableLayoutPanel2.Controls.Add(this.text_arms_l2, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.text_arms_l1, 1, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(26, 175);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.21312F));
@@ -456,8 +470,8 @@
             // 
             this.text_vrms_l3.BackColor = System.Drawing.Color.SkyBlue;
             this.text_vrms_l3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_vrms_l3.Location = new System.Drawing.Point(392, 16);
-            this.text_vrms_l3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_vrms_l3.Location = new System.Drawing.Point(390, 16);
+            this.text_vrms_l3.Margin = new System.Windows.Forms.Padding(2);
             this.text_vrms_l3.MaxLength = 100;
             this.text_vrms_l3.Name = "text_vrms_l3";
             this.text_vrms_l3.Size = new System.Drawing.Size(79, 22);
@@ -468,8 +482,8 @@
             // 
             this.text_vrms_l2.BackColor = System.Drawing.Color.SkyBlue;
             this.text_vrms_l2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_vrms_l2.Location = new System.Drawing.Point(295, 16);
-            this.text_vrms_l2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_vrms_l2.Location = new System.Drawing.Point(293, 16);
+            this.text_vrms_l2.Margin = new System.Windows.Forms.Padding(2);
             this.text_vrms_l2.MaxLength = 100;
             this.text_vrms_l2.Name = "text_vrms_l2";
             this.text_vrms_l2.Size = new System.Drawing.Size(92, 22);
@@ -480,8 +494,8 @@
             // 
             this.text_vrms_l1.BackColor = System.Drawing.Color.SkyBlue;
             this.text_vrms_l1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_vrms_l1.Location = new System.Drawing.Point(194, 16);
-            this.text_vrms_l1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_vrms_l1.Location = new System.Drawing.Point(193, 16);
+            this.text_vrms_l1.Margin = new System.Windows.Forms.Padding(2);
             this.text_vrms_l1.MaxLength = 100;
             this.text_vrms_l1.Name = "text_vrms_l1";
             this.text_vrms_l1.Size = new System.Drawing.Size(92, 22);
@@ -506,7 +520,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(392, 1);
+            this.label10.Location = new System.Drawing.Point(390, 1);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(62, 12);
@@ -519,7 +533,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(295, 1);
+            this.label9.Location = new System.Drawing.Point(293, 1);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 12);
@@ -532,7 +546,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(194, 1);
+            this.label8.Location = new System.Drawing.Point(193, 1);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(91, 12);
@@ -557,8 +571,8 @@
             // 
             this.text_arms_l3.BackColor = System.Drawing.Color.SkyBlue;
             this.text_arms_l3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_arms_l3.Location = new System.Drawing.Point(392, 45);
-            this.text_arms_l3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_arms_l3.Location = new System.Drawing.Point(390, 45);
+            this.text_arms_l3.Margin = new System.Windows.Forms.Padding(2);
             this.text_arms_l3.MaxLength = 100;
             this.text_arms_l3.Name = "text_arms_l3";
             this.text_arms_l3.Size = new System.Drawing.Size(79, 22);
@@ -569,8 +583,8 @@
             // 
             this.text_arms_l2.BackColor = System.Drawing.Color.SkyBlue;
             this.text_arms_l2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_arms_l2.Location = new System.Drawing.Point(295, 45);
-            this.text_arms_l2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_arms_l2.Location = new System.Drawing.Point(293, 45);
+            this.text_arms_l2.Margin = new System.Windows.Forms.Padding(2);
             this.text_arms_l2.MaxLength = 100;
             this.text_arms_l2.Name = "text_arms_l2";
             this.text_arms_l2.Size = new System.Drawing.Size(92, 22);
@@ -581,8 +595,8 @@
             // 
             this.text_arms_l1.BackColor = System.Drawing.Color.SkyBlue;
             this.text_arms_l1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_arms_l1.Location = new System.Drawing.Point(194, 45);
-            this.text_arms_l1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_arms_l1.Location = new System.Drawing.Point(193, 45);
+            this.text_arms_l1.Margin = new System.Windows.Forms.Padding(2);
             this.text_arms_l1.MaxLength = 100;
             this.text_arms_l1.Name = "text_arms_l1";
             this.text_arms_l1.Size = new System.Drawing.Size(92, 22);
@@ -595,43 +609,41 @@
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.7931F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.2069F));
-            this.tableLayoutPanel6.Controls.Add(this.cmb_judgement, 1, 6);
-            this.tableLayoutPanel6.Controls.Add(this.cmb_led_display, 1, 5);
-            this.tableLayoutPanel6.Controls.Add(this.cmb_button_function, 1, 4);
-            this.tableLayoutPanel6.Controls.Add(this.cmb_dcdc_firmware, 1, 3);
-            this.tableLayoutPanel6.Controls.Add(this.cmb_pfc_firmware, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.txtfirmware, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.cmb_judgement, 1, 5);
+            this.tableLayoutPanel6.Controls.Add(this.cmb_led_display, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.cmb_button_function, 1, 3);
             this.tableLayoutPanel6.Controls.Add(this.cmb_status_burn_in_1hr, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.txt_remarks, 1, 10);
-            this.tableLayoutPanel6.Controls.Add(this.txt_test_technician, 1, 9);
-            this.tableLayoutPanel6.Controls.Add(this.txt_testfailuredetails, 1, 8);
-            this.tableLayoutPanel6.Controls.Add(this.txt_tok_sticker_attached, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.txt_remarks, 1, 9);
+            this.tableLayoutPanel6.Controls.Add(this.txt_test_technician, 1, 8);
+            this.tableLayoutPanel6.Controls.Add(this.txt_testfailuredetails, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.txt_tok_sticker_attached, 1, 6);
             this.tableLayoutPanel6.Controls.Add(this.txt_powerfactor, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.label41, 0, 2);
             this.tableLayoutPanel6.Controls.Add(this.label34, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label42, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label44, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.label45, 0, 6);
-            this.tableLayoutPanel6.Controls.Add(this.label46, 0, 5);
-            this.tableLayoutPanel6.Controls.Add(this.label47, 0, 4);
-            this.tableLayoutPanel6.Controls.Add(this.label35, 0, 7);
-            this.tableLayoutPanel6.Controls.Add(this.label36, 0, 8);
-            this.tableLayoutPanel6.Controls.Add(this.label37, 0, 9);
-            this.tableLayoutPanel6.Controls.Add(this.label38, 0, 10);
+            this.tableLayoutPanel6.Controls.Add(this.label45, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.label46, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.label47, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.label35, 0, 6);
+            this.tableLayoutPanel6.Controls.Add(this.label36, 0, 7);
+            this.tableLayoutPanel6.Controls.Add(this.label37, 0, 8);
+            this.tableLayoutPanel6.Controls.Add(this.label38, 0, 9);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(26, 604);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 11;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.110791F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.110788F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.110788F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.110788F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.110788F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.110788F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.110788F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.056123F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.056123F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.056123F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.056123F));
+            this.tableLayoutPanel6.RowCount = 10;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.02406F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.02406F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.02406F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.02406F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.02406F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.02406F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.963913F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.963913F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.963913F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.963913F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(479, 323);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
@@ -646,8 +658,8 @@
             this.cmb_judgement.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.cmb_judgement.Location = new System.Drawing.Point(307, 177);
-            this.cmb_judgement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_judgement.Location = new System.Drawing.Point(307, 163);
+            this.cmb_judgement.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_judgement.Name = "cmb_judgement";
             this.cmb_judgement.Size = new System.Drawing.Size(168, 22);
             this.cmb_judgement.TabIndex = 172;
@@ -663,8 +675,8 @@
             this.cmb_led_display.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.cmb_led_display.Location = new System.Drawing.Point(307, 148);
-            this.cmb_led_display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_led_display.Location = new System.Drawing.Point(307, 131);
+            this.cmb_led_display.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_led_display.Name = "cmb_led_display";
             this.cmb_led_display.Size = new System.Drawing.Size(168, 22);
             this.cmb_led_display.TabIndex = 172;
@@ -680,45 +692,11 @@
             this.cmb_button_function.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.cmb_button_function.Location = new System.Drawing.Point(307, 119);
-            this.cmb_button_function.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_button_function.Location = new System.Drawing.Point(307, 99);
+            this.cmb_button_function.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_button_function.Name = "cmb_button_function";
             this.cmb_button_function.Size = new System.Drawing.Size(168, 22);
             this.cmb_button_function.TabIndex = 172;
-            // 
-            // cmb_dcdc_firmware
-            // 
-            this.cmb_dcdc_firmware.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmb_dcdc_firmware.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmb_dcdc_firmware.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmb_dcdc_firmware.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_dcdc_firmware.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_dcdc_firmware.FormattingEnabled = true;
-            this.cmb_dcdc_firmware.Items.AddRange(new object[] {
-            "Pass",
-            "Fail"});
-            this.cmb_dcdc_firmware.Location = new System.Drawing.Point(307, 90);
-            this.cmb_dcdc_firmware.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmb_dcdc_firmware.Name = "cmb_dcdc_firmware";
-            this.cmb_dcdc_firmware.Size = new System.Drawing.Size(168, 22);
-            this.cmb_dcdc_firmware.TabIndex = 172;
-            // 
-            // cmb_pfc_firmware
-            // 
-            this.cmb_pfc_firmware.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmb_pfc_firmware.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmb_pfc_firmware.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmb_pfc_firmware.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_pfc_firmware.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_pfc_firmware.FormattingEnabled = true;
-            this.cmb_pfc_firmware.Items.AddRange(new object[] {
-            "Pass",
-            "Fail"});
-            this.cmb_pfc_firmware.Location = new System.Drawing.Point(307, 61);
-            this.cmb_pfc_firmware.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmb_pfc_firmware.Name = "cmb_pfc_firmware";
-            this.cmb_pfc_firmware.Size = new System.Drawing.Size(168, 22);
-            this.cmb_pfc_firmware.TabIndex = 172;
             // 
             // cmb_status_burn_in_1hr
             // 
@@ -731,8 +709,8 @@
             this.cmb_status_burn_in_1hr.Items.AddRange(new object[] {
             "Pass",
             "Fail"});
-            this.cmb_status_burn_in_1hr.Location = new System.Drawing.Point(307, 32);
-            this.cmb_status_burn_in_1hr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_status_burn_in_1hr.Location = new System.Drawing.Point(307, 35);
+            this.cmb_status_burn_in_1hr.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_status_burn_in_1hr.Name = "cmb_status_burn_in_1hr";
             this.cmb_status_burn_in_1hr.Size = new System.Drawing.Size(168, 22);
             this.cmb_status_burn_in_1hr.TabIndex = 172;
@@ -741,8 +719,8 @@
             // 
             this.txt_remarks.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_remarks.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_remarks.Location = new System.Drawing.Point(307, 293);
-            this.txt_remarks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_remarks.Location = new System.Drawing.Point(307, 291);
+            this.txt_remarks.Margin = new System.Windows.Forms.Padding(2);
             this.txt_remarks.MaxLength = 20;
             this.txt_remarks.Name = "txt_remarks";
             this.txt_remarks.Size = new System.Drawing.Size(165, 22);
@@ -753,8 +731,8 @@
             // 
             this.txt_test_technician.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_test_technician.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_test_technician.Location = new System.Drawing.Point(307, 264);
-            this.txt_test_technician.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_test_technician.Location = new System.Drawing.Point(307, 259);
+            this.txt_test_technician.Margin = new System.Windows.Forms.Padding(2);
             this.txt_test_technician.MaxLength = 20;
             this.txt_test_technician.Name = "txt_test_technician";
             this.txt_test_technician.Size = new System.Drawing.Size(165, 22);
@@ -765,8 +743,8 @@
             // 
             this.txt_testfailuredetails.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_testfailuredetails.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_testfailuredetails.Location = new System.Drawing.Point(307, 235);
-            this.txt_testfailuredetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_testfailuredetails.Location = new System.Drawing.Point(307, 227);
+            this.txt_testfailuredetails.Margin = new System.Windows.Forms.Padding(2);
             this.txt_testfailuredetails.MaxLength = 20;
             this.txt_testfailuredetails.Name = "txt_testfailuredetails";
             this.txt_testfailuredetails.Size = new System.Drawing.Size(165, 22);
@@ -777,8 +755,8 @@
             // 
             this.txt_tok_sticker_attached.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_tok_sticker_attached.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tok_sticker_attached.Location = new System.Drawing.Point(307, 206);
-            this.txt_tok_sticker_attached.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_tok_sticker_attached.Location = new System.Drawing.Point(307, 195);
+            this.txt_tok_sticker_attached.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tok_sticker_attached.MaxLength = 20;
             this.txt_tok_sticker_attached.Name = "txt_tok_sticker_attached";
             this.txt_tok_sticker_attached.Size = new System.Drawing.Size(165, 22);
@@ -790,7 +768,7 @@
             this.txt_powerfactor.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_powerfactor.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_powerfactor.Location = new System.Drawing.Point(307, 3);
-            this.txt_powerfactor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_powerfactor.Margin = new System.Windows.Forms.Padding(2);
             this.txt_powerfactor.MaxLength = 20;
             this.txt_powerfactor.Name = "txt_powerfactor";
             this.txt_powerfactor.Size = new System.Drawing.Size(165, 22);
@@ -802,12 +780,12 @@
             this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.Color.Black;
-            this.label41.Location = new System.Drawing.Point(3, 59);
+            this.label41.Location = new System.Drawing.Point(3, 65);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(248, 24);
             this.label41.TabIndex = 171;
-            this.label41.Text = "Pfc Firmware 0.512,0.492";
+            this.label41.Text = "Firmware";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
@@ -828,7 +806,7 @@
             this.label42.BackColor = System.Drawing.Color.Transparent;
             this.label42.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(3, 30);
+            this.label42.Location = new System.Drawing.Point(3, 33);
             this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(248, 24);
@@ -836,26 +814,12 @@
             this.label42.Text = "Status After Burn-in (1hr)";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(3, 88);
-            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(248, 24);
-            this.label44.TabIndex = 171;
-            this.label44.Text = "DCdc Firmware 4.511 , 1.798";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label44.Click += new System.EventHandler(this.label7_Click);
-            // 
             // label45
             // 
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(3, 175);
+            this.label45.Location = new System.Drawing.Point(3, 161);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(248, 24);
@@ -868,7 +832,7 @@
             this.label46.BackColor = System.Drawing.Color.Transparent;
             this.label46.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(3, 146);
+            this.label46.Location = new System.Drawing.Point(3, 129);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(248, 24);
@@ -881,7 +845,7 @@
             this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(3, 117);
+            this.label47.Location = new System.Drawing.Point(3, 97);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(248, 24);
@@ -894,7 +858,7 @@
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Black;
-            this.label35.Location = new System.Drawing.Point(3, 204);
+            this.label35.Location = new System.Drawing.Point(3, 193);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(248, 24);
@@ -907,7 +871,7 @@
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(3, 233);
+            this.label36.Location = new System.Drawing.Point(3, 225);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(248, 24);
@@ -920,7 +884,7 @@
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(3, 262);
+            this.label37.Location = new System.Drawing.Point(3, 257);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(248, 24);
@@ -933,7 +897,7 @@
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(3, 291);
+            this.label38.Location = new System.Drawing.Point(3, 289);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(248, 24);
@@ -947,7 +911,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.30049F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.69951F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179F));
             this.tableLayoutPanel5.Controls.Add(this.txt_efficiency, 2, 6);
             this.tableLayoutPanel5.Controls.Add(this.txt_output_power, 2, 5);
             this.tableLayoutPanel5.Controls.Add(this.txt_Output_current, 2, 4);
@@ -970,7 +934,7 @@
             this.tableLayoutPanel5.Controls.Add(this.label32, 0, 5);
             this.tableLayoutPanel5.Controls.Add(this.label24, 0, 4);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(26, 398);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 7;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
@@ -987,8 +951,8 @@
             // 
             this.txt_efficiency.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_efficiency.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_efficiency.Location = new System.Drawing.Point(302, 171);
-            this.txt_efficiency.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_efficiency.Location = new System.Drawing.Point(300, 171);
+            this.txt_efficiency.Margin = new System.Windows.Forms.Padding(2);
             this.txt_efficiency.MaxLength = 20;
             this.txt_efficiency.Name = "txt_efficiency";
             this.txt_efficiency.Size = new System.Drawing.Size(165, 22);
@@ -999,8 +963,8 @@
             // 
             this.txt_output_power.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_output_power.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_output_power.Location = new System.Drawing.Point(302, 143);
-            this.txt_output_power.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_output_power.Location = new System.Drawing.Point(300, 143);
+            this.txt_output_power.Margin = new System.Windows.Forms.Padding(2);
             this.txt_output_power.MaxLength = 20;
             this.txt_output_power.Name = "txt_output_power";
             this.txt_output_power.Size = new System.Drawing.Size(165, 22);
@@ -1011,8 +975,8 @@
             // 
             this.txt_Output_current.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_Output_current.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Output_current.Location = new System.Drawing.Point(302, 115);
-            this.txt_Output_current.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Output_current.Location = new System.Drawing.Point(300, 115);
+            this.txt_Output_current.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Output_current.MaxLength = 20;
             this.txt_Output_current.Name = "txt_Output_current";
             this.txt_Output_current.Size = new System.Drawing.Size(165, 22);
@@ -1024,7 +988,7 @@
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(192, 169);
+            this.label31.Location = new System.Drawing.Point(191, 169);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(98, 24);
@@ -1037,7 +1001,7 @@
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(192, 141);
+            this.label30.Location = new System.Drawing.Point(191, 141);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(98, 24);
@@ -1050,7 +1014,7 @@
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(192, 113);
+            this.label29.Location = new System.Drawing.Point(191, 113);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(98, 24);
@@ -1063,7 +1027,7 @@
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(192, 85);
+            this.label28.Location = new System.Drawing.Point(191, 85);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(98, 24);
@@ -1076,7 +1040,7 @@
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(192, 57);
+            this.label27.Location = new System.Drawing.Point(191, 57);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(98, 24);
@@ -1089,7 +1053,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(192, 29);
+            this.label26.Location = new System.Drawing.Point(191, 29);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(98, 24);
@@ -1102,7 +1066,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(192, 1);
+            this.label25.Location = new System.Drawing.Point(191, 1);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(98, 24);
@@ -1114,8 +1078,8 @@
             // 
             this.txt_output_voltage.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_output_voltage.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_output_voltage.Location = new System.Drawing.Point(302, 87);
-            this.txt_output_voltage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_output_voltage.Location = new System.Drawing.Point(300, 87);
+            this.txt_output_voltage.Margin = new System.Windows.Forms.Padding(2);
             this.txt_output_voltage.MaxLength = 20;
             this.txt_output_voltage.Name = "txt_output_voltage";
             this.txt_output_voltage.Size = new System.Drawing.Size(165, 22);
@@ -1126,8 +1090,8 @@
             // 
             this.txt_input_power.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_input_power.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_input_power.Location = new System.Drawing.Point(302, 59);
-            this.txt_input_power.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_input_power.Location = new System.Drawing.Point(300, 59);
+            this.txt_input_power.Margin = new System.Windows.Forms.Padding(2);
             this.txt_input_power.MaxLength = 20;
             this.txt_input_power.Name = "txt_input_power";
             this.txt_input_power.Size = new System.Drawing.Size(165, 22);
@@ -1138,8 +1102,8 @@
             // 
             this.txt_standby_power.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_standby_power.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_standby_power.Location = new System.Drawing.Point(302, 31);
-            this.txt_standby_power.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_standby_power.Location = new System.Drawing.Point(300, 31);
+            this.txt_standby_power.Margin = new System.Windows.Forms.Padding(2);
             this.txt_standby_power.MaxLength = 20;
             this.txt_standby_power.Name = "txt_standby_power";
             this.txt_standby_power.Size = new System.Drawing.Size(165, 22);
@@ -1150,8 +1114,8 @@
             // 
             this.txt_inhibit_function_12V.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_inhibit_function_12V.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_inhibit_function_12V.Location = new System.Drawing.Point(302, 3);
-            this.txt_inhibit_function_12V.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_inhibit_function_12V.Location = new System.Drawing.Point(300, 3);
+            this.txt_inhibit_function_12V.Margin = new System.Windows.Forms.Padding(2);
             this.txt_inhibit_function_12V.MaxLength = 20;
             this.txt_inhibit_function_12V.Name = "txt_inhibit_function_12V";
             this.txt_inhibit_function_12V.Size = new System.Drawing.Size(165, 22);
@@ -1267,7 +1231,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txt_ipn, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(26, 15);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -1283,7 +1247,7 @@
             this.txt_no.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_no.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_no.Location = new System.Drawing.Point(199, 3);
-            this.txt_no.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_no.Margin = new System.Windows.Forms.Padding(2);
             this.txt_no.MaxLength = 20;
             this.txt_no.Name = "txt_no";
             this.txt_no.Size = new System.Drawing.Size(273, 22);
@@ -1295,7 +1259,7 @@
             this.txt_datetested.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_datetested.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_datetested.Location = new System.Drawing.Point(199, 32);
-            this.txt_datetested.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_datetested.Margin = new System.Windows.Forms.Padding(2);
             this.txt_datetested.MaxLength = 100;
             this.txt_datetested.Name = "txt_datetested";
             this.txt_datetested.Size = new System.Drawing.Size(273, 22);
@@ -1307,7 +1271,7 @@
             this.text_serial_number.BackColor = System.Drawing.Color.SkyBlue;
             this.text_serial_number.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_serial_number.Location = new System.Drawing.Point(199, 90);
-            this.text_serial_number.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.text_serial_number.Margin = new System.Windows.Forms.Padding(2);
             this.text_serial_number.MaxLength = 100;
             this.text_serial_number.Name = "text_serial_number";
             this.text_serial_number.Size = new System.Drawing.Size(273, 22);
@@ -1366,7 +1330,7 @@
             "Pass",
             "Fail"});
             this.cmb_visual_ispection.Location = new System.Drawing.Point(199, 119);
-            this.cmb_visual_ispection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_visual_ispection.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_visual_ispection.Name = "cmb_visual_ispection";
             this.cmb_visual_ispection.Size = new System.Drawing.Size(273, 22);
             this.cmb_visual_ispection.TabIndex = 167;
@@ -1389,7 +1353,7 @@
             this.txt_ipn.BackColor = System.Drawing.Color.SkyBlue;
             this.txt_ipn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ipn.Location = new System.Drawing.Point(199, 61);
-            this.txt_ipn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_ipn.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ipn.MaxLength = 100;
             this.txt_ipn.Name = "txt_ipn";
             this.txt_ipn.Size = new System.Drawing.Size(273, 22);
@@ -1409,22 +1373,17 @@
             this.label7.Text = "Visual Inspection (Pass/Fail)";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // rjCircularPictureBox1
+            // txtfirmware
             // 
-            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
-            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox1.BorderSize = 2;
-            this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(99, 99);
-            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rjCircularPictureBox1.TabIndex = 47;
-            this.rjCircularPictureBox1.TabStop = false;
+            this.txtfirmware.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtfirmware.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfirmware.Location = new System.Drawing.Point(307, 67);
+            this.txtfirmware.Margin = new System.Windows.Forms.Padding(2);
+            this.txtfirmware.MaxLength = 20;
+            this.txtfirmware.Name = "txtfirmware";
+            this.txtfirmware.Size = new System.Drawing.Size(165, 22);
+            this.txtfirmware.TabIndex = 173;
+            this.txtfirmware.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PowerModulefrm
             // 
@@ -1432,9 +1391,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(674, 665);
+            this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label23);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PowerModulefrm";
             this.Text = "Power Module";
             this.Load += new System.EventHandler(this.PowerModulefrm_Load);
@@ -1442,6 +1402,7 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -1450,7 +1411,6 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1530,15 +1490,12 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.ComboBox cmb_judgement;
         private System.Windows.Forms.ComboBox cmb_led_display;
         private System.Windows.Forms.ComboBox cmb_button_function;
-        private System.Windows.Forms.ComboBox cmb_dcdc_firmware;
-        private System.Windows.Forms.ComboBox cmb_pfc_firmware;
         private System.Windows.Forms.ComboBox cmb_status_burn_in_1hr;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
@@ -1547,5 +1504,6 @@
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.Label label7;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
+        private System.Windows.Forms.TextBox txtfirmware;
     }
 }

@@ -544,6 +544,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.ico" />
+    <None Include="assets\image %287%29.png" />
     <None Include="assets\Picture5.png" />
     <None Include="assets\Picture4.png" />
     <None Include="assets\Picture3.png" />
