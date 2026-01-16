@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -47,7 +44,7 @@ namespace EngineLevelTesting.Forms
         {
             if (string.IsNullOrEmpty(txtserial.Text) || string.IsNullOrEmpty(txtrev.Text) || string.IsNullOrEmpty(txtfirm.Text) || string.IsNullOrEmpty(txttp3.Text) || string.IsNullOrEmpty(txttp4.Text)
                 || string.IsNullOrEmpty(txttp5.Text) || string.IsNullOrEmpty(cbCopn.Text) || string.IsNullOrEmpty(cbCclose.Text) || string.IsNullOrEmpty(txtvoltagePlus.Text) || string.IsNullOrEmpty(txttempRead.Text)
-                || string.IsNullOrEmpty(txtgfci.Text) || string.IsNullOrEmpty(txtsn.Text) || string.IsNullOrEmpty(cbleak.Text) || string.IsNullOrEmpty(cbcircuit.Text) || string.IsNullOrEmpty(cbduty.Text) || 
+                || string.IsNullOrEmpty(txtgfci.Text) || string.IsNullOrEmpty(txtsn.Text) || string.IsNullOrEmpty(cbleak.Text) || string.IsNullOrEmpty(cbcircuit.Text) || string.IsNullOrEmpty(cbduty.Text) ||
                 string.IsNullOrEmpty(txtamp240.Text) || string.IsNullOrEmpty(txtamp120.Text) || string.IsNullOrEmpty(cbjudgement.Text) || string.IsNullOrEmpty(txtremarks.Text) || string.IsNullOrEmpty(txttestby.Text))
             {
                 MessageBox.Show("Please Input Fields");
@@ -265,6 +262,11 @@ namespace EngineLevelTesting.Forms
                 txtremarks.ReadOnly = true;
                 txttestby.ReadOnly = true;
             }
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

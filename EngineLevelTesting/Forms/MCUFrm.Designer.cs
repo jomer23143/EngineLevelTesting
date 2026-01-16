@@ -139,11 +139,21 @@ namespace EngineLevelTesting.Forms
             this.label43 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cb1380 = new System.Windows.Forms.ComboBox();
+            this.cb1290 = new System.Windows.Forms.ComboBox();
+            this.cb1200 = new System.Windows.Forms.ComboBox();
+            this.cb1090 = new System.Windows.Forms.ComboBox();
+            this.cb1000 = new System.Windows.Forms.ComboBox();
+            this.cb900 = new System.Windows.Forms.ComboBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel66 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
             this.panel61 = new System.Windows.Forms.Panel();
             this.cbchargingstatus1 = new System.Windows.Forms.ComboBox();
             this.panel60 = new System.Windows.Forms.Panel();
@@ -193,19 +203,9 @@ namespace EngineLevelTesting.Forms
             this.label30 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
             this.txtlow_c1_t3 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.cb900 = new System.Windows.Forms.ComboBox();
-            this.cb1000 = new System.Windows.Forms.ComboBox();
-            this.cb1090 = new System.Windows.Forms.ComboBox();
-            this.cb1200 = new System.Windows.Forms.ComboBox();
-            this.cb1290 = new System.Windows.Forms.ComboBox();
-            this.cb1380 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel66 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -254,7 +254,6 @@ namespace EngineLevelTesting.Forms
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.panel66.SuspendLayout();
             this.panel61.SuspendLayout();
             this.panel60.SuspendLayout();
             this.panel37.SuspendLayout();
@@ -279,6 +278,7 @@ namespace EngineLevelTesting.Forms
             this.panel25.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel27.SuspendLayout();
+            this.panel66.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -1473,6 +1473,180 @@ namespace EngineLevelTesting.Forms
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
+            // cb1380
+            // 
+            this.cb1380.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cb1380.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb1380.BackColor = System.Drawing.Color.SkyBlue;
+            this.cb1380.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb1380.FormattingEnabled = true;
+            this.cb1380.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cb1380.Location = new System.Drawing.Point(335, 306);
+            this.cb1380.Name = "cb1380";
+            this.cb1380.Size = new System.Drawing.Size(112, 22);
+            this.cb1380.TabIndex = 188;
+            // 
+            // cb1290
+            // 
+            this.cb1290.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cb1290.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb1290.BackColor = System.Drawing.Color.SkyBlue;
+            this.cb1290.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb1290.FormattingEnabled = true;
+            this.cb1290.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cb1290.Location = new System.Drawing.Point(333, 278);
+            this.cb1290.Name = "cb1290";
+            this.cb1290.Size = new System.Drawing.Size(112, 22);
+            this.cb1290.TabIndex = 187;
+            // 
+            // cb1200
+            // 
+            this.cb1200.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cb1200.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb1200.BackColor = System.Drawing.Color.SkyBlue;
+            this.cb1200.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb1200.FormattingEnabled = true;
+            this.cb1200.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cb1200.Location = new System.Drawing.Point(333, 250);
+            this.cb1200.Name = "cb1200";
+            this.cb1200.Size = new System.Drawing.Size(112, 22);
+            this.cb1200.TabIndex = 186;
+            // 
+            // cb1090
+            // 
+            this.cb1090.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cb1090.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb1090.BackColor = System.Drawing.Color.SkyBlue;
+            this.cb1090.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb1090.FormattingEnabled = true;
+            this.cb1090.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cb1090.Location = new System.Drawing.Point(333, 222);
+            this.cb1090.Name = "cb1090";
+            this.cb1090.Size = new System.Drawing.Size(112, 22);
+            this.cb1090.TabIndex = 185;
+            // 
+            // cb1000
+            // 
+            this.cb1000.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cb1000.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb1000.BackColor = System.Drawing.Color.SkyBlue;
+            this.cb1000.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb1000.FormattingEnabled = true;
+            this.cb1000.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cb1000.Location = new System.Drawing.Point(333, 194);
+            this.cb1000.Name = "cb1000";
+            this.cb1000.Size = new System.Drawing.Size(112, 22);
+            this.cb1000.TabIndex = 184;
+            // 
+            // cb900
+            // 
+            this.cb900.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cb900.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb900.BackColor = System.Drawing.Color.SkyBlue;
+            this.cb900.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb900.FormattingEnabled = true;
+            this.cb900.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cb900.Location = new System.Drawing.Point(333, 166);
+            this.cb900.Name = "cb900";
+            this.cb900.Size = new System.Drawing.Size(112, 22);
+            this.cb900.TabIndex = 183;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.Transparent;
+            this.label51.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.Black;
+            this.label51.Location = new System.Drawing.Point(281, 309);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(50, 15);
+            this.label51.TabIndex = 182;
+            this.label51.Text = "1380Ω :";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.Transparent;
+            this.label50.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Black;
+            this.label50.Location = new System.Drawing.Point(279, 282);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(50, 15);
+            this.label50.TabIndex = 181;
+            this.label50.Text = "1290Ω :";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(279, 253);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(50, 15);
+            this.label49.TabIndex = 180;
+            this.label49.Text = "1200Ω :";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Black;
+            this.label48.Location = new System.Drawing.Point(279, 225);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(50, 15);
+            this.label48.TabIndex = 179;
+            this.label48.Text = "1090Ω :";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(280, 197);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(50, 15);
+            this.label47.TabIndex = 178;
+            this.label47.Text = "1000Ω :";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(286, 170);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(43, 15);
+            this.label46.TabIndex = 177;
+            this.label46.Text = "900Ω :";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.Black;
+            this.label45.Location = new System.Drawing.Point(150, 142);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(175, 15);
+            this.label45.TabIndex = 176;
+            this.label45.Text = "Calibrator customized resistor";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
@@ -1554,43 +1728,10 @@ namespace EngineLevelTesting.Forms
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1051, 638);
+            this.tabPage2.Size = new System.Drawing.Size(822, 638);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(11, 595);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 37);
-            this.button2.TabIndex = 221;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // panel66
-            // 
-            this.panel66.Controls.Add(this.label44);
-            this.panel66.Location = new System.Drawing.Point(-1, 1);
-            this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(1070, 41);
-            this.panel66.TabIndex = 197;
-            // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.LimeGreen;
-            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label44.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(0, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(1070, 41);
-            this.label44.TabIndex = 0;
-            this.label44.Text = "MCU 6 Series Board EL Test Data";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel61
             // 
@@ -2078,179 +2219,38 @@ namespace EngineLevelTesting.Forms
             this.txtlow_c1_t3.TabIndex = 0;
             this.txtlow_c1_t3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label45
+            // button2
             // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(150, 142);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(175, 15);
-            this.label45.TabIndex = 176;
-            this.label45.Text = "Calibrator customized resistor";
+            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(11, 595);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 37);
+            this.button2.TabIndex = 221;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label46
+            // panel66
             // 
-            this.label46.AutoSize = true;
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(286, 170);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(43, 15);
-            this.label46.TabIndex = 177;
-            this.label46.Text = "900Ω :";
+            this.panel66.Controls.Add(this.label44);
+            this.panel66.Location = new System.Drawing.Point(-1, 1);
+            this.panel66.Name = "panel66";
+            this.panel66.Size = new System.Drawing.Size(1070, 41);
+            this.panel66.TabIndex = 197;
             // 
-            // label47
+            // label44
             // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(280, 197);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(50, 15);
-            this.label47.TabIndex = 178;
-            this.label47.Text = "1000Ω :";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(279, 225);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(50, 15);
-            this.label48.TabIndex = 179;
-            this.label48.Text = "1090Ω :";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(279, 253);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(50, 15);
-            this.label49.TabIndex = 180;
-            this.label49.Text = "1200Ω :";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(279, 282);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(50, 15);
-            this.label50.TabIndex = 181;
-            this.label50.Text = "1290Ω :";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(281, 309);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(50, 15);
-            this.label51.TabIndex = 182;
-            this.label51.Text = "1380Ω :";
-            // 
-            // cb900
-            // 
-            this.cb900.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cb900.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cb900.BackColor = System.Drawing.Color.SkyBlue;
-            this.cb900.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb900.FormattingEnabled = true;
-            this.cb900.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.cb900.Location = new System.Drawing.Point(333, 166);
-            this.cb900.Name = "cb900";
-            this.cb900.Size = new System.Drawing.Size(112, 22);
-            this.cb900.TabIndex = 183;
-            // 
-            // cb1000
-            // 
-            this.cb1000.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cb1000.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cb1000.BackColor = System.Drawing.Color.SkyBlue;
-            this.cb1000.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb1000.FormattingEnabled = true;
-            this.cb1000.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.cb1000.Location = new System.Drawing.Point(333, 194);
-            this.cb1000.Name = "cb1000";
-            this.cb1000.Size = new System.Drawing.Size(112, 22);
-            this.cb1000.TabIndex = 184;
-            // 
-            // cb1090
-            // 
-            this.cb1090.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cb1090.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cb1090.BackColor = System.Drawing.Color.SkyBlue;
-            this.cb1090.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb1090.FormattingEnabled = true;
-            this.cb1090.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.cb1090.Location = new System.Drawing.Point(333, 222);
-            this.cb1090.Name = "cb1090";
-            this.cb1090.Size = new System.Drawing.Size(112, 22);
-            this.cb1090.TabIndex = 185;
-            // 
-            // cb1200
-            // 
-            this.cb1200.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cb1200.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cb1200.BackColor = System.Drawing.Color.SkyBlue;
-            this.cb1200.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb1200.FormattingEnabled = true;
-            this.cb1200.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.cb1200.Location = new System.Drawing.Point(333, 250);
-            this.cb1200.Name = "cb1200";
-            this.cb1200.Size = new System.Drawing.Size(112, 22);
-            this.cb1200.TabIndex = 186;
-            // 
-            // cb1290
-            // 
-            this.cb1290.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cb1290.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cb1290.BackColor = System.Drawing.Color.SkyBlue;
-            this.cb1290.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb1290.FormattingEnabled = true;
-            this.cb1290.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.cb1290.Location = new System.Drawing.Point(333, 278);
-            this.cb1290.Name = "cb1290";
-            this.cb1290.Size = new System.Drawing.Size(112, 22);
-            this.cb1290.TabIndex = 187;
-            // 
-            // cb1380
-            // 
-            this.cb1380.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cb1380.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cb1380.BackColor = System.Drawing.Color.SkyBlue;
-            this.cb1380.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb1380.FormattingEnabled = true;
-            this.cb1380.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.cb1380.Location = new System.Drawing.Point(335, 306);
-            this.cb1380.Name = "cb1380";
-            this.cb1380.Size = new System.Drawing.Size(112, 22);
-            this.cb1380.TabIndex = 188;
+            this.label44.BackColor = System.Drawing.Color.LimeGreen;
+            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label44.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(0, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(1070, 41);
+            this.label44.TabIndex = 0;
+            this.label44.Text = "MCU 6 Series Board EL Test Data";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MCUFrm
             // 
@@ -2329,7 +2329,6 @@ namespace EngineLevelTesting.Forms
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.panel66.ResumeLayout(false);
             this.panel61.ResumeLayout(false);
             this.panel60.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
@@ -2365,6 +2364,7 @@ namespace EngineLevelTesting.Forms
             this.panel24.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
+            this.panel66.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

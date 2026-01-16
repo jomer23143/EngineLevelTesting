@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu.UI.WinForms;
-using EngineLevelTesting.Utilities;
 using EngineLevelTesting.Class;
+using EngineLevelTesting.Utilities;
 namespace EngineLevelTesting.Forms
 {
     public partial class Secc2Frm : Form
@@ -30,8 +30,8 @@ namespace EngineLevelTesting.Forms
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-         
-    
+
+
             pictureBox3.Hide();
         }
 
@@ -41,7 +41,7 @@ namespace EngineLevelTesting.Forms
             Txt_serial_number.Select();
         }
 
-      
+
 
         // Single event handler for all TextBoxes
         private void TextBox_TextChanged(object sender, EventArgs e)
@@ -74,9 +74,9 @@ namespace EngineLevelTesting.Forms
 
         private void Btn_Save_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(Txt_ipn.Text) || string.IsNullOrEmpty(Txt_serial_number.Text) || string.IsNullOrEmpty(Txt_emmc.Text) || string.IsNullOrEmpty(Txt_load_test.Text) || string.IsNullOrEmpty(Txt_keysight_attenuation.Text) || string.IsNullOrEmpty(Txt_failure_details.Text) || string.IsNullOrEmpty(Txt_test_technician.Text) || string.IsNullOrEmpty(Txt_remarks.Text))
+            if (string.IsNullOrEmpty(Txt_ipn.Text) || string.IsNullOrEmpty(Txt_serial_number.Text) || string.IsNullOrEmpty(Txt_emmc.Text) || string.IsNullOrEmpty(Txt_load_test.Text) || string.IsNullOrEmpty(Txt_keysight_attenuation.Text) || string.IsNullOrEmpty(Txt_failure_details.Text) || string.IsNullOrEmpty(Txt_test_technician.Text) || string.IsNullOrEmpty(Txt_remarks.Text))
             {
-                MessageBox.Show("Please input all Fields", "Notification - SECC 2.0 Board Test Checklist", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Please input all Fields", "Notification - SECC 2.0 Board Test Checklist", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
                 Saved();
@@ -87,7 +87,7 @@ namespace EngineLevelTesting.Forms
         {
             try
             {
-              pictureBox3.Show();
+                pictureBox3.Show();
                 StringBuilder sql = new StringBuilder();
                 Dictionary<string, object> data = new Dictionary<string, object> {
                                // { "no",Txt_no.Text},
@@ -126,20 +126,20 @@ namespace EngineLevelTesting.Forms
                 {
                     MySqlDatasupport.RunNonQuery(sql.ToString(), IsolationLevel.ReadCommitted);
                 });
-               pictureBox3.Hide();
+                pictureBox3.Hide();
                 MessageBox.Show("Data Sucessfully Saved!!!", "Success-SECC 2.0 Board Test Checklist", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Cleardata();
             }
             catch (Exception)
             {
-               pictureBox3.Hide();
+                pictureBox3.Hide();
                 MessageBox.Show("Failed!!!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void Cleardata()
         {
-           
+
             Txt_revno.Clear();
             Txt_serial_number.Clear();
 

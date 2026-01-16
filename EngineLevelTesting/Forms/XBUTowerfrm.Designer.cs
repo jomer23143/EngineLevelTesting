@@ -34,6 +34,7 @@ namespace EngineLevelTesting.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.txtserial = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label40 = new System.Windows.Forms.Label();
             this.txtremarks = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.txttestby = new System.Windows.Forms.TextBox();
@@ -111,7 +112,6 @@ namespace EngineLevelTesting.Forms
             this.txtipn = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label40 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -228,6 +228,15 @@ namespace EngineLevelTesting.Forms
             this.groupBox1.Size = new System.Drawing.Size(1109, 522);
             this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(761, 93);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(121, 17);
+            this.label40.TabIndex = 123;
+            this.label40.Text = "Dipswitch(Enable) :";
             // 
             // txtremarks
             // 
@@ -987,15 +996,6 @@ namespace EngineLevelTesting.Forms
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(761, 93);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(121, 17);
-            this.label40.TabIndex = 123;
-            this.label40.Text = "Dipswitch(Enable) :";
             // 
             // XBUTowerfrm
             // 

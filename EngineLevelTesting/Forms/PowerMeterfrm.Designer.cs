@@ -529,6 +529,7 @@ namespace EngineLevelTesting.Forms
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label16);
+            this.panel12.Controls.Add(this.rjCircularPictureBox1);
             this.panel12.Location = new System.Drawing.Point(152, 367);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(232, 28);
@@ -748,7 +749,7 @@ namespace EngineLevelTesting.Forms
             this.rjCircularPictureBox1.BorderSize = 2;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(232, 269);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(56, -48);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -792,7 +793,6 @@ namespace EngineLevelTesting.Forms
             this.ClientSize = new System.Drawing.Size(565, 638);
             this.Controls.Add(this.txtfirm);
             this.Controls.Add(this.cbrev);
-            this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txttestby);
             this.Controls.Add(this.txtremarks);

@@ -196,6 +196,11 @@ namespace EngineLevelTesting.Forms
             txt_no.Text = currentNo.ToString();
 
         }
+
+        private void txt_remarks_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

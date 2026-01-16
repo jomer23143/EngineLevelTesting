@@ -1728,7 +1728,7 @@
             this.bunifuPanel1.Controls.Add(this.label5);
             this.bunifuPanel1.Controls.Add(this.label9);
             this.bunifuPanel1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuPanel1.Location = new System.Drawing.Point(-50, 51);
+            this.bunifuPanel1.Location = new System.Drawing.Point(-68, 51);
             this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;

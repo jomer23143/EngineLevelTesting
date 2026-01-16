@@ -395,6 +395,7 @@ namespace EngineLevelTesting.Forms
             this.label19.Size = new System.Drawing.Size(102, 15);
             this.label19.TabIndex = 132;
             this.label19.Text = "Charge Amp 240 :";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label20
             // 

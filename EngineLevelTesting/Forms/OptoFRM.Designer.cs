@@ -88,6 +88,7 @@ namespace EngineLevelTesting.Forms
             this.label23.TabIndex = 43;
             this.label23.Text = "Opto-Isolator Board Level Test Data";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label2
             // 
